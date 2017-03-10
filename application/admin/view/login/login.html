@@ -77,14 +77,16 @@ body {
         if(!username){$.Prompt("用户名不能为空",1000);return false;}
         if(!password){$.Prompt("密码不能为空",1000);return false;}
         var url = "{:url('login')}";
-        $.get(url,{username:username,password:password},function(msg){
+        $.post(url,{username:username,password:password},function(msg){
             if(msg['code'] == -1 || msg['code'] == -2){
               $.Prompt(msg['msg'],2000);
             }
 
             if(msg['code'] == 1){
               $.Prompt(msg['msg'],4000);
-              window.location.href = "{:url('index/index')}";
+              //window.location.href = "{:url('index/index')}";
+                setTimeout(window.location.href = "{:url('index/index')}", 300);  
+              //reutrn false; 
             }
         },'json')
      })

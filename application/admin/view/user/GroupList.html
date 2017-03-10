@@ -38,7 +38,7 @@
 			</td>
 			<td align="left">{$v.create_time}</td>
 			<td align="left">{$v.update_time}</td>
-			<td><a href="javascript:;" class="GetRule" ids="{$v.id}">分配权限</a> | <a href="101">编辑</a> | <a href="101">删除</a> </td>
+			<td><a href="javascript:;" class="GetRule" ids="{$v.id}" onclick="authrule({$v.id})">分配权限</a> | <!--<a href="101">编辑</a> | <a href="101">删除</a>--> </td>
 		</tr> 
 	{/foreach}
 
@@ -62,58 +62,58 @@
 
 <div id="choose-box-wrapper">
  <div id="choose-box">
+	 <form method="post" action="{:url('Updategroupauth')}"   name="form3"> 
 		<div id="choose-box-title">
 			<span>权限分配</span>
 			<span style="float:right;curosr:pointer;" id="hide">关闭</span>
-		</div>
+		</div>  
+		<div class="tree_content">
+	        <div class="tree_node">
+				{foreach name="GroupArrayData" item="v"}
+		            <div class="div_inline"><input type="button" value="" class="tree_node_toggle_button"></div>
+		            <div class="div_inline tree_node_parent"> 
+		                <input type="checkbox" name="box[]" class="tree_node_parent_checkbox" value="{$v.id}">{$v.title} <br>
+		                {foreach name="v.data_list" item="vv"}
+		                <div class="tree_node_child">
+		                    
+		                    <!-- 三级 -->
+								<?php if($vv['data_lists'] != array()){?>
+		                    		<div class="div_inline">
+		                    			<input type="button" value="" class="tree_node_toggle_button">
+		                    		</div>
+		                    	<?php
+		                    	}
+		                    	?>
+		                    <div class="div_inline tree_node_parent">
+                            <input type="checkbox" name="box[]" value="{$vv.id}" class="tree_node_child_checkbox">{$vv.title}<br>
+		                        {foreach name="$vv.data_lists" item="vvv"}
+			                        <div class="tree_node_child">
+			                            <input type="checkbox" name="box[]" value="{$vv.id}" class="tree_node_child_checkboxs">{$vvv.title}<br>
+			                        </div> 
+		                        {/foreach}	
+		                    </div>
 
-
-
-				<div class="tree_content">
-			        <div class="tree_node">
-						{foreach name="GroupArrayData" item="v"}
-				            <div class="div_inline"><input type="button" value="" class="tree_node_toggle_button"></div>
-				            <div class="div_inline tree_node_parent">
-								
-				                <input type="checkbox" name="box" class="tree_node_parent_checkbox" value="{$v.id}">{$v.title} <br>
-				                {foreach name="v.data_list" item="vv"}
-				                <div class="tree_node_child">
-				                    
-				                    <!-- 三级 -->
-										<?php if($vv['data_lists'] != array()){?>
-				                    		<div class="div_inline">
-				                    			<input type="button" value="" class="tree_node_toggle_button">
-				                    		</div>
-				                    	<?php
-				                    	}
-				                    	?>
-				                    <div class="div_inline tree_node_parent">
-		                            <input type="checkbox" name="box" value="{$vv.id}" class="tree_node_child_checkbox">{$vv.title}<br>
-				                        {foreach name="$vv.data_lists" item="vvv"}
-					                        <div class="tree_node_child">
-					                            <input type="checkbox" name="box" value="{$vv.id}" class="tree_node_child_checkboxs">{$vvv.title}<br>
-					                        </div> 
-				                        {/foreach}	
-				                    </div>
-	
-				                </div>
-				                {/foreach}
-				            </div>
-						{/foreach}
-			        </div>
-			    </div>
+		                </div>
+		                {/foreach}
+		            </div>
+				{/foreach}
+	        </div>
+	    </div>
 
 
 		<div id="choose-box-bottom">
-			<input type="botton" id="GroupAllot" value="分配权限" />
+			<input type="number" value="" name="groupid" style="display: none;">
+			<input type="submit" id="GroupAllot" value="分配权限" />
 		</div>
-	  </div>
-	</div>
+	 </form>
+  </div>
+</div>
 
 </body>
 </html>
 <script type="text/javascript" src="javascript/skin/js/jquery-3.0.0.js"></script>
 <script type="text/javascript" src="javascript/skin/js/checkbox.js"></script>
+<script type="text/javascript" src="javascript/skin/js/basesong.js"></script>
 
 <script>
 	$(function(){

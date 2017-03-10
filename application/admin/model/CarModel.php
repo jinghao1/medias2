@@ -13,13 +13,14 @@ class CarModel extends Model
 {
 	 // 设置当前模型对应的完整数据表名称
     protected $table = 'car_series';
-
+    protected $tablebd = 'brand';
+	
     /*
      * 读取车系车型父级
      */
     function GetSelectOne()
     {
-    	return Db::name($this->table)->where('pid',0)->select();
+    	return Db::name($this->tablebd)->where('pid',0)->select();
     }
 
     /**
@@ -28,7 +29,7 @@ class CarModel extends Model
      */
     function CarClass($id)
     {
-    	return Db::name($this->table)->where('pid',$id)->select();
+    	return Db::name($this->tablebd)->where('pid',$id)->select();
     }
 
     /**
@@ -46,12 +47,29 @@ class CarModel extends Model
      */
     function CarSelectName($id)
     {
-        $res = DB::name($this->table)->field("car_id,car_name")->where('car_id','in',$id)->select();
+	    $string = "";
+        $res = DB::name($this->tablebd)->field("brand_id,brand_name")->where('brand_id','in',$id)->select();
+        //echo DB::getLastSql(); //打印上一条sql语句
         foreach ($res as $key => $value) {
-            $arr[] = $value['car_name'];;
+            $arr[] = $value['brand_name'];;
             $string = join(",",$arr);
         }
         return $string;
+    }
+
+    //根据车系id信息，查询车系id=>name数组
+    function CarSelectnmobj($id){
+	    return DB::name($this->tablebd)->field("brand_id,brand_name")->where('brand_id','in',$id)->select();
+    }
+
+    //返回购车时间
+    public function BuycarTime($id=null){
+	    if($id){
+		    return DB::name("buytime")->field("id,timename")->where('id',$id)->select();
+	    }else{
+		    return  DB::name("buytime")->field("id,timename")->select();
+	    }
+	    
     }
 
 

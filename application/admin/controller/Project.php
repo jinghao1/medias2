@@ -23,7 +23,8 @@ class Project extends	Base
 	{	
 		$project = new ProjectModel();	
 		$data = $project->showAll();
-		$this->assign('data',$data);						
+		//echo Db::getlastsql();
+		$this->assign('data',$data);  
 		return $this->fetch();
 	}
 
@@ -38,11 +39,12 @@ class Project extends	Base
 		if(input('param.')){
 			$data = input('param.');
 			$data['brand'] = implode(",", $data['brand_id']);
-			$beginPeriod = str_replace("-","/",$data['beginPeriod']);
-			$endPeriod = str_replace("-","/",$data['endPeriod']);
-			$data['period'] = $beginPeriod.'-'.$endPeriod;
+			//$beginPeriod = str_replace("-","/",$data['beginPeriod']);
+			//$endPeriod = str_replace("-","/",$data['endPeriod']);
+			//$data['period'] = $beginPeriod.'-'.$endPeriod;
 			$data['time'] = date("Y-m-d H:i:s");
 			// p($endPeriod);
+			 
 			$res = $project->ProjectAdd($data);
 			if($res){
 				$this->success('添加成功','show');
@@ -57,6 +59,25 @@ class Project extends	Base
 			$data = $brand->GetSelect();
 			$this->assign('data',$data);
 			return $this->fetch();
+		}
+	}
+
+	//删除项目
+	public function pjdel(){
+		$delend = new ProjectModel();
+		$paramstr =  Request::instance()->only('id');
+		$id = empty($paramstr['id']) ? "" : $paramstr['id']; 
+		if($id){
+			$res = $delend->ProjectDel($id);
+			if($res){
+				$this->success('删除成功','show');
+			}
+			else
+			{
+				$this->error('删除失败');
+			}
+		}else{
+			$this->error('无删除id');
 		}
 	}
 

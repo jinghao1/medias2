@@ -6,6 +6,15 @@ function checkname(){
 		alert("请输入姓名");
 		$("input[name='name']").focus();
 		return false;
+	}else{
+		if (!name.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
+			alert("抱歉，需要输入2-4位汉字或八个英文字母");
+			return false;
+		}
+	}
+	if (!name.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
+		alert("抱歉，需要输入2-4位汉字或八个英文字母");
+		return false;
 	}
 	//手机号验证
 	var phone = $("input[name='phone']").val();
@@ -14,10 +23,12 @@ function checkname(){
 		$("input[name='phone']").focus(); 
 		return false; 
 	}  
-	if (!phone.match(/^(((13[0-9]{1})|159|153|155|177|170|185|186|188|189)+\d{8})$/)) { 
+	if (!phone.match(/^(((13[0-9]{1})|159|153|155|177|170|182|185|186|188|189)+\d{8})$/)) { 
 		alert("手机号码格式不正确！");  
 		$("input[name='phone']").focus(); 
 		return false; 
+	}else{
+		 
 	}
 	//邮箱验证
 	var email = $("input[name='email']").val();

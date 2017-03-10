@@ -27,7 +27,7 @@ class Brand extends	Base
 			// p($data);
 			$res = $brand->BrandAdd($data);
 			if($res){
-				$this->success('添加成功','show');
+				$this->success('添加成功','BrandAdd');
 			}
 			else
 			{
@@ -53,5 +53,26 @@ class Brand extends	Base
 		$brandData = $brand->GetSelectAll();
 		$this->assign('brandData',$brandData);									
 		return $this->fetch('brand_show');
+	}
+
+	
+
+	//车系品牌删除
+	public function BrandDel(){
+		$brand = new BrandModel(); 
+		$id = input('param.brand_id/d');
+		 
+	    if($id  ){ 
+			$res = $brand->DelUnderAll($id);
+			if($res){
+				$this->success('删除成功','BrandShow');
+			}
+			else
+			{
+				$this->error('删除失败');
+			}
+		}else{
+			$this->error('无删除id');
+		}
 	}
 }

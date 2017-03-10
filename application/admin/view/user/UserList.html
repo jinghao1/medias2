@@ -61,10 +61,10 @@
 			}
 			?>
 		</td>
-		<td><a href="101">编辑</a> | <a href="101">删除</a></td>
+		<td><a href="{:url('UserAdd',['user_id'=>$v.user_id,'edit'=>1])}">编辑</a> | <a href="{:url('Deluser',['user_id'=>$v.user_id,'del'=>1])}">删除</a></td>
 	</tr>
 	{/foreach}
-
+	
 	<!-- <tr bgcolor="#FAFAF1">
 	<td height="28" colspan="10">
 		&nbsp;

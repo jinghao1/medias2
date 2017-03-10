@@ -15,19 +15,34 @@
 			<table width='98%'  border='0' cellpadding='1' cellspacing='1' align="center" class="tabody">
 				<tr>
 					<td>用户名</td>
-					<td><input type="text" name="username"></td>
+					<td>
+						<input type="text" name="username" value="{$userinfo.username ?? ''}"> 
+						{if condition="!empty($userinfo['user_id'])"}
+						<input type="text" style="display: none;" name="userid" value="{$userinfo['user_id']}"> 
+						<input type="text" style="display: none;" name="edit" value="2"> 
+						{/if}
+					</td>
 				</tr>
+				{if condition="$edit==3" }
+					<select style="display: none;" name="groupid" id="">
+							<option value="0">==请选择==</option>
+							{foreach name="GroupData" item="v"}
+								<option value="{$v.id}"  {if condition="($userinfo['groupid'] ==$v.id) "} selected {/if}>{$v.title}</option>
+							{/foreach}
+						</select>
+				{else/}
 				<tr>
 					<td>管理员角色</td>
 					<td>
 						<select name="groupid" id="">
 							<option value="0">==请选择==</option>
 							{foreach name="GroupData" item="v"}
-								<option value="{$v.id}">{$v.title}</option>
+								<option value="{$v.id}"  {if condition="($userinfo['groupid'] ==$v.id) "} selected {/if}>{$v.title}</option>
 							{/foreach}
 						</select>
 					</td>
 				</tr>
+				{/if}
 				<tr>
 					<td>密码</td>
 					<td>
@@ -37,11 +52,11 @@
 				<tr>
 					<td>邮箱</td>
 					<td>
-						<input type="text" name="email" value="">
+						<input type="text" name="email" value="{$userinfo.email ?? ''}">
 					</td>
 				</tr>
 				<tr>
-					<td colspan="2">
+					<td colspan="2" class="midum">
 						<input class="getSubmit" type="submit" value="提交">
 						<input type="reset" class="getReset" value="重置"/>
 					</td>

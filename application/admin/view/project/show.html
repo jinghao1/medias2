@@ -4,6 +4,7 @@
 <title>文档管理</title>
 <base href="__PUBLIC__/">
 <link rel="stylesheet" type="text/css" href="javascript/skin/css/base.css">
+<link rel="stylesheet" type="text/css" href="javascript/skin/css/content.css">
 <script language="javascript">
 function viewArc(aid){
 	if(aid==0) aid = getOneItem();
@@ -117,33 +118,29 @@ function noSelAll()
 </tr>
 </table> -->
 <!--  搜索表单  -->
-<form name='form3' action='' method='get'>
+<form name='form3' action='' method='post'>
 <input type='hidden' name='dopost' value='' />
 <table width='98%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="center" style="margin-top:8px">
   <tr bgcolor='#EEF4EA'>
     <td background='skin/images/wbg.gif'>
       <table border='0' cellpadding='0' cellspacing='0'>
         <tr>
-            <td width='90'>品牌信息：</td>
+	        <td width='90'>合同号：</td>
             <td width='160'>
-	          <select name='cid' style='width:150'>
-	          	<option value='0'>选择类型...</option>
-	          	<option value='1'>名称</option>
-	          </select>
+	            <input type='text' name='pj_key' value='' /> 
         	</td>
+           
+        	<td width='90'>项目名称：</td>
+        	<td width='160'><input type='text' name='keyxm' value='' /> </td>
+        	<td width='90'>车系信息：</td>
+            <td width='160'>
+	            <input type='text' name='keybrand' value='' /> 
+        	</td>
+        	<td>
+	           <input name="imageField" type="image" src="javascript/skin/images/frame/search.gif" width="45" height="20" border="0" class="np" />
+	        </td>
         </tr>
-        <tr>
-	        <td width='70'>
-	          项目周期：
-	        </td>
-	        <td width='160'>
-	          	<input type='text' name='keyword' value='' />
-	          	<input type='text' name='keyword' value='' />
-	        </td>
-	        <td>
-	          <input name="imageField" type="image" src="javascript/skin/images/frame/search.gif" width="45" height="20" border="0" class="np" />
-	        </td>
-       </tr>
+        
       </table>
     </td>
   </tr>
@@ -154,41 +151,41 @@ function noSelAll()
 
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 	<tr bgcolor="#E7E7E7">
-		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;文档列表&nbsp;</td>
+		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;文档列表&nbsp;<button class="outbut"><a style="float:right" href="{:url('Excel/index')}">导出全部</a></button>&nbsp;&nbsp;&nbsp;</td>
 	</tr>
 	<tr align="center" bgcolor="#FAFAF1" height="22">
-		<td width="20%">项目ID</td>
-		<td width="20%">项目名称</td>
-		<td width="20%">品牌</td>
-		<td width="20%">项目周期</td>
-		<td width="20%">操作管理</td>
+		<td width="8%">项目ID</td>
+		<td width="20%">合同号</td>
+		<td width="30%">项目名称</td>
+		<td width="20%">车系</td> 
+		<td width="22%">操作管理</td>
 	</tr>
 
 	{foreach name="data" item="v"}
 	<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
 		<td>{$v.id}</td>
-		<td align="left"><u><a href="{:url('dealer/show',['id'=>$v.id])}">{$v.project_name}</a></u></td>
-		<td align="left">{$v.brand_name}</td>
-		<td align="left">{$v.period}</td>
-		<td><a href="101">编辑</a> | <a href="101">预览</a> | <a href="101">下载</a></td>
+		<td align="center">{$v.pj_id}</td>
+		<td align="center"><u><a href="{:url('dealer/show',['id'=>$v.id])}">{$v.project_name}</a></u></td>
+		<td align="center">{$v.brand_name}</td>
+		
+		<td><!--<a href="101">编辑</a> |--> <a onclick="return confirm('项目删除后，其下边所有用户提交信息均会被删除，确认删除？');" href="{:url('project/pjdel',['id'=>$v.id])}">删除</a></td>
 	</tr>
 	{/foreach}
 
-	<tr bgcolor="#FAFAF1">
+	<!--<tr bgcolor="#FAFAF1">
 		<td height="28" colspan="10">
 			&nbsp;
 			<a href="javascript:selAll()" class="coolbg">全选</a>
 			<a href="javascript:noSelAll()" class="coolbg">取消</a>
-			<!-- <a href="javascript:updateArc(0)" class="coolbg">&nbsp;更新&nbsp;</a>
-			<a href="javascript:checkArc(0)" class="coolbg">&nbsp;审核&nbsp;</a>
-			<a href="javascript:adArc(0)" class="coolbg">&nbsp;推荐&nbsp;</a>
-			<a href="javascript:moveArc(0)" class="coolbg">&nbsp;移动&nbsp;</a> -->
+		 
 			<a href="javascript:delArc(0)" class="coolbg">&nbsp;删除&nbsp;</a>
 		</td>
-	</tr>
+	</tr>-->
 	<tr align="right" bgcolor="#EEF4EA">
-		<td height="36" colspan="10" align="center"><!--翻页代码 --></td>
+		<td height="36" colspan="10" align="center" class="pageinfo"> {$data->render()}</td>
 	</tr>
+ 	 
+
 </table>
 
 </form>

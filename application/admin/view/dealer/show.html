@@ -4,6 +4,7 @@
 <title>文档管理</title>
 <base href="__PUBLIC__/">
 <link rel="stylesheet" type="text/css" href="javascript/skin/css/base.css">
+<link rel="stylesheet" type="text/css" href="javascript/skin/css/content.css">
 </head>
 <body leftmargin="8" topmargin="8" background='skin/images/allbg.gif'>
 
@@ -28,53 +29,46 @@
 </tr>
 </table> -->
 <!--  搜索表单  -->
-<form name='form3' action='' method='get'>
+<!--<form name='form3' action='' method='get'>
 <input type='hidden' name='dopost' value='' />
 <table width='98%'  border='0' cellpadding='1' cellspacing='1' bgcolor='#CBD8AC' align="center" style="margin-top:8px">
   <tr bgcolor='#EEF4EA'>
     <td background='skin/images/wbg.gif' align='center'>
       <table border='0' cellpadding='0' cellspacing='0'>
         <tr>
-          <td width='90' align='center'>搜索条件：</td>
-          <td width='160'>
-          <select name='cid' style='width:150'>
-          <option value='0'>选择类型...</option>
-          	<option value='1'>项目名称</option>
-          	<option value='1'>姓名</option>
-          	<option value='1'>购车时间</option>
-          </select>
-        </td>
-        <td width='70'>
-          关键字：
-        </td>
-        <td width='160'>
-          	<input type='text' name='keyword' value='' style='width:150px' />
-        </td>
-        <!-- <td width='110'>
-    		<select name='orderby' style='width:80px'>
-            	<option value='id'>排序...</option>
-            	<option value='pubdate'>发布时间</option>
-      		</select>
-        </td> -->
-        <td>
-          <input name="imageField" type="image" src="javascript/skin/images/frame/search.gif" width="45" height="20" border="0" class="np" />
-        </td>
-       </tr>
+            <td width='90'>姓名：</td>
+            <td width='160'>
+	            <input type='text' name='keybrand' value='' /> 
+        	</td>
+        	 
+        	<td>
+	           <input name="imageField" type="image" src="javascript/skin/images/frame/search.gif" width="45" height="20" border="0" class="np" />
+	        </td>
+        </tr>
       </table>
     </td>
   </tr>
 </table>
-</form> 
+</form> -->
+<!--信息导出excel-->
+ 
+	<!--信息导入，隐藏，已导入成功-->
+<!--<form action="{:url('Excel/reader')}" method="post" enctype="multipart/form-data">
+    <input type="file" name="importexcel"/> 
+    <input type="submit" value="导入"/>
+</form>-->
+<!--end 导出-->
 <!--  内容列表   -->
 <form name="form2">
 
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 	<tr bgcolor="#E7E7E7">
-		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;经销商列表&nbsp;</td>
+		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;项目名称:&nbsp;{$proname}&nbsp;<button class="outbut"><a style="float:right" href="{:url('Excel/index',['proid'=>$proid])}"> 导 出 </a></button>&nbsp;&nbsp;&nbsp;</td>
+		 
 	</tr>
 	<tr align="center" bgcolor="#FAFAF1" height="22">
-		<td >经销商ID</td>
-		<td >所属项目</td>
+		<td >用户ID</td>
+ 
 		<td >姓名</td>
 		<td >性别</td>
 		<td >手机号</td>
@@ -88,20 +82,21 @@
 	{foreach name="data" item="v"}
 		<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
 			<td>{$v.dealer_id}</td>
-			<td align="left">{$v.project_name}</td>
+			 
 			<td align="left">{$v.name}</td>
 			<td align="left">{if $v.sex == 1}男{else/}女{/if}</td>
 			<td align="left">{$v.phone}</td>
 			<td>{$v.email}</td>
-			<td align="left">{$v.car_time}</td>
-			<td align="left">{$v.dealer_name}</td>
-			<td align="left">{$v.car_series_id}</td>
-			<td><a href="101">编辑</a> | <a href="101">预览</a> | <a href="101">删除</a></td>
+			<td >{$v.buy_car_time}</td>
+			<td >{$v.dealer_name}</td>
+			<td >{$v.car_series_id}</td>
+			<td><a href="{:url('add',['dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a> | <a onclick="return confirm('确认删除？');" href="{:url('dealer/PjregDel',['dealer_id'=>$v.dealer_id,'pjid'=>$v.project_id])}">删除</a></td>
 		</tr>
 	{/foreach}
 
 	<tr align="right" bgcolor="#EEF4EA">
-		<td height="36" colspan="10" align="center"><!--翻页代码 --></td>
+		 
+		<td height="36" colspan="10" align="center" class="pageinfo">  {$page} </td>
 	</tr>
 </table>
 

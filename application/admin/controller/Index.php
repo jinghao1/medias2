@@ -14,7 +14,10 @@ class Index extends	Base
 	public	function top()				
 	{	
 		$UserName = session::get("admin_username");
+		$UserId = session::get("admin_uid");
+		 
 		$this->assign("UserName",$UserName);
+		$this->assign("UserId",$UserId);
 		return $this->fetch();
 	}
 

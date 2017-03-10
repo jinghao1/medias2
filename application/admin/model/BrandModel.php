@@ -53,6 +53,8 @@ class BrandModel extends Model
         return $result;
      }
 
+     
+
      /**
       * 添加品牌
       */
@@ -60,6 +62,12 @@ class BrandModel extends Model
      {
         return Db::name($this->table)->insert($data);
      }
+     //删除车系品牌
+     public function BrandCarDel($brand_id){ 
+		return Db::name($this->table)->delete($brand_id);  
+     }
+
+     
 
      /**
       * 查询品牌名称
@@ -73,6 +81,39 @@ class BrandModel extends Model
             $string = join(",",$arr);
         }
         return $string;
+     }
+
+     //递归删除车系子集
+	public function DelUnderAll($id){
+	 
+		//判断此车系下有无其他子系，如果有，查出并返回
+	    $hav = $this->BrandUnder($id);
+	    $end[$id] = $this->BrandCarDel($id); //先把此级信息删除
+	    if(!empty($hav)){ 
+		    foreach($hav as $hv){ //循环子集并删除 
+				$end[$hv] = $this->DelUnderAll($hv); 
+		    }
+	    }
+	    if($end[$id]){
+		    return 1;
+	    }else{
+		    return 0;
+	    } 
+	    
+	}
+
+     //查询此品牌车系下有无其他子信息，如果有返回
+     public function BrandUnder($id){
+	    $arr = null;
+	    $res = DB::name($this->table)->field("brand_id")->where('pid',$id)->select();
+	    if($res){
+			foreach ($res as $key => $value) {
+	            $arr[] = $value['brand_id'];;
+	            
+	        }
+	    }
+        
+        return $arr;
      }
 
 }

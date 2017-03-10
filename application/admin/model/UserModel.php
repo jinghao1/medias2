@@ -13,10 +13,15 @@ class UserModel extends Model
 {
 	 // 设置当前模型对应的完整数据表名称
     protected $table = 'table';
-
-    public function UserAll()
+	//查询用户信息  有id为单个信息查询，无id查询所有的信息
+    public function UserAll($userid=null)
     {
-    	return Db::name("admin")->alias("a")->join('zt_auth_group g','a.groupid=g.id')->order("user_id desc")->select();
+		if($userid){
+			return Db::name("admin")->alias("a")->join('zt_auth_group g','a.groupid=g.id')->where('a.user_id',$userid)->select();
+		}else{
+			return Db::name("admin")->alias("a")->join('zt_auth_group g','a.groupid=g.id')->order("user_id desc")->select();
+		}
+    	
     }
 
     /**
@@ -38,6 +43,21 @@ class UserModel extends Model
         if($userId > 0){ 
             return Db::name('auth_user_group')->insert(array("uid"=>$userId,"group_id"=>$data['groupid']));
         }
+    }
+
+    //更改用户
+    public function UpdateUserinfo($data){
+	    if($data['userid']){ 
+	    	$userid = $data['userid'];
+	    	unset($data['userid']);
+	    	unset($data['edit']);
+			$end = DB::name("admin")->where("user_id",$userid)->update($data);
+			return $end;
+	        if($end){//目前认为 auth_user_group 无用
+		        return Db::name('auth_user_group')->where('uid',$data['groupid'])->update(array("uid"=>$data['userid'],"group_id"=>$data['groupid'])); 
+	        } 
+	    }
+	   
     }
         
     /**
@@ -94,6 +114,8 @@ class UserModel extends Model
         return Db::name('auth_group')->insert($data);
      }
 
+     //
+
      /**
       * 查询所有权限
       */
@@ -109,4 +131,12 @@ class UserModel extends Model
         }
         return $data;
      }
+
+     //删除用户信息
+     function DelUserinfo($userid){
+	     return Db::name('admin')->delete($userid);
+     }
+
+     
+     
 }

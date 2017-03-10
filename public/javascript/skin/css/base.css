@@ -287,3 +287,12 @@ border:1px solid #ffffff;
 	background:#F9FFE6;
 	padding:6px;
 }
+
+.pageinfo .pagination li{
+	width:40px;
+	float:left;
+	display:block;
+}
+.pageinfo .pagination li a{
+	display:block;
+}

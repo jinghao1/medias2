@@ -146,8 +146,8 @@ a:link,a:visited {
       <tr>
       <td align="right" height="60" style="padding-right:10px;line-height:26px;">
         	您好：<span class="username">{$UserName}</span>，欢迎使用专题管理系统！
-        	[<a href="http://localhost/medium/public/" target="_blank">网站主页</a>]
-        	[<a href="{:url('login/UpdatePassword')}" target="_blank">修改密码</a>]
+        	 
+        	[<a href="{:url('user/UserAdd',['user_id'=>$UserId,'edit'=>3])}" target="main">修改密码</a>]
         	[<a href="{:url('login/GetQuit')}" target="_top">注销退出</a>]&nbsp;
       </td>
       </tr>

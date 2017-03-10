@@ -19,3 +19,13 @@
 .getSubmit{
 	margin-left:10%;
 }
+
+.midum{
+	text-align:center;
+}
+
+button.outbut{
+	padding:0px;
+	float:right;
+	margin-right:5px;
+}

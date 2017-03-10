@@ -35,7 +35,7 @@
 		<div class="GetNav">
 			<p class="regtitle">&nbsp;用户预约购买信息&nbsp;</p>
 		</div> 
-		<!-- 注册开始 -->
+		<!-- 注册开始  -->
 		<div class="login">
 			<form action="{:url('reg')}" method="post" onsubmit="return checkname()">
 			<ul>
@@ -108,11 +108,30 @@
 			<!-- end-注册 -->
 		</div>
 	</div>
+
+	<input type="hidden" name="blurfocus" value="" /> 
+   
+   
 </body>
 </html>
  
   <script>
- $(function(){
+
+	  
+ $(function(){ 
+	//$("input[name='name']").blur(function(){
+         
+ //       var nameval =$("input[name='name']").val(); 
+ //       // console.log(nameval);
+ //       if(nameval == ""){
+	//        alert("姓名不能为空");
+	//        return;
+ //       }
+ //       if (!nameval.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
+	//		alert("抱歉，需要输入2-4位汉字或八个英文字母");
+	//	}
+ //   })
+	 
 	//项目更改
 	$(document).on('change','.ProJect',function(){
          var project_id = $(this).val();

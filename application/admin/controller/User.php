@@ -30,8 +30,24 @@ class User extends	Base
 	 public	function UserAdd()				
 	{	
 		$user = new UserModel();
-		if(input('param.'))
-		{
+		$userinfo[0] = array('groupid'=>"");  //定义空数组
+		$edit = 0;
+		if(input('param.user_id') && (input('param.edit')==1 || input('param.edit')==3)){ //用户信息修改 
+		 	$edit = input('param.edit');
+			$userinfo = $user->UserAll(input('param.user_id'));//用户id 
+		}else if(input('param.edit')==2 && input('param.userid')){
+			$data = input('param.');
+			$data['password'] = MD5(md5($data['password']).config('auth_key'));
+			$data['time'] = time();
+			$res = $user->UpdateUserinfo($data);
+			if($res){
+				$this->success('更改成功');
+			}
+			else
+			{
+				$this->error('更改失败');
+			}	
+		}else if(input('param.')){
 			$data = input('param.');
 			$data['password'] = MD5(md5($data['password']).config('auth_key'));
 			$data['time'] = time();
@@ -43,14 +59,13 @@ class User extends	Base
 			{
 				$this->error('添加失败');
 			}
-		}
-		else
-		{
-			//查询角色
-			$GroupData = $user->GroupSelect();	
-			$this->assign('GroupData',$GroupData);								
-			return $this->fetch();
-		}
+		} 
+		//查询角色
+		$GroupData = $user->GroupSelect();	
+		$this->assign('GroupData',$GroupData);
+		$this->assign('edit',$edit);
+		$this->assign('userinfo',$userinfo[0]);
+		return $this->fetch();
 	}
 
 	/**
@@ -120,11 +135,17 @@ class User extends	Base
 	 */
 	public function GetMenuList()
 	{
+		//p("song");
+		//return $this->fetch();
 		$user = new UserModel();
 		$nav = new \org\Leftnav;
+		
 		$admin_rule = $user->MenuListAll();
+		
 		$arr = $nav::rule($admin_rule);	
+		//p($arr);
 		$this->assign("MenuData",$arr);
+		
 		return $this->fetch();
 	}
 
@@ -157,6 +178,21 @@ class User extends	Base
 		}
 	}
 
+	//删除用户
+	public function Deluser(){
+		$user = new UserModel();
+		$end = null;
+		if(input('param.del') && input('param.user_id')){
+			$end = $user->DelUserinfo(input('param.user_id'));
+			
+		}
+		if($end){
+			$this->success('删除成功','UserList');
+		}else{
+			$this->error('删除失败');
+		}
+	}
+
 	/**
 	 * 角色分配权限
 	 */
@@ -178,5 +214,24 @@ class User extends	Base
 			$result = array('code'=>0,'data'=>'权限分配失败');
 			exit(json_encode($result));
 		}
+	}
+
+	//角色权限更改
+	public function Updategroupauth(){
+		$user = new UserModel();
+		$data = input('param.');
+		$end = null;
+		if(!empty($data['box'])&&$data['groupid']){
+			$strbox = implode(",",$data['box']);
+			$end = $user->GroupAllot($data['groupid'],$strbox);
+		}else if(empty($data['box']) && $data['groupid']){
+			$end = $user->GroupAllot($data['groupid'],'');
+		}
+		if($end){
+			$this->success('更新成功');
+		}else{
+			$this->error('更新失败');
+		}
+		
 	}
 }
