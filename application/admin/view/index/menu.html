@@ -13,49 +13,44 @@
   <tr>
     <td style='padding-left:3px;padding-top:8px' valign="top">
 	<!-- Item 1 Strat -->
-      <dl class='bitem'>
+      <!--<dl class='bitem'>
         <dt onClick='showHide("items1_1")'><b>项目管理</b></dt>
         <dd style='display:block' class='sitem' id='items1_1'>
           <ul class='sitemu'>
-            <!-- <li>
-              <div class='items'>
-                <div class='fllct'><a href='archives' target='main'>专题管理</a></div>
-                <div class='flrct'> <a href='archives.html' target='main'><img src='javascript/skin/images/frame/gtk-sadd.png' alt='创建栏目' title='创建栏目'/></a> </div>
-              </div>
-            </li> -->
+             
             <li><a href="{:url('Project/show')}" target='main' class="iii">项目列表</a> </li>
             <li><a href="{:url('Project/add')}" target='main'>项目添加</a> </li>
-            <!-- <li>
-              <div class='items'>
-                <div class='fllct'><a href='archives.html' target='main'>回收站</a></div>
-                <div class='flrct'> <a href='archives.html' target='main'><img src='javascript/skin/images/frame/gtk-del.png' alt='清空回收站' title='清空回收站'/></a> </div>
-              </div>
-            </li> -->
+             
           </ul>
         </dd>
-      </dl>
-      <!-- Item 1 End -->
-      <!-- Item 2 Strat -->
-      <!-- <dl class='bitem'>
-        <dt onClick='showHide("items2_1")'><b>用户管理</b></dt>
-        <dd style='display:block' class='sitem' id='items2_1'>
-          <ul class='sitemu'>
-            <li><a href="{:url('User/UserList')}" target='main'>用户列表</a></li>
-            <li><a href="{:url('User/UserAdd')}" target='main'>用户添加</a></li>
-          </ul>
-        </dd>
-      </dl>
- -->
-      <dl class='bitem'>
+      </dl>-->
+   		{if condition="isset($menuarr)"}
+   			{foreach name="menuarr" item="menuvo" key="fmenu"}
+   			  <dl class='bitem'>
+		        <dt onClick='showHide("{$fmenu}")'><b>{$fmenu}</b></dt>
+		        <dd style='display:block' class='sitem' id='{$fmenu}'>
+		          <ul class='sitemu'>
+		            {foreach name='menuvo' item="tname" key="kurl"} 
+			            <li><a href="{:url($kurl)}" target='main' class="iii">{$tname}</a> </li>
+			             
+		            {/foreach}
+		          </ul>
+		        </dd>
+		      </dl>
+   			{/foreach}
+		{else /} 
+			请联系管理员
+		{/if}
+      <!--<dl class='bitem'>
         <dt onClick='showHide("items3_1")'><b>注册信息管理</b></dt>
         <dd style='display:block' class='sitem' id='items3_1'>
           <ul class='sitemu'>
-            <!--<li><a href="{:url('Dealer/show')}" target='main'>注册信息列表</a></li>-->
+             
             <li><a href="{:url('Dealer/add')}" target='main'>添加注册信息</a></li>
           </ul>
         </dd>
-      </dl>
-      
+      </dl>-->
+      <!--
       <dl class='bitem'>
         <dt onClick='showHide("items4_1")'><b>车系管理</b></dt>
         <dd style='display:block' class='sitem' id='items4_1'>
@@ -64,18 +59,18 @@
             <li><a href="{:url('Brand/BrandShow')}" target='main'>车系列表</a></li>
           </ul>
         </dd>
-      </dl>
+      </dl>-->
 
-      <dl class='bitem'>
+      <!--<dl class='bitem'>
         <dt onClick='showHide("items5_1")'><b>权限管理</b></dt>
         <dd style='display:block' class='sitem' id='items5_1'>
           <ul class='sitemu'>
-            <li><a href="{:url('User/GetMenuList')}" target='main'>菜单管理</a></li>
-            <li><a href="{:url('User/GroupList')}" target='main'>角色管理</a></li>
-            <li><a href="{:url('User/UserList')}" target='main'>用户管理</a></li>
+            <li><a href="{:url('admin/User/GetMenuList')}" target='main'>菜单管理</a></li>
+            <li><a href="{:url('admin/User/GroupList')}" target='main'>角色管理</a></li>
+            <li><a href="{:url('admin/User/UserList')}" target='main'>用户管理</a></li>
           </ul>
         </dd>
-      </dl>
+      </dl>-->
       <!-- Item 2 End -->
 	  </td>
   </tr>

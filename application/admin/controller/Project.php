@@ -12,6 +12,7 @@ use	think\Request;
 use	think\Db;
 use app\admin\model\ProjectModel;
 use app\admin\model\BrandModel;
+use app\admin\model\UserModel;
 class Project extends	Base	
 {	
 
@@ -22,7 +23,10 @@ class Project extends	Base
 	public	function show()				
 	{	
 		$project = new ProjectModel();	
+		$user = new UserModel();	
 		$data = $project->showAll();
+		//检测删除操作
+		$delpro = $user->CkOptionuser();
 		//echo Db::getlastsql();
 		$this->assign('data',$data);  
 		return $this->fetch();

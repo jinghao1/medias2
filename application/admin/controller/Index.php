@@ -4,6 +4,7 @@ use	think\Controller;
 use	think\Request;
 use	think\Db;
 use think\Session;
+use app\admin\model\UserModel;
 //use think\auth\Auth;
 class Index extends	Base	
 {				
@@ -23,10 +24,32 @@ class Index extends	Base
 	}
 
 	public	function menu()				
-	{				
-		// ��ȡauthʵ��
+	{		
+		$UserName = session::get("admin_username");
+		$UserId = session::get("admin_uid");
+		//获取用户组，对应的权限
+		if($UserId){
+			$user = new UserModel();
+			$rules = $user->HisRule($UserId);	
+			//p($rules);
+			if(isset($rules[0]['rules'])){
+				$menus = new UserModel();
+				if(empty($rules[0]['rules'])){
+					//超级管理员，权限都有
+					$allmenu = $menus->showmenu($rules[0]['rules']); 
+				}else{ //根据权限查询菜单项
+					$allmenu = $menus->showmenu($rules[0]['rules']); 
+					
+				} 
+				$this->assign("menuarr",$allmenu);
+			}else{
+				//没有此用户角色
+			}
+		}
+			
+		// 获取auth实例
 		//$auth = Auth::instance();	
-		//��ȡ�û�id			
+		//获取用户id			
 		return $this->fetch();
 	}
 

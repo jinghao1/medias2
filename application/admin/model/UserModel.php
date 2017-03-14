@@ -150,7 +150,55 @@ class UserModel extends Model
      public function UserAuth($pid){ 
 	     return Db::name('auth_group')->where('id',$pid)->select();
      }
+	//根据用户id，返回用户角色所拥有的权限
+	public function HisRule($uid){
+		return Db::name('admin')->alias('a')->join('zt_auth_group b','a.groupid=b.id','LEFT')->field('a.user_id,b.rules')->where('a.user_id',$uid)->select();
+	}
 
+	//根据规则查询所有菜单项
+	public function showmenu($ruleid=null){
+		$menuarr = array(); //顶级下对应次级菜单
+		$firmenu = array(); //顶级菜单
+		if($ruleid){
+			//p($ruleid);
+			//获取顶级菜单
+			$first = Db::name('auth_rule')->field('id,name,title')->where('id','in',$ruleid)->where('pid',0)->order("sort")->select();
+			if($first){  
+				foreach($first as $allv){ //根据顶级获取二级菜单 
+					//$firmenu[$allv['title']] = $allv['name'];
+					$second = Db::name('auth_rule')->field('id,name,title')->where('id','in',$ruleid)->where('pid',$allv['id'])->order("sort")->select();
+					if($second){
+						foreach($second as $seval){  //赋值
+							$menuarr[$allv['title']][$seval['name']] = $seval['title'];
+						}
+					} 
+				}
+			}
+		}else{
+			 
+			//获取顶级菜单
+			$first = Db::name('auth_rule')->field('id,name,title')->where('pid',0)->order("sort")->select();
+			if($first){  
+				foreach($first as $allv){ //根据顶级获取二级菜单 
+					//$firmenu[$allv['title']] = $allv['name'];
+					$second = Db::name('auth_rule')->field('id,name,title')->where('pid',$allv['id'])->order("sort")->select();
+					if($second){
+						foreach($second as $seval){  //赋值
+							$menuarr[$allv['title']][$seval['name']] = $seval['title'];
+						}
+					} 
+				}
+			}
+		}
+		return $menuarr;
+		//return array('1'=>$firmenu,'2'=>$menuarr);
+		
+	}
+
+	//单独检测用户对某个操作有无权限
+	public function CkOptionuser($option){
+		
+	}
      
      
 }
