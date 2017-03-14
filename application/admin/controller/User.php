@@ -117,6 +117,32 @@ class User extends	Base
 		}
 	}
 
+	//根据用户角色，返回其所有的操作权限
+	public function Haveauth(){
+	 
+		$groupid = input('param.groupid');
+		
+		$user = new UserModel();
+		
+		if($groupid){
+			$end = $user->UserAuth($groupid);
+			if($end){
+				foreach($end as $val){
+					 
+					if(!empty($val['rules'])){
+						$arr = explode(",",$val['rules']);
+						return json_encode($arr);
+					} 
+					 
+				}
+			} 
+			
+		} 
+		return json_encode(1); 
+		
+		
+	}
+
 	/**
 	 * 查询所有权限菜单
 	 *  ajax请求
@@ -231,7 +257,20 @@ class User extends	Base
 			$this->success('更新成功');
 		}else{
 			$this->error('更新失败');
+		} 
+	}
+	//删除角色
+	public function Groupuserdel(){
+		$guid = input('param.guid');
+		if($guid){
+			$user = new UserModel(); 
+			$deluserg = $user->Delgroupuser($guid);
+			$deluser = $user->Deluserbygroupid($guid);
+			if($deluserg){
+				$this->success('删除成功');
+			}else{
+				$this->error('删除失败');
+			}
 		}
-		
 	}
 }

@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/home\view\userreg\reg.html";i:1489024617;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -5,7 +6,6 @@
  <base href="__PUBLIC__/"> 
 	<meta charset="UTF-8">
 	<title>信息注册</title>
-
 	<!-- 引入时间插件 -->
     <!-- <script type="text/javascript" src="javascript/time/js/laydate.js"></script> -->
     <script type="text/javascript" src="javascript/skin/js/basesong.js"></script>
@@ -17,7 +17,7 @@
 		.content{width:500px; padding:0 0 20px 0;overflow: hidden;margin:30px auto;  background:#2a768a;border-radius: 4px}
 		ul,li{list-style: none}
 		.login{}
-		.login li{float:left; width:100%;height:auto;padding-bottom:10px;margin-left:35px;}
+		.login li{float:left; width:360px;height:34px;padding-bottom:10px;margin-left:35px;}
 		.login li span{float:left; width:100px; text-align: center; font-size:16px;line-height: 34px;}
 		.login li input[type="text"]{width:210px; padding-left:10px;height:32px;border:1px solid #bbbbbf;color:000;}
 		.login li select{background:none;width:222px;padding-left:10px;height:34px;border:1px solid #bbbbbf;color:000;}
@@ -30,20 +30,19 @@
 			font-weight: 600;
 		}
 	</style>
-
 </head>
 <body>
 	<div class="content">
 		<div class="GetNav">
 			<p class="regtitle">&nbsp;用户预约购买信息&nbsp;</p>
 		</div> 
-		<!-- 注册开始  -->
+		<!-- 注册开始 -->
 		<div class="login">
-			<form action="{:url('reg')}" method="post" onsubmit="return checkname()">
+			<form action="<?php echo url('reg'); ?>" method="post" onsubmit="return checkname()">
 			<ul>
 				<li>
 					<span>姓名</span>
-					<input type="text" name="name" value="{$dealer_info.0.name ?? ''}">
+					<input type="text" name="name" value="<?php echo isset($dealer_info['0']['name']) ? $dealer_info['0']['name'] :  ''; ?>">
 				</li>
 				<li>
 					<span>性别</span>
@@ -54,52 +53,46 @@
 				</li>
 				<li>
 					<span>手机号</span>
-					<input type="text" name="phone" type="number" value="{$dealer_info.0.phone ?? ''}">
+					<input type="text" name="phone" type="number" value="<?php echo isset($dealer_info['0']['phone']) ? $dealer_info['0']['phone'] :  ''; ?>">
 				</li>
 				<li>
 					<span>邮箱</span>
-					<input name="email" type="text" value="{$dealer_info.0.email ?? ''}">
+					<input name="email" type="text" value="<?php echo isset($dealer_info['0']['email']) ? $dealer_info['0']['email'] :  ''; ?>">
 				</li>
 				<li>
 					<span>项目</span>
 					<select name="project_id" class="ProJect">
 						<option value="0">==请选择==</option> 
-						{foreach name="ProjectName" item="v"}
-							<option value="{$v.id}"  {if condition="($dealer_info[0]['project_id'] ==$v.id) "} selected {/if} >{$v.project_name}</option>
-						{/foreach}
+						<?php if(is_array($ProjectName) || $ProjectName instanceof \think\Collection): if( count($ProjectName)==0 ) : echo "" ;else: foreach($ProjectName as $key=>$v): ?>
+							<option value="<?php echo $v['id']; ?>"  <?php if(($dealer_info[0]['project_id'] ==$v['id'])): ?> selected <?php endif; ?> ><?php echo $v['project_name']; ?></option>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
 					</select>
 				</li>
 				<li>
 					<span>车系/车型</span>
-					<span>
-						<select name="car_series_id[]" class="GetCar">
-							<option value="0">==请选择==</option>
-							{foreach name="data" item="v"}
-								<option value="{$v.brand_id}">{$v.brand_name}</option>
-							{/foreach}
-						</select>
-					</span>
+					<select name="car_series_id[]" class="GetCar">
+						<option value="0">==请选择==</option>
+						<?php if(is_array($data) || $data instanceof \think\Collection): if( count($data)==0 ) : echo "" ;else: foreach($data as $key=>$v): ?>
+							<option value="<?php echo $v['brand_id']; ?>"><?php echo $v['brand_name']; ?></option>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
+					</select>
 				</li>
 				<li>
 					<span>购车时间</span>
-					<span>
-						<select name="buy_car_time">
-							{foreach name="buytime" item="mv"}
-								<option value="{$mv.id}"  {if condition="($dealer_info[0]['buy_car_time'] == $mv.id) "} selected {/if} >{$mv.timename}</option> 
-							{/foreach}
-						</select>
-					</span>
+					<select name="buy_car_time">
+						<?php if(is_array($buytime) || $buytime instanceof \think\Collection): if( count($buytime)==0 ) : echo "" ;else: foreach($buytime as $key=>$mv): ?>
+							<option value="<?php echo $mv['id']; ?>"  <?php if(($dealer_info[0]['buy_car_time'] == $mv['id'])): ?> selected <?php endif; ?> ><?php echo $mv['timename']; ?></option> 
+						<?php endforeach; endif; else: echo "" ;endif; ?>
+					</select>
 				</li>
 				<li>
 					<span>选择经销商</span>
-					<span>
-						<select name="dealer_name[]" class="GetDealer">
-							<option value="">==请选择==</option>
-						{foreach name="DealerData" item="v"}
-							<option value="{$v.dealer_id}">{$v.dealer_name}</option>
-						{/foreach}
-						</select>
-					</span>
+					<select name="dealer_name[]" class="GetDealer">
+						<option value="">==请选择==</option>
+					<?php if(is_array($DealerData) || $DealerData instanceof \think\Collection): if( count($DealerData)==0 ) : echo "" ;else: foreach($DealerData as $key=>$v): ?>
+						<option value="<?php echo $v['dealer_id']; ?>"><?php echo $v['dealer_name']; ?></option>
+					<?php endforeach; endif; else: echo "" ;endif; ?>
+					</select>
 				</li>
 				<li>
 					<font class="tj"><input  type="submit" value="提交"></font>
@@ -110,30 +103,11 @@
 			<!-- end-注册 -->
 		</div>
 	</div>
-
-	<input type="hidden" name="blurfocus" value="" /> 
-   
-   
 </body>
 </html>
  
   <script>
-
-	  
- $(function(){ 
-	//$("input[name='name']").blur(function(){
-         
- //       var nameval =$("input[name='name']").val(); 
- //       // console.log(nameval);
- //       if(nameval == ""){
-	//        alert("姓名不能为空");
-	//        return;
- //       }
- //       if (!nameval.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
-	//		alert("抱歉，需要输入2-4位汉字或八个英文字母");
-	//	}
- //   })
-	 
+ $(function(){
 	//项目更改
 	$(document).on('change','.ProJect',function(){
          var project_id = $(this).val();
@@ -141,7 +115,7 @@
          // alert(_this);
          $.ajax({
              type : 'get',
-             url  : "{:url('ProjectCar')}",
+             url  : "<?php echo url('ProjectCar'); ?>",
              data : {project_id : project_id},
              dataType : "json",
              success : function(msg){
@@ -176,14 +150,14 @@
          if(brand_id>0){
 		    $.ajax({
 	             type : 'get',
-	             url  : "{:url('CarClass')}",
+	             url  : "<?php echo url('CarClass'); ?>",
 	             data : {brand_id : brand_id},
 	             dataType : "json",
 	             success : function(msg){
 	                 //alert($.type(msg));
 	                 //console.log(msg);
 	                 if(msg.length){
-	                    var str = "</br><select class='GetCar' name='car_series_id[]'>";
+	                    var str = "<select class='GetCar' name='car_series_id[]'>";
 	                    $(msg).each(function(k,v){
 	                    str +="<option value="+v.brand_id+">"+v.brand_name+"</option>";
 	                    });
@@ -209,7 +183,7 @@
          // alert(dealer_id);
          $.ajax({
              type : 'get',
-             url  : "{:url('GetDealer')}",
+             url  : "<?php echo url('GetDealer'); ?>",
              data : {dealer_id : dealer_id},
              dataType : "json",
              success : function(msg){

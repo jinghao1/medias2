@@ -114,6 +114,11 @@ class UserModel extends Model
         return Db::name('auth_group')->insert($data);
      }
 
+     //角色删除
+     public function Delgroupuser($id){
+	    return Db::name('auth_group')->delete($id);
+     }
+
      //
 
      /**
@@ -135,6 +140,15 @@ class UserModel extends Model
      //删除用户信息
      function DelUserinfo($userid){
 	     return Db::name('admin')->delete($userid);
+     }
+
+     //根据角色删除用户信息
+     public function Deluserbygroupid($pid){
+	    return Db::name('admin')->where("groupid",$pid)->delete();
+     }
+     //根据用户角色，返回角色所拥有权限
+     public function UserAuth($pid){ 
+	     return Db::name('auth_group')->where('id',$pid)->select();
      }
 
      

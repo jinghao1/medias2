@@ -4,6 +4,7 @@ use	think\Controller;
 use	think\Request;
 use	think\Db;
 use think\Session;
+//use think\auth\Auth;
 class Index extends	Base	
 {				
 	public	function index()				
@@ -22,7 +23,10 @@ class Index extends	Base
 	}
 
 	public	function menu()				
-	{								
+	{				
+		// 获取auth实例
+		//$auth = Auth::instance();	
+		//获取用户id			
 		return $this->fetch();
 	}
 

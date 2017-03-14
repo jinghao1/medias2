@@ -1,3 +1,13 @@
+ 
+//百度统计
+var _hmt = _hmt || [];
+(function() {
+  var hm = document.createElement("script");
+  hm.src = "https://hm.baidu.com/hm.js?7e1b991d14eb5047e1f521cd606b8f00";
+  var s = document.getElementsByTagName("script")[0]; 
+  s.parentNode.insertBefore(hm, s);
+})();
+ 
 //用户注册表单验证
 function checkname(){ 
 	//名字不为空
@@ -59,10 +69,7 @@ function checkname(){
 	}   
 }
 
-//点击分配权限，分配当前用户组id 到body
-function authrule(id){
-	$("input[name='groupid']").val(id);
-}
+
 
  
 

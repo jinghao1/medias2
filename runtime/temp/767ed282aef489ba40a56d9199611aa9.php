@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:79:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\grouplist.html";i:1489376244;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -11,7 +12,7 @@
 
 <body leftmargin="8" topmargin="8" background='skin/images/allbg.gif'>
 <div style="margin-left:10px;">
-	<a href="{:url('GroupAdd')}"><input type="button" value="添加角色"></a>
+	<a href="<?php echo url('GroupAdd'); ?>"><input type="button" value="添加角色"></a>
 </div>
 <!--  内容列表   -->
 <form name="form2">
@@ -29,18 +30,18 @@
 		<td >操作</td>
 	</tr>
 
-	{foreach name="GroupData" item="v"}
+	<?php if(is_array($GroupData) || $GroupData instanceof \think\Collection): if( count($GroupData)==0 ) : echo "" ;else: foreach($GroupData as $key=>$v): ?>
 		<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-			<td>{$v.id}</td>
-			<td align="left">{$v.title}</td>
+			<td><?php echo $v['id']; ?></td>
+			<td align="left"><?php echo $v['title']; ?></td>
 			<td align="left">
-				{if $v.status == 1}关闭{else/}开启{/if}
+				<?php if($v['status'] == 1): ?>关闭<?php else: ?>开启<?php endif; ?>
 			</td>
-			<td align="left">{$v.create_time}</td>
-			<td align="left">{$v.update_time}</td>
-			<td><a href="javascript:;" class="GetRule" ids="{$v.id}" onclick="authrule({$v.id})">分配权限</a> | <a href="{:url('Groupuserdel',['guid'=>$v.id])}" onclick="return confirm('项目删除后，此用户组下所有用户均会被删除，确认删除？');">删除</a><!--<a href="101">编辑</a> | <a href="101">删除</a>--> </td>
+			<td align="left"><?php echo $v['create_time']; ?></td>
+			<td align="left"><?php echo $v['update_time']; ?></td>
+			<td><a href="javascript:;" class="GetRule" ids="<?php echo $v['id']; ?>" onclick="authrule(<?php echo $v['id']; ?>)">分配权限</a> | <a href="<?php echo url('Groupuserdel',['guid'=>$v['id']]); ?>" onclick="return confirm('项目删除后，此用户组下所有用户均会被删除，确认删除？');">删除</a><!--<a href="101">编辑</a> | <a href="101">删除</a>--> </td>
 		</tr> 
-	{/foreach}
+	<?php endforeach; endif; else: echo "" ;endif; ?>
 
 	<!-- <tr bgcolor="#FAFAF1">
 		<td height="28" colspan="10">
@@ -62,18 +63,18 @@
 
 <div id="choose-box-wrapper">
  <div id="choose-box">
-	 <form method="post" action="{:url('Updategroupauth')}"   name="form3"> 
+	 <form method="post" action="<?php echo url('Updategroupauth'); ?>"   name="form3"> 
 		<div id="choose-box-title">
 			<span>权限分配</span>
 			<span style="float:right;curosr:pointer;" id="hide">关闭</span>
 		</div>  
 		<div class="tree_content">
 	        <div class="tree_node">
-				{foreach name="GroupArrayData" item="v"}
+				<?php if(is_array($GroupArrayData) || $GroupArrayData instanceof \think\Collection): if( count($GroupArrayData)==0 ) : echo "" ;else: foreach($GroupArrayData as $key=>$v): ?>
 		            <div class="div_inline"><input type="button" value="" class="tree_node_toggle_button"></div>
 		            <div class="div_inline tree_node_parent"> 
-		                <input type="checkbox" name="box[]" class="tree_node_parent_checkbox" value="{$v.id}">{$v.title} <br>
-		                {foreach name="v.data_list" item="vv"}
+		                <input type="checkbox" name="box[]" class="tree_node_parent_checkbox" value="<?php echo $v['id']; ?>"><?php echo $v['title']; ?> <br>
+		                <?php if(is_array($v['data_list']) || $v['data_list'] instanceof \think\Collection): if( count($v['data_list'])==0 ) : echo "" ;else: foreach($v['data_list'] as $key=>$vv): ?>
 		                <div class="tree_node_child">
 		                    
 		                    <!-- 三级 -->
@@ -85,18 +86,18 @@
 		                    	}
 		                    	?>
 		                    <div class="div_inline tree_node_parent">
-                            <input type="checkbox" name="box[]" value="{$vv.id}" class="tree_node_child_checkbox">{$vv.title}<br>
-		                        {foreach name="$vv.data_lists" item="vvv"}
+                            <input type="checkbox" name="box[]" value="<?php echo $vv['id']; ?>" class="tree_node_child_checkbox"><?php echo $vv['title']; ?><br>
+		                        <?php if(is_array($vv['data_lists']) || $vv['data_lists'] instanceof \think\Collection): if( count($vv['data_lists'])==0 ) : echo "" ;else: foreach($vv['data_lists'] as $key=>$vvv): ?>
 			                        <div class="tree_node_child">
-			                            <input type="checkbox" name="box[]" value="{$vvv.id}" class="tree_node_child_checkboxs">{$vvv.title}<br>
+			                            <input type="checkbox" name="box[]" value="<?php echo $vvv['id']; ?>" class="tree_node_child_checkboxs"><?php echo $vvv['title']; ?><br>
 			                        </div> 
-		                        {/foreach}	
+		                        <?php endforeach; endif; else: echo "" ;endif; ?>	
 		                    </div>
 
 		                </div>
-		                {/foreach}
+		                <?php endforeach; endif; else: echo "" ;endif; ?>
 		            </div>
-				{/foreach}
+				<?php endforeach; endif; else: echo "" ;endif; ?>
 	        </div>
 	    </div>
 
@@ -128,7 +129,7 @@ function authrule(id){
 	//获取此用户组下的权限
 	 $.ajax({
          type : 'post',
-         url  : "{:url('admin/User/Haveauth')}",
+         url  : "<?php echo url('admin/User/Haveauth'); ?>",
          data : {groupid : id},
          dataType : "json",
          success : function(msg){

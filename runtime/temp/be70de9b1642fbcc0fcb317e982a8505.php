@@ -1,3 +1,4 @@
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/port\view\userreg\reg.html";i:1489461339;}*/ ?>
 
 <!DOCTYPE html>
 <html lang="en">
@@ -39,11 +40,11 @@
 		</div> 
 		<!-- 注册开始  -->
 		<div class="login">
-			<form action="{:url('reg')}" method="post" onsubmit="return checkname()">
+			<form action="<?php echo url('reg'); ?>" method="post" onsubmit="return checkname()">
 			<ul>
 				<li>
 					<span>姓名</span>
-					<input type="text" name="name" value="{$dealer_info.0.name ?? ''}">
+					<input type="text" name="name" value="<?php echo isset($dealer_info['0']['name']) ? $dealer_info['0']['name'] :  ''; ?>">
 				</li>
 				<li>
 					<span>性别</span>
@@ -54,19 +55,19 @@
 				</li>
 				<li>
 					<span>手机号</span>
-					<input type="text" name="phone" type="number" value="{$dealer_info.0.phone ?? ''}">
+					<input type="text" name="phone" type="number" value="<?php echo isset($dealer_info['0']['phone']) ? $dealer_info['0']['phone'] :  ''; ?>">
 				</li>
 				<li>
 					<span>邮箱</span>
-					<input name="email" type="text" value="{$dealer_info.0.email ?? ''}">
+					<input name="email" type="text" value="<?php echo isset($dealer_info['0']['email']) ? $dealer_info['0']['email'] :  ''; ?>">
 				</li>
 				<li>
 					<span>项目</span>
 					<select name="project_id" class="ProJect">
 						<option value="0">==请选择==</option> 
-						{foreach name="ProjectName" item="v"}
-							<option value="{$v.id}"  {if condition="($dealer_info[0]['project_id'] ==$v.id) "} selected {/if} >{$v.project_name}</option>
-						{/foreach}
+						<?php if(is_array($ProjectName) || $ProjectName instanceof \think\Collection): if( count($ProjectName)==0 ) : echo "" ;else: foreach($ProjectName as $key=>$v): ?>
+							<option value="<?php echo $v['id']; ?>"  <?php if(($dealer_info[0]['project_id'] ==$v['id'])): ?> selected <?php endif; ?> ><?php echo $v['project_name']; ?></option>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
 					</select>
 				</li>
 				<li>
@@ -74,9 +75,9 @@
 					<span>
 						<select name="car_series_id[]" class="GetCar">
 							<option value="0">==请选择==</option>
-							{foreach name="data" item="v"}
-								<option value="{$v.brand_id}">{$v.brand_name}</option>
-							{/foreach}
+							<?php if(is_array($data) || $data instanceof \think\Collection): if( count($data)==0 ) : echo "" ;else: foreach($data as $key=>$v): ?>
+								<option value="<?php echo $v['brand_id']; ?>"><?php echo $v['brand_name']; ?></option>
+							<?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</span>
 				</li>
@@ -84,9 +85,9 @@
 					<span>购车时间</span>
 					<span>
 						<select name="buy_car_time">
-							{foreach name="buytime" item="mv"}
-								<option value="{$mv.id}"  {if condition="($dealer_info[0]['buy_car_time'] == $mv.id) "} selected {/if} >{$mv.timename}</option> 
-							{/foreach}
+							<?php if(is_array($buytime) || $buytime instanceof \think\Collection): if( count($buytime)==0 ) : echo "" ;else: foreach($buytime as $key=>$mv): ?>
+								<option value="<?php echo $mv['id']; ?>"  <?php if(($dealer_info[0]['buy_car_time'] == $mv['id'])): ?> selected <?php endif; ?> ><?php echo $mv['timename']; ?></option> 
+							<?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</span>
 				</li>
@@ -95,9 +96,9 @@
 					<span>
 						<select name="dealer_name[]" class="GetDealer">
 							<option value="">==请选择==</option>
-						{foreach name="DealerData" item="v"}
-							<option value="{$v.dealer_id}">{$v.dealer_name}</option>
-						{/foreach}
+						<?php if(is_array($DealerData) || $DealerData instanceof \think\Collection): if( count($DealerData)==0 ) : echo "" ;else: foreach($DealerData as $key=>$v): ?>
+							<option value="<?php echo $v['dealer_id']; ?>"><?php echo $v['dealer_name']; ?></option>
+						<?php endforeach; endif; else: echo "" ;endif; ?>
 						</select>
 					</span>
 				</li>
@@ -141,7 +142,7 @@
          // alert(_this);
          $.ajax({
              type : 'get',
-             url  : "{:url('ProjectCar')}",
+             url  : "<?php echo url('ProjectCar'); ?>",
              data : {project_id : project_id},
              dataType : "json",
              success : function(msg){
@@ -176,7 +177,7 @@
          if(brand_id>0){
 		    $.ajax({
 	             type : 'get',
-	             url  : "{:url('CarClass')}",
+	             url  : "<?php echo url('CarClass'); ?>",
 	             data : {brand_id : brand_id},
 	             dataType : "json",
 	             success : function(msg){
@@ -209,7 +210,7 @@
          // alert(dealer_id);
          $.ajax({
              type : 'get',
-             url  : "{:url('GetDealer')}",
+             url  : "<?php echo url('GetDealer'); ?>",
              data : {dealer_id : dealer_id},
              dataType : "json",
              success : function(msg){

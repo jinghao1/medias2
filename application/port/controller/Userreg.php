@@ -191,9 +191,73 @@ class Userreg extends	Controller	{
 			exit(json_encode("参数错误"));
 		}
 	}
+	// 手机号验证唯一 接口
+	public function Checkuniquephone(){
+		
+		if(input('param.han')!="ckphone" || empty(input('param.phone')) ){
+			return 5; //参数错误
+		}
+		$phonenumber = input('param.phone');  
+		if(!preg_match("/^1[34578]{1}\d{9}$/",$phonenumber)){  
+		    return 3;  //不是手机号格式
+		} 
 
- 
-	
-	
+		$dealer = new DealerModel(); 
+		$phend = $dealer->checkphoneunique($phonenumber);
+		if($phend==1){
+			return 2; 
+			//$this->error('抱歉，此手机号已注册，请更换手机号，谢谢！'); 
+		}else{
+			return 1;
+		} 
+	}
+	//用户注册信息提交 接口
+	public function Comreg(){ //东风标致
+		if(input('param.han')!="dealreg"){
+			return 5; //参数错误
+		} 
+		$dealer = new DealerModel();
+		//$car = new CarModel();
+		//$project = new ProjectModel(); 
+		$data = input('param.');
+		$data['project_id'] = 31; //项目id
+	 
+		if(input('param.')){ //信息增加 
+			//检测信息
+			if(!$data['dealer_name']|| !$data['car_series_id'] || !$data['phone'] ){
+				//$this->error('请填写预约信息，谢谢！'); 
+				return 1;
+			}else{ //检测手机号的唯一性
+				//手机号格式验证  
+				if(!preg_match("/^1[34578]{1}\d{9}$/",$data['phone'])){  
+				    return 6;  //不是手机号格式
+				} 
+		
+				$phend = $dealer->checkphoneunique($data['phone']);
+				if($phend==1){
+					return 2; 
+					//$this->error('抱歉，此手机号已注册，请更换手机号，谢谢！'); 
+				}
+			}
+			//if(!isset($data['email'])){
+				$data['email'] = "";
+			//}
+			//end
+			$data['dealer_name'] = $data['dealer_name'];
+			//$data['car_series_id'] = $data['carid'];
+			//$data['car_time'] = strtotime($data['car_time']);
+			$data['time'] = time();
+			unset($data['han']); 
+			// p($data); 
+			//exit(json_encode($data));
+			$res = $dealer->DealerAdd($data); 
+			if($res){
+				return 3; //成功
+			}else{
+				return 4; //添加失败
+			}
+		}
+		 	
+	} 
 }
 ?>
