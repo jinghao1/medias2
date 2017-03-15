@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html";i:1489127167;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html";i:1489566758;}*/ ?>
 <html>
 <head>
 <base href="__PUBLIC__/">
@@ -57,8 +57,8 @@
 		<td>
 			<?php if($v['status'] == 1): ?><a href="">关闭</a><?php else: ?><a href="">开启</a><?php endif; ?>
 		</td>
-		<td align="left"><?php echo $v['create_time']; ?></td>
-		<td><a href="101">编辑</a> | <a href="101">删除</a></td>
+		<td align="left"><?php echo $v['create_time']; ?></td> 
+		<td><a href="<?php echo url('MenuAdd',['mnid'=>$v['id']]); ?>">编辑</a> | <a href="101">删除</a></td>
 	</tr>
 	<?php endforeach; endif; else: echo "" ;endif; ?>
 	<tr align="right" bgcolor="#EEF4EA">

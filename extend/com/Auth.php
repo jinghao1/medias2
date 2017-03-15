@@ -98,7 +98,7 @@ class Auth{
             return true;
 		
         $authList = $this->getAuthList($uid,$type); //获取用户需要验证的所有有效规则列表
-		
+		 
         if (is_string($name)) {
             $name = strtolower($name);
             if (strpos($name, ',') !== false) {
@@ -146,11 +146,18 @@ class Auth{
         static $groups = array();
         if (isset($groups[$uid]))
             return $groups[$uid];
-        $user_groups = \think\Db::table('zt_auth_user_group')
+            //不使用分表 edit by song
+        //$user_groups = \think\Db::table('zt_auth_user_group')
+        //    ->alias('a')
+        //    ->join("zt_auth_group g", "g.id=a.group_id")
+        //    ->where("a.uid='$uid'   and g.status='1'")
+        //    ->field('uid,group_id,title,rules')->select();
+        $user_groups = \think\Db::table('zt_admin')
             ->alias('a')
-            ->join("zt_auth_group g", "g.id=a.group_id")
-            ->where("a.uid='$uid'   and g.status='1'")
-            ->field('uid,group_id,title,rules')->select();
+            ->join("zt_auth_group g", "g.id=a.groupid")
+            ->where("a.user_id='$uid'   and g.status='1'")
+            ->field('user_id,groupid,title,rules')->select();
+        
         $groups[$uid] = $user_groups ? $user_groups : array();
         return $groups[$uid];
     }
@@ -182,12 +189,13 @@ class Auth{
             $_authList[$uid.$t] = array();
             return array();
         }
-
+ 
         $map=array(
             'id'=>array('in',$ids),
             'type'=>$type,
             'status'=>1,
         );
+        
         //读取用户组所有权限规则
         $rules = \think\Db::table('zt_auth_rule')->where($map)->field('condition,name')->select();
 
@@ -209,6 +217,7 @@ class Auth{
             }
         }
         $_authList[$uid.$t] = $authList;
+       
         if($this->_config['auth_type']==2){
             //规则列表结果保存到session
             \think\Session::set('_auth_list_'.$uid.$t, $authList);

@@ -56,8 +56,8 @@
 		<td>
 			{if $v.status == 1}<a href="">关闭</a>{else/}<a href="">开启</a>{/if}
 		</td>
-		<td align="left">{$v.create_time}</td>
-		<td><a href="101">编辑</a> | <a href="101">删除</a></td>
+		<td align="left">{$v.create_time}</td> 
+		<td><a href="{:url('MenuAdd',['mnid'=>$v.id])}">编辑</a> | <a href="101">删除</a></td>
 	</tr>
 	{/foreach}
 	<tr align="right" bgcolor="#EEF4EA">

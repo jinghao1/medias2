@@ -90,7 +90,16 @@
 			<td >{$v.buy_car_time}</td>
 			<td >{$v.dealer_name}</td>
 			<td >{$v.car_series_id}</td>
-			<td><a href="{:url('add',['dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a> | <a onclick="return confirm('确认删除？');" href="{:url('dealer/PjregDel',['dealer_id'=>$v.dealer_id,'pjid'=>$v.project_id])}">删除</a></td>
+			<td>
+				{if condition="$editopt"}
+					<a href="{:url('add',['dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a>
+				{else /}|
+				{/if}
+				{if condition="$delopt"}
+					<a onclick="return confirm('确认删除？');" href="{:url('dealer/PjregDel',['dealer_id'=>$v.dealer_id,'pjid'=>$v.project_id])}">删除</a>
+				{else /}|
+				{/if} 
+			</td>
 		</tr>
 	{/foreach}
 

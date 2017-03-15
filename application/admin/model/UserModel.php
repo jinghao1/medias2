@@ -9,6 +9,7 @@
 namespace app\admin\model;
 use think\Model;
 use think\DB;
+use think\Session;
 class UserModel extends Model
 {
 	 // 设置当前模型对应的完整数据表名称
@@ -63,9 +64,14 @@ class UserModel extends Model
     /**
      * 查询所有菜单功能
      */
-    public function MenuListAll()
+    public function MenuListAll($id=null)
     {
-       return DB::name("auth_rule")->select();
+	    if($id){
+		    return DB::name("auth_rule")->select($id);
+	    }else{
+		    return DB::name("auth_rule")->select();
+	    }
+       
         // return $this->RecursionAll($data_list);
     }
 
@@ -75,6 +81,12 @@ class UserModel extends Model
     public function MenuAdd($data)
     {
         return DB::name("auth_rule")->insert($data);
+    }
+    //更改菜单节点
+    public function Menuedit($data){
+	    $id = $data['edit'];
+	    unset($data['edit']);
+	    return Db::name('auth_rule')->where('id',$id)->update($data);
     }
     /**
      * 递归查询所有品牌
@@ -195,9 +207,29 @@ class UserModel extends Model
 		
 	}
 
-	//单独检测用户对某个操作有无权限
-	public function CkOptionuser($option){
-		
+	//单独检测用户对某个操作有无权限 此检测， 暂时未调用
+	public function CkOptionuser($option=null){
+		$userid = session::get("admin_uid");
+		if($option && $userid){ //联表查询 规则信息，是否存在
+			//首先判断规则是否存在，不存在为超级管理员，拥有所有权限
+			$therule = Db::name('admin')->alias('a')->join('zt_auth_group b','b.id=a.groupid')->where('a.user_id',$userid)->field('rules')->select();
+			 
+			if(isset($therule[0]['rules']) && !empty($therule[0]['rules'])){
+				$end = Db::name('auth_rule')->field('id')->where('id','in',$therule[0]['rules'])->where('name',$option)->select(); 
+				//echo Db::name('auth_rule')->getLastSql();
+				//p($end);
+				if($end){
+					return true; //有权限
+				} 
+			}else{
+				return true;
+			} 
+		}
+		return false;
+	}
+
+	public function ckuniquename($username){
+		return Db::name('admin')->where('username',$username)->select();
 	}
      
      

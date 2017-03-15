@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html";i:1488879504;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html";i:1489550353;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -169,7 +169,13 @@ function noSelAll()
 		<td align="center"><u><a href="<?php echo url('dealer/show',['id'=>$v['id']]); ?>"><?php echo $v['project_name']; ?></a></u></td>
 		<td align="center"><?php echo $v['brand_name']; ?></td>
 		
-		<td><!--<a href="101">编辑</a> |--> <a onclick="return confirm('项目删除后，其下边所有用户提交信息均会被删除，确认删除？');" href="<?php echo url('project/pjdel',['id'=>$v['id']]); ?>">删除</a></td>
+		<td><!--<a href="101">编辑</a> |-->
+			<?php if($delopt): ?>
+				<a onclick="return confirm('项目删除后，其下边所有用户提交信息均会被删除，确认删除？');" href="<?php echo url('project/pjdel',['id'=>$v['id']]); ?>">删除</a>
+			<?php else: ?>无操作权限
+			<?php endif; ?>
+		 	
+		</td>
 	</tr>
 	<?php endforeach; endif; else: echo "" ;endif; ?>
 

@@ -48,4 +48,5 @@ return [
     'auto_timestamp' => false,
     // 是否需要进行SQL性能分析
     'sql_explain'    => false,
+  
 ];

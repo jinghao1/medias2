@@ -18,11 +18,13 @@ class Base extends Controller
         $controller = strtolower(request()->controller());
         $action     = strtolower(request()->action());
         $url        = $module."/".$controller."/".$action;
-
+		
         //跳过检测以及主页权限
         if(session('admin_uid') != 1){
-
+		
             if(!in_array($url, ['admin/index/index','admin/index/top','admin/index/menu','admin/index/main'])){
+	            //p($url,session('admin_uid'));
+	           
                 if(!$auth->check($url,session('admin_uid'))){
                     $this->error('抱歉，您没有操作权限');
                 }

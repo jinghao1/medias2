@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1488939452;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1489557674;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -91,7 +91,15 @@
 			<td ><?php echo $v['buy_car_time']; ?></td>
 			<td ><?php echo $v['dealer_name']; ?></td>
 			<td ><?php echo $v['car_series_id']; ?></td>
-			<td><a href="<?php echo url('add',['dealer_id'=>$v['dealer_id'],'edit'=>1]); ?>">编辑</a> | <a onclick="return confirm('确认删除？');" href="<?php echo url('dealer/PjregDel',['dealer_id'=>$v['dealer_id'],'pjid'=>$v['project_id']]); ?>">删除</a></td>
+			<td>
+				<?php if($editopt): ?>
+					<a href="<?php echo url('add',['dealer_id'=>$v['dealer_id'],'edit'=>1]); ?>">编辑</a>
+				<?php else: ?>|
+				<?php endif; if($delopt): ?>
+					<a onclick="return confirm('确认删除？');" href="<?php echo url('dealer/PjregDel',['dealer_id'=>$v['dealer_id'],'pjid'=>$v['project_id']]); ?>">删除</a>
+				<?php else: ?>|
+				<?php endif; ?> 
+			</td>
 		</tr>
 	<?php endforeach; endif; else: echo "" ;endif; ?>
 

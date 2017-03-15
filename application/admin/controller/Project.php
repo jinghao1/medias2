@@ -22,12 +22,17 @@ class Project extends	Base
 	 */
 	public	function show()				
 	{	
+	 
 		$project = new ProjectModel();	
 		$user = new UserModel();	
 		$data = $project->showAll();
 		//检测删除操作
-		$delpro = $user->CkOptionuser();
+		//$auth = new \com\Auth();
+		//$delpro = $auth->check('admin/project/pjdel',session('admin_uid'));
+	 
+		$delpro = $user->CkOptionuser('admin/project/pjdel');
 		//echo Db::getlastsql();
+		$this->assign('delopt',$delpro); //是否有删除权限，1有，2没有 true ,false
 		$this->assign('data',$data);  
 		return $this->fetch();
 	}

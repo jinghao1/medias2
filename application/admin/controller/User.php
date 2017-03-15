@@ -32,12 +32,26 @@ class User extends	Base
 		$user = new UserModel();
 		$userinfo[0] = array('groupid'=>"");  //定义空数组
 		$edit = 0;
-		if(input('param.user_id') && (input('param.edit')==1 || input('param.edit')==3)){ //用户信息修改 
+		if(input('param.user_id') && (input('param.edit')==1 || input('param.edit')==3)){ //用户信息修改 查看
 		 	$edit = input('param.edit');
 			$userinfo = $user->UserAll(input('param.user_id'));//用户id 
 		}else if(input('param.edit')==2 && input('param.userid')){
 			$data = input('param.');
-			$data['password'] = MD5(md5($data['password']).config('auth_key'));
+			//检测用户名 唯一
+			if(empty($data['username'])){
+				$this->error("用户名不能为空");
+			}else{
+				$haveuser = $user->ckuniquename($data['username']);
+				if($haveuser){
+					$this->error("此用户已存在");
+				}
+			}
+			if(!empty($data['password'])){
+				$data['password'] = MD5(md5($data['password']).config('auth_key'));
+			}else{
+				unset($data['password']);
+			}
+			
 			$data['time'] = time();
 			$res = $user->UpdateUserinfo($data);
 			if($res){
@@ -50,6 +64,15 @@ class User extends	Base
 		}else if(input('param.')){
 			$data = input('param.');
 			$data['password'] = MD5(md5($data['password']).config('auth_key'));
+			//检测用户名 唯一
+			if(empty($data['username'])){
+				$this->error("用户名不能为空");
+			}else{
+				$haveuser = $user->ckuniquename($data['username']);
+				if($haveuser){
+					$this->error("此用户已存在");
+				}
+			}
 			$data['time'] = time();
 			$res = $user->UserAdd($data);
 			if($res){
@@ -169,6 +192,7 @@ class User extends	Base
 		$admin_rule = $user->MenuListAll();
 		
 		$arr = $nav::rule($admin_rule);	
+		
 		//p($arr);
 		$this->assign("MenuData",$arr);
 		
@@ -181,7 +205,21 @@ class User extends	Base
 	public function MenuAdd()
 	{
 		$user = new UserModel();
-		if(input('param.'))
+		$menuinfo = array(0=>array('pid'=>""));
+		if(!empty(input('param.mnid'))){ //菜单信息更改
+			//获取当前菜单信息
+			$menuinfo = $user->MenuListAll(input('param.mnid')); 
+		}else if(input('param.edit')){ //菜单信息更改
+			$data = input('param.');
+			//$upid = $data['edit'];
+			//unset($data['edit']);
+			$res = $user->Menuedit($data);
+			if($res){
+				$this->success('更新成功');
+			}else{
+				$this->error('更新失败');
+			}
+		}else if(input('param.'))
 		{
 			$data = input('param.');
 			$data['create_time'] = time();
@@ -193,16 +231,16 @@ class User extends	Base
 			{
 				$this->error('添加失败');
 			}
-		}
-		else
-		{
-			$nav = new \org\Leftnav;
-			$admin_rule = $user->MenuListAll();
-			$arr = $nav::rule($admin_rule);	
-			$this->assign("MenuData",$arr);
-			return $this->fetch();
-		}
+		} 
+		$this->assign("menuall",$menuinfo[0]);
+		$nav = new \org\Leftnav;
+		$admin_rule = $user->MenuListAll();
+		$arr = $nav::rule($admin_rule);	
+		$this->assign("MenuData",$arr);
+		return $this->fetch();
+		 
 	}
+ 
 
 	//删除用户
 	public function Deluser(){

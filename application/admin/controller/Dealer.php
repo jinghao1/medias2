@@ -14,6 +14,7 @@ use app\admin\model\DealerModel;
 use app\admin\model\CarModel;
 use app\admin\model\ProjectModel;
 use app\admin\model\BrandModel;
+use app\admin\model\UserModel;
 class Dealer extends	Base	
 {	
 	/**
@@ -199,6 +200,23 @@ class Dealer extends	Base
 			$data[$key]['car_series_id'] = $DataArrName;
 			$data[$key]['buy_car_time'] = $newbuycartm[$data[$key]['buy_car_time']];
 		} 
+		$user = new UserModel();
+		//检测删除操作
+		//$auth = new \com\Auth();
+		//检测注册信息编辑权限，  
+		//$editopt = $auth->check('admin/dealer/add',session('admin_uid'));
+		//检测注册信息删除权限
+		//$delpro = $auth->check('admin/dealer/PjregDel',session('admin_uid'));
+
+	 
+		//检测注册信息编辑权限，
+		$editopt = $user->CkOptionuser('admin/dealer/add');
+		//echo Db::getlastsql();
+		$this->assign('editopt',$editopt); //是否有删除权限，1有，2没有 true ,false
+		//检测注册信息删除权限
+		$delpro = $user->CkOptionuser('admin/dealer/PjregDel');
+		//echo Db::getlastsql();
+		$this->assign('delopt',$delpro); //是否有删除权限，1有，2没有
 		$this->assign('data',$data);	 
 		$this->assign('page',$page); 					
 		return $this->fetch();

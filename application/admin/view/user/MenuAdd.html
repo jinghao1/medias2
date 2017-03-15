@@ -15,11 +15,11 @@
 			<table width='98%'  border='0' cellpadding='1' cellspacing='1' align="center" class="tabody">
 				<tr>
 					<td>默认顶级</td>
-					<td>
+					<td> 
 						<select name="pid" id="">
 							<option value="0">默认顶级</option>
-							{foreach name="MenuData" item="v"}
-								<option value="{$v.id}">
+							{foreach name="MenuData" item="v"} 
+								<option value="{$v.id}" {$v.id==$menuall.pid ? 'selected' : ''} >
 									{if $v.pid eq 0}<span class="folder-open"></span>{else}<span style="display:inline-block;width:{$v.leftpin}px;"></span><span>|--</span>{/if}{$v.title}
 								</option>
 							{/foreach}
@@ -28,20 +28,20 @@
 				<tr>
 					<td>菜单名称</td>
 					<td>
-						<input type="text" name="title" placeholder="菜单名称">
+						<input type="text" name="title" value="{$menuall.title ?? '' }" placeholder="菜单名称">
 					</td>
 				</tr>
 				<tr>
 					<td>节点</td>
 					<td>
-						<input type="text" name="name" value="" placeholder="模块/控制器/方法"><br>
+						<input type="text" name="name" value="{$menuall.name ?? '' }"  placeholder="模块/控制器/方法"><br>
 						<span style="color:#aaa;">如：admin/user/addlist(一级节点添加#即可)</span>
 					</td>
 				</tr>
 				<tr>
 					<td>排序</td>
 					<td>
-						<input type="text" name="sort" value="0" placeholder="">
+						<input type="text" name="sort" value="{$menuall.sort ?? '' }"  placeholder="">
 					</td>
 				</tr>
 				<tr>
@@ -53,6 +53,9 @@
 				</tr>
 				<tr>
 					<td colspan="2">
+						{if condition="isset($menuall.id)"}
+						<input type="hidden" name="edit" value="{$menuall.id}" />
+						{/if}
 						<input class="getSubmit" type="submit" value="提交">
 						<input type="reset" class="getReset" value="重置"/>
 					</td>
