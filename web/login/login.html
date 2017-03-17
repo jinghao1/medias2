@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<!-- <base href="__PUBLIC__/"> -->
+	<meta charset="UTF-8">
+	<title>立即报名</title>
+    <script type="text/javascript" src="../login/js/jquery-3.0.0.js"></script>
+    <script type="text/javascript" src="../login/js/login.js"></script> 
+	<style>
+		input,select{border:none; background: none;padding-left:10px;}
+		ul,li{list-style: none}
+		.login{width:400px; overflow:hidden;margin:50px auto;background:#7d6c65;border-radius: 4px; padding:30px 0;}
+		.login ul{float:left;}
+		.login ul li{width:220px;float:left;margin-left:55px;}
+		.login ul li input{width:208px;height:38px;line-height:38px\9;border:1px solid #ccc;border-radius: 4px;float:left;margin-bottom:8px;}
+		/*.login ul li input{height:40px;}*/
+		.login ul li input.name{width:92px;}
+		.login ul li .province,.login ul li .city,.login ul li .sex{height:40px;border:1px solid #ccc;border-radius: 4px;float:left;margin-bottom:8px;width:103px;}
+		.login ul li .province select,.login ul li .city select,.login ul li .sex select{width:103px;/*padding:11px 0px 11px 10px;*/height:40px;}
+		.login ul li .city,.login ul li .sex{margin-left:10px;}
+		.login ul li .dealer,.login ul li .carType{height:40px;border:1px solid #ccc;border-radius: 4px;float:left;margin-bottom:8px;width:218px;}
+		.login ul li .dealer select,.login ul li .carType select{width:218px;/*padding:11px 0px 11px 10px;*/height:40px;}
+		.btn{cursor:pointer;width:220px; background: #8d3319;float:left;line-height: 46px;border-radius: 6px; text-align: center;color:#fff;margin-left:95px;}
+	</style>
+</head>
+<body>
+	<div class="login">
+		<ul>
+			<!-- 姓名/性别 -->
+			<li>
+				<input type="text"  value="姓名" class="name" name="name"><span></span>
+				<div class="sex">
+					<select id="sex" name="sexId"><option>请选择性别</option><option value="1">男</option><option value="2">女</option></select>
+				</div>
+			</li>
+			<!-- 手机号 -->
+			<li><input type="text"  value="手机号" name="phone"><span></span></li>
+			<!-- 省市 -->
+			<li>
+				<div class="province">
+					<select id="province" name="provinceId" ><option>省份</option></select>
+				</div>
+				<div class="city">
+					<select id="city" name="cityId"><option>城市</option></select>
+				</div>
+			</li>
+			<!-- 经销商 -->
+			<li>
+				<div class="dealer">
+					<select id="dealer" name='dealer'><option>经销商</option></select>
+				</div>
+			</li>
+			<!-- 意向车型 -->
+			<li>
+				<div class="carType">
+					<select id="carType" name='car_series_id'>
+						<option value="61">东风标致4008</option>
+						<option value="62">东风标致3008</option>
+						<option value="63">东风标致2008</option>
+					</select>
+				</div>
+			</li>
+		</ul>
+		<div class="btn">意向车型</div>
+	</div>	
+</body>
+</html>
+
+<!--<script type="text/javascript" src="javascript/time/js/laydatetime.js"></script> -->
+<!-- <script>
+ $(function(){
+	//项目更改
+	$(document).on('change','.ProJect',function(){
+         var project_id = $(this).val();
+         var _this = $(this);
+         // alert(_this);
+         $.ajax({
+             type : 'get',
+             url  : "{:url('ProjectCar')}",
+             data : {project_id : project_id},
+             dataType : "json",
+             success : function(msg){
+	             // alert($.type(msg));
+	              //var thetype = $.type(msg);
+	              //if(thetype=="object"){
+	                 
+	              //}
+                 //console.log(msg);
+                 //console.log(msg.length);
+                 if(msg.length){
+	                var str = "";
+                   
+                    $(msg).each(function(k,v){
+                    str +="<option value="+v.brand_id+">"+v.brand_name+"</option>"
+                    })
+                 
+                    $(".GetCar").nextAll().remove();
+                    $(".GetCar").html(str);
+                    
+                 }
+
+             }
+         })
+     })
+ 	//车系车型 click
+     $(document).on('click','.GetCar',function(){ 
+         var brand_id = $(this).val();
+         var _this = $(this);
+         // alert(_this);
+         //console.log(brand_id);
+         if(brand_id>0){
+		    $.ajax({
+	             type : 'get',
+	             url  : "{:url('CarClass')}",
+	             data : {brand_id : brand_id},
+	             dataType : "json",
+	             success : function(msg){
+	                 //alert($.type(msg));
+	                 //console.log(msg);
+	                 if(msg.length){
+	                    var str = "<select class='GetCar' name='car_series_id[]'>";
+	                    $(msg).each(function(k,v){
+	                    str +="<option value="+v.brand_id+">"+v.brand_name+"</option>";
+	                    });
+	                    str += "</select>";
+	                    _this.nextAll().remove();
+	                    _this.after(str);
+	                 }else{
+		                _this.nextAll().remove(); 
+	                 }
+
+	             }
+	         })
+         }else{
+	         _this.nextAll().remove();
+         }
+        
+     })
+
+     //经销商
+      $(document).on('click','.GetDealer',function(){
+         var dealer_id = $(this).val();
+         var _this = $(this);
+         // alert(dealer_id);
+         $.ajax({
+             type : 'get',
+             url  : "{:url('GetDealer')}",
+             data : {dealer_id : dealer_id},
+             dataType : "json",
+             success : function(msg){
+                 if(msg.length < 1){
+                 	 _this.nextAll().remove();
+                 }
+                 
+                 if(msg.length){
+                    var str = "<select name='dealer_name[]' class='GetDealer'>";
+                    $(msg).each(function(k,v){
+                    str +="<option value="+v.dealer_id+">"+v.dealer_name+"</option>"
+                    })
+                    str += "</select>";
+                    _this.nextAll().remove();
+                    _this.after(str);
+                 }
+
+             }
+         })
+     }) 
+
+     
+
+		 
+  })
+</script> -->

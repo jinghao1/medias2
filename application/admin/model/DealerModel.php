@@ -44,7 +44,7 @@ class DealerModel extends Model
     public function DealerAdd($data)
     {
 	    //p($data);
-        return DB::name("user_dealer")->insert($data);
+        return DB::name("user_dealer")->insertGetId($data);
     }
 
     //更改用户预约注册信息

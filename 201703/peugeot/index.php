@@ -1,37 +1,5 @@
 <?php 
 //$a = 1;
-session_start();
- 
-require("../../extend/aes/outaes.php");
-$key = "o0o0o0o0o7ujm*IK<9o.00ew00O0O";//加密秘钥
-$aes = new Aes($key);
-error_reporting(E_ALL | E_STRICT);
-$ip = $_SERVER["REMOTE_ADDR"];  //获取当前ip
- 
-$time = substr(time(),-5); //获取当前时间戳
-$name1 = "son"; // key
-$name2 = "qin";	//key
-$num = rand(0,9999);
-$arr = array('ip'=>$ip,'tm'=>$time,'no'=>$name1,'tw'=>$name2,'nm'=>$num);
-shuffle($arr); //打乱数组顺序
-$arrstr = implode("-",$arr); 
-  
-$str = $aes->encrypt($arrstr);//加密
-echo '<input type="hidden" name="encrystr" value="'.$str.'" />';
- 
-//echo "**********<br>"; 
-//print_r($arrstr);
-//echo "<br>====----<br>"; 
-//echo $str;
-//echo "<br>";
-//$end = $aes->decrypt($str);//解密
-//var_dump($end);
-//$_SESSION[$end]=1;
-//echo "<br>========";
-//var_dump($_SESSION) ;
-//echo "<br>";
-//echo "====<br>====";
-
 function isMobile(){   
     // 如果有HTTP_X_WAP_PROFILE则一定是移动设备  
     if (isset ($_SERVER['HTTP_X_WAP_PROFILE']))  
@@ -101,15 +69,12 @@ function isMobile(){
     return false;  
 }  
 
-
-
-
 if(!isMobile()){ //pc端
 	echo "pc";
-	include("../login/login.html");
+	include("pc.html");
 }else{ //mobile 
 	echo 'mobile';
-	include("../userreg/reg.html");
+	include("mobile.html");
 }
 
 ?>
