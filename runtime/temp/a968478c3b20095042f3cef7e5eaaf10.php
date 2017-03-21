@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1489557674;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490005247;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -50,7 +50,7 @@
     </td>
   </tr>
 </table>
-</form> -->
+</form>-->
 <!--信息导出excel-->
  
 	<!--信息导入，隐藏，已导入成功-->
@@ -64,7 +64,15 @@
 
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 	<tr bgcolor="#E7E7E7">
-		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid]); ?>"> 导 出 </a></button>&nbsp;&nbsp;&nbsp;</td>
+		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
+			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;
+			<button class="outbutlef ckback"><a style="float:left" href="<?php echo url('dealer/show',['id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>
+			<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'1','id'=>$proid]); ?>">&nbsp; 营 销 策 划 &nbsp;</a></button>
+			<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'2','id'=>$proid]); ?>">&nbsp; 流 量 变 现 &nbsp;</a></button>
+			 
+			<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid]); ?>"> 导 出 </a></button>
+			&nbsp;&nbsp;&nbsp;
+		</td>
 		 
 	</tr>
 	<tr align="center" bgcolor="#FAFAF1" height="22">
@@ -85,7 +93,7 @@
 			<td><?php echo $v['dealer_id']; ?></td>
 			 
 			<td align="left"><?php echo $v['name']; ?></td>
-			<td align="left"><?php if($v['sex'] == 1): ?>男<?php else: ?>女<?php endif; ?></td>
+			<td align="left"><?php if($v['sex'] == 1): ?>男<?php elseif($v['sex'] == 2): ?>女<?php else: ?>未选择<?php endif; ?></td>
 			<td align="left"><?php echo $v['phone']; ?></td>
 			<td><?php echo $v['email']; ?></td>
 			<td ><?php echo $v['buy_car_time']; ?></td>

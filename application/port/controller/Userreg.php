@@ -11,6 +11,7 @@ use	think\Controller;
 use	think\Request;
 use	think\Db;
 use think\Session;
+use think\Cache;
 use think\Loader;
 use app\admin\model\DealerModel;
 use app\port\model\LotteryModel;
@@ -205,7 +206,17 @@ class Userreg extends	Controller	{
 		} 
 
 		$dealer = new DealerModel(); 
-		$phend = $dealer->checkphoneunique($phonenumber);
+		$phinfo = input('param.');
+		//return json_encode($phinfo);
+		if(isset($phinfo['proid'])){ //有项目id时，在项目内检测
+			//return 6;
+			$phend = $dealer->checkphoneunique($phonenumber,$phinfo['proid']);
+		}else{
+			//return 7;
+			$phend = $dealer->checkphoneunique($phonenumber);
+		}
+	 
+		
 		if($phend==1){
 			return 2; 
 			//$this->error('抱歉，此手机号已注册，请更换手机号，谢谢！'); 
@@ -215,22 +226,21 @@ class Userreg extends	Controller	{
 	}
 	//信息检测	//无效信息，返回1,默认返回0
 	public function Ckencstr($str){ 
+	
 		//首先解密，->匹配 son,qin,不存在，无效 ->拼接，检测session 是否存在，存在为无效信息
 		//引用解密插件
-		Loader::import('aes\aes', EXTEND_PATH); 
+		//Loader::import('aes\aes', EXTEND_PATH); 
 		$key = "o0o0o0o0o7ujm*IK<9o.00ew00O0O";// 密钥
 		$aes = new \aes\Aes($key);
-		$sess = Session::get('');
-	 	return $sess ;
+		
+		//$sess = Session::get(''); 获取所有session
+	 	//return $sess ;
 		$bfarr = $aes->decrypt($str);
+		 
+		$keybfarr = str_replace(".",'',$bfarr);
+		$keybfarr = str_replace("-",'',$keybfarr);
 		if($bfarr){
-			//检测有无此ssession 
-			$thes = Session::get($bfarr);
-			if($thes){ //密钥错误
-				return 1;
-			}else{
-				 Session::set($bfarr,1);
-			}
+			//检测有无此缓存  
 			$endarr = explode("-",$bfarr); 
 			if($endarr){ //查询有无 'son' , 'qin'
 				$son = in_array('son',$endarr);
@@ -238,70 +248,75 @@ class Userreg extends	Controller	{
 				if(!$son || !$qin){  // 密钥错误
 					return 1;
 				} 
-			}
+			}  	 
+			
+			$thes = Cache::get($keybfarr); 
+		  	
+			if(!empty($thes)){ //密钥错误
+				return 1;
+			}else{
+				Cache::set($keybfarr,3,5); 
+			}   
 		} 
 		return 0;
 	}
 	//用户注册信息提交 接口
 	public function Comreg(){ //东风标致
-		 
-		if(input('param.han')!="dealreg"){
+	 	$arr = input('param.');
+	 	  
+		$enc = $arr['key'];  //加密串 检测 
+		$data = array();
+		$data['phone'] = $arr['numberphone']; //手机号
+		$data['name'] = $arr['username']; //用户名
+		$data['dealer_name'] = $arr['dealer'];
+		$data['car_series_id'] = $arr['model'];
+		$data['sex'] = $arr['thesex'];
+		if($arr['han']!="dealreg" && $arr['han']!="qinreg"){
 			//return 2;
-			return json_encode(array("statu"=>5));   //参数错误
+			return json_encode(array("start"=>'1001','msg'=>'数据传入有误'));   //参数错误
 		} 
-		//return 1;
-		$dealer = new DealerModel();
-		//$car = new CarModel();
-		//$project = new ProjectModel(); 
-		$data = input('param.');
-		 
-		$enc = $data['enc'];  //加密串 检测 
-		$encckend = $this->Ckencstr($enc);
-		//return 1;
-		return json_encode($encckend) ;
-		if($encckend==1){
-			return json_encode(array("statu"=>6));   //请刷新页面,请勿重复提交
+		if($arr['han']=="qinreg"){
+			$data['from'] = 2; //标记为下游注册
 		}
-		$data['project_id'] = 31; //项目id
+		
+		$dealer = new DealerModel(); 
+		$encckend = $this->Ckencstr($enc);
+		//return $encckend;  
+		if($encckend==1){
+			return json_encode(array("start"=>'1006','msg'=>'请刷新页面,请勿重复提交,密钥失效'));   //请刷新页面,请勿重复提交
+		}
+		$data['project_id'] = 32; //项目id
 	 	
 		if(input('param.')){ //信息增加 
 			//return json_encode(array("statu"=>1)) ;
 			//检测信息
-			if(!$data['dealer_name']|| !$data['car_series_id'] || !$data['phone'] ){
+			if( !$data['phone'] ){
 				//$this->error('请填写预约信息，谢谢！'); 
-				return  json_encode(array("statu"=>1));
+				return  json_encode(array("start"=>'1002','msg'=>'手机号不合法'));
 			}else{ //检测手机号的唯一性
 				//手机号格式验证  
 				if(!preg_match("/^1[34578]{1}\d{9}$/",$data['phone'])){  
-				    return  json_encode(array("statu"=>6));  //不是手机号格式
+				    return  json_encode(array("start"=>'1002','msg'=>'手机号不合法'));
 				} 
 		
-				$phend = $dealer->checkphoneunique($data['phone']);
+				$phend = $dealer->checkphoneunique($data['phone'],$data['project_id']);
 				if($phend==1){
-					return  json_encode(array("statu"=>2)); 
+					return  json_encode(array("start"=>'1003','msg'=>'该手机已经注册'));
 					//$this->error('抱歉，此手机号已注册，请更换手机号，谢谢！'); 
 				}
-			}
-			//if(!isset($data['email'])){
-				$data['email'] = "";
-			//}
-			//end
-			$data['dealer_name'] = $data['dealer_name'];
-			//$data['car_series_id'] = $data['carid'];
-			//$data['car_time'] = strtotime($data['car_time']);
-			$data['time'] = time();
-			unset($data['han']); 
-			// p($data); 
-			//exit(json_encode($data));
+			}  
+			$data['time'] = time(); //注册时间
+			 
+			//return json_encode($data);
 			$res = $dealer->DealerAdd($data); 
 			//return "skkdkf";
 			if($res){
 				$uchoose = new LotteryModel();
 				$endcj = $uchoose->HavChance($res);
 				//return $endcj; 
-				return  json_encode(array("statu"=>3,'lotinfo'=>$endcj)); //成功
+				return json_encode($endcj); //抽奖返回信息
 			}else{
-				return json_encode(array("statu"=>4)); //添加失败
+				return  json_encode(array("start"=>'2007','msg'=>'注册失败，请重试'));
 			}
 		}
 		 	

@@ -12,11 +12,11 @@ class LotteryModel extends Model
 		//检测确认是否插入成功，并获取user phone
 		$phone = $this->Ckgetphone($userid);
 		if(!$phone){
-			$statu = 5;
-			$jxname = "无注册信息";
+			$statu = '2007';
+			$jxname = "注册失败，请重试";
 		}else{
-			$statu = 0;
-			$jxname = "次活动已结束";
+			$statu = '2008';
+			$jxname = "此次活动已结束";
 		}
 		$tolinfo = $this->GetLottery(); 
 		//检测此用户有无抽取过奖项
@@ -24,7 +24,7 @@ class LotteryModel extends Model
 		 
 		
 		if($havecj){
-			$statu=4;
+			$statu='2002';
 			$jxname = "您已抽过奖-".$havecj[0]['name'];
 		}
 		if($tolinfo && empty($havecj) && $phone){
@@ -71,26 +71,32 @@ class LotteryModel extends Model
 					'phone'=>$phone, //用户手机号
 					'lotid'=>$zone //奖项id
 				);
-			if($lotnum==0){  
+			if($lotnum<=0){  
 				$userinfo['lotid'] = $endlot; //最后一个奖项
 				$userinfo['status'] = 3; //无库存情况下插入  
 				$userinfo['bflotid'] = $zone; //之前中奖无库存，奖项id
 			}
+			
 			$jxname = $prizeList[$userinfo['lotid']];//奖项名称
 		    //给 用户发奖 ->发奖成功，减库存 == 需要加入事务 回滚 == 
 			$adduserlot = $this->SendLotUser($userinfo);
 			if($adduserlot){ // 发奖成功后 执行 减库存
 				$uplot = $this->UpdLotGoods($zone);
 				if($uplot){ //发奖，减库存，执行成功
-					$statu = 1; 
+					$statu = '2004'; 
 				}else{
-					$statu = 2;  //减库存失败 发奖成功
+					$statu = '2004';  //减库存失败 发奖成功
 				}  
 			}else{
-				$statu = 3; //发奖失败
+				$statu = '2005'; //发奖失败
+				$jxname = '注册成功,抽奖失败';
+			} 
+			if($userinfo['lotid'] == $endlot){ //谢谢参与
+				$statu = '2003'; 
+				$jxname = $prizeList[$endlot];//谢谢参与
 			} 
 		} 
-		return array('statu'=>$statu,'name'=>$jxname);
+		return array('start'=>$statu,'msg'=>$jxname);
  
 		//return Db::table('porttest')->where('name',$name)->find();
 	}

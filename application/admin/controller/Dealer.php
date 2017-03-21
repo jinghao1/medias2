@@ -162,12 +162,16 @@ class Dealer extends	Base
 		$dealer = new DealerModel();
 		$car = new CarModel();
 		$project = new ProjectModel(); 
-         
+        
 		$paramstr = input('param.id/d');
 		$id = empty($paramstr) ? "" : $paramstr;
 		//查询车系车型
 		if(!empty($id)){
-			$data = $dealer->ProjectDealerAll($id); 
+			//获取是显示全部还是，中游，下游
+			$you = input('param.enews');
+			$fromid = empty($you) ? null : $you;
+		 
+			$data = $dealer->ProjectDealerAll($id,$fromid); 
 			$proinfo = $project->ProjectSelectName($id); //获取当前项目名称
 			$this->assign('proname',$proinfo[0]['project_name']);
 			$this->assign('proid',$id);

@@ -182,6 +182,8 @@ return [
         'type'   => 'File',
         // 缓存保存目录
         'path'   => CACHE_PATH,
+       //服务器
+        //'host' => 'localhost',
         // 缓存前缀
         'prefix' => '',
         // 缓存有效期 0表示永久缓存

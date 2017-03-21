@@ -1,0 +1,86 @@
+[ 2017-03-20T18:26:23+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/enews/1/id/32.html?
+[ log ] localhost/medias/public/index.php/admin/dealer/show/enews/1/id/32.html? [运行时间：0.095214s][吞吐率：10.50req/s] [内存消耗：2,008.89kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'PHPSESSID=o32k9rbkk9jmcebvivc6impc30',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/dealer/show/enews/1/id/32.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+  'id' => '32',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'proname',
+  1 => 'proid',
+  2 => 'editopt',
+  3 => 'delopt',
+  4 => 'data',
+  5 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_user_dealer` [ RunTime:0.008530s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_user_dealer` `d` INNER JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` INNER JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  (  d.project_id=32 )  AND `d`.`from` = '1' ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_user_dealer` `d` INNER JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` INNER JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  (  d.project_id=32 )  AND `d`.`from` = '1' ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008388s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 32   [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008082s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007920s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.008868s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (3,101,102)     [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,94,95)     [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (3,101,102)     [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (1,33,62)     [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,94,95)     [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,94,95)     [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (1,33,62)     [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (3,101,102)     [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,94,95)     [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (4,131,132)     [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (4,131,132)     [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (15,481,482)     [ RunTime:0.000207s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009444s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000274s ]
+
+---------------------------------------------------------------

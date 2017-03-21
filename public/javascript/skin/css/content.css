@@ -29,3 +29,13 @@ button.outbut{
 	float:right;
 	margin-right:5px;
 }
+
+.outbutlef{
+	padding:0px;
+	float:left;
+	margin-right:5px;
+}
+
+button.ckback.outbutlef{
+	background:#ccc;
+}

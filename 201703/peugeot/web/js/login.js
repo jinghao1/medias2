@@ -1,4 +1,7 @@
+
+
 $(document).ready(function(){
+	 
 	//eidt by song
 	var encrystr = $("input[name='encrystr']").val();
 	//console.log(encrystr);
@@ -89,8 +92,10 @@ $(document).ready(function(){
 	//判断鼠标失去焦点后  手机号是否？
     $("input[name='phone']").blur(function(){ 
     	var phone = $("input[name='phone']").val(); 
-            $.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Checkuniquephone", { han: "ckphone",phone:phone}, function(json){
+            $.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Checkuniquephone", { han: "ckphone",phone:phone,proid:32}, function(json){
+	           // console.log("songkkkk");
 			//console.log(json);
+			$("input[name='encrystr']").focus();
 			if(json == 2){
 				alert('手机已注册');
 			}else if(json == 3){
@@ -111,7 +116,7 @@ $(document).ready(function(){
 	 		return false;
 	 	}
 	 	if (!name.match(/^([\u4E00-\u9FA5]{2,4}$)|(^[a-zA-Z]{1,8}$)/)){ 
-			alert("抱歉，需要输入2-4位汉字或八个英文字母");
+			alert("抱歉，姓名需要输入2-4位汉字或八个英文字母");
 			return false;
 		}
 	 	//性别，必选
@@ -129,7 +134,7 @@ $(document).ready(function(){
 	 		$("input[name='phone']").focus(); 
 	 		return false; 
 	 	}  
-	 	if (!phone.match(/^(((13[0-9]{1})|159|153|155|177|170|186|188|189)+\d{8})$/)) { 
+	 	if (!phone.match(/^(((1[3|5|7|8][0-9]{1}))+\d{8})$/)) { 
 	 		alert("手机号码格式不正确！");  
 	 		$("input[name='phone']").focus(); 
 	 		return false; 
@@ -184,17 +189,26 @@ $(document).ready(function(){
 			return false; 
 	 	}
 	 	var dealer_name = province+","+city+","+dealer;
-	  
-	 	$.getJSON("http://localhost/medias/public/index.php/port/Userreg/Comreg", { han: "dealreg",name:name,sex:sex,phone:phone,dealer_name:dealer_name,car_series_id:carid,enc:encrystr}, function(json){
+	 	//console.log(dealer_name);
+	 	$.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Comreg", { han: "dealreg",username:name,thesex:sex,numberphone:phone,dealer:dealer_name,model:carid,key:encrystr}, function(json){
+			 
+			if(jQuery.type(json)=="string"){
+				var json = eval('('+json+')'); //字符串转为json格式
+			} 
+			alert(json.msg);
 			console.log(json);
-			if(json.statu == 2){
-				alert('手机号已注册');
-			}else if(json.statu == 3){
-				console.log(json.lotinfo);
-				alert('成功');
-			}else if(json.statu == 4){
-				alert('失败');
-			}
+			///$('body').append(json.msg);
+			//json.msg = changetoch(json.msg);
+			//$("#newsongend").html(json.msg);
+			//alert(json.msg);
+			//if(json.statu == 2){
+			//	alert('手机号已注册');
+			//}else if(json.statu == 3){
+			//	console.log(json.lotinfo);
+			//	alert('成功');
+			//}else if(json.statu == 4){
+			//	alert('失败');
+			//}
 		})	
 
 		//$.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Comreg", { han: "dealreg",name:"宋京浩",sex:"1",phone:"17703186690",dealer_name:"4,7,65",car_series_id:'61'}, function(json){

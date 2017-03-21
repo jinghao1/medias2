@@ -1,0 +1,1972 @@
+[ 2017-03-18T15:01:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017715s][吞吐率：56.45req/s] [内存消耗：1,553.41kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\port\controller\Cache' not found[D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php:242]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:01:24+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017961s][吞吐率：55.68req/s] [内存消耗：1,553.39kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\port\controller\Cache' not found[D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php:242]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:02:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017040s][吞吐率：58.69req/s] [内存消耗：1,523.68kb] [文件加载：39]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:02:54+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017746s][吞吐率：56.35req/s] [内存消耗：1,553.39kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\port\controller\Cache' not found[D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php:242]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:03:41+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018020s][吞吐率：55.49req/s] [内存消耗：1,553.70kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Class 'app\port\controller\Cache' not found[D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php:241]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.092120s][吞吐率：10.86req/s] [内存消耗：1,590.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018012s][吞吐率：55.52req/s] [内存消耗：1,590.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018823s][吞吐率：53.13req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018971s][吞吐率：52.71req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:37+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.020428s][吞吐率：48.95req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:37+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017937s][吞吐率：55.75req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:37+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017892s][吞吐率：55.89req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:40+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018308s][吞吐率：54.62req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:05:49+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.015210s][吞吐率：65.75req/s] [内存消耗：1,523.70kb] [文件加载：39]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:06+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.033629s][吞吐率：29.74req/s] [内存消耗：1,586.68kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.015976s][吞吐率：62.59req/s] [内存消耗：1,586.68kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018338s][吞吐率：54.53req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017994s][吞吐率：55.57req/s] [内存消耗：1,590.07kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016154s][吞吐率：61.90req/s] [内存消耗：1,586.68kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.020463s][吞吐率：48.87req/s] [内存消耗：1,586.73kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:39+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016377s][吞吐率：61.06req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:39+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016028s][吞吐率：62.39req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:40+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017912s][吞吐率：55.83req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:40+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016138s][吞吐率：61.97req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:41+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016612s][吞吐率：60.20req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:45+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016645s][吞吐率：60.08req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:45+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016608s][吞吐率：60.21req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.015982s][吞吐率：62.57req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016210s][吞吐率：61.69req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:47+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016082s][吞吐率：62.18req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:47+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016237s][吞吐率：61.59req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:48+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016179s][吞吐率：61.81req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016264s][吞吐率：61.49req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:49+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017638s][吞吐率：56.70req/s] [内存消耗：1,586.77kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:50+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017417s][吞吐率：57.42req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:06:50+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.016112s][吞吐率：62.07req/s] [内存消耗：1,586.61kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T15:11:03+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.019442s][吞吐率：51.44req/s] [内存消耗：1,589.87kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:11:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017903s][吞吐率：55.86req/s] [内存消耗：1,589.87kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:11:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.017721s][吞吐率：56.43req/s] [内存消耗：1,589.87kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T15:11:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E4%BD%86%E6%98%AF&sex=1&phone=17703186692&dealer_name=3%2C101%2C102&car_series_id=61&enc=00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792 [运行时间：0.018050s][吞吐率：55.40req/s] [内存消耗：1,589.87kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '但是',
+  'sex' => '1',
+  'phone' => '17703186692',
+  'dealer_name' => '3,101,102',
+  'car_series_id' => '61',
+  'enc' => '00def73ab839923d5b3073eb88220cfefb6d7ac428dc5ed20c8be2b1d4276792',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT redis
+[ info ] [ LOG ] INIT File
+[ error ] [0]不支持: redis[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\cache\driver\Redis.php:44]
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:09+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.019351s][吞吐率：51.68req/s] [内存消耗：1,586.74kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015962s][吞吐率：62.65req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015660s][吞吐率：63.86req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:15+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015940s][吞吐率：62.74req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015703s][吞吐率：63.68req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015979s][吞吐率：62.58req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:21+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.017661s][吞吐率：56.62req/s] [内存消耗：1,586.76kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.017212s][吞吐率：58.10req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-03-18T16:17:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a
+[ log ] localhost/medias/public/index.php/port/Userreg/Comreg?han=dealreg&name=%E6%9E%97%E8%BE%89&sex=1&phone=17703186612&dealer_name=2%2C94%2C95&car_series_id=61&enc=146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a [运行时间：0.015887s][吞吐率：62.94req/s] [内存消耗：1,586.59kb] [文件加载：42]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Userreg',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1489744745,1489803614; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1489803614; PHPSESSID=spgrn2coqosedlocqml048e6n2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/web/rw/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'han' => 'dealreg',
+  'name' => '林辉',
+  'sex' => '1',
+  'phone' => '17703186612',
+  'dealer_name' => '2,94,95',
+  'car_series_id' => '61',
+  'enc' => '146e22031e1a612374c61b3995ca7a9049aaf38ddc89e0b356bed0a31eef300a',
+)
+[ info ] [ RUN ] app\port\controller\Userreg->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

@@ -23,15 +23,28 @@ class DealerModel extends Model
     /**
      * 读取项目经销商列表分页
      */
-    function ProjectDealerAll($id)
+    function ProjectDealerAll($id,$fromid=null)
     {
-        return Db::name($this->table)
-                        ->alias("d")
-                        ->join('zt_brand c','d.car_series_id=c.brand_id')
-                        ->join('zt_project p','d.project_id=p.id')
-                        ->where('d.project_id='.$id)
-                        ->order("dealer_id desc ")
-                        ->paginate(); 
+	   
+	    if($fromid){
+		    return Db::name($this->table)
+                    ->alias("d")
+                    ->join('zt_brand c','d.car_series_id=c.brand_id')
+                    ->join('zt_project p','d.project_id=p.id')
+                    ->where('d.project_id='.$id)
+                    ->where('d.from',$fromid)
+                    ->order("dealer_id desc ")
+                    ->paginate(); 
+	    }else{
+			return Db::name($this->table)
+                    ->alias("d")
+                    ->join('zt_brand c','d.car_series_id=c.brand_id')
+                    ->join('zt_project p','d.project_id=p.id')
+                    ->where('d.project_id='.$id)
+                    ->order("dealer_id desc ")
+                    ->paginate();  
+	    }
+       
     }
 
 	 
@@ -88,6 +101,11 @@ class DealerModel extends Model
 	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid'],'code'=>$info['dm'],'minname'=>$info['dlmime']];  
 		return Db::name('dealer_list')->insertGetId($data); 
     }
+      //插入经销商信息 dongbiao
+    public function InsertDealerInfodb($info){
+	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid']];  
+		return Db::name('dealer_list')->insertGetId($data); 
+    }
 
     /**
      * 根据项目对应的经销商,用户注册信息
@@ -110,8 +128,13 @@ class DealerModel extends Model
 		return Db::name("dealer_list")->where("pid",$id)->select();
 	}
     //验证手机号唯一性
-    public function checkphoneunique($phone){
-	    $end = Db::name($this->table)->field("dealer_id")->where("phone",$phone)->select();
+    public function checkphoneunique($phone,$proid=null){
+	    if($proid){
+		    $end = Db::name($this->table)->field("dealer_id")->where("phone",$phone)->where('project_id',$proid)->select();
+	    }else{
+		    $end = Db::name($this->table)->field("dealer_id")->where("phone",$phone)->select();
+	    }
+	    
 	    if($end){
 		    if($end[0]['dealer_id']){
 			    return 1;
