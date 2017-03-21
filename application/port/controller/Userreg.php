@@ -255,7 +255,7 @@ class Userreg extends	Controller	{
 			if(!empty($thes)){ //密钥错误
 				return 1;
 			}else{
-				Cache::set($keybfarr,3,5); 
+				Cache::set($keybfarr,'3',5); 
 			}   
 		} 
 		return 0;
@@ -321,6 +321,38 @@ class Userreg extends	Controller	{
 		}
 		 	
 	} 
+
+	//检测本项目 此手机号是否已注册 已注册返回1，为注册返回2，密钥错误返回3
+	function CKphoneHave(){
+		$arr = input('param.');
+		if(!isset($arr) || empty($arr['numberphone'])){
+			return json_encode(array("start"=>'1001','msg'=>'数据传入有误'));   //请刷新页面,请勿重复提交
+		}else{
+			if(!preg_match("/1[34578]{1}\d{9}$/",$arr['numberphone'])){
+		      return json_encode(array("start"=>'1002',"msg"=>"手机号不合法"));
+		    }
+		}
+		$phone = $arr['numberphone']; //手机号
+		if(empty($arr['key'])){
+			return json_encode(array("start"=>'1006','msg'=>'请刷新页面,请勿重复提交,密钥失效'));   //请刷新页面,请勿重复提交
+		}else{
+			$enc = $arr['key']; //密钥	 
+			$encckend = $this->Ckencstr($enc); 
+			if($encckend==1){
+				return json_encode(array("start"=>'1006','msg'=>'请刷新页面,请勿重复提交,密钥失效'));   //请刷新页面,请勿重复提交
+			}
+		}
+		//检测手机号是否存在
+		$proid = 32; //东标项目
+		$dealer = new DealerModel(); 
+		$phend = $dealer->checkphoneunique($phone,$proid);
+		if($phend==1){
+			return  json_encode(array("start"=>'1003','msg'=>'该手机已经注册'));
+			//$this->error('抱歉，此手机号已注册，请更换手机号，谢谢！'); 
+		}else{
+			return  json_encode(array("start"=>'2008','msg'=>'验证通过'));
+		}
+	}
  
 }
 ?>

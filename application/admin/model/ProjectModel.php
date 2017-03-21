@@ -20,7 +20,11 @@ class ProjectModel extends Model
     	$user  = new ProjectModel;
     	return $user->data($data)->allowField(true)->save();
     }
-
+    
+	//查询当前项目下有无注册信息
+	function Ckhaveinfocur($proid){
+		return Db::name('user_dealer')->field('dealer_id')->where('project_id',$proid)->limit(1)->select();
+	}
     /**
      * 查询项目列表
      * @return [type] [description]
@@ -42,7 +46,7 @@ class ProjectModel extends Model
 		    return Db::name($this->tables)->alias("p")->join('zt_brand b','p.brand=b.brand_id')->where($strsql)->order("id desc")->paginate(config('list_rows')); 
 		    
 	    }else{
-		   return Db::name($this->tables)->alias("p")->join('zt_brand b','p.brand=b.brand_id')->order("id desc")->paginate(config('list_rows')); 
+		    return Db::name($this->tables)->alias("p")->join('zt_brand b','p.brand=b.brand_id')->order("id desc")->paginate(config('list_rows')); 
 	    }
         
     }

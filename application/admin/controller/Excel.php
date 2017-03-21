@@ -18,10 +18,26 @@ class Excel extends	Controller
 {				
 
 	public function index(){
-        $header = array('注册id','项目名称','姓名','性别','手机号','购买时间','经销商','邮箱','车系','创建时间');
+        $header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','购买时间','经销商','车系','创建时间');
         $proid = input('param.proid/d');
-        if($proid){
-	        $data = db("user_dealer")->where('project_id',$proid)->select();
+        $enewsid = input('param.enewsid/d');
+        
+        if($proid || $enewsid){
+	        if($proid){
+		        $wharr['d.project_id'] = $proid;
+	        }
+	        if($enewsid){
+		        $wharr['d.from'] = $enewsid;
+	        }
+	        $data = db("user_dealer") 
+                    ->alias("d")->field('d.dealer_id,d.project_id,d.name,d.sex,d.phone,d.car_time,d.dealer_name,d.car_series_id,d.time,d.buy_car_time,n.name as lotname')
+                    ->join('zt_brand c','d.car_series_id=c.brand_id','LEFT')
+                    ->join('zt_project p','d.project_id=p.id','LEFT')
+                    ->join('zt_lotuser m','m.userid=d.dealer_id','LEFT')
+                    ->join('zt_lottery n','m.lotid=n.id','LEFT')
+                    ->where($wharr) 
+                    ->order("dealer_id desc ")
+                    ->select(); 
         }else{
 	        $data = db("user_dealer")->order('project_id desc')->select();
         }
@@ -79,18 +95,25 @@ class Excel extends	Controller
         foreach($data as $key => $rows){ //行写入
             $span = ord("A");
             //信息对应
-            $rows['sex'] = $rows['sex']==1?"男":"女";
-            $rows['project_id'] = $newpj[$rows['project_id']]; //项目名称
-            $rows['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
-            $rows['time'] = date("Y-m-d H:i:s",$rows['time']); //注册时间
-            //根据分销商id，获取对应省市，分销商名称 
-            $rows['dealer_name'] = $dealer->DealerSelectName($rows['dealer_name']);
-            //根据车系id获取车系名称
-            $rows['car_series_id'] = $carserise->CarSelectName($rows['car_series_id']);
-            unset($rows['start']);
-            unset($rows['buy_car_time']);
+            $arrs['dealer_id'] = $rows['dealer_id']; //注册id
+            $arrs['project_id'] = $newpj[$rows['project_id']]; //项目名称
+            $arrs['name'] = $rows['name'];
+            $arrs['sex'] = $rows['sex']==1?"男":"女";
+            $arrs['phone'] = $rows['phone'];
+            if(isset($rows['lotname'])){
+	            $arrs['lotname'] = $rows['lotname']; //获奖名称
+            }else{
+	            $arrs['lotname'] = null;
+            } 
+            $arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
+              //根据分销商id，获取对应省市，分销商名称 
+            $arrs['dealer_name'] = $dealer->DealerSelectName($rows['dealer_name']);
+             //根据车系id获取车系名称
+            $arrs['car_series_id'] = $carserise->CarSelectName($rows['car_series_id']);
+            $arrs['time'] = date("Y-m-d H:i:s",$rows['time']); //创建时间
+           
             //end
-            foreach($rows as $keyName=>$value) {// 列写入
+            foreach($arrs as $keyName=>$value) {// 列写入
                 $j = chr($span);
                 $objActSheet->getRowDimension($column)->setRowHeight(20);
                 $objActSheet->setCellValue($j.$column, $value);

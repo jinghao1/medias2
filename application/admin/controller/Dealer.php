@@ -165,20 +165,38 @@ class Dealer extends	Base
         
 		$paramstr = input('param.id/d');
 		$id = empty($paramstr) ? "" : $paramstr;
+		$you = input('param.enews');
+		$fromid = empty($you) ? 1 : $you;
+		 
 		//查询车系车型
 		if(!empty($id)){
 			//获取是显示全部还是，中游，下游
-			$you = input('param.enews');
-			$fromid = empty($you) ? null : $you;
-		 
+			switch ($fromid){
+				case 1:
+			 		$this->assign('yxenews',1);
+				 	break;  
+			 	case 2:
+			 		$this->assign('llenews',1);
+				 	break;  
+				case 3:
+			 		$this->assign('allout',1);
+				 	break;  
+				default:
+				 	$this->assign('yxenews',1);
+				 	break; 
+			}
+		  
 			$data = $dealer->ProjectDealerAll($id,$fromid); 
 			$proinfo = $project->ProjectSelectName($id); //获取当前项目名称
 			$this->assign('proname',$proinfo[0]['project_name']);
 			$this->assign('proid',$id);
-			
+			 
 		}else{
+			
 			$data = $dealer->SelectAll();
 		} 
+		 
+		$this->assign('enewsid',$fromid);
 		//获取购买时间段
 		$newbuycartm = array(0=>"暂无");
 		$buycartm = $car->BuycarTime();
@@ -189,6 +207,7 @@ class Dealer extends	Base
 		} 
 		$page = $data->render();
 		$data = $data->all(); //解除对象保护 
+		
 		foreach ($data as $key => $val) {
 			//查询车系、车型
 			if(!$val['car_series_id']){
@@ -254,6 +273,19 @@ class Dealer extends	Base
 		}else{
 			$this->error('无删除id');
 		}
+	}
+
+	//查询当前项目 获奖信息
+	function showlot(){
+		$proid = input('param.id/d');
+		if($proid==32){ //查询东标项目奖项情况
+			$dealer = new DealerModel();
+			$end = $dealer->LotteryAll();
+			$this->assign('data',$end); 	 
+		}else{
+			$this->assign('data',array());
+		}
+		return $this->fetch();
 	}
 
 }

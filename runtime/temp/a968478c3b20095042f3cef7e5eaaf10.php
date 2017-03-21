@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490005247;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490088643;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -65,12 +65,16 @@
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 	<tr bgcolor="#E7E7E7">
 		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
-			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;
-			<button class="outbutlef ckback"><a style="float:left" href="<?php echo url('dealer/show',['id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>
-			<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'1','id'=>$proid]); ?>">&nbsp; 营 销 策 划 &nbsp;</a></button>
-			<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'2','id'=>$proid]); ?>">&nbsp; 流 量 变 现 &nbsp;</a></button>
+			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;&nbsp;&nbsp;&nbsp; 
+			<?php if($delopt == 1): ?>
+				<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>">&nbsp;抽奖情况&nbsp;</a></button>
+			<?php endif; ?>
+			
+			<!--<button class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> "><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'3','id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>
+			<button class="outbutlef <?php if(!empty($yxenews)) echo 'ckback'; ?>"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'1','id'=>$proid]); ?>">&nbsp; 营 销 策 划 &nbsp;</a></button>
+			<button class="outbutlef <?php if(!empty($llenews)) echo 'ckback'; ?>"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'2','id'=>$proid]); ?>">&nbsp; 流 量 变 现 &nbsp;</a></button>-->
 			 
-			<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid]); ?>"> 导 出 </a></button>
+			<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid]); ?>"> 导 出 </a></button>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 
@@ -81,7 +85,7 @@
 		<td >姓名</td>
 		<td >性别</td>
 		<td >手机号</td>
-		<td >邮箱</td>
+		<td >获奖信息</td>
 		<td >购车时间</td>
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
@@ -95,7 +99,7 @@
 			<td align="left"><?php echo $v['name']; ?></td>
 			<td align="left"><?php if($v['sex'] == 1): ?>男<?php elseif($v['sex'] == 2): ?>女<?php else: ?>未选择<?php endif; ?></td>
 			<td align="left"><?php echo $v['phone']; ?></td>
-			<td><?php echo $v['email']; ?></td>
+		    <td ><?php echo $v['lotname']; ?></td>
 			<td ><?php echo $v['buy_car_time']; ?></td>
 			<td ><?php echo $v['dealer_name']; ?></td>
 			<td ><?php echo $v['car_series_id']; ?></td>

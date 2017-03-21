@@ -90,21 +90,21 @@ $(document).ready(function(){
         });    
 	})
 	//判断鼠标失去焦点后  手机号是否？
-    $("input[name='phone']").blur(function(){ 
-    	var phone = $("input[name='phone']").val(); 
-            $.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Checkuniquephone", { han: "ckphone",phone:phone,proid:32}, function(json){
-	           // console.log("songkkkk");
-			//console.log(json);
-			$("input[name='encrystr']").focus();
-			if(json == 2){
-				alert('手机已注册');
-			}else if(json == 3){
-				alert('手机格式不正确');
-			}else if(json == 5){
-				console.log('参数有问题');
-			}
-		})	
-    });    
+  //  $("input[name='phone']").blur(function(){ 
+  //  	var phone = $("input[name='phone']").val(); 
+  //          $.getJSON("http://h5.qlh520.top/media/public/index.php/port/Userreg/Checkuniquephone", { han: "ckphone",phone:phone,proid:32}, function(json){
+	 //          // console.log("songkkkk");
+		//	//console.log(json);
+		//	$("input[name='encrystr']").focus();
+		//	if(json == 2){
+		//		alert('手机已注册');
+		//	}else if(json == 3){
+		//		alert('手机格式不正确');
+		//	}else if(json == 5){
+		//		console.log('参数有问题');
+		//	}
+		//})	
+  //  });    
 	
 	
 	$(".btn").click(function(){

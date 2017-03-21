@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1489050405;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1490062935;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -45,12 +45,7 @@
 						<input name="phone" type="number" value="<?php echo isset($dealer_info['0']['phone']) ? $dealer_info['0']['phone'] :  ''; ?>">
 					</td>
 				</tr>
-				<tr>
-					<td>邮箱</td>
-					<td>
-						<input name="email" type="text" value="<?php echo isset($dealer_info['0']['email']) ? $dealer_info['0']['email'] :  ''; ?>">
-					</td>
-				</tr>
+				 
 				<tr>
 					<td>项目</td>
 					<td> 

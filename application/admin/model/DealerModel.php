@@ -23,28 +23,21 @@ class DealerModel extends Model
     /**
      * 读取项目经销商列表分页
      */
-    function ProjectDealerAll($id,$fromid=null)
+    function ProjectDealerAll($id,$fromid=1)
     {
-	   
-	    if($fromid){
-		    return Db::name($this->table)
-                    ->alias("d")
-                    ->join('zt_brand c','d.car_series_id=c.brand_id')
-                    ->join('zt_project p','d.project_id=p.id')
-                    ->where('d.project_id='.$id)
-                    ->where('d.from',$fromid)
-                    ->order("dealer_id desc ")
-                    ->paginate(); 
-	    }else{
-			return Db::name($this->table)
-                    ->alias("d")
-                    ->join('zt_brand c','d.car_series_id=c.brand_id')
-                    ->join('zt_project p','d.project_id=p.id')
-                    ->where('d.project_id='.$id)
+	    $arrwh = array('d.project_id'=>$id);
+		if($fromid && $fromid!=3){
+			$arrwh['d.from'] = $fromid;
+		}
+	    return Db::name($this->table)
+                    ->alias("d")->field('d.dealer_id,d.project_id,d.name,d.sex,d.phone,d.car_time,d.dealer_name,d.car_series_id,d.time,d.buy_car_time,n.name as lotname')
+                    ->join('zt_brand c','d.car_series_id=c.brand_id','LEFT')
+                    ->join('zt_project p','d.project_id=p.id','LEFT')
+                    ->join('zt_lotuser m','m.userid=d.dealer_id','LEFT')
+                    ->join('zt_lottery n','m.lotid=n.id','LEFT')
+                    ->where($arrwh) 
                     ->order("dealer_id desc ")
                     ->paginate();  
-	    }
-       
     }
 
 	 
@@ -141,6 +134,10 @@ class DealerModel extends Model
 		    }
 	    }
 	    return 2;
+    }
+    //获取所有奖项信息
+    function LotteryAll(){
+	    return Db::name("lottery")->select();
     }
 
 }

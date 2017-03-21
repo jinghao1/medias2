@@ -76,7 +76,14 @@ class Project extends	Base
 		$delend = new ProjectModel();
 		$paramstr =  Request::instance()->only('id');
 		$id = empty($paramstr['id']) ? "" : $paramstr['id']; 
+		
+		
 		if($id){
+			//检测 如果当前项目下，有注册信息，不可删除
+			$have =$delend->Ckhaveinfocur($id);
+			if($have){
+				$this->error('当前项目下有注册信息，请先删除注册信息');
+			}
 			$res = $delend->ProjectDel($id);
 			if($res){
 				$this->success('删除成功','show');
