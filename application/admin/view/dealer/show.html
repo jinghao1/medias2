@@ -53,10 +53,7 @@
 <!--信息导出excel-->
  
 	<!--信息导入，隐藏，已导入成功-->
-<!--<form action="{:url('Excel/reader')}" method="post" enctype="multipart/form-data">
-    <input type="file" name="importexcel"/> 
-    <input type="submit" value="导入"/>
-</form>-->
+
 <!--end 导出-->
 <!--  内容列表   -->
 <form name="form2">
@@ -65,7 +62,7 @@
 	<tr bgcolor="#E7E7E7">
 		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
 			&nbsp;项目名称:&nbsp;{$proname}&nbsp;&nbsp;&nbsp;&nbsp; 
-			{if $delopt == 1}
+			{if $delopt == 1 && $proid==32}
 				<button class="outbutlef"><a style="float:left" href="{:url('dealer/showlot',['id'=>$proid])}">&nbsp;抽奖情况&nbsp;</a></button>
 			{/if}
 			
@@ -104,7 +101,7 @@
 			<td >{$v.car_series_id}</td>
 			<td>
 				{if condition="$editopt"}
-					<a href="{:url('add',['dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a>
+					<a href="{:url('add',['proid'=>$v.project_id,'dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a>
 				{else /}|
 				{/if}
 				{if condition="$delopt"}

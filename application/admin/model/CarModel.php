@@ -36,9 +36,13 @@ class CarModel extends Model
      * 调用 经销商 子级
      * @param [type] $id [description]
      */
-    function DealerClass($id)
+    function DealerClass($id,$proid=0)
     {
-        return Db::name("dealer_list")->where('pid',$id)->select();
+	    $tabinfo = Db::name("allpro")->where('proid',$proid)->select();
+	    if($tabinfo[0]['dealname']){
+		    return Db::name($tabinfo[0]['dealname'])->where('pid',$id)->select();
+	    }
+        
     }
 
     /**

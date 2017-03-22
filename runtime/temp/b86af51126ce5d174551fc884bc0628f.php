@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1490062935;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1490171658;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -20,6 +20,7 @@
 			 
 			<?php if(isset($dealer_info[0]['dealer_id'])): ?>
 				<input type="text" style="display: none;" name="dealer_id" value="<?php echo $dealer_info['0']['dealer_id']; ?>">
+				 
 			<?php endif; ?>
 			<table width='98%'  border='0' cellpadding='1' cellspacing='1' align="center" class="tabody">
 				<tr>
@@ -186,13 +187,15 @@
 
      //经销商
       $(document).on('click','.GetDealer',function(){
-         var dealer_id = $(this).val();
+         var dealer_id = $(this).val();//当前id
+         var proid = $("select[name='project_id']").val(); //获取项目id
+         //console.log(proid);
          var _this = $(this);
          // alert(dealer_id);
          $.ajax({
              type : 'get',
              url  : "<?php echo url('GetDealer'); ?>",
-             data : {dealer_id : dealer_id},
+             data : {dealer_id : dealer_id,proid:proid},
              dataType : "json",
              success : function(msg){
                  if(msg.length < 1){

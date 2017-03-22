@@ -34,7 +34,8 @@ class Dealer extends	Base
 		if(input('param.edit') && input('param.dealer_id')){ //信息编辑
 		    //获取原有信息
 		    $thedealer_id = input('param.dealer_id'); 
-		    $thedealer_info = $dealer->DealerIdList($thedealer_id); //获取当前用户注册信息 
+		    $proid = input('param.proid'); 
+		    $thedealer_info = $dealer->DealerIdList($proid,$thedealer_id); //获取当前用户注册信息 
 		   // $thedealer_info[0]['car_time'] = date("Y-m-d",$thedealer_info[0]['car_time']); //购车时间转换 
 		    //获取车系信息
 		    $carselect = $car->CarSelectnmobj($thedealer_info[0]['car_series_id']);
@@ -49,7 +50,7 @@ class Dealer extends	Base
 		    $thedealer_info[0]['car_series_id'] = $carstr;
 		    
 		    //获取经销商信息
-		    $dealselect = $dealer->DealerSelarr($thedealer_info[0]['dealer_name']);
+		    $dealselect = $dealer->DealerSelarr($proid,$thedealer_info[0]['dealer_name']);
 		    $dealstr = "";
 		    if($dealselect){
 			    foreach($dealselect as $dlv){
@@ -148,7 +149,8 @@ class Dealer extends	Base
 	{
 		$car = new CarModel();
 		$dealer_id = input('param.dealer_id');
-		$data = $car->DealerClass($dealer_id);
+		$proid = input('param.proid');
+		$data = $car->DealerClass($dealer_id,$proid);
 		exit(json_encode($data));
 	}
 
@@ -216,7 +218,7 @@ class Dealer extends	Base
 			$DataArrName = $car->CarSelectName($val['car_series_id']);
 			//查询经销商
 			if($val['dealer_name']){
-				$DataDealerName = $dealer->DealerSelectName($val['dealer_name']);
+				$DataDealerName = $dealer->DealerSelectName($val['dealer_name'],$val['project_id']);
 				$data[$key]['dealer_name'] = $DataDealerName; 
 			}
 			
@@ -261,8 +263,9 @@ class Dealer extends	Base
 		$dealer = new DealerModel();
 		$id = input('param.dealer_id/d');
 		$pjid = input('param.pjid/d'); //项目id
+	 
 	    if($id && $pjid){
-			$res = $dealer->ProUserDel($id);
+			$res = $dealer->ProUserDel($id,$pjid);
 			if($res){
 				$this->success('删除成功');
 			}
@@ -286,6 +289,14 @@ class Dealer extends	Base
 			$this->assign('data',array());
 		}
 		return $this->fetch();
+	}
+	//更新奖项信息
+	function editlot(){
+		$news = input('param.');
+		var_dump($news);
+		echo "<br>";
+		echo "songkk";
+		return;
 	}
 
 }

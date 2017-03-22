@@ -10,7 +10,7 @@
         }
 		
 			var title ='东风标致购车节'; // 分享标题
-            var link ='http://h5.qlh520.top/media/web/rw';
+            var link ='http://h5.qlh520.top/media/201703/peugeot';
             var desc = '标致4008全新上市'; // 分享描述
             var imgUrl = 'http://h5.qlh520.top/invitation/img/log1.png';
 		

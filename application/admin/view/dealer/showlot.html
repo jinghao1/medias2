@@ -5,25 +5,28 @@
 	<title>中奖信息</title>
 </head>
 <body>
-	<table>
-		<tr align="center" bgcolor="#FAFAF1" height="22">
-			<td >奖项ID</td> 
-			<td >奖项名称</td>
-			<td >中奖概率</td>
-			<td >剩余数量</td> 
-		</tr>
-
-		{foreach name="data" item="v"}
-			<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-				<td>{$v.id}</td>
-				 
-				<td  >{$v.name}</td>
-			 
-				<td >{$v.chance}%</td>
-			    <td >{$v.num}</td> 
-			 
+	<form action="{:url('editlot')}" method="post">
+		<table>
+			<tr align="center" bgcolor="#FAFAF1" height="22">
+				<td >奖项ID</td> 
+				<td >奖项名称</td>
+				<td >中奖概率</td>
+				<td >剩余数量</td> 
 			</tr>
-		{/foreach}
-	</table>
+
+			{foreach name="data" item="v"}
+				<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
+					<td><input type="number" name="lotid" value="{$v.id}" /> </td>
+					 
+					<td ><input type="text" name="lotname" value="{$v.name}" /> </td>
+				 
+					<td ><input type="text" name="lotchance" value="{$v.chance}" /></td>
+				    <td ><input type="text" name="lotnum" value="{$v.num}" /></td> 
+				 
+				</tr>
+			{/foreach}
+		</table>
+		<p><input type="submit" value='更新'></p>
+	</form>
 </body>
 </html>

@@ -19,6 +19,7 @@
 			 
 			{if condition="isset($dealer_info[0]['dealer_id'])"}
 				<input type="text" style="display: none;" name="dealer_id" value="{$dealer_info.0.dealer_id}">
+				 
 			{/if}
 			<table width='98%'  border='0' cellpadding='1' cellspacing='1' align="center" class="tabody">
 				<tr>
@@ -187,13 +188,15 @@
 
      //经销商
       $(document).on('click','.GetDealer',function(){
-         var dealer_id = $(this).val();
+         var dealer_id = $(this).val();//当前id
+         var proid = $("select[name='project_id']").val(); //获取项目id
+         //console.log(proid);
          var _this = $(this);
          // alert(dealer_id);
          $.ajax({
              type : 'get',
              url  : "{:url('GetDealer')}",
-             data : {dealer_id : dealer_id},
+             data : {dealer_id : dealer_id,proid:proid},
              dataType : "json",
              success : function(msg){
                  if(msg.length < 1){

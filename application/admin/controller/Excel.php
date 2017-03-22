@@ -15,7 +15,12 @@ use app\admin\model\ProjectModel; //获取项目信息
 use app\admin\model\DealerModel; //获取经销商信息
 use app\admin\model\CarModel; //获取车系信息
 class Excel extends	Controller	
-{				
+{			
+
+	//信息导入
+	public function Putin(){
+		return $this->fetch();
+	}	
 
 	public function index(){
         $header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','购买时间','经销商','车系','创建时间');
@@ -144,7 +149,7 @@ class Excel extends	Controller
      */
     public function reader() { 
     //关闭
-    	//return "closed";
+    	return "closed";
 	    $file = request()->file('importexcel');
 	   
         // 移动到框架应用根目录/public/uploads/ 目录下
@@ -175,7 +180,7 @@ class Excel extends	Controller
         $allColumn    = $currentSheet->getHighestColumn();
         $allRow       = $currentSheet->getHighestRow();
         $dealer = new DealerModel();
-        $allColumn ='E';
+        $allColumn ='H';
         for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
             for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
                 $address = $currentColumn.$currentRow;
@@ -186,14 +191,15 @@ class Excel extends	Controller
 			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
             }
                
-            //$dm = $arr[$currentRow]['C']; //经销商代码
+            $dm = $arr[$currentRow]['F']; //经销商编号
             //$dealername = $arr[$currentRow]['D']; //经销商名称
             //$dealcity = $arr[$currentRow]['F']; //经销商所在城市名称
             //$dealprovince = $arr[$currentRow]['H']; //经销商所在省份名称
-            //$dealminname = $arr[$currentRow]['I']; //经销商简称 
-            $dealername = $arr[$currentRow]['B']; //经销商名称
-            $dealprovince = $arr[$currentRow]['C']; //经销商所在省份名称
-            $dealcity = $arr[$currentRow]['D']; //经销商所在城市名称
+            $addr = $arr[$currentRow]['E']; //经销商所在地址
+            $dealminname = $arr[$currentRow]['C']; //经销商简称 
+            $dealername = $arr[$currentRow]['D']; //经销商名称
+            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['B']; //经销商所在城市名称
             //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
             if(!$dealername|| !$dealcity ||!$dealprovince){
 	            continue;
@@ -245,6 +251,125 @@ class Excel extends	Controller
         return $this->fetch();
     }
 
+
+//宝沃BX5 经销商信息导入
+	public function readerBW() { 
+    //关闭
+    	return "closed";
+	    $file = request()->file('importexcel');
+	   
+        // 移动到框架应用根目录/public/uploads/ 目录下
+    	$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+    	if($info){
+	        // 成功上传后 获取上传信息 
+	        $extname = $info->getExtension(); //获取文件扩展名  
+	        $urlname = $info->getSaveName(); //获取文件存储目录及名称
+	        $urlname = ROOT_PATH . 'public' . DS . 'uploads/'.$urlname;
+	        $filename = $info->getFilename();  //获取文件保存名称
+	    }else{
+	        // 上传失败获取错误信息
+	        echo $file->getError();
+	    } 
+	   
+        if ($extname == 'xls') {
+            $result = import("Excel5",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel5();
+        } elseif ($extname == 'xlsx') {
+            $result = import("Excel2007",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel2007();
+        } else {
+            return '路径出错';
+        }
+
+        $PHPExcel     = $PHPReader->load($urlname);
+        $currentSheet = $PHPExcel->getSheet(0);
+        $allColumn    = $currentSheet->getHighestColumn();
+        $allRow       = $currentSheet->getHighestRow();
+        $dealer = new DealerModel();
+        $allColumn ='H';
+        for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
+            for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
+                $address = $currentColumn.$currentRow;
+                $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+               // if(is_object($arr[$currentRow][$currentColumn]) ){     //富文本转换字符串  
+                //instanceof PHPExcel_RichText 需要检测字段类型 目前为强制转换
+                //富文本转换
+			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
+            }
+               
+            $dm = $arr[$currentRow]['F']; //经销商编号
+            //$dealername = $arr[$currentRow]['D']; //经销商名称
+            //$dealcity = $arr[$currentRow]['F']; //经销商所在城市名称
+            //$dealprovince = $arr[$currentRow]['H']; //经销商所在省份名称
+            $addr = $arr[$currentRow]['E']; //经销商所在地址
+            $dealminname = $arr[$currentRow]['C']; //经销商简称 
+            $dealername = $arr[$currentRow]['D']; //经销商名称
+            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['B']; //经销商所在城市名称
+            //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
+            if(!$dealername|| !$dealcity ||!$dealprovince){
+	            continue;
+            }
+            //var_dump($dealminname);
+            //exit;
+            $dataarr = array();
+            $result =  $dealer->exDealerBw($dealername);
+            if(!$result){ //如果不存在
+	            //检测省份是否存在，不存在，创建，存在获取proid
+	            $endpro =  $dealer->exDealerBw($dealprovince);
+	            if($endpro){ //省份存在 检测城市是否存在
+		            $endcity =  $dealer->exDealerBw($dealcity);
+		            if($endcity){ //城市存在，插入经销商信息
+		            	//$dataarr = array('dm'=>$dm); //存放传入信息 
+		            	$dataarr['pid'] = $endcity[0]['dealer_id']; //父级id
+		            	$dataarr['dlname'] = $dealername; //经销商名称
+		            	$dataarr['minname'] = $dealminname; //经销商名字简称
+		            	$dataarr['number'] = $dm; //编码
+		            	$dataarr['addr'] = $addr; //地址
+			            $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+			            var_dump( $insertinfo);
+				           echo "<br>";
+		            }else{ //城市不存在，先插入城市，获取城市id，再插入经销商
+			           //$dataarr = array('dm'=>'','dlmime'=>''); //存放传入信息  					
+			            $dataarr['minname'] = ""; //经销商名字简称
+		            	$dataarr['number'] = ""; //编码
+		            	$dataarr['addr'] = ""; //地址
+			           $dataarr['dlname'] = $dealcity; //城市名称
+			           $dataarr['pid'] = $endpro[0]['dealer_id']; //父级省份id
+			           $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+			           var_dump( $insertinfo);
+				           echo "<br>";
+			           if($insertinfo){ //城市插入成功，插入当前经销商信息
+				           $datrr = array('pid'=>$insertinfo,'dlname'=>$dealername); 
+				           $insertjxs = $dealer->ItDealerInfoBW($datrr);
+				           var_dump( $insertjxs);
+				           echo "<br>";
+			           }   
+		            }
+	            }else{ //省份不存在，创建省份，创建城市，创建经销商  == 未写 因为省份已提前录入
+		            $dataarr['dlname'] = $dealprovince; //城市名称
+			        $dataarr['pid'] = 0; //父级省份id
+			        $dataarr['minname'] = ""; //经销商名字简称
+		            $dataarr['number'] = ""; //编码
+		            $dataarr['addr'] = ""; //地址
+			        $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+			        var_dump( $insertinfo);
+				    echo "<br>";
+	            }
+            }else{//存在,继续
+	            continue;
+            }
+            //var_dump($dm,$dealername,$dealcity,$dealprovince,$dealminname);
+             
+            //检测城市是否存在，不存在，创建，存在获取cityid
+
+             
+        } 
+        return "success";
+        return $this->fetch();
+    }
+
+    
     private static function _getExt($file) {
         return pathinfo($file, PATHINFO_EXTENSION);
     }

@@ -20,12 +20,13 @@ echo '<meta charset="UTF-8">';
 echo '<script type="text/javascript" src="../../public/javascript/skin/js/jquery-3.0.0.js"></script>
 <script type="text/javascript" src="../../public/javascript/skin/js/jweixin-1.0.0.js"></script>
 <script type="text/javascript" src="../../public/javascript/skin/js/basesong.js"></script>
-<script type="text/javascript" src="../../public/javascript/skin/js/wx_share.js"></script>';
+';
 if(!isMobile()){ //pc端
 	echo "pc";
 	include("./web/login.html");
 }else{ //mobile 
 	echo 'mobile';
+	include("./web/mb.html");
 	//include("../userreg/reg.html");
 }
 

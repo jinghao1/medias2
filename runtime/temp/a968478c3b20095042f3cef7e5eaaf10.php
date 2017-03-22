@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490088643;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490178498;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -54,10 +54,7 @@
 <!--信息导出excel-->
  
 	<!--信息导入，隐藏，已导入成功-->
-<!--<form action="<?php echo url('Excel/reader'); ?>" method="post" enctype="multipart/form-data">
-    <input type="file" name="importexcel"/> 
-    <input type="submit" value="导入"/>
-</form>-->
+
 <!--end 导出-->
 <!--  内容列表   -->
 <form name="form2">
@@ -66,7 +63,7 @@
 	<tr bgcolor="#E7E7E7">
 		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
 			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;&nbsp;&nbsp;&nbsp; 
-			<?php if($delopt == 1): ?>
+			<?php if($delopt == 1 && $proid==32): ?>
 				<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>">&nbsp;抽奖情况&nbsp;</a></button>
 			<?php endif; ?>
 			
@@ -105,7 +102,7 @@
 			<td ><?php echo $v['car_series_id']; ?></td>
 			<td>
 				<?php if($editopt): ?>
-					<a href="<?php echo url('add',['dealer_id'=>$v['dealer_id'],'edit'=>1]); ?>">编辑</a>
+					<a href="<?php echo url('add',['proid'=>$v['project_id'],'dealer_id'=>$v['dealer_id'],'edit'=>1]); ?>">编辑</a>
 				<?php else: ?>|
 				<?php endif; if($delopt): ?>
 					<a onclick="return confirm('确认删除？');" href="<?php echo url('dealer/PjregDel',['dealer_id'=>$v['dealer_id'],'pjid'=>$v['project_id']]); ?>">删除</a>

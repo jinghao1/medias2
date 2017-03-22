@@ -24,6 +24,8 @@ class User extends	Base
 		return $this->fetch();
 	}
 
+	
+
 	/**
 	 * 用户添加
 	 */
