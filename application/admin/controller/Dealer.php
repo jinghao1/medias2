@@ -223,6 +223,7 @@ class Dealer extends	Base
 			}
 			
 			$data[$key]['car_series_id'] = $DataArrName;
+			$data[$key]['time'] = date("Y-m-d H:i:s",$data[$key]['time']) ;
 			$data[$key]['buy_car_time'] = $newbuycartm[$data[$key]['buy_car_time']];
 		} 
 		$user = new UserModel();

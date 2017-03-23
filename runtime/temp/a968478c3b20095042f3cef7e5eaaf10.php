@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490178498;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490263901;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -86,6 +86,7 @@
 		<td >购车时间</td>
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
+		<td >注册时间</td>
 		<td >操作</td>
 	</tr>
 
@@ -100,6 +101,7 @@
 			<td ><?php echo $v['buy_car_time']; ?></td>
 			<td ><?php echo $v['dealer_name']; ?></td>
 			<td ><?php echo $v['car_series_id']; ?></td>
+			<td ><?php echo $v['time']; ?></td>
 			<td>
 				<?php if($editopt): ?>
 					<a href="<?php echo url('add',['proid'=>$v['project_id'],'dealer_id'=>$v['dealer_id'],'edit'=>1]); ?>">编辑</a>

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html";i:1489550353;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html";i:1490262359;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -152,7 +152,8 @@ function noSelAll()
 
 <table width="98%" border="0" cellpadding="2" cellspacing="1" bgcolor="#D1DDAA" align="center" style="margin-top:8px">
 	<tr bgcolor="#E7E7E7">
-		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;文档列表&nbsp;<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index'); ?>">导出全部</a></button>&nbsp;&nbsp;&nbsp;</td>
+		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">&nbsp;文档列表&nbsp;&nbsp;&nbsp;&nbsp;</td>
+		<!--<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index'); ?>">导出全部</a></button>-->
 	</tr>
 	<tr align="center" bgcolor="#FAFAF1" height="22">
 		<td width="8%">项目ID</td>

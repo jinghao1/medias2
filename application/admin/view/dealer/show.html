@@ -85,6 +85,7 @@
 		<td >购车时间</td>
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
+		<td >注册时间</td>
 		<td >操作</td>
 	</tr>
 
@@ -99,6 +100,7 @@
 			<td >{$v.buy_car_time}</td>
 			<td >{$v.dealer_name}</td>
 			<td >{$v.car_series_id}</td>
+			<td >{$v.time}</td>
 			<td>
 				{if condition="$editopt"}
 					<a href="{:url('add',['proid'=>$v.project_id,'dealer_id'=>$v.dealer_id,'edit'=>1])}">编辑</a>

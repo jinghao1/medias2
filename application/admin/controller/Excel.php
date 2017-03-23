@@ -31,10 +31,14 @@ class Excel extends	Controller
 	        if($proid){
 		        $wharr['d.project_id'] = $proid;
 	        }
-	        if($enewsid){
-		        $wharr['d.from'] = $enewsid;
+	        //通过项目id 获取对应的注册用户表
+	        $tablinfo =  Db::name("allpro")->where('proid',$proid)->select();
+	        if(!empty($tablinfo[0]['reginfo'])){
+		        $table = $tablinfo[0]['reginfo'];
+	        }else{
+		        $table = "user_dealer";
 	        }
-	        $data = db("user_dealer") 
+	        $data = db($table) 
                     ->alias("d")->field('d.dealer_id,d.project_id,d.name,d.sex,d.phone,d.car_time,d.dealer_name,d.car_series_id,d.time,d.buy_car_time,n.name as lotname')
                     ->join('zt_brand c','d.car_series_id=c.brand_id','LEFT')
                     ->join('zt_project p','d.project_id=p.id','LEFT')
@@ -112,7 +116,7 @@ class Excel extends	Controller
             } 
             $arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
               //根据分销商id，获取对应省市，分销商名称 
-            $arrs['dealer_name'] = $dealer->DealerSelectName($rows['dealer_name']);
+            $arrs['dealer_name'] = $dealer->DealerSelectName($rows['dealer_name'],$rows['project_id']);
              //根据车系id获取车系名称
             $arrs['car_series_id'] = $carserise->CarSelectName($rows['car_series_id']);
             $arrs['time'] = date("Y-m-d H:i:s",$rows['time']); //创建时间

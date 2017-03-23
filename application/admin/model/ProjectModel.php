@@ -34,14 +34,25 @@ class ProjectModel extends Model
 	    $request = Request::instance(); 
 		$param=$request->param(); 
 	    if(!empty($_POST['keybrand']) || !empty($_POST['keyxm']) || !empty($_POST['pj_key']) ){
+		    $strsql = "";
 		    if(!empty($_POST['keybrand'])){
 			    $strsql = " b.brand_name like '%".$_POST['keybrand']."%' ";
 		    }
 		    if(!empty($_POST['keyxm'])){
-			    $strsql .= " and p.project_name like '%".$_POST['keyxm']."%' ";
+			    if($strsql){
+				     $strsql .= " and p.project_name like '%".$_POST['keyxm']."%' ";
+			    }else{
+				     $strsql = "  p.project_name like '%".$_POST['keyxm']."%' ";
+			    }
+			   
 		    }
 		    if(!empty($_POST['pj_key'])){
-			    $strsql = " p.pj_id like '%".$_POST['pj_key']."%'";
+			    if($strsql){
+				    $strsql .= " and p.pj_id like '%".$_POST['pj_key']."%'";
+			    }else{
+				    $strsql = "  p.pj_id like '%".$_POST['pj_key']."%'";
+			    }
+			    
 		    }
 		    return Db::name($this->tables)->alias("p")->join('zt_brand b','p.brand=b.brand_id')->where($strsql)->order("id desc")->paginate(config('list_rows')); 
 		    
