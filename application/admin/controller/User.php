@@ -44,7 +44,7 @@ class User extends	Base
 				$this->error("用户名不能为空");
 			}else{
 				$haveuser = $user->ckuniquename($data['username']);
-				if($haveuser){
+				if(!empty($haveuser[0]['user_id']) && $haveuser[0]['user_id']!=$data['userid']){
 					$this->error("此用户已存在");
 				}
 			}

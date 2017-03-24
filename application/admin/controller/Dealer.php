@@ -172,7 +172,7 @@ class Dealer extends	Base
 		 
 		//查询车系车型
 		if(!empty($id)){
-			//获取是显示全部还是，中游，下游
+			//获取是显示全部还是，mobile，pc
 			switch ($fromid){
 				case 1:
 			 		$this->assign('yxenews',1);
@@ -242,6 +242,8 @@ class Dealer extends	Base
 		//检测注册信息删除权限
 		$delpro = $user->CkOptionuser('admin/dealer/PjregDel');
 		//echo Db::getlastsql();
+		//var_dump($delpro);
+		//exit;	 
 		$this->assign('delopt',$delpro); //是否有删除权限，1有，2没有
 		$this->assign('data',$data);	 
 		$this->assign('page',$page); 					

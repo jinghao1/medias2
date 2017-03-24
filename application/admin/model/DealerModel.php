@@ -29,7 +29,7 @@ class DealerModel extends Model
 	    $tbinfo = Db::name("allpro")->where('proid',$id)->select();
 	    $arrwh = array('d.project_id'=>$id);
 		if($fromid && $fromid!=3){
-			//$arrwh['d.from'] = $fromid;
+			$arrwh['d.whreg'] = $fromid;
 		}
 		if(!empty($tbinfo[0]['reginfo'])){ 
 			 

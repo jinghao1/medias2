@@ -203,6 +203,7 @@ class Bwuser extends	Controller	{
 		$data['dealer_name'] = $arr['dealer']; //经销商id串
 		$data['car_series_id'] = $arr['model']; //车系id
 		$data['sex'] = $arr['thesex'];  //性别
+		$data['whreg'] = $arr['fromwh'];  //注册位置
 		 
 		$dealer = new DealerModel(); 
 		$encckend = $this->Ckencstr($enc);

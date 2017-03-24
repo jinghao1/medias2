@@ -265,12 +265,15 @@ class Userreg extends	Controller	{
 	 	$arr = input('param.');
 	 	  
 		$enc = $arr['key'];  //加密串 检测 
+		//return json_encode($arr);
 		$data = array();
 		$data['phone'] = $arr['numberphone']; //手机号
 		$data['name'] = $arr['username']; //用户名
 		$data['dealer_name'] = $arr['dealer'];
 		$data['car_series_id'] = $arr['model'];
 		$data['sex'] = $arr['thesex'];
+		$data['whreg'] = $arr['fromwh'];  //注册位置
+		 
 		if($arr['han']!="dealreg" && $arr['han']!="qinreg"){
 			//return 2;
 			return json_encode(array("start"=>'1001','msg'=>'数据传入有误'));   //参数错误
@@ -286,7 +289,7 @@ class Userreg extends	Controller	{
 			return json_encode(array("start"=>'1006','msg'=>'请刷新页面,请勿重复提交,密钥失效'));   //请刷新页面,请勿重复提交
 		}
 		$data['project_id'] = 32; //项目id
-	 	
+	 
 		if(input('param.')){ //信息增加 
 			//return json_encode(array("statu"=>1)) ;
 			//检测信息
@@ -306,8 +309,7 @@ class Userreg extends	Controller	{
 				}
 			}  
 			$data['time'] = time(); //注册时间
-			 
-			//return json_encode($data);
+			 //	return json_encode($data); 
 			$res = $dealer->DealerAdd($data); 
 			//return "skkdkf";
 			if($res){

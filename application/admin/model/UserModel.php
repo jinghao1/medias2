@@ -213,11 +213,11 @@ class UserModel extends Model
 		if($option && $userid){ //联表查询 规则信息，是否存在
 			//首先判断规则是否存在，不存在为超级管理员，拥有所有权限
 			$therule = Db::name('admin')->alias('a')->join('zt_auth_group b','b.id=a.groupid')->where('a.user_id',$userid)->field('rules')->select();
-			 
+			
 			if(isset($therule[0]['rules']) && !empty($therule[0]['rules'])){
 				$end = Db::name('auth_rule')->field('id')->where('id','in',$therule[0]['rules'])->where('name',$option)->select(); 
-				//echo Db::name('auth_rule')->getLastSql();
-				//p($end);
+				 
+				
 				if($end){
 					return true; //有权限
 				} 

@@ -24,7 +24,8 @@
 	text-align:center;
 }
 
-button.outbut{
+.outbut{
+	background:#ccc;
 	padding:0px;
 	float:right;
 	margin-right:5px;
@@ -34,8 +35,9 @@ button.outbut{
 	padding:0px;
 	float:left;
 	margin-right:5px;
+	background:#ccc;
 }
 
-button.ckback.outbutlef{
+.ckback.outbutlef{
 	background:#DD4;
 }

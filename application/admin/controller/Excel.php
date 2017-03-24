@@ -31,6 +31,9 @@ class Excel extends	Controller
 	        if($proid){
 		        $wharr['d.project_id'] = $proid;
 	        }
+	        if($enewsid && $enewsid!=3){
+		        $wharr['d.whreg'] = $enewsid;
+	        }
 	        //通过项目id 获取对应的注册用户表
 	        $tablinfo =  Db::name("allpro")->where('proid',$proid)->select();
 	        if(!empty($tablinfo[0]['reginfo'])){

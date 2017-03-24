@@ -69,8 +69,11 @@
 			<!--<button class="outbutlef  {$allout?='ckback'} "><a style="float:left" href="{:url('dealer/show',['enews'=>'3','id'=>$proid])}">&nbsp;  全 部  &nbsp;</a></button>
 			<button class="outbutlef {$yxenews?='ckback'}"><a style="float:left" href="{:url('dealer/show',['enews'=>'1','id'=>$proid])}">&nbsp; 营 销 策 划 &nbsp;</a></button>
 			<button class="outbutlef {$llenews?='ckback'}"><a style="float:left" href="{:url('dealer/show',['enews'=>'2','id'=>$proid])}">&nbsp; 流 量 变 现 &nbsp;</a></button>-->
+			<a style="float:left" href="{:url('dealer/show',['enews'=>'3','id'=>$proid])}"><div class="outbutlef  {$allout?='ckback'} ">&nbsp;  全 部  &nbsp;</div></a> 
+			<a style="float:left" href="{:url('dealer/show',['enews'=>'1','id'=>$proid])}"><div class="outbutlef {$yxenews?='ckback'}">&nbsp; mobile &nbsp;</div></a> 
+			<a style="float:left" href="{:url('dealer/show',['enews'=>'2','id'=>$proid])}"><div class="outbutlef {$llenews?='ckback'}">&nbsp; pc &nbsp;</div></a>
 			 
-			<button class="outbut"><a style="float:right" href="{:url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid])}"> 导 出 </a></button>
+			<a style="float:right" href="{:url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid])}"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 

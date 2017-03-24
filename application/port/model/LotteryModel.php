@@ -3,7 +3,7 @@
 namespace app\port\model;
 use think\Model;
 use think\Db;
-
+use think\Cache;
 class LotteryModel extends Model
 {
 	
@@ -64,6 +64,13 @@ class LotteryModel extends Model
 				$zone = $v['k'];
 				break;
 			}
+			//检测当前有无正在抽奖
+			
+			$lting = Cache::get("loting"); 
+			//return 1; 
+			if(empty($lting)){
+				Cache::set('loting','1',2); 
+			}
 			//通过奖项id，获取此奖项库存
 			$lotnum = $this->LotGoods($zone);
 			$userinfo = array(
@@ -71,7 +78,8 @@ class LotteryModel extends Model
 					'phone'=>$phone, //用户手机号
 					'lotid'=>$zone //奖项id
 				);
-			if($lotnum<=0){  
+			
+			if($lotnum<=0 || $lting==1){  
 				$userinfo['lotid'] = $endlot; //最后一个奖项
 				$userinfo['status'] = 3; //无库存情况下插入  
 				$userinfo['bflotid'] = $zone; //之前中奖无库存，奖项id
@@ -91,6 +99,7 @@ class LotteryModel extends Model
 				$statu = '2005'; //发奖失败
 				$jxname = '注册成功,抽奖失败';
 			} 
+			Cache::set('loting',''); //抽奖已执行完成
 			if($userinfo['lotid'] == $endlot){ //谢谢参与
 				$statu = '2003'; 
 				$jxname = $prizeList[$endlot];//谢谢参与

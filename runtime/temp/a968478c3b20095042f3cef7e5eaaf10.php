@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490263901;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490343709;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -70,8 +70,11 @@
 			<!--<button class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> "><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'3','id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>
 			<button class="outbutlef <?php if(!empty($yxenews)) echo 'ckback'; ?>"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'1','id'=>$proid]); ?>">&nbsp; 营 销 策 划 &nbsp;</a></button>
 			<button class="outbutlef <?php if(!empty($llenews)) echo 'ckback'; ?>"><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'2','id'=>$proid]); ?>">&nbsp; 流 量 变 现 &nbsp;</a></button>-->
+			<a style="float:left" href="<?php echo url('dealer/show',['enews'=>'3','id'=>$proid]); ?>"><div class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> ">&nbsp;  全 部  &nbsp;</div></a> 
+			<a style="float:left" href="<?php echo url('dealer/show',['enews'=>'1','id'=>$proid]); ?>"><div class="outbutlef <?php if(!empty($yxenews)) echo 'ckback'; ?>">&nbsp; mobile &nbsp;</div></a> 
+			<a style="float:left" href="<?php echo url('dealer/show',['enews'=>'2','id'=>$proid]); ?>"><div class="outbutlef <?php if(!empty($llenews)) echo 'ckback'; ?>">&nbsp; pc &nbsp;</div></a>
 			 
-			<button class="outbut"><a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid]); ?>"> 导 出 </a></button>
+			<a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid]); ?>"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 
