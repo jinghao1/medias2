@@ -63,7 +63,8 @@
 		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
 			&nbsp;项目名称:&nbsp;{$proname}&nbsp;&nbsp;&nbsp;&nbsp; 
 			{if $delopt == 1 && $proid==32}
-				<button class="outbutlef"><a style="float:left" href="{:url('dealer/showlot',['id'=>$proid])}">&nbsp;抽奖情况&nbsp;</a></button>
+				 
+				<a style="float:left" href="{:url('dealer/showlot',['id'=>$proid])}"><div class="outbutlef  {$allout?='ckback'} ">&nbsp;抽奖情况&nbsp;</div></a> 
 			{/if}
 			
 			<!--<button class="outbutlef  {$allout?='ckback'} "><a style="float:left" href="{:url('dealer/show',['enews'=>'3','id'=>$proid])}">&nbsp;  全 部  &nbsp;</a></button>
@@ -84,8 +85,10 @@
 		<td >姓名</td>
 		<td >性别</td>
 		<td >手机号</td>
+		{if  $proid==32}
 		<td >获奖信息</td>
-		<td >购车时间</td>
+	<!--	<td >购车时间</td>-->
+		{/if}
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
 		<td >注册时间</td>
@@ -99,8 +102,10 @@
 			<td align="left">{$v.name}</td>
 			<td align="left">{if $v.sex == 1}男{elseif  $v.sex == 2 /}女{else/}未选择{/if}</td>
 			<td align="left">{$v.phone}</td>
+			{if  $proid==32}
 		    <td >{$v.lotname}</td>
-			<td >{$v.buy_car_time}</td>
+			 
+			{/if}
 			<td >{$v.dealer_name}</td>
 			<td >{$v.car_series_id}</td>
 			<td >{$v.time}</td>

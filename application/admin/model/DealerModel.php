@@ -109,6 +109,16 @@ class DealerModel extends Model
     public function exDealerBw($name){
 	    return DB::name('bw_dealer')->field("dealer_id")->where('dealer_name',$name)->select();
     }
+     //检测 荣威 经销商是否存在
+    public function exDealerRw($name){
+	    return DB::name('rw_list')->field("dealer_id")->where('dealer_name',$name)->select();
+    }
+    //插入省份信息 荣威
+    public function ItDealerInfoRW($info){
+	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid']]; 
+		$end= Db::name('rw_list')->insertGetId($data);  
+		return $end; 
+    }
 	//插入经销商信息 宝沃
     public function ItDealerInfoBW($info){
 	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid'],'minname'=>$info['minname'],'addr'=>$info['addr'],'number'=>$info['number']];  		
@@ -149,6 +159,13 @@ class DealerModel extends Model
 		    return Db::name($end[0]['reginfo'])->delete($pjid);
 	    }
 		
+    }
+    //获取项目下对应的省级目录
+    public function Provproid($proid){
+	    $end = Db::name('allpro')->where('proid',$proid)->select();
+	    if($end[0]['dealname']){
+		    return Db::name($end[0]['dealname'])->where('pid',0)->select();
+	    }
     }
 
     //通过dealer_id 获取子信息 接口

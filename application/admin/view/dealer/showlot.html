@@ -4,6 +4,11 @@
 	<meta charset="UTF-8">
 	<title>中奖信息</title>
 </head>
+<style type="text/css" media="screen" id="test">
+	.textcen{
+		text-align:center; 
+	}
+</style>
 <body>
 	<form action="{:url('editlot')}" method="post">
 		<table>
@@ -16,17 +21,20 @@
 
 			{foreach name="data" item="v"}
 				<tr align='center' bgcolor="#FFFFFF" onMouseMove="javascript:this.bgColor='#FCFDEE';" onMouseOut="javascript:this.bgColor='#FFFFFF';" height="22" >
-					<td><input type="number" name="lotid" value="{$v.id}" /> </td>
+					<td><input class="textcen"  type="number" name="lotid" value="{$v.id}" /> </td>
 					 
-					<td ><input type="text" name="lotname" value="{$v.name}" /> </td>
+					<td ><input  class="textcen" type="text" name="lotname" value="{$v.name}" /> </td>
 				 
-					<td ><input type="text" name="lotchance" value="{$v.chance}" /></td>
-				    <td ><input type="text" name="lotnum" value="{$v.num}" /></td> 
+					<td ><input class="textcen"  type="text" name="lotchance" value="{$v.chance}%" /></td>
+				    <td ><input class="textcen" type="text" name="lotnum" value="{$v.num}" /></td> 
 				 
 				</tr>
 			{/foreach}
 		</table>
-		<p><input type="submit" value='更新'></p>
+	 
+			<!--<p><input type="submit" value='更新'></p>-->
+	 
+	
 	</form>
 </body>
 </html>

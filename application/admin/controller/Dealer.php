@@ -55,7 +55,9 @@ class Dealer extends	Base
 		    if($dealselect){
 			    foreach($dealselect as $dlv){
 				    $dealstr .= "<select class='GetDealer' name='dealer_name[]'>";
+				    
 				    $dealstr .="<option value=".$dlv['dealer_id'].">".$dlv['dealer_name']."</option>";
+				    
 				    $dealstr .= "</select>";
 			    }
 		    }
@@ -131,6 +133,17 @@ class Dealer extends	Base
 		exit(json_encode($data));
 	}
 
+	//查询项目下对应的 车系信息， 一级经销商信息
+	public function ProCarProv(){
+		$car = new ProjectModel();
+		$dealer = new DealerModel();
+		$proid = input('param.project_id');
+		$datacar = $car->ProjectUnderCar($proid);
+		$dealinfo = $dealer->Provproid($proid); 
+		$end = array('car'=>$datacar,'deal'=>$dealinfo);
+		exit(json_encode($end));
+	}
+
 	/**
 	 * 查询车系子级
 	 */
@@ -169,7 +182,7 @@ class Dealer extends	Base
 		$id = empty($paramstr) ? "" : $paramstr;
 		$you = input('param.enews');
 		$fromid = empty($you) ? 1 : $you;
-		 
+		$data = array(); 
 		//查询车系车型
 		if(!empty($id)){
 			//获取是显示全部还是，mobile，pc
@@ -207,25 +220,29 @@ class Dealer extends	Base
 				$newbuycartm[$bctm['id']] = $bctm['timename'];
 			}
 		} 
-		$page = $data->render();
-		$data = $data->all(); //解除对象保护 
-		
-		foreach ($data as $key => $val) {
-			//查询车系、车型
-			if(!$val['car_series_id']){
-				continue;
+		if(!empty($data)){
+			$page = $data->render();
+			$data = $data->all(); //解除对象保护  
+			foreach ($data as $key => $val) {
+				//查询车系、车型
+				if(!$val['car_series_id']){
+					continue;
+				} 
+				$DataArrName = $car->CarSelectName($val['car_series_id']);
+				//查询经销商
+				if($val['dealer_name']){
+					$DataDealerName = $dealer->DealerSelectName($val['dealer_name'],$val['project_id']);
+					$data[$key]['dealer_name'] = $DataDealerName; 
+				}
+				
+				$data[$key]['car_series_id'] = $DataArrName;
+				$data[$key]['time'] = date("Y-m-d H:i:s",$data[$key]['time']) ;
+				$data[$key]['buy_car_time'] = $newbuycartm[$data[$key]['buy_car_time']];
 			} 
-			$DataArrName = $car->CarSelectName($val['car_series_id']);
-			//查询经销商
-			if($val['dealer_name']){
-				$DataDealerName = $dealer->DealerSelectName($val['dealer_name'],$val['project_id']);
-				$data[$key]['dealer_name'] = $DataDealerName; 
-			}
-			
-			$data[$key]['car_series_id'] = $DataArrName;
-			$data[$key]['time'] = date("Y-m-d H:i:s",$data[$key]['time']) ;
-			$data[$key]['buy_car_time'] = $newbuycartm[$data[$key]['buy_car_time']];
-		} 
+		}else{
+			$page = "";
+		}
+		
 		$user = new UserModel();
 		//检测删除操作
 		//$auth = new \com\Auth();
@@ -284,6 +301,7 @@ class Dealer extends	Base
 	//查询当前项目 获奖信息
 	function showlot(){
 		$proid = input('param.id/d');
+		$userid = session('admin_uid'); //获取登录者id
 		if($proid==32){ //查询东标项目奖项情况
 			$dealer = new DealerModel();
 			$end = $dealer->LotteryAll();
@@ -291,6 +309,7 @@ class Dealer extends	Base
 		}else{
 			$this->assign('data',array());
 		}
+		//$this->assign('useridupt',$userid);
 		return $this->fetch();
 	}
 	//更新奖项信息

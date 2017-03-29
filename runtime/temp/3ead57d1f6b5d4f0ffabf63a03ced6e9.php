@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\login\login.html";i:1489136013;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\login\login.html";i:1490670308;}*/ ?>
 <html xmlns="http://www.w3.org/1999/xhtml">
 <head>
 <base href="__PUBLIC__/javascript/"/>
@@ -33,7 +33,7 @@ body {
       </tr>
       <tr>
         <td height="53">
-          <!-- <form action="<?php echo url('login'); ?>" method="post"> -->
+         <form action="<?php echo url('loginsong'); ?>" method="post" onsubmit="return ckform()"> 
             <table width="100%" border="0" cellspacing="0" cellpadding="0">
             <tr>
               <td width="394" height="53" background="login/images/login_05.gif">&nbsp;</td>
@@ -50,13 +50,19 @@ body {
                   <td height="25"><div align="center">
                     <input type="password" name="password" style="width:105px; height:17px; background-color:#292929; border:solid 1px #7dbad7; font-size:12px; color:#6cd0ff">
                   </div></td>
-                  <td height="25"><div align="left"><a href="javascript:;" class="GetSubmit"><img src="login/images/dl.gif" width="49" height="18" border="0"></a></div></td>
+                  <td height="25">
+	                  <div align="left">
+		                  <input type="submit" name="test" value="登录" />
+		                  <!--<a href="javascript:;" class="GetSubmit">
+			                  <img src="login/images/dl.gif" width="49" height="18" border="0"></a>-->
+			          </div>
+			      </td>
                 </tr>
               </table></td>
               <td width="362" background="login/images/login_07.gif">&nbsp;</td>
             </tr>
           </table>
-          <!-- </form> -->
+         </form>  
         </td>
       </tr>
       <tr>
@@ -71,26 +77,63 @@ body {
 <script type="text/javascript" src="popup/js/jquery.1.7.2.min.js"></script>
 <script type="text/javascript" src="popup/js/jquery.prompt.min.js"></script>
 <script>
-  $(function(){
-     $(".GetSubmit").click(function(){
-        var username = $("input[name='username']").val();
+	function ckform(){
+		 $("body").data("fromend",0);
+		 var username = $("input[name='username']").val();
         var password = $("input[name='password']").val();
         if(!username){$.Prompt("用户名不能为空",1000);return false;}
         if(!password){$.Prompt("密码不能为空",1000);return false;}
         var url = "<?php echo url('login'); ?>";
-        $.post(url,{username:username,password:password},function(msg){
-            if(msg['code'] == -1 || msg['code'] == -2){
-              $.Prompt(msg['msg'],2000);
-            }
+        $.ajax({  
+	         type : "post",  
+	          url : url,  
+	          data : {username:username,password:password},  
+	          async : false,  
+	          dataType:'json',
+	          success : function(msg){  
+	              if(msg['code'] == -1 || msg['code'] == -2){
+		              $.Prompt(msg['msg'],2000);
+		              $("body").data("fromend",1);
+		              return false;
+		            } 
+	            if(msg['code'] == 1){
+	              $.Prompt(msg['msg'],4000);
+	              //window.location.href = "<?php echo url('index/index'); ?>";
+	                setTimeout(window.location.href = "<?php echo url('index/index'); ?>", 300);  
+	              //reutrn false; 
+	            }
+	          },
+	          error:function(err){
 
-            if(msg['code'] == 1){
-              $.Prompt(msg['msg'],4000);
-              //window.location.href = "<?php echo url('index/index'); ?>";
-                setTimeout(window.location.href = "<?php echo url('index/index'); ?>", 300);  
-              //reutrn false; 
-            }
-        },'json')
-     })
+				console.log(err);
+				alert("请稍后");
+		        }  
+	     }); 
+	    if($("body").data("fromend")==1) {
+		    return false;
+	    }
+         
+	}
+  $(function(){
+     //$(".GetSubmit").click(function(){
+     //   var username = $("input[name='username']").val();
+     //   var password = $("input[name='password']").val();
+     //   if(!username){$.Prompt("用户名不能为空",1000);return false;}
+     //   if(!password){$.Prompt("密码不能为空",1000);return false;}
+     //   var url = "<?php echo url('login'); ?>";
+     //   $.post(url,{username:username,password:password},function(msg){
+     //       if(msg['code'] == -1 || msg['code'] == -2){
+     //         $.Prompt(msg['msg'],2000);
+     //       }
+
+     //       if(msg['code'] == 1){
+     //         $.Prompt(msg['msg'],4000);
+     //         //window.location.href = "<?php echo url('index/index'); ?>";
+     //           setTimeout(window.location.href = "<?php echo url('index/index'); ?>", 300);  
+     //         //reutrn false; 
+     //       }
+     //   },'json')
+     //})
   })
 
 </script>

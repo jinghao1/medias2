@@ -8,7 +8,7 @@ class LotteryModel extends Model
 {
 	
 	//抽奖方法 
-	function HavChance($userid){ 
+	function HavChance($userid,$self=null){ 
 		//检测确认是否插入成功，并获取user phone
 		$phone = $this->Ckgetphone($userid);
 		if(!$phone){
@@ -65,7 +65,9 @@ class LotteryModel extends Model
 				break;
 			}
 			//检测当前有无正在抽奖
-			
+			if($self==1){ //自己人 不中奖
+				$zone = $endlot; //最后一个奖项
+			}
 			$lting = Cache::get("loting"); 
 			//return 1; 
 			if(empty($lting)){

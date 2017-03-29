@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490343709;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490598214;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -64,7 +64,8 @@
 		<td height="24" colspan="10" background="javascript/skin/images/tbg.gif">
 			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;&nbsp;&nbsp;&nbsp; 
 			<?php if($delopt == 1 && $proid==32): ?>
-				<button class="outbutlef"><a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>">&nbsp;抽奖情况&nbsp;</a></button>
+				 
+				<a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>"><div class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> ">&nbsp;抽奖情况&nbsp;</div></a> 
 			<?php endif; ?>
 			
 			<!--<button class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> "><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'3','id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>
@@ -85,8 +86,10 @@
 		<td >姓名</td>
 		<td >性别</td>
 		<td >手机号</td>
+		<?php if($proid==32): ?>
 		<td >获奖信息</td>
-		<td >购车时间</td>
+	<!--	<td >购车时间</td>-->
+		<?php endif; ?>
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
 		<td >注册时间</td>
@@ -100,8 +103,10 @@
 			<td align="left"><?php echo $v['name']; ?></td>
 			<td align="left"><?php if($v['sex'] == 1): ?>男<?php elseif($v['sex'] == 2): ?>女<?php else: ?>未选择<?php endif; ?></td>
 			<td align="left"><?php echo $v['phone']; ?></td>
+			<?php if($proid==32): ?>
 		    <td ><?php echo $v['lotname']; ?></td>
-			<td ><?php echo $v['buy_car_time']; ?></td>
+			 
+			<?php endif; ?>
 			<td ><?php echo $v['dealer_name']; ?></td>
 			<td ><?php echo $v['car_series_id']; ?></td>
 			<td ><?php echo $v['time']; ?></td>

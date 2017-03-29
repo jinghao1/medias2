@@ -273,7 +273,11 @@ class Userreg extends	Controller	{
 		$data['car_series_id'] = $arr['model'];
 		$data['sex'] = $arr['thesex'];
 		$data['whreg'] = $arr['fromwh'];  //注册位置
-		 
+		if(isset($arr['fself'])){
+			$self = $arr['fself'];
+		}else{
+			$self = 0;
+		}
 		if($arr['han']!="dealreg" && $arr['han']!="qinreg"){
 			//return 2;
 			return json_encode(array("start"=>'1001','msg'=>'数据传入有误'));   //参数错误
@@ -314,7 +318,7 @@ class Userreg extends	Controller	{
 			//return "skkdkf";
 			if($res){
 				$uchoose = new LotteryModel();
-				$endcj = $uchoose->HavChance($res);
+				$endcj = $uchoose->HavChance($res,$self);
 				//return $endcj; 
 				return json_encode($endcj); //抽奖返回信息
 			}else{

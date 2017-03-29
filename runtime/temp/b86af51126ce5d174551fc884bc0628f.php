@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1490171658;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html";i:1490602587;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -11,6 +11,12 @@
 
 	<link rel="stylesheet" href="javascript/skin/css/content.css" type="text/css" />
 </head>
+<style type="text/css" media="screen" id="test">
+	.firwid{
+		width:150px;
+		text-align:center;
+	}
+</style>
 <body>
 	<div class="content">
 		<div class="GetNav">
@@ -24,11 +30,11 @@
 			<?php endif; ?>
 			<table width='98%'  border='0' cellpadding='1' cellspacing='1' align="center" class="tabody">
 				<tr>
-					<td>姓名</td>
+					<td class="firwid">姓名</td>
 					<td><input type="text" name="name" value="<?php echo isset($dealer_info['0']['name']) ? $dealer_info['0']['name'] :  ''; ?>"></td>
 				</tr>
 				<tr>
-					<td>性别</td>
+					<td class="firwid">性别</td>
 					<td>
 						<?php if($dealer_info['0']['sex'] == '2'): ?>
 						<input type="radio" name="sex"  value="1">男
@@ -41,14 +47,14 @@
 					</td>
 				</tr>
 				<tr>
-					<td>手机号</td>
+					<td class="firwid">手机号</td>
 					<td>
 						<input name="phone" type="number" value="<?php echo isset($dealer_info['0']['phone']) ? $dealer_info['0']['phone'] :  ''; ?>">
 					</td>
 				</tr>
 				 
 				<tr>
-					<td>项目</td>
+					<td class="firwid">项目</td>
 					<td> 
 						<select name="project_id" class="ProJect">
 							<option value="0">==请选择==</option> 
@@ -59,7 +65,7 @@
 					</td>
 				</tr>
 				<tr>
-					<td>车系/车型</td>
+					<td class="firwid">车系/车型</td>
 					<td>
 						<?php if(!empty($dealer_info[0]['car_series_id'])): ?>
 							<?php echo $dealer_info[0]['car_series_id']; else: ?> 
@@ -72,20 +78,18 @@
 						<?php endif; ?>
 					</td>
 				</tr>
-				<tr>
+				<!--<tr>
 					<td>购车时间</td>
 					<td>
 						<select name="buy_car_time" > 
 							<?php if(is_array($buytime) || $buytime instanceof \think\Collection): if( count($buytime)==0 ) : echo "" ;else: foreach($buytime as $key=>$mv): ?>
 								<option value="<?php echo $mv['id']; ?>"  <?php if(($dealer_info[0]['buy_car_time'] == $mv['id'])): ?> selected <?php endif; ?> ><?php echo $mv['timename']; ?></option> 
-							<?php endforeach; endif; else: echo "" ;endif; ?>
-							 
-						</select>
-						<!--<input type="text" name="car_time" class="inline laydate-icon" id="start"  value="<?php echo isset($dealer_info['0']['car_time']) ? $dealer_info['0']['car_time'] :  ''; ?>">-->
+							<?php endforeach; endif; else: echo "" ;endif; ?> 
+						</select> 
 					</td>
-				</tr>
+				</tr>-->
 				<tr>
-					<td>选择经销商</td>
+					<td class="firwid">选择经销商</td>
 					<td>
 						<?php if(!empty($dealer_info[0]['dealer_name'])): ?>
 							<?php echo $dealer_info[0]['dealer_name']; else: ?> 
@@ -124,27 +128,32 @@
          
          $.ajax({
              type : 'get',
-             url  : "<?php echo url('ProjectCar'); ?>",
+             url  : "<?php echo url('ProCarProv'); ?>",
              data : {project_id : project_id},
              dataType : "json",
              success : function(msg){
 	             // alert($.type(msg));
-	              //var thetype = $.type(msg);
-	              //if(thetype=="object"){
+	              var thetype = $.type(msg);
+	              if(thetype=="string"){
 	                 
-	              //}
+	              }
                  //console.log(msg);
                  //console.log(msg.length);
-                 if(msg.length){
-	                var str = "";
-                   
-                    $(msg).each(function(k,v){
-                    str +="<option value="+v.brand_id+">"+v.brand_name+"</option>"
-                    })
-                 
+                 if(msg.car.length){
+	                var str = ""; 
+                    $(msg.car).each(function(k,v){
+                    	str +="<option value="+v.brand_id+">"+v.brand_name+"</option>"
+                    }); 
                     $(".GetCar").nextAll().remove();
-                    $(".GetCar").html(str);
-                    
+                    $(".GetCar").html(str); 
+                 }
+                  if(msg.deal.length){
+	                var str = ""; 
+                    $(msg.deal).each(function(k,v){
+                    	str +="<option value="+v.dealer_id+">"+v.dealer_name+"</option>"
+                    }); 
+                    $(".GetDealer").nextAll().remove();
+                    $(".GetDealer").html(str); 
                  }
 
              }

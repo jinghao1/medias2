@@ -23,7 +23,7 @@ class Excel extends	Controller
 	}	
 
 	public function index(){
-        $header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','购买时间','经销商','车系','创建时间');
+        $header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','省份','市区','经销商','车系','创建时间');
         $proid = input('param.proid/d');
         $enewsid = input('param.enewsid/d');
         
@@ -110,16 +110,39 @@ class Excel extends	Controller
             $arrs['dealer_id'] = $rows['dealer_id']; //注册id
             $arrs['project_id'] = $newpj[$rows['project_id']]; //项目名称
             $arrs['name'] = $rows['name'];
-            $arrs['sex'] = $rows['sex']==1?"男":"女";
+            switch($rows['sex']){
+	            case 1:
+	            	$arrs['sex'] = "男";
+	            	break;
+	            case 2:
+	            	$arrs['sex'] = "女";
+	            	break;
+	            default:
+	            	$arrs['sex'] = "未选择";
+	            	break;
+            } 
             $arrs['phone'] = $rows['phone'];
-            if(isset($rows['lotname'])){
+            if(isset($rows['lotname']) && $rows['project_id']==32){
 	            $arrs['lotname'] = $rows['lotname']; //获奖名称
             }else{
 	            $arrs['lotname'] = null;
             } 
-            $arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
+            //$arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
+            $arrs['dealer_name0'] = "";
+            $arrs['dealer_name1'] = "";
+            $arrs['dealer_name2'] = "";
               //根据分销商id，获取对应省市，分销商名称 
-            $arrs['dealer_name'] = $dealer->DealerSelectName($rows['dealer_name'],$rows['project_id']);
+             $alldealer = $dealer->DealerSelectName($rows['dealer_name'],$rows['project_id']);
+             if($alldealer){
+	            $endd = explode("-",$alldealer); 
+	            foreach( $endd as $key=>$ev){
+		            if($key>=3){
+			            break;
+		            }
+		            $arrs['dealer_name'.$key] = $ev; 
+	            } 
+             }
+             
              //根据车系id获取车系名称
             $arrs['car_series_id'] = $carserise->CarSelectName($rows['car_series_id']);
             $arrs['time'] = date("Y-m-d H:i:s",$rows['time']); //创建时间
@@ -156,7 +179,7 @@ class Excel extends	Controller
      */
     public function reader() { 
     //关闭
-    	return "closed";
+    	//return "closed";
 	    $file = request()->file('importexcel');
 	   
         // 移动到框架应用根目录/public/uploads/ 目录下
@@ -374,6 +397,90 @@ class Excel extends	Controller
         } 
         return "success";
         return $this->fetch();
+    }
+
+
+	public function readerRW() { 
+    //关闭
+    	//return "closed";
+	    $file = request()->file('importexcel');
+	   
+        // 移动到框架应用根目录/public/uploads/ 目录下
+    	$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+    	if($info){
+	        // 成功上传后 获取上传信息 
+	        $extname = $info->getExtension(); //获取文件扩展名  
+	        $urlname = $info->getSaveName(); //获取文件存储目录及名称
+	        $urlname = ROOT_PATH . 'public' . DS . 'uploads/'.$urlname;
+	        $filename = $info->getFilename();  //获取文件保存名称
+	    }else{
+	        // 上传失败获取错误信息
+	        echo $file->getError();
+	    } 
+	   
+        if ($extname == 'xls') {
+            $result = import("Excel5",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel5();
+        } elseif ($extname == 'xlsx') {
+            $result = import("Excel2007",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel2007();
+        } else {
+            return '路径出错';
+        }
+
+        $PHPExcel     = $PHPReader->load($urlname);
+        $currentSheet = $PHPExcel->getSheet(0);
+        $allColumn    = $currentSheet->getHighestColumn();
+        $allRow       = $currentSheet->getHighestRow();
+        $dealer = new DealerModel();
+        $allColumn ='H';
+        for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
+            for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
+                $address = $currentColumn.$currentRow;
+                $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+               // if(is_object($arr[$currentRow][$currentColumn]) ){     //富文本转换字符串  
+                //instanceof PHPExcel_RichText 需要检测字段类型 目前为强制转换
+                //富文本转换
+			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
+            }
+          
+            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['B']; //经销商所在城市名称
+            //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
+            if( !$dealcity ||!$dealprovince){
+	            continue;
+            }
+        
+            $dataarr = array();
+            //检测城市是否存在
+            $result =  $dealer->exDealerRw($dealcity);
+            if(!$result){ //如果不存在
+	            //检测省份是否存在，不存在，创建，存在获取proid
+	            $endpro =  $dealer->exDealerRw($dealprovince);
+	            if($endpro){ //省份存在 检测城市是否存在
+		            $endcity =  $dealer->exDealerRw($dealcity);
+		            if(!$endcity){ //城市不存在，先插入城市，
+			           $dataarr['dlname'] = $dealcity; //城市名称
+			           $dataarr['pid'] = $endpro[0]['dealer_id']; //父级省份id
+			           $insertinfo = $dealer->ItDealerInfoRW($dataarr);
+			           var_dump( $insertinfo);
+				           echo "<br>"; 
+		            }
+	            }else{ //省份不存在，创建省份，创建城市，创建经销商  == 未写 因为省份已提前录入
+		            $dataarr['dlname'] = $dealprovince; //城市名称
+			        $dataarr['pid'] = 0; //父级省份id
+			     
+			        $insertinfo = $dealer->ItDealerInfoRW($dataarr);
+			        var_dump( $insertinfo);
+				    echo "<br>";
+	            }
+            }else{//存在,继续
+	            continue;
+            }
+            
+        } 
+        return "success";
+       // return $this->fetch();
     }
 
     
