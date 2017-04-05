@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490598214;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490752743;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -65,7 +65,7 @@
 			&nbsp;项目名称:&nbsp;<?php echo $proname; ?>&nbsp;&nbsp;&nbsp;&nbsp; 
 			<?php if($delopt == 1 && $proid==32): ?>
 				 
-				<a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>"><div class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> ">&nbsp;抽奖情况&nbsp;</div></a> 
+				<a style="float:left" href="<?php echo url('dealer/showlot',['id'=>$proid]); ?>"><div class="outbutlef   ">&nbsp;抽奖情况&nbsp;</div></a> 
 			<?php endif; ?>
 			
 			<!--<button class="outbutlef  <?php if(!empty($allout)) echo 'ckback'; ?> "><a style="float:left" href="<?php echo url('dealer/show',['enews'=>'3','id'=>$proid]); ?>">&nbsp;  全 部  &nbsp;</a></button>

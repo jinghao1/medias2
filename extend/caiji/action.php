@@ -14,15 +14,21 @@ function acontent($str){
 
 }
 //获取最满意一点
-function getbest($str){ 
-	$end = explode("<br/>",$str);
+function getbest($str){  
+    $str = str_replace("<br/>","",$str);
 	$new = array('最满意的一点'=>"",'最不满意的一点'=>"");
-	if(isset($end[1])){
-		$new['最满意的一点'] =	$end[1];
+	//最满意
+	$patt = '/最满意的一点】(.*)【最不满意的一点/';
+	preg_match($patt,$str,$mats);  
+	if(isset($mats[1])){
+		$new['最满意的一点'] = $mats[1];
 	}
-	if(isset($end[3])){
-		$new['最不满意的一点'] = $end[3];
-	}
+	//最不满意
+	$patt2 = '/最不满意的一点】(.*)【空间/';
+	preg_match($patt2,$str,$mats2);  
+	if(isset($mats2[1])){
+		$new['最不满意的一点'] = $mats2[1];
+	} 
 	return $new;   
 } 
 //end
@@ -116,6 +122,7 @@ if(isset($_POST['url'])){
 			}
 		}
 		$endarr = cainfo($theurl[3],$begin,$num);
+		// exit;
 		$allarr = $endarr['info']; //抓取页面内容
 		$pagetitle = $endarr['title']; //页面标题车型
 		//print_r($allarr); 
@@ -137,25 +144,73 @@ if(isset($_POST['url'])){
         }
 		//设置数据
 		 
-		
-		 $column = 2;
+		$ttarr = array("goods"=>"","bads"=>"");
+		if(!empty($_POST['good'])){
+			$thego = explode("-",$_POST['good']);
+			foreach($thego as $tk=>$tv){
+				$ttarr['goods'][$tv] = 0;
+			}
+		}
+		if(!empty($_POST['bad'])){
+			$thego = explode("-",$_POST['bad']);
+			foreach($thego as $tk=>$tv){
+				$ttarr['bads'][$tv] = 0;
+			}
+		}
+		$column = 2;
 		foreach ($allarr as $key => $cells) { //分页读取
 		    foreach($cells as $celobj){ //行写入
 			    $span = ord("A");
+			    $mn = 1;
 				foreach($celobj as $keyName=>$value) {// 列写入
-					//echo $value."==";
-					
+					//echo $value."=="; 
 	                $j = chr($span);
 	                $objActSheet->getRowDimension($column)->setRowHeight(20);
 	                //echo $j.$column."==";
 	                $objActSheet->setCellValue($j.$column,$value);
+	                if($mn==4 && !empty($_POST['good']) && $value){
+		                $goods = explode('-',$_POST['good']);
+		                foreach($goods as $k=>$vb){
+			                if(!empty($vb)){
+				                $patt = '/(.*)'.$vb.'(.*)/';
+								preg_match($patt,$value,$mats); 
+								if(!empty($mats)){
+									$ttarr['goods'][$vb] += 1; 
+								}  
+			                } 
+		                }
+	                }else if($mn==5 && !empty($_POST['bad']) && $value){
+		                $bads = explode('-',$_POST['bad']);
+		                foreach($bads as $k=>$vb){
+			                if(!empty($vb)){
+				                $patt = '/(.*)'.$vb.'(.*)/';
+								preg_match($patt,$value,$mats); 
+								if(!empty($mats)){
+									$ttarr['bads'][$vb] += 1; 
+								}  
+			                } 
+		                }
+	                }
 	                $span++;
+	                $mn++;
 	            }
 	           // echo "<br>";
 	            $column++;
 		    } 
 		} 
-		 
+		if($_POST['good']){ //行写入
+		    $span = ord("A");
+		    $mn = 1;
+			foreach($celobj as $keyName=>$value) {// 列写入
+				//echo $value."=="; 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20);
+                //echo $j.$column."==";
+                $objActSheet->setCellValue($j.$column,$value);
+            }
+        }
+		var_dump($ttarr);
+		exit;
 		$objPHPExcel->getActiveSheet()->setTitle('口碑列表');
 		$objPHPExcel->setActiveSheetIndex(0);
 		$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');

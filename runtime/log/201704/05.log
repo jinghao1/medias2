@@ -1,0 +1,47 @@
+[ 2017-04-05T09:41:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/userreg/reg.html
+[ log ] localhost/medias/public/index.php/port/userreg/reg.html [运行时间：0.445065s][吞吐率：2.25req/s] [内存消耗：1,815.07kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'userreg',
+    2 => 'reg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1490752676',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Userreg->reg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Userreg.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/port\view\userreg\reg.html [ array (
+  0 => 'data',
+  1 => 'buytime',
+  2 => 'DealerData',
+  3 => 'ProjectName',
+  4 => 'dealer_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003924s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.028244s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand` WHERE  `pid` = 0   [ RunTime:0.015293s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.034237s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_dealer_list` WHERE  `pid` = 0   [ RunTime:0.008866s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.028889s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project`  [ RunTime:0.005366s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.026138s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000502s ]
+
+---------------------------------------------------------------
