@@ -1,138 +1,128 @@
-<html xmlns="http://www.w3.org/1999/xhtml">
-<head>
-<base href="__PUBLIC__/javascript/"/>
-<meta http-equiv="Content-Type" content="text/html; charset=gb2312" />
-<title>管理员登录</title>
-<link type="text/css" rel="stylesheet" href="popup/css/plug.css">
+<!DOCTYPE html>  
+<html lang="en">  
+<head>  
+	<base href="__PUBLIC__/javascript/"/>
+    <meta charset="UTF-8">
+	      
+    <title>管理员登录</title>  
+    <link type="text/css" rel="stylesheet" href="popup/css/plug.css">
 
 <link rel="stylesheet" type="text/css" href="popup/css/jquery.prompt.css">
 <link href="popup/css/style.css" type="text/css" rel="stylesheet" />
 
-<style type="text/css">
-body {
-	margin-left: 0px;
-	margin-top: 0px;
-	margin-right: 0px;
-	margin-bottom: 0px;
-	background-color: #016aa9;
-	overflow:hidden;
-}
-.STYLE1 {
-	color: #000000;
-	font-size: 12px;
-}
-</style></head>
-
-<body>
-<table width="100%" height="100%" border="0" cellpadding="0" cellspacing="0">
-  <tr>
-    <td><table width="962" border="0" align="center" cellpadding="0" cellspacing="0">
-      <tr>
-        <td height="235" background="login/images/login_03.gif">&nbsp;</td>
-      </tr>
-      <tr>
-        <td height="53">
-         <form action="{:url('loginsong')}" method="post" onsubmit="return ckform()"> 
-            <table width="100%" border="0" cellspacing="0" cellpadding="0">
-            <tr>
-              <td width="394" height="53" background="login/images/login_05.gif">&nbsp;</td>
-              <td width="206" background="login/images/login_06.gif"><table width="100%" border="0" cellspacing="0" cellpadding="0">
-                <tr>
-                  <td width="16%" height="25"><div align="right"><span class="STYLE1">用户</span></div></td>
-                  <td width="57%" height="25"><div align="center">
-                    <input type="text" name="username" style="width:105px; height:17px; background-color:#292929; border:solid 1px #7dbad7; font-size:12px; color:#6cd0ff">
-                  </div></td>
-                  <td width="27%" height="25">&nbsp;</td>
-                </tr>
-                <tr>
-                  <td height="25"><div align="right"><span class="STYLE1">密码</span></div></td>
-                  <td height="25"><div align="center">
-                    <input type="password" name="password" style="width:105px; height:17px; background-color:#292929; border:solid 1px #7dbad7; font-size:12px; color:#6cd0ff">
-                  </div></td>
-                  <td height="25">
-	                  <div align="left">
-		                  <input type="submit" name="test" value="登录" />
-		                  <!--<a href="javascript:;" class="GetSubmit">
-			                  <img src="login/images/dl.gif" width="49" height="18" border="0"></a>-->
-			          </div>
-			      </td>
-                </tr>
-              </table></td>
-              <td width="362" background="login/images/login_07.gif">&nbsp;</td>
-            </tr>
-          </table>
-         </form>  
-        </td>
-      </tr>
-      <tr>
-        <td height="213" background="login/images/login_08.gif">&nbsp;</td>
-      </tr>
-    </table></td>
-  </tr>
-</table>
-</body>
-</html>
-<!-- <script type="text/javascript" src="login/js/jquery-3.0.0.js"></script> -->
+<!--    <link rel="stylesheet" type="text/css" href="Login.css"/>  -->
+</head>  
+<style type="text/css" media="screen" id="test">
+html{   
+    width: 100%;   
+    height: 100%;   
+    overflow: hidden;   
+    font-style: sans-serif;   
+}   
+body{   
+    width: 100%;   
+    height: 100%;   
+    font-family: 'Open Sans',sans-serif;   
+    margin: 0;   
+    background-color: #4A374A;   
+}   
+#login{   
+    position: absolute;   
+    top: 50%;   
+    left:50%;   
+    margin: -150px 0 0 -150px;   
+    width: 300px;   
+    height: 300px;   
+}   
+#login h1{   
+    color: #fff;   
+    text-shadow:0 0 10px;   
+    letter-spacing: 1px;   
+    text-align: center;   
+}   
+h1{   
+    font-size: 2em;   
+    margin: 0.67em 0;   
+}   
+input{   
+    width: 278px;   
+    height: 18px;   
+    margin-bottom: 10px;   
+    outline: none;   
+    padding: 10px;   
+    font-size: 13px;   
+    color: #fff;   
+  /*  text-shadow:1px 1px 1px;  */ 
+    border-top: 1px solid #312E3D;   
+    border-left: 1px solid #312E3D;   
+    border-right: 1px solid #312E3D;   
+    border-bottom: 1px solid #56536A;   
+    border-radius: 4px;   
+    background-color: #2D2D3F;   
+}   
+.but{   
+    width: 300px;   
+    min-height: 20px;   
+    display: block;   
+    background-color: #4a77d4;   
+    border: 1px solid #3762bc;   
+    color: #fff;   
+    padding: 9px 14px;   
+    font-size: 15px;   
+    line-height: normal;   
+    border-radius: 5px;   
+    margin: 0;   
+}  	
+</style>
+<body>  
+    <div id="login">  
+        <h1>商务运营后台</h1>  
+       
+	    <form action="{:url('loginsong')}" method="post" onsubmit="return ckform()"> 
+            <input type="text" name="username" required="required" placeholder="用户名" name="u"></input>  
+            <input type="password"  name="password" required="required" placeholder="密码" name="p"></input>  
+            <button class="but" type="submit">登录</button>  
+        </form>  
+    </div>  
+</body>  
+</html>  
 <script type="text/javascript" src="popup/js/jquery.1.7.2.min.js"></script>
 <script type="text/javascript" src="popup/js/jquery.prompt.min.js"></script>
 <script>
-	function ckform(){
-		 $("body").data("fromend",0);
-		 var username = $("input[name='username']").val();
-        var password = $("input[name='password']").val();
-        if(!username){$.Prompt("用户名不能为空",1000);return false;}
-        if(!password){$.Prompt("密码不能为空",1000);return false;}
-        var url = "{:url('login')}";
-        $.ajax({  
-	         type : "post",  
-	          url : url,  
-	          data : {username:username,password:password},  
-	          async : false,  
-	          dataType:'json',
-	          success : function(msg){  
-	              if(msg['code'] == -1 || msg['code'] == -2){
-		              $.Prompt(msg['msg'],2000);
-		              $("body").data("fromend",1);
-		              return false;
-		            } 
-	            if(msg['code'] == 1){
-	              $.Prompt(msg['msg'],4000);
-	              //window.location.href = "{:url('index/index')}";
-	                setTimeout(window.location.href = "{:url('index/index')}", 300);  
-	              //reutrn false; 
-	            }
-	          },
-	          error:function(err){
+function ckform(){
+	$("body").data("fromend",0);
+	var username = $("input[name='username']").val();
+    var password = $("input[name='password']").val();
+    if(!username){$.Prompt("用户名不能为空",1000);return false;}
+    if(!password){$.Prompt("密码不能为空",1000);return false;}
+    var url = "{:url('login')}";
+    $.ajax({  
+         type : "post",  
+          url : url,  
+          data : {username:username,password:password},  
+          async : false,  
+          dataType:'json',
+          success : function(msg){  
+              if(msg['code'] == -1 || msg['code'] == -2){
+	              $.Prompt(msg['msg'],2000);
+	              $("body").data("fromend",1);
+	              return false;
+	            } 
+            if(msg['code'] == 1){
+              $.Prompt(msg['msg'],4000);
+              //window.location.href = "{:url('index/index')}";
+                setTimeout(window.location.href = "{:url('index/index')}", 300);  
+              //reutrn false; 
+            }
+          },
+          error:function(err){
 
-				console.log(err);
-				alert("请稍后");
-		        }  
-	     }); 
-	    if($("body").data("fromend")==1) {
-		    return false;
-	    }
-         
-	}
-  $(function(){
-     //$(".GetSubmit").click(function(){
-     //   var username = $("input[name='username']").val();
-     //   var password = $("input[name='password']").val();
-     //   if(!username){$.Prompt("用户名不能为空",1000);return false;}
-     //   if(!password){$.Prompt("密码不能为空",1000);return false;}
-     //   var url = "{:url('login')}";
-     //   $.post(url,{username:username,password:password},function(msg){
-     //       if(msg['code'] == -1 || msg['code'] == -2){
-     //         $.Prompt(msg['msg'],2000);
-     //       }
-
-     //       if(msg['code'] == 1){
-     //         $.Prompt(msg['msg'],4000);
-     //         //window.location.href = "{:url('index/index')}";
-     //           setTimeout(window.location.href = "{:url('index/index')}", 300);  
-     //         //reutrn false; 
-     //       }
-     //   },'json')
-     //})
-  })
-
+			console.log(err);
+			alert("请稍后");
+	        }  
+     }); 
+    if($("body").data("fromend")==1) {
+	    return false;
+    }   
+} 
 </script>

@@ -33,6 +33,16 @@ function getbest($str){
 } 
 //end
 
+//获取 键名，键值 匹配
+function getkeyv($str){
+	$key = "";
+	$patt = '/<dt>(.*)<\/dt>/';
+	preg_match($patt,$str,$mats); 
+ 	if(isset($mats[1])){
+	 	$key = $mats[1];
+ 	}
+ 	 
+}
 //获取当页内容
 function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){  
 	$html = file_get_html($url);
@@ -85,7 +95,30 @@ function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){
 		//	echo $end."<br>";
 		//} 
 	} 
-	return array('title'=>$title,'info'=>$newarr);
+	//动力 评分 
+	//echo '<meta charset="utf-8">';
+	$comarr = array();
+	$comnum = array();
+	foreach($html->find('div[class=position-r]') as $dlk=>$dlm){
+		$tt = $dlm->outertext;
+		//$ttstr = $tt->outertext;
+		$newtt = getkeyv($tt); //key
+		$ttspan = ""; //val
+		foreach($dlm->find('span[class=font-arial c333]') as $dlk=>$dlv){
+			$ttspan = $dlv->outertext; 
+		}
+		$end = array_key_exists($newtt,$comarr);
+		//var_dump($newtt);
+		if($end){
+			$comarr[$newtt] += $ttspan;
+			$comnum[$newtt] += 1;
+		}else{
+			$comarr[$newtt] = $ttspan;
+			$comnum[$newtt] = 1;
+		}
+		 
+	} 
+	return array('title'=>$title,'info'=>$newarr,'cominfo'=>$comarr,'comnum'=>$comnum);
  
 }
 
@@ -94,6 +127,7 @@ function cainfo($numurl='692',$beg,$num){
 	$beg = $beg-1;
 	$arr = array();
 	$end = array('title'=>"无");
+	$pfarr = array(); // 评分
 	for($beg;$num>0;$num--){
 		 
 		$thepage = $beg+1;
@@ -101,9 +135,9 @@ function cainfo($numurl='692',$beg,$num){
 		$url = "http://k.autohome.com.cn/".$numurl."/index_".$thepage.".html";
 		$end = curcontent($url);
 		$arr[$thepage] = $end['info'];
-		
+		$pfarr[$num] = array('cominfo'=>$end['cominfo'],'comnum'=>$end['comnum']); 
 	}
-	return array("info"=>$arr,'title'=>$end['title']); 
+	return array("info"=>$arr,'title'=>$end['title'],'cominfo'=>$end['cominfo'],'comnum'=>$end['comnum']); 
 }
  
 if(isset($_POST['url'])){
@@ -198,19 +232,53 @@ if(isset($_POST['url'])){
 	            $column++;
 		    } 
 		} 
+		//满意 词频
 		if($_POST['good']){ //行写入
-		    $span = ord("A");
-		    $mn = 1;
-			foreach($celobj as $keyName=>$value) {// 列写入
+			$begspan = ord("A");
+			$bj = chr($begspan);
+			$objActSheet->setCellValue($bj.$column,"good");
+		    $span = ord("B");  
+			foreach($ttarr['goods'] as $keyName=>$value) {// 列写入
 				//echo $value."=="; 
                 $j = chr($span);
                 $objActSheet->getRowDimension($column)->setRowHeight(20);
                 //echo $j.$column."==";
-                $objActSheet->setCellValue($j.$column,$value);
+                $objActSheet->setCellValue($j.$column,$keyName);
+                $span++;
             }
+            $column++;  
+            $span = ord("B"); 
+			foreach($ttarr['goods'] as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$value);
+                $span++;
+            }
+            $column++;
         }
-		var_dump($ttarr);
-		exit;
+        //不满意 词频
+        if($_POST['bad']){ //行写入
+			$begspan = ord("A");
+			$bj = chr($begspan);
+			$objActSheet->setCellValue($bj.$column,"bad");
+		    $span = ord("B");  
+			foreach($ttarr['bads'] as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$keyName);
+                $span++;
+            }
+            $column++;  
+            $span = ord("B"); 
+			foreach($ttarr['bads'] as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$value);
+                $span++;
+            }
+            $column++;
+        }
+	 
 		$objPHPExcel->getActiveSheet()->setTitle('口碑列表');
 		$objPHPExcel->setActiveSheetIndex(0);
 		$objWriter = PHPExcel_IOFactory::createWriter($objPHPExcel, 'Excel5');
