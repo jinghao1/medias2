@@ -41,7 +41,17 @@ function getkeyv($str){
  	if(isset($mats[1])){
 	 	$key = $mats[1];
  	}
- 	 
+ 	return $key; 
+}
+//获取 键名，键值 匹配
+function getkeyspan($str){
+	$key = 0;
+	$patt = '/>(.*)<\/span>/';
+	preg_match($patt,$str,$mats); 
+ 	if(isset($mats[1])){
+	 	$key = intval($mats[1]) ;
+ 	}
+ 	return $key; 
 }
 //获取当页内容
 function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){  
@@ -99,6 +109,8 @@ function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){
 	//echo '<meta charset="utf-8">';
 	$comarr = array();
 	$comnum = array();
+	$k = "89";
+	 
 	foreach($html->find('div[class=position-r]') as $dlk=>$dlm){
 		$tt = $dlm->outertext;
 		//$ttstr = $tt->outertext;
@@ -108,12 +120,15 @@ function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){
 			$ttspan = $dlv->outertext; 
 		}
 		$end = array_key_exists($newtt,$comarr);
-		//var_dump($newtt);
+		//var_dump()
+		$ttspan = getkeyspan($ttspan);
+		 
+	 
 		if($end){
-			$comarr[$newtt] += $ttspan;
+			$comarr[$newtt] = $comarr[$newtt] + $ttspan ;
 			$comnum[$newtt] += 1;
 		}else{
-			$comarr[$newtt] = $ttspan;
+			$comarr[$newtt] = $ttspan ;
 			$comnum[$newtt] = 1;
 		}
 		 
@@ -128,6 +143,7 @@ function cainfo($numurl='692',$beg,$num){
 	$arr = array();
 	$end = array('title'=>"无");
 	$pfarr = array(); // 评分
+	$pfnum = array(); // 评分
 	for($beg;$num>0;$num--){
 		 
 		$thepage = $beg+1;
@@ -135,9 +151,31 @@ function cainfo($numurl='692',$beg,$num){
 		$url = "http://k.autohome.com.cn/".$numurl."/index_".$thepage.".html";
 		$end = curcontent($url);
 		$arr[$thepage] = $end['info'];
-		$pfarr[$num] = array('cominfo'=>$end['cominfo'],'comnum'=>$end['comnum']); 
+	 
+		if($end['cominfo']){ //评分值 汇总
+			foreach($end['cominfo'] as $key=>$val){
+				$thek = array_key_exists($key,$pfarr);
+				if($thek){
+					$pfarr[$key] +=$val;
+				}else{
+					$pfarr[$key] = $val;
+				}
+				
+			}
+		}
+		if($end['comnum']){ //评论次数 汇总
+			foreach($end['comnum'] as $ky=>$vl){
+				$tk = array_key_exists($ky,$pfnum);
+				if($tk){
+					$pfnum[$ky] += $vl; 
+				}else{
+					$pfnum[$ky] = $vl; 
+				}
+			}
+		}
+	 
 	}
-	return array("info"=>$arr,'title'=>$end['title'],'cominfo'=>$end['cominfo'],'comnum'=>$end['comnum']); 
+	return array("info"=>$arr,'title'=>$end['title'],'cominfo'=>$pfarr,'comnum'=>$pfnum); 
 }
  
 if(isset($_POST['url'])){
@@ -157,6 +195,8 @@ if(isset($_POST['url'])){
 		}
 		$endarr = cainfo($theurl[3],$begin,$num);
 		// exit;
+	 
+		
 		$allarr = $endarr['info']; //抓取页面内容
 		$pagetitle = $endarr['title']; //页面标题车型
 		//print_r($allarr); 
@@ -277,6 +317,56 @@ if(isset($_POST['url'])){
                 $span++;
             }
             $column++;
+        }
+
+        $plzhi = $endarr['cominfo']; //评论 值
+		$plnum = $endarr['comnum']; //评论数量
+		 //评论值写入
+        if($plzhi){ //行写入
+			$begspan = ord("A");
+			$bj = chr($begspan);
+			$objActSheet->setCellValue($bj.$column,"评论值");
+		    $span = ord("B");  
+			foreach($plzhi as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$keyName);
+                $span++;
+            }
+            $column++;  
+            $span = ord("B"); 
+			foreach($plzhi as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$value);
+                $span++;
+            }
+            $column++;
+            
+        }
+
+	 	 //评论数量写入
+        if($plnum){ //行写入
+			$begspan = ord("A");
+			$bj = chr($begspan);
+			$objActSheet->setCellValue($bj.$column,"评论数量");
+		    $span = ord("B");  
+			foreach($plnum as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$keyName);
+                $span++;
+            }
+            $column++;  
+            $span = ord("B"); 
+			foreach($plnum as $keyName=>$value) {// 列写入 
+                $j = chr($span);
+                $objActSheet->getRowDimension($column)->setRowHeight(20); 
+                $objActSheet->setCellValue($j.$column,$value);
+                $span++;
+            }
+            $column++;
+            
         }
 	 
 		$objPHPExcel->getActiveSheet()->setTitle('口碑列表');

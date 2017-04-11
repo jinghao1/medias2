@@ -236,10 +236,12 @@ class Cjcir extends	Controller	{
 			}
 		}
 		 	
-	} 
+	}
+	 
 	//抽奖接口 cir
 	function Cirlot(){
 		$arr = input('param.');
+		phpinfo();
 		$arr['key'] = 7;
 		if(!isset($arr['phone']) || empty($arr['phone']) || !isset($arr['key'])){
 			return json_encode(array("start"=>'1001','msg'=>'数据传入有误'));   //请刷新页面,请勿重复提交
@@ -260,8 +262,7 @@ class Cjcir extends	Controller	{
 		//检测是否有抽奖次数
 		if(isset($phoinfo[0]['cjnum']) && $phoinfo[0]['cjnum']>0){
 			//减次数
-			//抽奖
-			 
+			//抽奖 
 			$endcj = $phact->HavChance($phone);
 			return json_encode($endcj);
 		}else{
