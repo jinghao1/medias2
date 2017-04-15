@@ -17,7 +17,7 @@ use app\port\model\HkdataModel;
  
 class Hkinfo extends Controller	{	
 	 
-	//获取访问信息
+	//获取回馈信息
 	public function ItHk()
 	{
 		$hk = new HkdataModel();
@@ -29,6 +29,10 @@ class Hkinfo extends Controller	{
 			if($et){
 				if(!empty($allinfo['laiyuan'])){ //检测来源
 					$ly = $hk->Autoadd($allinfo['pid'],'laiyuan');
+					if(!empty($allinfo['lycont'])){
+						$lyarr = array('lycon'=>$allinfo['lycont']);
+						$lycon = $hk->EditHk($allinfo['pid'],$lyarr);
+					}
 				}
 				if(!empty($allinfo['biaoti'])){
 					$lyb = $hk->Autoadd($allinfo['pid'],'btd');
@@ -37,20 +41,76 @@ class Hkinfo extends Controller	{
 					$lyz = $hk->Autoadd($allinfo['pid'],'quality');
 				}
 			}else{
-				
-			}
-			
-		 
-			 
-			// 自增 score 字段
-			db('user')->where('id', 1)->setInc('score');
+				if(!empty($allinfo['laiyuan']) && !empty($allinfo['lycont'])){
+					$newa['laiyuan'] = 1;
+					$newa['lycon'] = $allinfo['lycont']; //来源链接地址
+					
+				}
+				if(!empty($allinfo['biaoti'])){ //标题党
+					$newa['btd'] = 1;
+				}
+				if(!empty($allinfo['zl'])){ //质量差
+					$newa['quality'] = 1;
+				}
+				$newa['artid'] = $allinfo['pid']; //文章id
+				//数据插入
+				$bad = $hk->IntHk($newa);
+			}  
 		}
-		exit(json_encode($allinfo)) ;
-		return 1;
-		var_dump($allinfo);
+	 	return 1;
+		//var_dump($bad,$lyb);
 		exit;
 		//$data = $car->DealerClass($dealer_id);
 		//exit(json_encode($data));
+	}
+
+	//广告点击监测
+	public function Adck(){
+		$ck = new HkdataModel();
+		$all = input('param.'); //接收信息 
+		$newaw = array(); 
+ 
+		if($all['tit'] && $all['pos'] && $all['link']){
+			$newaw['title'] = $all['tit']; //标题
+			$newaw['position'] = $all['pos']; //广告位
+			$newaw['link'] = $all['link']; //链接
+			//检测是否已经存在
+			$et = $ck->Ethead($newaw);
+			if($et){ //数据更新
+				$upad = $ck->EditAd($newaw); 
+			}else{ //插入数据
+				$newaw['time'] = time();
+				$newaw['num'] = 1;
+				$addend = $ck->IntAd($newaw);
+			}
+		}
+		return 1;
+	}
+
+	//接口信息转换列表
+	public function Changelist(){
+		$appid = 'a31994181db54f5395f0fe43b19cf520';
+		$all = input('param.'); //接收信息    
+		$callback = $all["callback"];  
+		$all['newsType'] = 0; //最新
+		//$zurl = 'http://172.16.0.142:13000/newsapi/getnewslist?appid='.$appid.'&newsType='.$all['newsType'].'&pageNo='.$all['pageNo'].'&pageSize='.$all['pageSize'];
+		$zurl = 'http://partner.api.qichedaquan.com/newsapi/getnewslist?appid='.$appid.'&newsType='.$all['newsType'].'&pageNo='.$all['pageNo'].'&pageSize='.$all['pageSize'];
+		$end = file_get_contents($zurl); 
+		echo $callback.'('.json_encode($end).')';
+		return;
+	}
+
+	//接口信息转换 内容详情
+	public function Changecont(){
+		$all = input('param.'); //接收信息 
+		$callback = $all["callback"]; 
+		$appid = 'a31994181db54f5395f0fe43b19cf520';
+		$xurl = 'http://172.16.0.142:13000/newsapi/detail/'.$all['cid'].'?appid='.$appid;
+		$xurl = 'http://partner.api.qichedaquan.com/newsapi/detail/'.$all['cid'].'?appid='.$appid;
+		$end = file_get_contents($xurl);
+		//$end = '00099';  
+		echo $callback.'('.json_encode($end).')';
+		return;
 	}
 
  
