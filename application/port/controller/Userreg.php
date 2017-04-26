@@ -273,6 +273,7 @@ class Userreg extends	Controller	{
 		$data['car_series_id'] = $arr['model'];
 		$data['sex'] = $arr['thesex'];
 		$data['whreg'] = $arr['fromwh'];  //注册位置
+		$data['from'] = $arr['fself'];
 		if(isset($arr['fself'])){
 			$self = $arr['fself'];
 		}else{

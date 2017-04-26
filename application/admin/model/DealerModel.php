@@ -40,13 +40,48 @@ class DealerModel extends Model
                     ->join('zt_lotuser m','m.userid=d.dealer_id','LEFT')
                     ->join('zt_lottery n','m.lotid=n.id','LEFT')
                     ->where($arrwh) 
-                    ->order("dealer_id desc ")
+                    //->order("dealer_id desc ")
+                   // ->select("limit 1,20");
                     ->paginate();  
         }
     }
 
-	 
-
+	//读取分页信息 
+    function PjDlAll($id,$fromid=1)
+    {
+	    //通过项目id，查询项目对应的注册信息表
+	    $tbinfo = Db::name("allpro")->where('proid',$id)->select();
+	    $arrwh = array('d.project_id'=>$id);
+		if($fromid && $fromid!=3){
+			$arrwh['d.whreg'] = $fromid;
+		}
+		if(!empty($tbinfo[0]['reginfo'])){ 
+			 
+	    	return Db::name($tbinfo[0]['reginfo'])
+                    ->alias("d")->field('d.dealer_id,d.project_id,d.name,d.sex,d.phone,d.car_time,d.dealer_name,d.car_series_id,d.time,d.buy_car_time ')
+                    ->join('zt_brand c','d.car_series_id=c.brand_id','LEFT')
+                    ->join('zt_project p','d.project_id=p.id','LEFT')
+                    //->join('zt_lotuser m','m.userid=d.dealer_id','LEFT')
+                   // ->join('zt_lottery n','m.lotid=n.id','LEFT')
+                    ->where($arrwh) 
+                    ->order("dealer_id desc ")
+                    //->limit("0,20")
+                    //->select();
+                    ->paginate();  
+        }
+    }
+	//获取东标用户中奖id
+	public function dblotid($dealerid){
+		 
+		$end = DB::name('lotuser')->field('lotid')->where('userid',$dealerid)->select(); 
+		if(isset($end[0])){
+			return $end[0]['lotid'];
+		}
+	}
+	//获取东标项目所有奖项
+	public function alllotin(){
+		return DB::name('lottery')->field('id,name')->select();
+	}
      /**
      * 添加用户注册信息
      * @param  [type] $data [description]

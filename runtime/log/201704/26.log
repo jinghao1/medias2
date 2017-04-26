@@ -1,0 +1,1045 @@
+[ 2017-04-26T14:03:53+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/enews/1/id/32.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/enews/1/id/32.html [运行时间：0.197334s][吞吐率：5.07req/s] [内存消耗：2,073.39kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/dealer/show/enews/3/id/32.html?page=3',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+  'id' => '32',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001072s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.009181s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000447s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_user_dealer` [ RunTime:0.008509s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.005333s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.013520s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008438s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 32   [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008317s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.013813s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007714s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.008632s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,470,473)     [ RunTime:0.000483s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007746s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 6417   [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5757   [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,22,24)     [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5575   [ RunTime:0.000765s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,415,417)     [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5563   [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,5)     [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5430   [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000235s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5428   [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,6)     [ RunTime:0.000256s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5427   [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5426   [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5425   [ RunTime:0.000948s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (14,15,18)     [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4317   [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,25,27)     [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4026   [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,309)     [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4018   [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,382,385)     [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4017   [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (426,427,428)     [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4016   [ RunTime:0.000733s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (59,62,63)     [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4015   [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,541,543)     [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4014   [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (589,615,616)     [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4013   [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,492,493)     [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4012   [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,522,523)     [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4011   [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,308)     [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4010   [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008670s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000475s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:12:05+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/enews/1/id/32.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/enews/1/id/32.html [运行时间：0.182212s][吞吐率：5.49req/s] [内存消耗：2,073.41kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/dealer/show/enews/1/id/32.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+  'id' => '32',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.008561s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_user_dealer` [ RunTime:0.007957s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.004678s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.013255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007636s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 32   [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007156s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.007500s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.014348s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.007608s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,470,473)     [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007216s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 6417   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5757   [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,22,24)     [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5575   [ RunTime:0.000622s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,415,417)     [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5563   [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000409s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,5)     [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5430   [ RunTime:0.000745s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5428   [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,6)     [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5427   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5426   [ RunTime:0.000681s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5425   [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (14,15,18)     [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4317   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,25,27)     [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4026   [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,309)     [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4018   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,382,385)     [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4017   [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (426,427,428)     [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4016   [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (59,62,63)     [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4015   [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,541,543)     [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4014   [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (589,615,616)     [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4013   [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,492,493)     [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4012   [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,522,523)     [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4011   [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,308)     [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4010   [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007875s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000346s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:25:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.050644s][吞吐率：19.75req/s] [内存消耗：1,870.19kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000890s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008645s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008171s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000777s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:25:23+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/id/36.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/id/36.html [运行时间：0.116398s][吞吐率：8.59req/s] [内存消耗：1,925.05kb] [文件加载：53]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/project/show.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.009523s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.021314s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.006674s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 36   [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008144s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.009263s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007939s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bw_dealer` [ RunTime:0.008152s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (1,4,5)     [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007630s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 9   [ RunTime:0.000683s ]
+[ error ] [8]未定义数组下标: 0[D:\rar\phpstudy\WWW\medias\application\admin\model\DealerModel.php:77]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:25:42+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.044029s][吞吐率：22.71req/s] [内存消耗：1,870.19kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008942s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007846s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:25:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/id/36.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/id/36.html [运行时间：0.093340s][吞吐率：10.71req/s] [内存消耗：1,925.60kb] [文件加载：53]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/project/show.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.007756s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000457s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.007456s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000421s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007429s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 36   [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007142s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.007362s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007116s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bw_dealer` [ RunTime:0.008588s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (1,4,5)     [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.006771s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 9   [ RunTime:0.000704s ]
+[ error ] [8]未定义数组索引: [D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php:262]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:27+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.043625s][吞吐率：22.92req/s] [内存消耗：1,870.19kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000769s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007742s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008256s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000294s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:29+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/id/36.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/id/36.html [运行时间：0.115942s][吞吐率：8.63req/s] [内存消耗：1,999.20kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/project/show.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000740s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.008886s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.007717s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007795s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 36   [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.006999s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.008111s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007806s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bw_dealer` [ RunTime:0.015465s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (1,4,5)     [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007234s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 9   [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000246s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (59,162,228)     [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 8   [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007845s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000310s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/enews/2/id/36.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/enews/2/id/36.html [运行时间：0.110280s][吞吐率：9.07req/s] [内存消耗：2,002.70kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/dealer/show/id/36.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+  'id' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'llenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000712s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.008306s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000430s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.008087s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = '2' ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = '2' ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007692s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 36   [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.006999s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000223s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.007485s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007789s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bw_dealer` [ RunTime:0.007514s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (45,47,151)     [ RunTime:0.000439s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007810s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 7   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (49,50,154)     [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 6   [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (10,114,216)     [ RunTime:0.000326s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5   [ RunTime:0.000654s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007251s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000298s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:31+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/enews/1/id/36.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/enews/1/id/36.html [运行时间：0.110978s][吞吐率：9.01req/s] [内存消耗：1,999.59kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/dealer/show/enews/2/id/36.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+  'id' => '36',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.007838s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000451s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.015246s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.000463s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_bwuser_bx7` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 36  AND `d`.`whreg` = '1' ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007353s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 36   [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.006731s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.007645s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.006984s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bw_dealer` [ RunTime:0.007218s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (1,4,5)     [ RunTime:0.000393s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007360s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 9   [ RunTime:0.000739s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (66)   [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_bw_dealer` WHERE  `dealer_id` IN (59,162,228)     [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 8   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007267s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000364s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.042180s][吞吐率：23.71req/s] [内存消耗：1,870.19kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000773s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008001s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000363s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/id/32.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/id/32.html [运行时间：0.177682s][吞吐率：5.63req/s] [内存消耗：2,073.16kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/project/show.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '32',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000730s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.008250s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_user_dealer` [ RunTime:0.008277s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.004582s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 32  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.012694s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008386s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 32   [ RunTime:0.000450s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007361s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.008305s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.014913s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.007746s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,470,473)     [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.007984s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 6417   [ RunTime:0.000632s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000205s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5757   [ RunTime:0.000734s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,22,24)     [ RunTime:0.000423s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5575   [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,415,417)     [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5563   [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,5)     [ RunTime:0.000362s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5430   [ RunTime:0.000755s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000420s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5428   [ RunTime:0.000645s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,6)     [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5427   [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5426   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (2,3,4)     [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 5425   [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (63)   [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (14,15,18)     [ RunTime:0.000403s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4317   [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (21,25,27)     [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4026   [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000200s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000433s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,309)     [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4018   [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (381,382,385)     [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4017   [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (426,427,428)     [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4016   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (59,62,63)     [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4015   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000208s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000243s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,541,543)     [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4014   [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (589,615,616)     [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4013   [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (61)   [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (469,492,493)     [ RunTime:0.000343s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4012   [ RunTime:0.000631s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000186s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000215s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (499,522,523)     [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4011   [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (62)   [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 32   [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_dealer_list` WHERE  `dealer_id` IN (296,307,308)     [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 4010   [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007641s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000267s ]
+
+---------------------------------------------------------------
+[ 2017-04-26T14:26:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.044272s][吞吐率：22.59req/s] [内存消耗：1,870.19kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; PHPSESSID=kainm0it78dqvch1vvurdabbj0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000812s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008489s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008174s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000356s ]
+
+---------------------------------------------------------------

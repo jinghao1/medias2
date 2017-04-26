@@ -200,8 +200,16 @@ class Dealer extends	Base
 				 	$this->assign('yxenews',1);
 				 	break; 
 			}
-		  
-			$data = $dealer->ProjectDealerAll($id,$fromid); 
+	//SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time`,n.name as lotname FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` LEFT JOIN `zt_lotuser` `m` ON `m`.`userid`=`d`.`dealer_id` LEFT JOIN `zt_lottery` `n` ON `m`.`lotid`=`n`.`id` WHERE `d`.`project_id` = 32 AND `d`.`whreg` = 1 LIMIT 0,20 
+	//select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on d.car_series_id=c.brand_id left join zt_project p on d.project_id=p.id left join zt_lotuser m on m.userid=d.dealer_id left join zt_lottery n on m.lotid = n.id where d.project_id = 32 and d.whreg=1 limit 0,20 
+
+	//'select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on d.car_series_id=c.brand_id left join zt_project p on d.project_id=p.id left join zt_lotuser m on m.userid=d.dealer_id left join zt_lottery n on m.lotid = n.id where d.project_id = 32 and d.whreg=1 order by d.dealer_id limit 0,20 '  
+	//'SELECT dealer_id,name FROM zt_user_dealer INNER JOIN (select d.dealer_id from zt_user_dealer d left join zt_brand c on d.car_series_id=c.brand_id   where d.project_id = 32 and d.whreg=1 order by d.dealer_id desc limit 0,20) as deall using (dealer_id)'
+
+	//'SELECT * FROM zt_user_dealer INNER JOIN (SELECT dealer_id FROM zt_user_dealer ORDER BY dealer_id desc LIMIT 0,20) as deal USING (dealer_id)'
+			//$data = $dealer->ProjectDealerAll($id,$fromid); 
+			$data = $dealer->PjDlAll($id,$fromid); 
+			//echo Db::name("user_dealer")->getlastsql();
 			$proinfo = $project->ProjectSelectName($id); //获取当前项目名称
 			$this->assign('proname',$proinfo[0]['project_name']);
 			$this->assign('proid',$id);
@@ -211,6 +219,9 @@ class Dealer extends	Base
 			$data = $dealer->SelectAll();
 		} 
 		 
+		// var_dump($data);
+
+		
 		$this->assign('enewsid',$fromid);
 		//获取购买时间段
 		$newbuycartm = array(0=>"暂无");
@@ -220,7 +231,16 @@ class Dealer extends	Base
 				$newbuycartm[$bctm['id']] = $bctm['timename'];
 			}
 		} 
+		//获取所有奖项
+		$alloti =  $dealer->alllotin();
+		$allotiarr = array();
+		if($alloti){
+			foreach($alloti as $altv){
+				$allotiarr[$altv['id']] = $altv['name'];
+			}
+		}
 		if(!empty($data)){
+			
 			$page = $data->render();
 			$data = $data->all(); //解除对象保护  
 			foreach ($data as $key => $val) {
@@ -238,6 +258,11 @@ class Dealer extends	Base
 				$data[$key]['car_series_id'] = $DataArrName;
 				$data[$key]['time'] = date("Y-m-d H:i:s",$data[$key]['time']) ;
 				$data[$key]['buy_car_time'] = $newbuycartm[$data[$key]['buy_car_time']];
+				$data[$key]['lotname'] =  $dealer->dblotid($data[$key]['dealer_id']); //获取奖项id
+				if($data[$key]['lotname']){
+					$data[$key]['lotname'] = $allotiarr[$data[$key]['lotname']]; // 获取奖项名称
+				}
+				
 			} 
 		}else{
 			$page = "";
@@ -265,6 +290,10 @@ class Dealer extends	Base
 		$this->assign('data',$data);	 
 		$this->assign('page',$page); 					
 		return $this->fetch();
+	}
+	//分页更新
+	private function pageshow(){
+		
 	}
 
 	/**
