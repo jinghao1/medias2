@@ -78,10 +78,12 @@ class Excel extends	Controller
         $key = ord("A");
         foreach($header as $v){
             $colum = chr($key);
+            $key = $key + 1; 
             $objPHPExcel->getActiveSheet()->getColumnDimension($colum)->setWidth(15);
             $objPHPExcel->setActiveSheetIndex(0)->setCellValue($colum.'1', $v);
-            $key += 1;
+            
         }
+       // exit;
         $column = 2;
         $objActSheet = $objPHPExcel->getActiveSheet();
         $objActSheet->getRowDimension(1)->setRowHeight(20);
@@ -105,7 +107,7 @@ class Excel extends	Controller
 			}
 		} 
         foreach($data as $key => $rows){ //行写入
-            $span = ord("A");
+            
             //信息对应
             $arrs['dealer_id'] = $rows['dealer_id']; //注册id
             $arrs['project_id'] = $newpj[$rows['project_id']]; //项目名称
@@ -146,13 +148,14 @@ class Excel extends	Controller
              //根据车系id获取车系名称
             $arrs['car_series_id'] = $carserise->CarSelectName($rows['car_series_id']);
             $arrs['time'] = date("Y-m-d H:i:s",$rows['time']); //创建时间
-           
+            $span = ord("A");
             //end
             foreach($arrs as $keyName=>$value) {// 列写入
                 $j = chr($span);
+                $span++;
                 $objActSheet->getRowDimension($column)->setRowHeight(20);
                 $objActSheet->setCellValue($j.$column, $value);
-                $span++;
+                
             }
             $column++;
         }

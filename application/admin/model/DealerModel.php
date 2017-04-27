@@ -117,13 +117,34 @@ class DealerModel extends Model
 	    $string = "";
 	    $tbinfo = Db::name('allpro')->where('proid',$proid)->select();
 	    if(!empty($tbinfo[0]['dealname'])){
-			$res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->select();
+		    //省
+		    $faterid = 0;
+		    
+			$res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->where('pid',$faterid)->select();
 	        foreach ($res as $key => $value) {
-	            $arr[] = $value['dealer_name'];;
-	            $string = join("-",$arr);
+	            $arr[] = $value['dealer_name']; 
+	            $faterid = $value['dealer_id'];
+	            break;
 	        }
+	        //市
+	   
+	        $res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->where('pid',$faterid)->select();
+	       // var_dump($faterid );
+	        foreach ($res as $key => $value) {
+	            $arr[] = $value['dealer_name']; 
+	            $faterid = $value['dealer_id'];
+	            break;
+	        }
+	        //公司
+	        $res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->where('pid',$faterid)->select();
+	        foreach ($res as $key => $value) {
+	            $arr[] = $value['dealer_name']; 
+	            break;
+	            //$faterid = $value['dealer_id'];
+	        }
+	        $string = join("-",$arr);
 	    }
-       
+      // var_dump($string,$arr);
         return $string;
     }
     //查询经销商信息 id=>name 

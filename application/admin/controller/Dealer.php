@@ -166,6 +166,13 @@ class Dealer extends	Base
 		$data = $car->DealerClass($dealer_id,$proid);
 		exit(json_encode($data));
 	}
+	//test 
+	public function updeal(){
+		$id = input('param.did');
+		$pid = input('param.pid');
+		$dealer = new DealerModel();
+		$dealer->DealerSelectName($id,$pid);
+	}
 
 	/**
 	 * 经销商列表

@@ -13,7 +13,7 @@ Header("Access-Control-Allow-Methods: POST, GET, OPTIONS, PUT, DELETE");
 // +----------------------------------------------------------------------
 
 // [ 应用入口文件 ]
-ini_set('max_execution_time','100');
+ini_set('max_execution_time','300');
 // 定义应用目录
 define('APP_PATH', __DIR__ . '/../application/');
 // 加载框架引导文件
