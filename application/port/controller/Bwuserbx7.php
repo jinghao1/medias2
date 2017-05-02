@@ -211,6 +211,10 @@ class Bwuserbx7 extends	Controller	{
 		$data['sex'] = $arr['thesex'];  //性别
 		$data['whreg'] = $arr['fromwh'];  //注册位置
 		$data['project_id'] = $arr['pjid']; //项目id  36
+		if(isset($arr['fself'])){
+			$data['from'] = intval($arr['fself']) ;
+		}
+		
 		//return json_encode($data);
 		$dealer = new DealerModel(); 
 		//$encckend = $this->Ckencstr($enc);

@@ -207,7 +207,7 @@ class Dealer extends	Base
 				 	$this->assign('yxenews',1);
 				 	break; 
 			}
-	//SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time`,n.name as lotname FROM `zt_user_dealer` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` LEFT JOIN `zt_lotuser` `m` ON `m`.`userid`=`d`.`dealer_id` LEFT JOIN `zt_lottery` `n` ON `m`.`lotid`=`n`.`id` WHERE `d`.`project_id` = 32 AND `d`.`whreg` = 1 LIMIT 0,20 
+ 
 	//select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on d.car_series_id=c.brand_id left join zt_project p on d.project_id=p.id left join zt_lotuser m on m.userid=d.dealer_id left join zt_lottery n on m.lotid = n.id where d.project_id = 32 and d.whreg=1 limit 0,20 
 
 	//'select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on d.car_series_id=c.brand_id left join zt_project p on d.project_id=p.id left join zt_lotuser m on m.userid=d.dealer_id left join zt_lottery n on m.lotid = n.id where d.project_id = 32 and d.whreg=1 order by d.dealer_id limit 0,20 '  

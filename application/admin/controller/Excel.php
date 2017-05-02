@@ -23,10 +23,21 @@ class Excel extends	Controller
 	}	
 
 	public function index(){
-        $header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','省份','市区','经销商','车系','创建时间');
+       
         $proid = input('param.proid/d');
         $enewsid = input('param.enewsid/d');
-        
+       
+        switch($proid){
+	        case 32:
+	       	 	$header = array('注册id','项目名称','姓名','性别','手机号','获奖信息','省份','市区','经销商','车系','创建时间'); 	
+	        	break;
+	        case 36:
+	       	 	$header = array('注册id','项目名称','姓名','性别','手机号','购车时间','省份','市区','经销商','车系','创建时间');
+	        	break;
+	        default:
+	        	$header = array('注册id','项目名称','姓名','性别','手机号','省份','市区','经销商','车系','创建时间');
+        }
+       
         if($proid || $enewsid){
 	        if($proid){
 		        $wharr['d.project_id'] = $proid;
@@ -127,9 +138,12 @@ class Excel extends	Controller
             if(isset($rows['lotname']) && $rows['project_id']==32){
 	            $arrs['lotname'] = $rows['lotname']; //获奖名称
             }else{
-	            $arrs['lotname'] = null;
+	           // $arrs['lotname'] = null;
             } 
-            //$arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
+            if( $rows['project_id'] == 36){
+	            $arrs['car_time'] = $newbuycartm[$rows['buy_car_time']]; //购车时间
+            }
+            
             $arrs['dealer_name0'] = "";
             $arrs['dealer_name1'] = "";
             $arrs['dealer_name2'] = "";

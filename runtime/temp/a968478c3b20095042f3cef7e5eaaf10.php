@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1490752743;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html";i:1493360134;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -89,6 +89,8 @@
 		<?php if($proid==32): ?>
 		<td >获奖信息</td>
 	<!--	<td >购车时间</td>-->
+		<?php endif; if($proid==36): ?>
+			<td>购车时间</td>
 		<?php endif; ?>
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
@@ -105,6 +107,9 @@
 			<td align="left"><?php echo $v['phone']; ?></td>
 			<?php if($proid==32): ?>
 		    <td ><?php echo $v['lotname']; ?></td>
+			 
+			<?php endif; if($proid==36): ?>
+		    <td ><?php echo $v['buy_car_time']; ?></td>
 			 
 			<?php endif; ?>
 			<td ><?php echo $v['dealer_name']; ?></td>

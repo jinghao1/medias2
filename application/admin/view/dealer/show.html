@@ -89,6 +89,9 @@
 		<td >获奖信息</td>
 	<!--	<td >购车时间</td>-->
 		{/if}
+		{if $proid==36}
+			<td>购车时间</td>
+		{/if}
 		<td >经销商地址名称</td>
 		<td >车系车型</td>
 		<td >注册时间</td>
@@ -104,6 +107,10 @@
 			<td align="left">{$v.phone}</td>
 			{if  $proid==32}
 		    <td >{$v.lotname}</td>
+			 
+			{/if}
+			{if  $proid==36}
+		    <td >{$v.buy_car_time}</td>
 			 
 			{/if}
 			<td >{$v.dealer_name}</td>
