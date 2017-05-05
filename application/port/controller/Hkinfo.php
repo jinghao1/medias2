@@ -113,6 +113,21 @@ class Hkinfo extends Controller	{
 		return;
 	}
 
+	//头部信息接口https 转换
+	public function cgheadhttps(){
+		$all = input('param.'); //接收信息 
+		$callback = $all["callback"]; 
+	 
+		$xurl = 'http://i.qichedaquan.com/info/header?backurl='.$all['bkurl'];
+		$end = file_get_contents($xurl);
+		//$end = '00099';  
+		$end = str_replace("null('",'',$end);
+		$end = str_replace("')",'',$end);
+		//echo $callback.'('.json_encode($end).')';
+		echo $callback.'('.json_encode($end).')';
+		return;
+	}
+
  
 }
 ?>

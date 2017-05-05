@@ -249,4 +249,9 @@ class DealerModel extends Model
 	    return Db::name("lottery")->select();
     }
 
+    //城市信息插入
+    function ItAllcity($data){
+	    return Db::name('allcity')->insertGetId($data);
+    }
+
 }

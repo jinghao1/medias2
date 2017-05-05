@@ -416,7 +416,64 @@ class Excel extends	Controller
         return $this->fetch();
     }
 
+	//行圆全部城市列表信息导入
+	public function xyallcity(){
+		$file = request()->file('importexcel');
+	   
+        // 移动到框架应用根目录/public/uploads/ 目录下
+    	$info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+    	if($info){
+	        // 成功上传后 获取上传信息 
+	        $extname = $info->getExtension(); //获取文件扩展名  
+	        $urlname = $info->getSaveName(); //获取文件存储目录及名称
+	        $urlname = ROOT_PATH . 'public' . DS . 'uploads/'.$urlname;
+	        $filename = $info->getFilename();  //获取文件保存名称
+	    }else{
+	        // 上传失败获取错误信息
+	        echo $file->getError();
+	    } 
+	   
+        if ($extname == 'xls') {
+            $result = import("Excel5",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel5();
+        } elseif ($extname == 'xlsx') {
+            $result = import("Excel2007",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel2007();
+        } else {
+            return '路径出错';
+        }
 
+        $PHPExcel     = $PHPReader->load($urlname);
+        $currentSheet = $PHPExcel->getSheet(0);
+        $allColumn    = $currentSheet->getHighestColumn();
+        $allRow       = $currentSheet->getHighestRow();
+        $dealer = new DealerModel();
+        $allColumn ='H';
+        for($currentRow = 3; $currentRow <= $allRow; $currentRow++){
+            for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
+                $address = $currentColumn.$currentRow;
+                $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+              
+            }
+           	$newcity = array();
+            $newcity['cityid'] = $arr[$currentRow]['A']; //城市id
+            $newcity['cityname'] = $arr[$currentRow]['B']; //城市或省份名称
+            $newcity['level'] = $arr[$currentRow]['C']; //级别，层级
+            $newcity['parentid'] = $arr[$currentRow]['D']; //父级id
+            $newcity['initial'] = $arr[$currentRow]['E']; //字母标识
+            //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
+            if( !$newcity['cityid'] ||!$newcity['cityname']){
+	            continue;
+            }
+        	$endit = $dealer->ItAllcity($newcity);
+            var_dump($endit);
+            echo "<br>";
+            
+        } 
+        
+	}
+
+	//经销商信息导入
 	public function readerRW() { 
     //关闭
     	//return "closed";
