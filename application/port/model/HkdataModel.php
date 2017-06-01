@@ -49,4 +49,12 @@ class HkdataModel extends Model
 		$end = Db::name($this->adtable)->insert($data);
 		return $end;
 	}
+	//获取省份信息
+	public function Gtproi(){
+		return Db::name('allcity')->field('cityid,cityname,initial')->where('level','0')->order('initial')->select();
+	}
+	//获取省份下的城市信息
+	public function Gtudcity($id){
+		return Db::name('allcity')->field('cityid,cityname')->where('parentid',$id)->select();
+	}
 }

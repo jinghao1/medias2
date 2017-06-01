@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html";i:1490177055;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html";i:1490177056;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=gb2312" />

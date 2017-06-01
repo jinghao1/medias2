@@ -94,6 +94,7 @@ class Auth{
       * @return boolean           通过验证返回true;失败返回false
      */
     public function check($name, $uid, $type=1, $mode='url', $relation='or') {
+	   
         if (!$this->_config['auth_on'])
             return true;
 		
@@ -157,7 +158,7 @@ class Auth{
             ->join("zt_auth_group g", "g.id=a.groupid")
             ->where("a.user_id='$uid'   and g.status='1'")
             ->field('user_id,groupid,title,rules')->select();
-        
+      
         $groups[$uid] = $user_groups ? $user_groups : array();
         return $groups[$uid];
     }
@@ -184,6 +185,7 @@ class Auth{
         foreach ($groups as $g) {
             $ids = array_merge($ids, explode(',', trim($g['rules'], ',')));
         }
+    
         $ids = array_unique($ids);
         if (empty($ids)) {
             $_authList[$uid.$t] = array();

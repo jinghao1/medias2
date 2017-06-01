@@ -1,0 +1,617 @@
+[ 2017-05-16T16:02:55+08:00 ] ::1 ::1 GET /medias/public/index.php
+[ log ] localhost/medias/public/index.php [运行时间：0.050247s][吞吐率：19.90req/s] [内存消耗：1,165.73kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-16T16:02:55+08:00 ] ::1 ::1 GET /medias/public/index.php/admin/login/index.html
+[ log ] localhost/medias/public/index.php/admin/login/index.html [运行时间：0.028881s][吞吐率：34.63req/s] [内存消耗：1,311.13kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Applications/MAMP/htdocs/song/WWW/medias/public/../application/admin/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-16T16:03:02+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/login.html
+[ log ] localhost/medias/public/index.php/admin/login/login.html [运行时间：0.053377s][吞吐率：18.73req/s] [内存消耗：1,863.40kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:03:04+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.042893s][吞吐率：23.31req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:04:40+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.042787s][吞吐率：23.37req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:04:45+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.044345s][吞吐率：22.55req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:11:15+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.095284s][吞吐率：10.49req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:11:17+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.049431s][吞吐率：20.23req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:11:42+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.041848s][吞吐率：23.90req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:11:49+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/login.html
+[ log ] localhost/medias/public/index.php/admin/login/login.html [运行时间：0.047282s][吞吐率：21.15req/s] [内存消耗：1,863.40kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'origin' => 'http://localhost',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:11:51+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.047384s][吞吐率：21.10req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:13:31+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.036902s][吞吐率：27.10req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:13:34+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.036177s][吞吐率：27.64req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:15:26+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.041107s][吞吐率：24.33req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:29:44+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.065869s][吞吐率：15.18req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:29:46+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.048822s][吞吐率：20.48req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------
+[ 2017-05-16T16:30:00+08:00 ] ::1 ::1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.040751s][吞吐率：24.54req/s] [内存消耗：1,865.13kb] [文件加载：42]
+[ info ] [ LANG ] /Applications/MAMP/htdocs/song/WWW/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=defb48c83d28b4e9a0f3312411335ed2; SQLiteManager_currentLangue=2',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/MAMP/htdocs/song/WWW/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [2002]SQLSTATE[HY000] [2002] Connection refused[/Applications/MAMP/htdocs/song/WWW/medias/thinkphp/library/think/db/Connection.php:282]
+
+---------------------------------------------------------------

@@ -19,6 +19,7 @@ function getbest($str){
 	$new = array('最满意的一点'=>"",'最不满意的一点'=>"");
 	//最满意
 	$patt = '/最满意的一点】(.*)【最不满意的一点/';
+ 
 	preg_match($patt,$str,$mats);  
 	if(isset($mats[1])){
 		$new['最满意的一点'] = $mats[1];

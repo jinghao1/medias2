@@ -114,7 +114,9 @@ class DealerModel extends Model
      */
     public function DealerSelectName($id,$proid=0)
     {
+
 	    $string = "";
+	    $arr = array();
 	    $tbinfo = Db::name('allpro')->where('proid',$proid)->select();
 	    if(!empty($tbinfo[0]['dealname'])){
 		    //省
@@ -127,7 +129,7 @@ class DealerModel extends Model
 	            break;
 	        }
 	        //市
-	   
+	    
 	        $res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->where('pid',$faterid)->select();
 	       // var_dump($faterid );
 	        foreach ($res as $key => $value) {
@@ -136,13 +138,17 @@ class DealerModel extends Model
 	            break;
 	        }
 	        //公司
+
 	        $res = DB::name($tbinfo[0]['dealname'])->field("dealer_id,dealer_name")->where('dealer_id','in',$id)->where('pid',$faterid)->select();
 	        foreach ($res as $key => $value) {
 	            $arr[] = $value['dealer_name']; 
 	            break;
 	            //$faterid = $value['dealer_id'];
 	        }
-	        $string = join("-",$arr);
+	        if($arr){
+	        	$string = join("-",$arr);
+	        }
+	        
 	    }
       // var_dump($string,$arr);
         return $string;
@@ -165,6 +171,25 @@ class DealerModel extends Model
     public function exDealerBw($name){
 	    return DB::name('bw_dealer')->field("dealer_id")->where('dealer_name',$name)->select();
     }
+
+    //检测名爵经销商是否存在
+    public function exDealerMingjue($name){
+	    return DB::name('bw_dealer')->field("dealer_id")->where('dealer_name',$name)->select();
+    }
+
+     //检测名爵zs经销商是否存在
+    public function exDlMingjueZs($name,$table){
+	    return DB::name($table)->field("dealer_id")->where('dealer_name',$name)->select();
+    }
+    //插入经销商信息 名爵
+    public function ItMJZs($info,$table){
+	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid'],'minname'=>$info['minname']];  		
+		$end= Db::name($table)->insertGetId($data); 
+		//$last = Db::name('bw_dealer')->getLastSql();
+		//var_dump($last);
+		return $end;
+		//exit;
+    }
      //检测 荣威 经销商是否存在
     public function exDealerRw($name){
 	    return DB::name('rw_list')->field("dealer_id")->where('dealer_name',$name)->select();
@@ -178,6 +203,15 @@ class DealerModel extends Model
 	//插入经销商信息 宝沃
     public function ItDealerInfoBW($info){
 	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid'],'minname'=>$info['minname'],'addr'=>$info['addr'],'number'=>$info['number']];  		
+		$end= Db::name('bw_dealer')->insertGetId($data); 
+		//$last = Db::name('bw_dealer')->getLastSql();
+		//var_dump($last);
+		return $end;
+		//exit;
+    }
+    //插入经销商信息 名爵
+    public function ItDealerInfoMJ($info){
+	    $data = ['dealer_name' => $info['dlname'], 'pid' => $info['pid'],'minname'=>$info['minname']];  		
 		$end= Db::name('bw_dealer')->insertGetId($data); 
 		//$last = Db::name('bw_dealer')->getLastSql();
 		//var_dump($last);

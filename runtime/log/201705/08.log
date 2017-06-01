@@ -1,0 +1,3419 @@
+[ 2017-05-08T15:00:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php
+[ log ] localhost/medias/public/index.php [运行时间：0.079101s][吞吐率：12.64req/s] [内存消耗：1,024.88kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/login/index.html
+[ log ] localhost/medias/public/index.php/admin/login/index.html [运行时间：0.035752s][吞吐率：27.97req/s] [内存消耗：1,012.25kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/login/login.html
+[ log ] localhost/medias/public/index.php/admin/login/login.html [运行时间：0.373021s][吞吐率：2.68req/s] [内存消耗：1,693.86kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://localhost',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001359s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.228580s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_admin` WHERE  `username` = 'admin' LIMIT 1    [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_group` [ RunTime:0.037683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_group` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.007018s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.015375s ]
+[ sql ] [ SQL ] SELECT `name` FROM `zt_auth_rule`  [ RunTime:0.000531s ]
+[ sql ] [ SQL ] UPDATE `zt_admin`  SET `loginnum`=220,`last_login_ip`='127.0.0.1',`last_login_time`=1494226838  WHERE  `user_id` = 1       [ RunTime:0.000308s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_log` [ RunTime:0.025682s ]
+[ sql ] [ SQL ] INSERT INTO `zt_log` (`admin_id` , `admin_name` , `description` , `status` , `ip` , `add_time`) VALUES (1 , 'admin' , '用户【admin】登录成功' , 1 , '127.0.0.1' , 1494226838)        [ RunTime:0.000304s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] localhost/medias/public/index.php/admin/login/loginsong.html [运行时间：0.074198s][吞吐率：13.48req/s] [内存消耗：1,732.91kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009135s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_admin` WHERE  `username` = 'admin' LIMIT 1    [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_group` [ RunTime:0.009893s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_group` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.000425s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008953s ]
+[ sql ] [ SQL ] SELECT `name` FROM `zt_auth_rule`  [ RunTime:0.001086s ]
+[ sql ] [ SQL ] UPDATE `zt_admin`  SET `loginnum`=221,`last_login_ip`='127.0.0.1',`last_login_time`=1494226838  WHERE  `user_id` = 1       [ RunTime:0.000336s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_log` [ RunTime:0.009378s ]
+[ sql ] [ SQL ] INSERT INTO `zt_log` (`admin_id` , `admin_name` , `description` , `status` , `ip` , `add_time`) VALUES (1 , 'admin' , '用户【admin】登录成功' , 1 , '127.0.0.1' , 1494226838)        [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] localhost/medias/public/index.php/admin/index/index.html [运行时间：0.042962s][吞吐率：23.28req/s] [内存消耗：1,034.43kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] localhost/medias/public/index.php/admin/index/top.html [运行时间：0.052075s][吞吐率：19.20req/s] [内存消耗：1,034.80kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] localhost/medias/public/index.php/admin/index/menu.html [运行时间：0.073298s][吞吐率：13.64req/s] [内存消耗：1,747.20kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000601s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008790s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.006332s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000184s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000228s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000201s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] localhost/medias/public/index.php/admin/index/main.html [运行时间：0.029761s][吞吐率：33.60req/s] [内存消耗：990.45kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:00:40+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.144409s][吞吐率：6.92req/s] [内存消耗：1,870.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000835s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.019955s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.016544s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007492s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000251s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:16:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.114967s][吞吐率：8.70req/s] [内存消耗：1,938.38kb] [文件加载：48]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000924s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.007759s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000580s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:16:41+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/menuadd.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd.html [运行时间：0.078487s][吞吐率：12.74req/s] [内存消耗：1,930.73kb] [文件加载：48]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/getmenulist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html [ array (
+  0 => 'menuall',
+  1 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008675s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000558s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:05+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/user/menuadd.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd.html [运行时间：0.122464s][吞吐率：8.17req/s] [内存消耗：1,885.14kb] [文件加载：48]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/menuadd.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '90',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '0',
+  'title' => '活动城市管理',
+  'name' => '#',
+  'sort' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000918s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.085760s ]
+[ sql ] [ SQL ] INSERT INTO `zt_auth_rule` (`pid` , `title` , `name` , `sort` , `status` , `create_time`) VALUES (0 , '活动城市管理' , '#' , 0 , 1 , 1494227825)        [ RunTime:0.000399s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.031094s][吞吐率：32.16req/s] [内存消耗：1,812.35kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/menuadd.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000758s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008284s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000595s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] localhost/medias/public/index.php/admin/index/index.html [运行时间：0.014391s][吞吐率：69.49req/s] [内存消耗：1,034.43kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] localhost/medias/public/index.php/admin/index/top.html [运行时间：0.017177s][吞吐率：58.22req/s] [内存消耗：1,034.80kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] localhost/medias/public/index.php/admin/index/menu.html [运行时间：0.062784s][吞吐率：15.93req/s] [内存消耗：1,747.38kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010056s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.010044s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.009208s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000309s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] localhost/medias/public/index.php/admin/index/main.html [运行时间：0.023110s][吞吐率：43.27req/s] [内存消耗：990.45kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.032298s][吞吐率：30.96req/s] [内存消耗：1,812.28kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000741s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008816s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000594s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:21+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/menuadd.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd.html [运行时间：0.032319s][吞吐率：30.94req/s] [内存消耗：1,812.75kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/getmenulist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html [ array (
+  0 => 'menuall',
+  1 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000719s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008408s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000544s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:49+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/user/menuadd.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd.html [运行时间：0.097280s][吞吐率：10.28req/s] [内存消耗：1,769.91kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/menuadd.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '94',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '122',
+  'title' => '城市列表',
+  'name' => 'admin/city/citylist',
+  'sort' => '',
+  'status' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.074932s ]
+[ sql ] [ SQL ] INSERT INTO `zt_auth_rule` (`pid` , `title` , `name` , `sort` , `status` , `create_time`) VALUES (122 , '城市列表' , 'admin/city/citylist' , 0 , 1 , 1494227868)        [ RunTime:0.000300s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:50+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.033153s][吞吐率：30.16req/s] [内存消耗：1,814.30kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/menuadd.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000785s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008034s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000482s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:51+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.031098s][吞吐率：32.16req/s] [内存消耗：1,814.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000602s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:54+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/menuadd/mnid/123.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd/mnid/123.html [运行时间：0.032291s][吞吐率：30.97req/s] [内存消耗：1,816.76kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/getmenulist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'mnid' => '123',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html [ array (
+  0 => 'menuall',
+  1 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001172s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008303s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule` WHERE  `id` = 123   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000598s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:17:56+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.031690s][吞吐率：31.56req/s] [内存消耗：1,814.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008600s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000638s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:18:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] localhost/medias/public/index.php/admin/index/index.html [运行时间：0.014170s][吞吐率：70.57req/s] [内存消耗：1,034.43kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:18:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] localhost/medias/public/index.php/admin/index/top.html [运行时间：0.015747s][吞吐率：63.50req/s] [内存消耗：1,034.80kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:18:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] localhost/medias/public/index.php/admin/index/menu.html [运行时间：0.046378s][吞吐率：21.56req/s] [内存消耗：1,747.66kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000586s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008198s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000399s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.007814s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000377s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000297s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000377s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T15:18:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] localhost/medias/public/index.php/admin/index/main.html [运行时间：0.020904s][吞吐率：47.84req/s] [内存消耗：990.45kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T15:18:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/city/citylist.html
+[ log ] localhost/medias/public/index.php/admin/city/citylist.html [运行时间：0.032572s][吞吐率：30.70req/s] [内存消耗：766.16kb] [文件加载：28]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'city',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:00:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.046545s][吞吐率：21.48req/s] [内存消耗：1,870.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001192s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007756s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007667s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000674s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:00:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/show/id/35.html
+[ log ] localhost/medias/public/index.php/admin/dealer/show/id/35.html [运行时间：0.323540s][吞吐率：3.09req/s] [内存消耗：2,086.80kb] [文件加载：52]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/project/show.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'id' => '35',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\show.html [ array (
+  0 => 'yxenews',
+  1 => 'proname',
+  2 => 'proid',
+  3 => 'enewsid',
+  4 => 'editopt',
+  5 => 'delopt',
+  6 => 'data',
+  7 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000856s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.023445s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000407s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_rwuser` [ RunTime:0.018961s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_rwuser` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 35  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 1   [ RunTime:0.007182s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`project_id`,`d`.`name`,`d`.`sex`,`d`.`phone`,`d`.`car_time`,`d`.`dealer_name`,`d`.`car_series_id`,`d`.`time`,`d`.`buy_car_time` FROM `zt_rwuser` `d` LEFT JOIN `zt_brand` `c` ON `d`.`car_series_id`=`c`.`brand_id` LEFT JOIN `zt_project` `p` ON `d`.`project_id`=`p`.`id` WHERE  `d`.`project_id` = 35  AND `d`.`whreg` = 1 ORDER BY dealer_id desc  LIMIT 0,20   [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007114s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project` WHERE  `id` = 35   [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.025146s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lottery` [ RunTime:0.018741s ]
+[ sql ] [ SQL ] SELECT `id`,`name` FROM `zt_lottery`  [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007635s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000238s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_rw_list` [ RunTime:0.033422s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (184,186)  AND `pid` = 0     [ RunTime:0.010879s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (184,186)  AND `pid` = 184     [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (184,186)  AND `pid` = 186     [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_lotuser` [ RunTime:0.025760s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2202   [ RunTime:0.010894s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,23)  AND `pid` = 0     [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,23)  AND `pid` = 20     [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,23)  AND `pid` = 23     [ RunTime:0.000327s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2199   [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 0     [ RunTime:0.000366s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 150     [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 151     [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2197   [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 0     [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 20     [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 21     [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2195   [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (136,146)  AND `pid` = 0     [ RunTime:0.000350s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (136,146)  AND `pid` = 136     [ RunTime:0.000355s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (136,146)  AND `pid` = 146     [ RunTime:0.000317s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2194   [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000408s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (196,197)  AND `pid` = 0     [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (196,197)  AND `pid` = 196     [ RunTime:0.000329s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (196,197)  AND `pid` = 197     [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2192   [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,102)  AND `pid` = 0     [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,102)  AND `pid` = 99     [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,102)  AND `pid` = 102     [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2191   [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,40)  AND `pid` = 0     [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,40)  AND `pid` = 32     [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,40)  AND `pid` = 40     [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2189   [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,154)  AND `pid` = 0     [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,154)  AND `pid` = 150     [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,154)  AND `pid` = 154     [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2188   [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000242s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 0     [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 150     [ RunTime:0.000330s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 151     [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2187   [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000248s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (3,4)  AND `pid` = 0     [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (3,4)  AND `pid` = 3     [ RunTime:0.000422s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (3,4)  AND `pid` = 4     [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2185   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (175,176)  AND `pid` = 0     [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (175,176)  AND `pid` = 175     [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (175,176)  AND `pid` = 176     [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2184   [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,155)  AND `pid` = 0     [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,155)  AND `pid` = 150     [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,155)  AND `pid` = 155     [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2183   [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 0     [ RunTime:0.000270s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 20     [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,21)  AND `pid` = 21     [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2181   [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000267s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000318s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (58,62)  AND `pid` = 0     [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (58,62)  AND `pid` = 58     [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (58,62)  AND `pid` = 62     [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2180   [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000286s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,103)  AND `pid` = 0     [ RunTime:0.000468s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,103)  AND `pid` = 99     [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (99,103)  AND `pid` = 103     [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2179   [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,34)  AND `pid` = 0     [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,34)  AND `pid` = 32     [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (32,34)  AND `pid` = 34     [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2177   [ RunTime:0.000642s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,160)  AND `pid` = 0     [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,160)  AND `pid` = 150     [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,160)  AND `pid` = 160     [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2176   [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 0     [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 150     [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (150,151)  AND `pid` = 151     [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2175   [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT `brand_id`,`brand_name` FROM `zt_brand` WHERE  `brand_id` IN (69)   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 35   [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,22)  AND `pid` = 0     [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,22)  AND `pid` = 20     [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `dealer_id`,`dealer_name` FROM `zt_rw_list` WHERE  `dealer_id` IN (20,22)  AND `pid` = 22     [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT `lotid` FROM `zt_lotuser` WHERE  `userid` = 2173   [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007446s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000359s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000309s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:00:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.042734s][吞吐率：23.40req/s] [内存消耗：1,870.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000793s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007719s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007982s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000416s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/city/citylist.html
+[ log ] localhost/medias/public/index.php/admin/city/citylist.html [运行时间：0.012638s][吞吐率：79.13req/s] [内存消耗：766.16kb] [文件加载：28]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'city',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] localhost/medias/public/index.php/admin/index/index.html [运行时间：0.015704s][吞吐率：63.68req/s] [内存消耗：1,034.43kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] localhost/medias/public/index.php/admin/index/top.html [运行时间：0.017547s][吞吐率：56.99req/s] [内存消耗：1,034.80kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] localhost/medias/public/index.php/admin/index/menu.html [运行时间：0.052583s][吞吐率：19.02req/s] [内存消耗：1,747.66kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000833s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009059s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.009687s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000324s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000236s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000344s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] localhost/medias/public/index.php/admin/index/main.html [运行时间：0.019292s][吞吐率：51.84req/s] [内存消耗：990.45kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:47+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/city/citylist.html
+[ log ] localhost/medias/public/index.php/admin/city/citylist.html [运行时间：0.011955s][吞吐率：83.65req/s] [内存消耗：766.16kb] [文件加载：28]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'city',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:56+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] localhost/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.033784s][吞吐率：29.60req/s] [内存消耗：1,814.23kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008220s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000626s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:01:59+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/menuadd/mnid/123.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd/mnid/123.html [运行时间：0.036669s][吞吐率：27.27req/s] [内存消耗：1,816.76kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/getmenulist.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'mnid' => '123',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html [ array (
+  0 => 'menuall',
+  1 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000748s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.012708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule` WHERE  `id` = 123   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000657s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:14+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/user/menuadd.html
+[ log ] localhost/medias/public/index.php/admin/user/menuadd.html [运行时间：0.077668s][吞吐率：12.88req/s] [内存消耗：1,726.67kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'menuadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/user/menuadd/mnid/123.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '98',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+)
+[ info ] [ PARAM ] array (
+  'pid' => '122',
+  'title' => '城市列表',
+  'name' => 'admin/cityact/citylist',
+  'sort' => '0',
+  'edit' => '123',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->MenuAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\thinkphp\tpl\dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001030s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.054942s ]
+[ sql ] [ SQL ] UPDATE `zt_auth_rule`  SET `pid`=122,`title`='城市列表',`name`='admin/cityact/citylist',`sort`=0  WHERE  `id` = 123        [ RunTime:0.000344s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/city/citylist.html
+[ log ] localhost/medias/public/index.php/admin/city/citylist.html [运行时间：0.013422s][吞吐率：74.50req/s] [内存消耗：766.16kb] [文件加载：28]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'city',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] localhost/medias/public/index.php/admin/index/index.html [运行时间：0.017961s][吞吐率：55.68req/s] [内存消耗：1,034.43kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] localhost/medias/public/index.php/admin/index/top.html [运行时间：0.018804s][吞吐率：53.18req/s] [内存消耗：1,034.80kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] localhost/medias/public/index.php/admin/index/menu.html [运行时间：0.053035s][吞吐率：18.86req/s] [内存消耗：1,747.66kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000982s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008503s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.008979s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000426s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000370s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] localhost/medias/public/index.php/admin/index/main.html [运行时间：0.021295s][吞吐率：46.96req/s] [内存消耗：990.45kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-08T16:02:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.089437s][吞吐率：11.18req/s] [内存消耗：1,864.30kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'prolist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000765s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.044847s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allcity` WHERE  `level` = 0   [ RunTime:0.001170s ]
+[ error ] [8]未定义变量: data[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:78]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:07:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.043846s][吞吐率：22.81req/s] [内存消耗：1,870.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000879s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007553s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000513s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007136s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000406s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:06+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandshow.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandshow.html [运行时间：0.106848s][吞吐率：9.36req/s] [内存消耗：1,853.78kb] [文件加载：48]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandShow[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\brand_show.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000903s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007686s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000512s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandadd.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandadd.html [运行时间：0.046591s][吞吐率：21.46req/s] [内存消耗：1,844.35kb] [文件加载：47]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\add.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007463s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000449s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandshow.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandshow.html [运行时间：0.031759s][吞吐率：31.49req/s] [内存消耗：1,731.83kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandShow[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\brand_show.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000746s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.009111s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000469s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandshow.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandshow.html [运行时间：0.029705s][吞吐率：33.66req/s] [内存消耗：1,731.83kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandShow[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\brand_show.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000587s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.007605s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000465s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:44+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandadd.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandadd.html [运行时间：0.030113s][吞吐率：33.21req/s] [内存消耗：1,728.93kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandadd',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandAdd[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\add.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000677s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.008107s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000439s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:55+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.040851s][吞吐率：24.48req/s] [内存消耗：1,870.46kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000750s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007852s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000444s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007192s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000313s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:57+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.035364s][吞吐率：28.28req/s] [内存消耗：1,862.27kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'prolist',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008757s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allcity` WHERE  `level` = 0   [ RunTime:0.000981s ]
+[ error ] [8]未定义变量: data[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:57]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:08:58+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/dealer/add.html
+[ log ] localhost/medias/public/index.php/admin/dealer/add.html [运行时间：0.145044s][吞吐率：6.89req/s] [内存消耗：1,993.80kb] [文件加载：49]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'dealer',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Dealer->add[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Dealer.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dealer\add.html [ array (
+  0 => 'data',
+  1 => 'buytime',
+  2 => 'DealerData',
+  3 => 'ProjectName',
+  4 => 'dealer_info',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000800s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.008423s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand` WHERE  `pid` = 0   [ RunTime:0.000507s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_dealer_list` [ RunTime:0.057976s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_dealer_list` WHERE  `pid` = 0   [ RunTime:0.009808s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.007175s ]
+[ sql ] [ SQL ] SELECT `id`,`project_name` FROM `zt_project`  [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.006627s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000372s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:09:05+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.043478s][吞吐率：23.00req/s] [内存消耗：1,870.58kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000676s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008048s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000515s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008403s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000405s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:15:53+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/brand/brandshow.html
+[ log ] localhost/medias/public/index.php/admin/brand/brandshow.html [运行时间：0.082817s][吞吐率：12.07req/s] [内存消耗：1,731.97kb] [文件加载：46]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'brand',
+    2 => 'brandshow',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Brand->BrandShow[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Brand.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\brand\brand_show.html [ array (
+  0 => 'brandData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001089s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.051928s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand`  [ RunTime:0.000476s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T16:23:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] localhost/medias/public/index.php/admin/project/show.html [运行时间：0.044851s][吞吐率：22.30req/s] [内存消耗：1,870.58kb] [文件加载：50]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\project\show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000892s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.008435s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000434s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007467s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000477s ]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:48:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.035735s][吞吐率：27.98req/s] [内存消耗：1,723.64kb] [文件加载：48]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000869s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007919s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001049s ]
+[ error ] [8]未定义变量: id[D:\rar\phpstudy\WWW\medias\application\admin\model\CityaModel.php:20]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:48:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.071888s][吞吐率：13.91req/s] [内存消耗：2,002.52kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008077s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001103s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.000946s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.001135s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000891s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000900s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000794s ]
+[ error ] [8]未定义数组下标: 0[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:69]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:49:58+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.072394s][吞吐率：13.81req/s] [内存消耗：2,002.51kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000805s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007797s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000971s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000784s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.001052s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000961s ]
+[ error ] [8]未定义数组下标: 0[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:69]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:51:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.075900s][吞吐率：13.18req/s] [内存消耗：2,002.55kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000930s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008032s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.000994s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.000867s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000984s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000803s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000926s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000947s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000826s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000780s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000897s ]
+[ error ] [8]未定义数组下标: 0[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:70]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:53:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.197018s][吞吐率：5.08req/s] [内存消耗：2,002.55kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000776s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.128487s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001111s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.001089s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000953s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000870s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000801s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000842s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000915s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000873s ]
+[ error ] [8]未定义数组索引: cityid[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:71]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:54:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.073415s][吞吐率：13.62req/s] [内存消耗：1,880.28kb] [文件加载：49]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000931s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008700s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000903s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000886s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000910s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000827s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000890s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000867s ]
+[ error ] [8]未定义数组索引: cityid[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:71]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:55:39+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.075234s][吞吐率：13.29req/s] [内存消耗：1,879.40kb] [文件加载：49]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001052s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008003s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000963s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000858s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000861s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000852s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000859s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000833s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000810s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000844s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000848s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.000906s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000792s ]
+[ error ] [8]未定义数组索引: cityid[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:71]
+
+---------------------------------------------------------------
+[ 2017-05-08T17:56:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] localhost/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.072938s][吞吐率：13.71req/s] [内存消耗：2,001.58kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; PHPSESSID=fvgfvbsrf3mkscshf865proqi4; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1491791584,1492065109,1494230939; Hm_lpvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; WOW64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/56.0.2924.87 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000798s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008111s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 1   [ RunTime:0.001000s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 820000   [ RunTime:0.000740s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 2   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 31   [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 3   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 6   [ RunTime:0.000916s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 7   [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 4   [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 5   [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 13   [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 12   [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 10   [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 9   [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 8   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 11   [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 14   [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 15   [ RunTime:0.000989s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 16   [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 17   [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 18   [ RunTime:0.000857s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 19   [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 20   [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 23   [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 24   [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 25   [ RunTime:0.000892s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 22   [ RunTime:0.000845s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 21   [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 26   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 710000   [ RunTime:0.000904s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 810000   [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 27   [ RunTime:0.001038s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 28   [ RunTime:0.000998s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 29   [ RunTime:0.001143s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `parentid` = 30   [ RunTime:0.000896s ]
+[ error ] [8]未定义数组索引: cityid[D:\rar\phpstudy\WWW\medias\runtime\temp\20c4091cfa695259c7af8884bef96dc7.php:71]
+
+---------------------------------------------------------------

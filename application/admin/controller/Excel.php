@@ -14,6 +14,7 @@ use think\PHPExcel\PHPExcel;
 use app\admin\model\ProjectModel; //获取项目信息
 use app\admin\model\DealerModel; //获取经销商信息
 use app\admin\model\CarModel; //获取车系信息
+use app\admin\model\ChebhModel; //获取车百汇信息
 class Excel extends	Controller	
 {			
 
@@ -300,9 +301,9 @@ class Excel extends	Controller
 
 
 //宝沃BX5 经销商信息导入
-	public function readerBW() { 
+	public function readerBW(){ 
     //关闭
-    	return "closed";
+    	//return "closed";
 	    $file = request()->file('importexcel');
 	   
         // 移动到框架应用根目录/public/uploads/ 目录下
@@ -333,7 +334,7 @@ class Excel extends	Controller
         $allColumn    = $currentSheet->getHighestColumn();
         $allRow       = $currentSheet->getHighestRow();
         $dealer = new DealerModel();
-        $allColumn ='H';
+        $allColumn ='N';
         for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
             for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
                 $address = $currentColumn.$currentRow;
@@ -344,15 +345,15 @@ class Excel extends	Controller
 			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
             }
                
-            $dm = $arr[$currentRow]['F']; //经销商编号
-            //$dealername = $arr[$currentRow]['D']; //经销商名称
+            //$dm = $arr[$currentRow]['F']; //经销商编号
+            //$dealername = $arr[$currentRow]['H']; //经销商名称
             //$dealcity = $arr[$currentRow]['F']; //经销商所在城市名称
             //$dealprovince = $arr[$currentRow]['H']; //经销商所在省份名称
-            $addr = $arr[$currentRow]['E']; //经销商所在地址
-            $dealminname = $arr[$currentRow]['C']; //经销商简称 
+            //$addr = $arr[$currentRow]['E']; //经销商所在地址
+            $dealminname = ''; //经销商简称 
             $dealername = $arr[$currentRow]['D']; //经销商名称
-            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
-            $dealcity = $arr[$currentRow]['B']; //经销商所在城市名称
+            $dealprovince = $arr[$currentRow]['B']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['C']; //经销商所在城市名称
             //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
             if(!$dealername|| !$dealcity ||!$dealprovince){
 	            continue;
@@ -360,35 +361,33 @@ class Excel extends	Controller
             //var_dump($dealminname);
             //exit;
             $dataarr = array();
-            $result =  $dealer->exDealerBw($dealername);
+            $result =  $dealer->exDlMingjueZs($dealername,'bwbx57');
             if(!$result){ //如果不存在
 	            //检测省份是否存在，不存在，创建，存在获取proid
-	            $endpro =  $dealer->exDealerBw($dealprovince);
+	            $endpro =  $dealer->exDlMingjueZs($dealprovince,'bwbx57');
 	            if($endpro){ //省份存在 检测城市是否存在
-		            $endcity =  $dealer->exDealerBw($dealcity);
+		            $endcity =  $dealer->exDlMingjueZs($dealcity,'bwbx57');
 		            if($endcity){ //城市存在，插入经销商信息
 		            	//$dataarr = array('dm'=>$dm); //存放传入信息 
 		            	$dataarr['pid'] = $endcity[0]['dealer_id']; //父级id
 		            	$dataarr['dlname'] = $dealername; //经销商名称
 		            	$dataarr['minname'] = $dealminname; //经销商名字简称
-		            	$dataarr['number'] = $dm; //编码
-		            	$dataarr['addr'] = $addr; //地址
-			            $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+		             
+			            $insertinfo = $dealer->ItMJZs($dataarr,'bwbx57');
 			            var_dump( $insertinfo);
 				           echo "<br>";
 		            }else{ //城市不存在，先插入城市，获取城市id，再插入经销商
 			           //$dataarr = array('dm'=>'','dlmime'=>''); //存放传入信息  					
 			            $dataarr['minname'] = ""; //经销商名字简称
-		            	$dataarr['number'] = ""; //编码
-		            	$dataarr['addr'] = ""; //地址
+		             
 			           $dataarr['dlname'] = $dealcity; //城市名称
 			           $dataarr['pid'] = $endpro[0]['dealer_id']; //父级省份id
-			           $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+			           $insertinfo = $dealer->ItMJZs($dataarr,'bwbx57');
 			           var_dump( $insertinfo);
 				           echo "<br>";
 			           if($insertinfo){ //城市插入成功，插入当前经销商信息
-				           $datrr = array('pid'=>$insertinfo,'dlname'=>$dealername); 
-				           $insertjxs = $dealer->ItDealerInfoBW($datrr);
+				           $datrr = array('pid'=>$insertinfo,'dlname'=>$dealername,'minname'=>$dealminname); 
+				           $insertjxs = $dealer->ItMJZs($datrr,'bwbx57');
 				           var_dump( $insertjxs);
 				           echo "<br>";
 			           }   
@@ -397,15 +396,219 @@ class Excel extends	Controller
 		            $dataarr['dlname'] = $dealprovince; //城市名称
 			        $dataarr['pid'] = 0; //父级省份id
 			        $dataarr['minname'] = ""; //经销商名字简称
-		            $dataarr['number'] = ""; //编码
-		            $dataarr['addr'] = ""; //地址
-			        $insertinfo = $dealer->ItDealerInfoBW($dataarr);
+		         
+			        $insertinfo = $dealer->ItMJZs($dataarr,'bwbx57');
 			        var_dump( $insertinfo);
 				    echo "<br>";
 	            }
             }else{//存在,继续
 	            continue;
             }
+            //var_dump($dm,$dealername,$dealcity,$dealprovince,$dealminname);
+             
+            //检测城市是否存在，不存在，创建，存在获取cityid
+
+             
+        } 
+        return "success";
+        return $this->fetch();
+    }
+
+
+
+    //汽车大全 车型信息导入
+    public function allcar_cbh(){ 
+    //关闭
+        //return "closed";
+        $file = request()->file('importexcel');
+       
+        // 移动到框架应用根目录/public/uploads/ 目录下
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+        if($info){
+            // 成功上传后 获取上传信息 
+            $extname = $info->getExtension(); //获取文件扩展名  
+            $urlname = $info->getSaveName(); //获取文件存储目录及名称
+            $urlname = ROOT_PATH . 'public' . DS . 'uploads/'.$urlname;
+            $filename = $info->getFilename();  //获取文件保存名称
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        } 
+       
+        if ($extname == 'xls') {
+            $result = import("Excel5",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel5();
+        } elseif ($extname == 'xlsx') {
+            $result = import("Excel2007",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel2007();
+        } else {
+            return '路径出错';
+        }
+
+        $PHPExcel     = $PHPReader->load($urlname);
+        $currentSheet = $PHPExcel->getSheet(0);
+        $allColumn    = $currentSheet->getHighestColumn();
+        $allRow       = $currentSheet->getHighestRow();
+        //$allRow = 10;
+        $dealer = new ChebhModel();
+        $allColumn ='N';
+        for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
+            for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
+                $address = $currentColumn.$currentRow;
+                $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+               // if(is_object($arr[$currentRow][$currentColumn]) ){     //富文本转换字符串  
+                //instanceof PHPExcel_RichText 需要检测字段类型 目前为强制转换
+                //富文本转换
+                   //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
+            }
+             
+            $ppid = $arr[$currentRow]['A']; //车型大品牌id 一级
+            $ppname = $arr[$currentRow]['B']; //车型品牌名称
+            $pid = $arr[$currentRow]['C']; //车型细品牌id 二级
+            $pname =  $arr[$currentRow]['D']; //车型细品牌名称
+            $did = $arr[$currentRow]['E']; //车型id 三级
+            $dname =  $arr[$currentRow]['F']; //车型名称
+            unset($arr);
+            //检测经销商是否存在，存在继续下一个，不存在检测省份，城市 
+
+            if(!$ppname|| !$pname ||!$dname){
+                continue;
+            } 
+            $dataarr = array();
+            //检测id，名称是否存在
+            $ckend = $dealer->Ckextid($did,$dname); 
+            if(!$ckend){ //如果不存在
+                //检测一级是否存在，不存在，创建，存在获取proid
+                $endpro =  $dealer->Ckextid($ppid,$ppname);
+                if($endpro){ //一级存在 检测二级是否存在
+                    $endcity =  $dealer->Ckextid($pid,$pname);
+                    if($endcity){ //二级存在，插入车型信息
+                        //$dataarr = array('dm'=>$dm); //存放传入信息 
+                        $dataarr['brand_id'] = $did; //当前id
+                        $dataarr['brand_name'] = $dname ; //车型名称
+                        $dataarr['pid'] = $pid; //  二级id
+                    
+                        $insertinfo = $dealer->IntCarinfo($dataarr);
+                        var_dump( $insertinfo);
+                           echo "<br>";
+                    }else{ //城市不存在，先插入城市，获取城市id，再插入经销商
+                        //$dataarr = array('dm'=>$dm); //存放传入信息 
+                        $dataarr['brand_id'] = $pid; //当前id
+                        $dataarr['brand_name'] = $pname ; //车型名称
+                        $dataarr['pid'] = $ppid; //  二级id
+                    
+                        $insertinfo = $dealer->IntCarinfo($dataarr);
+                       var_dump( $insertinfo);
+                           echo "<br>";
+                       if($insertinfo){ //城市插入成功，插入当前经销商信息
+                           $datrr = array('pid'=>$pid,'brand_id'=>$did,'brand_name'=>$dname); 
+                           $insertjxs = $dealer->IntCarinfo($datrr);
+                           unset($datrr);
+                           var_dump( $insertjxs);
+                           echo "<br>";
+                       }   
+                    }
+                }else{ //一级不存在，创建 
+                     //$dataarr = array('dm'=>$dm); //存放传入信息 
+                    $dataarr['brand_id'] = $ppid; //当前id
+                    $dataarr['brand_name'] = $ppname ; //车型名称
+                    $dataarr['pid'] = 0; //  二级id
+                
+                    $insertinfo = $dealer->IntCarinfo($dataarr);
+                    var_dump( $insertinfo);
+                    echo "<br>";
+                }
+            }else{//存在,继续
+                continue;
+            }
+            unset($dataarr);
+            //var_dump($dm,$dealername,$dealcity,$dealprovince,$dealminname);
+             
+            //检测城市是否存在，不存在，创建，存在获取cityid
+
+             
+        } 
+        return "success";
+        return $this->fetch();
+    }
+
+
+     //汽车大全 车型信息导入
+    public function allcar_cbh_detail(){ 
+    //关闭
+        return "closed";
+        $file = request()->file('importexcel');
+       
+        // 移动到框架应用根目录/public/uploads/ 目录下
+        $info = $file->move(ROOT_PATH . 'public' . DS . 'uploads');
+        if($info){
+            // 成功上传后 获取上传信息 
+            $extname = $info->getExtension(); //获取文件扩展名  
+            $urlname = $info->getSaveName(); //获取文件存储目录及名称
+            $urlname = ROOT_PATH . 'public' . DS . 'uploads/'.$urlname;
+            $filename = $info->getFilename();  //获取文件保存名称
+        }else{
+            // 上传失败获取错误信息
+            echo $file->getError();
+        } 
+       
+        if ($extname == 'xls') {
+            $result = import("Excel5",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel5();
+        } elseif ($extname == 'xlsx') {
+            $result = import("Excel2007",EXTEND_PATH.'PHPExcel/PHPExcel/Reader');
+            $PHPReader = new \PHPExcel_Reader_Excel2007();
+        } else {
+            return '路径出错';
+        }
+
+        $PHPExcel     = $PHPReader->load($urlname);
+        $currentSheet = $PHPExcel->getSheet(0);
+        $allColumn    = $currentSheet->getHighestColumn();
+        $allRow       = $currentSheet->getHighestRow();
+        //$allRow = 10;
+        $dealer = new ChebhModel();
+        $allColumn ='N';
+        for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
+            for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
+                $address = $currentColumn.$currentRow;
+                $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
+               // if(is_object($arr[$currentRow][$currentColumn]) ){     //富文本转换字符串  
+                //instanceof PHPExcel_RichText 需要检测字段类型 目前为强制转换
+                //富文本转换
+                   //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
+            }
+            $onearr = array();
+            $twoarr = array();
+            $threearr = array();
+            $fourarr = array();
+            $onearr['brand_id'] = $arr[$currentRow]['A']; //车型大品牌id 一级
+            $onearr['brand_name'] = $arr[$currentRow]['B']; //车型品牌名称
+            $onearr['pid'] = 0;
+            $twoarr['brand_id'] = $arr[$currentRow]['C']; //车型细品牌id 二级
+            $twoarr['brand_name'] =  $arr[$currentRow]['D']; //车型细品牌名称
+            $twoarr['pid'] = $onearr['brand_id'];
+            $threearr['brand_id'] = $arr[$currentRow]['E']; //车型id 三级
+            $threearr['brand_name'] =  $arr[$currentRow]['F']; //车型名称
+            $threearr['pid'] = $twoarr['brand_id'];
+            $fourarr['brand_id'] = $arr[$currentRow]['G']; //车型id 四级
+            $fourarr['brand_name'] =  $arr[$currentRow]['H']; //车型名称
+            $fourarr['pid'] = $threearr['brand_id'];
+            unset($arr);
+            //检测经销商是否存在，存在继续下一个，不存在检测省份，城市 
+
+            //检测id，名称是否存在
+            $onek = $dealer->Chbint($onearr,'cbh_brand');
+            echo $onek."<br>";
+            $two = $dealer->Chbint($twoarr,'cbh_masterbrand');
+            echo $two."<br>";
+            $thre = $dealer->Chbint($threearr,'cbh_carserise');
+            echo $thre."<br>";
+            $fourk = $dealer->Chbint($fourarr,'cbh_carbasic');
+            echo $fourk."<br>";
+            //不存在，插入
+            
+          
             //var_dump($dm,$dealername,$dealcity,$dealprovince,$dealminname);
              
             //检测城市是否存在，不存在，创建，存在获取cityid
@@ -473,6 +676,9 @@ class Excel extends	Controller
         
 	}
 
+	//行圆全部城市列表信息导入
+ 
+
 	//经销商信息导入
 	public function readerRW() { 
     //关闭
@@ -507,7 +713,7 @@ class Excel extends	Controller
         $allColumn    = $currentSheet->getHighestColumn();
         $allRow       = $currentSheet->getHighestRow();
         $dealer = new DealerModel();
-        $allColumn ='H';
+        $allColumn ='N';
         for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
             for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
                 $address = $currentColumn.$currentRow;
@@ -518,8 +724,8 @@ class Excel extends	Controller
 			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
             }
           
-            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
-            $dealcity = $arr[$currentRow]['B']; //经销商所在城市名称
+            $dealprovince = $arr[$currentRow]['J']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['K']; //经销商所在城市名称
             //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
             if( !$dealcity ||!$dealprovince){
 	            continue;

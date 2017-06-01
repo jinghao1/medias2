@@ -1,0 +1,333 @@
+[ 2017-05-18T17:49:51+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.082678s][吞吐率：12.10req/s] [内存消耗：4,042.84kb] [文件加载：47]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=nah50dkm5ahvaopa7rn04rnv23',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/cityact/citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000516s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005058s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 1  [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 820000  [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 2  [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 31  [ RunTime:0.001034s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 3  [ RunTime:0.001247s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 6  [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 7  [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 4  [ RunTime:0.001071s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 5  [ RunTime:0.001011s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 13  [ RunTime:0.001384s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 12  [ RunTime:0.001002s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 10  [ RunTime:0.001216s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 9  [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 8  [ RunTime:0.001022s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 11  [ RunTime:0.001027s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 14  [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 15  [ RunTime:0.000924s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 16  [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 17  [ RunTime:0.001129s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 18  [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 19  [ RunTime:0.001147s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 20  [ RunTime:0.001126s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 23  [ RunTime:0.001141s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 24  [ RunTime:0.001058s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 25  [ RunTime:0.000972s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 22  [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 21  [ RunTime:0.000944s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 26  [ RunTime:0.001036s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 710000  [ RunTime:0.000967s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 810000  [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 27  [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 28  [ RunTime:0.001030s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 29  [ RunTime:0.001040s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 30  [ RunTime:0.001088s ]
+
+---------------------------------------------------------------
+[ 2017-05-18T17:49:55+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upactaddr?callback=jQuery1123029865372346737584_1495100991710
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upactaddr?callback=jQuery1123029865372346737584_1495100991710 [运行时间：0.033257s][吞吐率：30.07req/s] [内存消耗：2,714.69kb] [文件加载：41]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upactaddr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '90',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/cityact/citylist.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=nah50dkm5ahvaopa7rn04rnv23',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1123029865372346737584_1495100991710',
+  'actaddr' => 'kkkkk',
+  'actstatu' => 'false',
+  'cbwaiting' => 'true',
+  'begt' => '2017-03-09 23:33',
+  'endt' => '0',
+  'fzr' => '',
+  'cityid' => '306',
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upactaddr[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000477s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcbhact` [ RunTime:0.003696s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allcbhact` WHERE  `cityid` = 306   [ RunTime:0.000371s ]
+[ sql ] [ SQL ] UPDATE `zt_allcbhact`  SET `cityid`=306,`begtime`=1489073580,`endtime`=0,`address`='kkkkk',`fzrname`='',`waiting`=1  WHERE  `cityid` = 306          [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003965s ]
+[ sql ] [ SQL ] UPDATE `zt_allcity`  SET `status`=0  WHERE  `cityid` = 306     [ RunTime:0.000304s ]
+
+---------------------------------------------------------------
+[ 2017-05-18T17:49:55+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.066323s][吞吐率：15.08req/s] [内存消耗：3,582.00kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/cityact/citylist.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=nah50dkm5ahvaopa7rn04rnv23',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/cityact/citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000423s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004636s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 1  [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 820000  [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 2  [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 31  [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 3  [ RunTime:0.001184s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 6  [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 7  [ RunTime:0.000884s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 4  [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 5  [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 13  [ RunTime:0.000965s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 12  [ RunTime:0.000960s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 10  [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 9  [ RunTime:0.000894s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 8  [ RunTime:0.000962s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 11  [ RunTime:0.000961s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 14  [ RunTime:0.001087s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 15  [ RunTime:0.001062s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 16  [ RunTime:0.000864s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 17  [ RunTime:0.000964s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 18  [ RunTime:0.000974s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 19  [ RunTime:0.000935s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 20  [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 23  [ RunTime:0.000957s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 24  [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 25  [ RunTime:0.000871s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 22  [ RunTime:0.000941s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 21  [ RunTime:0.001005s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 26  [ RunTime:0.000966s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 710000  [ RunTime:0.000939s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 810000  [ RunTime:0.000914s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 27  [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 28  [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 29  [ RunTime:0.000869s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 30  [ RunTime:0.000947s ]
+
+---------------------------------------------------------------
+[ 2017-05-18T17:50:00+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upactaddr?callback=jQuery1123022583268483462904_1495100995798
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upactaddr?callback=jQuery1123022583268483462904_1495100995798 [运行时间：0.038838s][吞吐率：25.75req/s] [内存消耗：2,715.18kb] [文件加载：41]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upactaddr',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '68',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'origin' => 'http://127.0.0.1',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/cityact/citylist.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=nah50dkm5ahvaopa7rn04rnv23',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1123022583268483462904_1495100995798',
+  'actaddr' => '',
+  'actstatu' => 'false',
+  'cbwaiting' => 'true',
+  'begt' => '0',
+  'endt' => '0',
+  'fzr' => '',
+  'cityid' => '417',
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upactaddr[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001939s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcbhact` [ RunTime:0.003815s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allcbhact` WHERE  `cityid` = 417   [ RunTime:0.000463s ]
+[ sql ] [ SQL ] INSERT INTO `zt_allcbhact` (`cityid` , `begtime` , `endtime` , `address` , `fzrname` , `waiting`) VALUES (417 , 0 , 0 , '' , '' , 1)        [ RunTime:0.000376s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003713s ]
+[ sql ] [ SQL ] UPDATE `zt_allcity`  SET `status`=0  WHERE  `cityid` = 417     [ RunTime:0.000570s ]
+
+---------------------------------------------------------------
+[ 2017-05-18T17:50:00+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.071406s][吞吐率：14.00req/s] [内存消耗：3,582.06kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/cityact/citylist.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=nah50dkm5ahvaopa7rn04rnv23',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/cityact/citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000611s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004032s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.001066s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 1  [ RunTime:0.001074s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 820000  [ RunTime:0.001028s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 2  [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 31  [ RunTime:0.001014s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 3  [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 6  [ RunTime:0.001061s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 7  [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 4  [ RunTime:0.001130s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 5  [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 13  [ RunTime:0.000938s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 12  [ RunTime:0.001016s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 10  [ RunTime:0.001070s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 9  [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 8  [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 11  [ RunTime:0.001085s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 14  [ RunTime:0.000878s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 15  [ RunTime:0.001020s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 16  [ RunTime:0.001125s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 17  [ RunTime:0.001037s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 18  [ RunTime:0.001012s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 19  [ RunTime:0.001108s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 20  [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 23  [ RunTime:0.001050s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 24  [ RunTime:0.001026s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 25  [ RunTime:0.001128s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 22  [ RunTime:0.001095s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 21  [ RunTime:0.001090s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 26  [ RunTime:0.000917s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 710000  [ RunTime:0.000929s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 810000  [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 27  [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 28  [ RunTime:0.001029s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 29  [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 30  [ RunTime:0.000988s ]
+
+---------------------------------------------------------------

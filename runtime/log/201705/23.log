@@ -1,0 +1,1783 @@
+[ 2017-05-23T14:16:41+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/Carinfo
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/Carinfo [运行时间：0.086048s][吞吐率：11.62req/s] [内存消耗：1,335.91kb] [文件加载：28]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Carinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [4]语法错误: unexpected '}'[/Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php:205]
+
+---------------------------------------------------------------
+[ 2017-05-23T14:16:56+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/Carinfo
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/Carinfo [运行时间：0.464010s][吞吐率：2.16req/s] [内存消耗：3,221.39kb] [文件加载：38]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Carinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Carinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.004188s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand_cbh` [ RunTime:0.005687s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 0   [ RunTime:0.001454s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 8   [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 192   [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 193   [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 81   [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3063   [ RunTime:0.000600s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2661   [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2539   [ RunTime:0.000764s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2062   [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2066   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2065   [ RunTime:0.002113s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2064   [ RunTime:0.000923s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4158   [ RunTime:0.000814s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2051   [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2063   [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2049   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4157   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2538   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2061   [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 149   [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 70   [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2   [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 120   [ RunTime:0.000598s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 119   [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 218   [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 224   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 301   [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 1   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 108   [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 130   [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 271   [ RunTime:0.000590s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 129   [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 229   [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 12   [ RunTime:0.000650s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4467   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2690   [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2075   [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2815   [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2076   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2077   [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2984   [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3382   [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4177   [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3355   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3083   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2986   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3051   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3885   [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2622   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4463   [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4505   [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4162   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4464   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3037   [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2074   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4220   [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3700   [ RunTime:0.000802s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4803   [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4964   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4946   [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3826   [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3800   [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 201   [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 7   [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 206   [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 238   [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3884   [ RunTime:0.001978s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3093   [ RunTime:0.000583s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2476   [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4131   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2577   [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2576   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4432   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2612   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2477   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 21   [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 124   [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 24   [ RunTime:0.000550s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 37   [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4050   [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4051   [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4685   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4852   [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3843   [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4686   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4687   [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 125   [ RunTime:0.000587s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 160   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 166   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2048   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 121   [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 145   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 64   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 13   [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2755   [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 186   [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 237   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 159   [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 236   [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4755   [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4280   [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3801   [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4583   [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2913   [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2137   [ RunTime:0.000531s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2138   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4042   [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2135   [ RunTime:0.000558s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2136   [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2683   [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2877   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2681   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2843   [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2139   [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4785   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 54   [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 84   [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2821   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2649   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4087   [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4879   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4444   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4181   [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4182   [ RunTime:0.000760s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2087   [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2535   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4918   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3833   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2193   [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3065   [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2878   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4730   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4478   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2097   [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2219   [ RunTime:0.000798s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4518   [ RunTime:0.000591s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4149   [ RunTime:0.000797s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4302   [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3574   [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4276   [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4251   [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2907   [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2217   [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3329   [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3330   [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3331   [ RunTime:0.000771s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3435   [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3436   [ RunTime:0.000555s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2218   [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2220   [ RunTime:0.000541s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4951   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2132   [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4175   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4749   [ RunTime:0.000527s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4049   [ RunTime:0.000529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4714   [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4790   [ RunTime:0.000743s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2988   [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4732   [ RunTime:0.000544s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 128   [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 19   [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2655   [ RunTime:0.000538s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4286   [ RunTime:0.000528s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4487   [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4822   [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4409   [ RunTime:0.000774s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2658   [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2275   [ RunTime:0.000603s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2441   [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4838   [ RunTime:0.001220s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2437   [ RunTime:0.000927s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2657   [ RunTime:0.000628s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2438   [ RunTime:0.000610s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4698   [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2656   [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4414   [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2652   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2440   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3049   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2439   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4856   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4947   [ RunTime:0.000547s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3561   [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4529   [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4530   [ RunTime:0.000567s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4114   [ RunTime:0.000866s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4528   [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4035   [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4139   [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3650   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2808   [ RunTime:0.000535s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4700   [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4128   [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4679   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 150   [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 20   [ RunTime:0.000889s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2515   [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4466   [ RunTime:0.000873s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3614   [ RunTime:0.000663s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2403   [ RunTime:0.000574s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4090   [ RunTime:0.000545s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2514   [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3518   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2971   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2516   [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2653   [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 123   [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 14   [ RunTime:0.000615s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3755   [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3716   [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2642   [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3072   [ RunTime:0.000811s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2643   [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2644   [ RunTime:0.000921s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2914   [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3832   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4101   [ RunTime:0.000840s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 188   [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 87   [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2080   [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3951   [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2905   [ RunTime:0.000883s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2072   [ RunTime:0.000879s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4056   [ RunTime:0.000597s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4053   [ RunTime:0.000656s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2592   [ RunTime:0.000837s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2082   [ RunTime:0.000660s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 241   [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 103   [ RunTime:0.000788s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4640   [ RunTime:0.000847s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4085   [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3892   [ RunTime:0.000828s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3447   [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 196   [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 102   [ RunTime:0.000885s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 205   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 268   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 223   [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 86   [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3303   [ RunTime:0.000763s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4637   [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4258   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4522   [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4447   [ RunTime:0.000742s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4389   [ RunTime:0.000860s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4299   [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4865   [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4723   [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4638   [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4961   [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4966   [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3890   [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4194   [ RunTime:0.000686s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3015   [ RunTime:0.000744s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 170   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 127   [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 133   [ RunTime:0.000790s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 27   [ RunTime:0.000830s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 109   [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 163   [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2047   [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2046   [ RunTime:0.000813s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 15   [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 16   [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 137   [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 47   [ RunTime:0.000671s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2092   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2854   [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 35   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 132   [ RunTime:0.000601s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 184   [ RunTime:0.000775s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 131   [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 52   [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3781   [ RunTime:0.000746s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4054   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3380   [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4919   [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3802   [ RunTime:0.000956s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4328   [ RunTime:0.000969s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4584   [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4753   [ RunTime:0.000862s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4469   [ RunTime:0.000812s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4052   [ RunTime:0.000778s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 6   [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 136   [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 112   [ RunTime:0.000647s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 73   [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 122   [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 10   [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 11   [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 139   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 173   [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 255   [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 58   [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 91   [ RunTime:0.001601s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 26   [ RunTime:0.000999s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 40   [ RunTime:0.000709s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 187   [ RunTime:0.000901s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 22   [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 247   [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 319   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 53   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 83   [ RunTime:0.000888s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2665   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4147   [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2211   [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3664   [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2213   [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2212   [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2838   [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4764   [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3665   [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4229   [ RunTime:0.000666s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3667   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 107   [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 154   [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2606   [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2377   [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 30   [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 165   [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 44   [ RunTime:0.000931s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2157   [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2797   [ RunTime:0.000594s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2153   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3917   [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2942   [ RunTime:0.000623s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2150   [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3   [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 183   [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 157   [ RunTime:0.000782s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2045   [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2050   [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 34   [ RunTime:0.000607s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 219   [ RunTime:0.000616s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 220   [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 286   [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4278   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4322   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 32   [ RunTime:0.000918s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 46   [ RunTime:0.001006s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2052   [ RunTime:0.000849s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 93   [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 185   [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 292   [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 29   [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 43   [ RunTime:0.001073s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2144   [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3458   [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3562   [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3189   [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2908   [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4968   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2145   [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3590   [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3387   [ RunTime:0.000557s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2141   [ RunTime:0.000785s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2140   [ RunTime:0.000714s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4140   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4179   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4357   [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4632   [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4878   [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2148   [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2147   [ RunTime:0.000576s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2603   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2142   [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2884   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2146   [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 142   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 56   [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 210   [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 288   [ RunTime:0.000770s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2684   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3166   [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3952   [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2956   [ RunTime:0.000736s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4038   [ RunTime:0.000685s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2373   [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2374   [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2954   [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3809   [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2763   [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3554   [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2765   [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4952   [ RunTime:0.000872s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2405   [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3005   [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2955   [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2173   [ RunTime:0.000581s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2396   [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2946   [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2528   [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 94   [ RunTime:0.000684s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 312   [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 202   [ RunTime:0.000806s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 89   [ RunTime:0.000661s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 134   [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 135   [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 71   [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 110   [ RunTime:0.000735s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 90   [ RunTime:0.000662s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 138   [ RunTime:0.000773s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 88   [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2321   [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3042   [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4979   [ RunTime:0.000776s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2320   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2864   [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3143   [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2205   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2949   [ RunTime:0.000724s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 76   [ RunTime:0.000750s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 208   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 207   [ RunTime:0.000711s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 74   [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 115   [ RunTime:0.000664s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 147   [ RunTime:0.000639s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 231   [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4681   [ RunTime:0.000723s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 79   [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 38   [ RunTime:0.000851s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 148   [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3116   [ RunTime:0.000730s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4924   [ RunTime:0.000716s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3764   [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4212   [ RunTime:0.000680s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2802   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3975   [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3117   [ RunTime:0.000823s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2964   [ RunTime:0.000690s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4645   [ RunTime:0.000728s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3238   [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4392   [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4423   [ RunTime:0.000691s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2216   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2771   [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2426   [ RunTime:0.000655s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 4835   [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2529   [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2720   [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 3032   [ RunTime:0.000712s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2407   [ RunTime:0.000767s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2406   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2260   [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2393   [ RunTime:0.000560s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2966   [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 25   [ RunTime:0.000907s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 36   [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 211   [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 9   [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 59   [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 214   [ RunTime:0.000721s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 97   [ RunTime:0.000701s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 140   [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 106   [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 180   [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 262   [ RunTime:0.000675s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2834   [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2835   [ RunTime:0.000672s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 2836   [ RunTime:0.000899s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 95   [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 212   [ RunTime:0.000641s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 48   [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 75   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 82   [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 98   [ RunTime:0.000949s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 117   [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 245   [ RunTime:0.000708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 246   [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 49   [ RunTime:0.000696s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 55   [ RunTime:0.000699s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 221   [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 72   [ RunTime:0.000793s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand_cbh` WHERE  `pid` = 111   [ RunTime:0.000695s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/index.html [运行时间：0.064239s][吞吐率：15.57req/s] [内存消耗：1,716.52kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/top.html [运行时间：0.034743s][吞吐率：28.78req/s] [内存消耗：1,717.23kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/menu.html [运行时间：0.119927s][吞吐率：8.34req/s] [内存消耗：2,896.03kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002636s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.010653s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.003371s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000874s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000428s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000320s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.001178s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/main.html [运行时间：0.146217s][吞吐率：6.84req/s] [内存消耗：1,641.90kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.020505s][吞吐率：48.77req/s] [内存消耗：1,976.86kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Excel.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/excel/putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T15:38:49+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/excel/allcar_cbh_detail.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/allcar_cbh_detail.html [运行时间：8.306982s][吞吐率：0.12req/s] [内存消耗：156,983.72kb] [文件加载：95]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'allcar_cbh_detail',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '1389212',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryASkCG23rByG9nTl1',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->allcar_cbh_detail[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000549s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_brand` [ RunTime:0.003211s ]
+[ sql ] [ SQL ] INSERT INTO `zt_cbh_brand` (`brand_id` , `brand_name` , `pid`) VALUES (8 , '奥迪' , 0)     [ RunTime:0.000494s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_masterbrand` [ RunTime:0.003331s ]
+[ sql ] [ SQL ] INSERT INTO `zt_cbh_masterbrand` (`brand_id` , `brand_name` , `pid`) VALUES (192 , '奥迪(进口)' , 8)     [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.002418s ]
+[ sql ] [ SQL ] INSERT INTO `zt_cbh_carserise` (`brand_id` , `brand_name` , `pid`) VALUES (4358 , 'A3 e-tron' , 192)     [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.002499s ]
+[ sql ] [ SQL ] INSERT INTO `zt_cbh_carbasic` (`brand_id` , `brand_name` , `pid`) VALUES (13217 , 'Sportback e-tron 舒适型' , 4358)     [ RunTime:0.000424s ]
+[ error ] [10501]SQLSTATE[23000]: Integrity constraint violation: 1062 Duplicate entry '8' for key 'PRIMARY'[/Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/library/think/db/Connection.php:405]
+
+---------------------------------------------------------------
+[ 2017-05-23T15:41:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.030420s][吞吐率：32.87req/s] [内存消耗：1,790.91kb] [文件加载：34]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Excel.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/excel/putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T15:57:59+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Carinfocbh?callback=jQuery183014056639314415542_1495526279509&_=1495526279544
+[ log ] localhost/medias/public/index.php/port/Chebaih/Carinfocbh?callback=jQuery183014056639314415542_1495526279509&_=1495526279544 [运行时间：0.227165s][吞吐率：4.40req/s] [内存消耗：2,896.81kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Carinfocbh',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=copf8u5o8n7465tkdvahbflk33',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183014056639314415542_1495526279509',
+  '_' => '1495526279544',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Carinfocbh[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001653s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_brand` [ RunTime:0.004195s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_brand` WHERE  `pid` = 0   [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_masterbrand` [ RunTime:0.004755s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 8   [ RunTime:0.000638s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.003349s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 192   [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 193   [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 81   [ RunTime:0.000617s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 149   [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 70   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 2   [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 120   [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 119   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 218   [ RunTime:0.000532s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 224   [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 301   [ RunTime:0.000625s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 1   [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 108   [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 130   [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 271   [ RunTime:0.001136s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 129   [ RunTime:0.000720s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 229   [ RunTime:0.001485s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 12   [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 8   [ RunTime:0.001656s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 201   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 7   [ RunTime:0.001045s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 206   [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 238   [ RunTime:0.000839s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 21   [ RunTime:0.000893s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 124   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 24   [ RunTime:0.001611s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 37   [ RunTime:0.000807s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 4   [ RunTime:0.000980s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 125   [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 160   [ RunTime:0.001138s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 166   [ RunTime:0.000959s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 121   [ RunTime:0.001740s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 145   [ RunTime:0.001162s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 64   [ RunTime:0.000829s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 13   [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 12   [ RunTime:0.000659s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 186   [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 237   [ RunTime:0.001737s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 159   [ RunTime:0.001032s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 236   [ RunTime:0.000954s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 54   [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 84   [ RunTime:0.001025s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 128   [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 19   [ RunTime:0.000815s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 150   [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 21   [ RunTime:0.000787s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 20   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 19   [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 23   [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 123   [ RunTime:0.000460s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 14   [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 108   [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 156   [ RunTime:0.000643s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 33   [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 7   [ RunTime:0.000542s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 128   [ RunTime:0.000955s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 60   [ RunTime:0.000820s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 80   [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 188   [ RunTime:0.000612s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 87   [ RunTime:0.000484s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 241   [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 103   [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 196   [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 102   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 205   [ RunTime:0.000398s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 268   [ RunTime:0.000777s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 223   [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 86   [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 24   [ RunTime:0.000510s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 31   [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 170   [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 127   [ RunTime:0.000722s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 241   [ RunTime:0.000694s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 133   [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 27   [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 109   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 163   [ RunTime:0.000692s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 15   [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 16   [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 137   [ RunTime:0.000757s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 47   [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 35   [ RunTime:0.000488s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 132   [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 184   [ RunTime:0.000575s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 131   [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 52   [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 6   [ RunTime:0.000363s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 136   [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 112   [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 73   [ RunTime:0.000584s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 122   [ RunTime:0.000475s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 10   [ RunTime:0.000710s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 11   [ RunTime:0.000624s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 139   [ RunTime:0.000419s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 223   [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 173   [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 255   [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 58   [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 91   [ RunTime:0.000703s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 26   [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 40   [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 187   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 22   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 27   [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 41   [ RunTime:0.000877s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 225   [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 247   [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 319   [ RunTime:0.000629s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 53   [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 83   [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 107   [ RunTime:0.000533s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 154   [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 30   [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 165   [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 44   [ RunTime:0.000588s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 3   [ RunTime:0.000388s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 183   [ RunTime:0.000669s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 157   [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 4   [ RunTime:0.000553s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 3   [ RunTime:0.000741s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 34   [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 219   [ RunTime:0.000673s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 220   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 286   [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 32   [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 46   [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 93   [ RunTime:0.000346s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 185   [ RunTime:0.000707s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 292   [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 29   [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 43   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 46   [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 107   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 32   [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 158   [ RunTime:0.000832s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 102   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 143   [ RunTime:0.000636s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 65   [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 142   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 56   [ RunTime:0.000749s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 210   [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 288   [ RunTime:0.000648s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 14   [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 17   [ RunTime:0.000569s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 188   [ RunTime:0.000752s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 152   [ RunTime:0.000838s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 13   [ RunTime:0.000651s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 145   [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 289   [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 290   [ RunTime:0.000667s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 94   [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 312   [ RunTime:0.000614s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 202   [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 89   [ RunTime:0.000472s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 134   [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 135   [ RunTime:0.000789s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 71   [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 110   [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 90   [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 138   [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 31   [ RunTime:0.000505s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 45   [ RunTime:0.000634s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 91   [ RunTime:0.000552s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 182   [ RunTime:0.000585s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 293   [ RunTime:0.000509s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 16   [ RunTime:0.000314s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 284   [ RunTime:0.000611s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 153   [ RunTime:0.000835s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 118   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 88   [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 206   [ RunTime:0.000589s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 76   [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 208   [ RunTime:0.000679s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 207   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 74   [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 115   [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 147   [ RunTime:0.000332s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 231   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 79   [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 38   [ RunTime:0.000795s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 123   [ RunTime:0.000593s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 23   [ RunTime:0.000522s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 29   [ RunTime:0.000570s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 210   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 148   [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 35   [ RunTime:0.000608s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 37   [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 54   [ RunTime:0.000592s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 25   [ RunTime:0.000374s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 36   [ RunTime:0.000478s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 211   [ RunTime:0.000821s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 88   [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 73   [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 114   [ RunTime:0.000682s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T15:58:49+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Carinfocbh?callback=jQuery18305499594229814917_1495526329455&_=1495526329503
+[ log ] localhost/medias/public/index.php/port/Chebaih/Carinfocbh?callback=jQuery18305499594229814917_1495526329455&_=1495526329503 [运行时间：0.219534s][吞吐率：4.56req/s] [内存消耗：2,833.29kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Carinfocbh',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=copf8u5o8n7465tkdvahbflk33',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18305499594229814917_1495526329455',
+  '_' => '1495526329503',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Carinfocbh[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000720s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_brand` [ RunTime:0.003395s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_brand` WHERE  `pid` = 0   [ RunTime:0.000462s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_masterbrand` [ RunTime:0.004701s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 8   [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.003708s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 192   [ RunTime:0.000559s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 193   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 81   [ RunTime:0.000850s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 149   [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 70   [ RunTime:0.000678s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 2   [ RunTime:0.000563s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 120   [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 119   [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 218   [ RunTime:0.004796s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 224   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 301   [ RunTime:0.000718s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 1   [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 108   [ RunTime:0.000875s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 130   [ RunTime:0.000834s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 271   [ RunTime:0.000841s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 129   [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 229   [ RunTime:0.000952s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 12   [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 8   [ RunTime:0.000772s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 201   [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 7   [ RunTime:0.000726s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 206   [ RunTime:0.000383s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 238   [ RunTime:0.000761s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 21   [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 124   [ RunTime:0.000825s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 24   [ RunTime:0.000887s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 37   [ RunTime:0.001234s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 4   [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 125   [ RunTime:0.000786s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 160   [ RunTime:0.000856s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 166   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 121   [ RunTime:0.000400s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 145   [ RunTime:0.000809s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 64   [ RunTime:0.000804s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 13   [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 12   [ RunTime:0.000536s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 186   [ RunTime:0.000292s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 237   [ RunTime:0.001225s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 159   [ RunTime:0.002202s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 236   [ RunTime:0.001597s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 54   [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 84   [ RunTime:0.000868s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 128   [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 19   [ RunTime:0.000549s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 150   [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 21   [ RunTime:0.000808s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 20   [ RunTime:0.000738s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 19   [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 23   [ RunTime:0.000732s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 123   [ RunTime:0.000562s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 14   [ RunTime:0.000737s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 108   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 156   [ RunTime:0.000843s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 33   [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 7   [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 128   [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 60   [ RunTime:0.000658s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 80   [ RunTime:0.000561s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 188   [ RunTime:0.000323s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 87   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 241   [ RunTime:0.000405s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 103   [ RunTime:0.000683s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 196   [ RunTime:0.000402s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 102   [ RunTime:0.000580s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 205   [ RunTime:0.000438s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 268   [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 223   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 86   [ RunTime:0.000698s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 24   [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 31   [ RunTime:0.000943s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 170   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 127   [ RunTime:0.000704s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 241   [ RunTime:0.000599s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 133   [ RunTime:0.000604s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 27   [ RunTime:0.000646s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 109   [ RunTime:0.000497s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 163   [ RunTime:0.000715s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 15   [ RunTime:0.000365s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 16   [ RunTime:0.000582s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 137   [ RunTime:0.000836s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 47   [ RunTime:0.000674s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 35   [ RunTime:0.000508s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 132   [ RunTime:0.000596s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 184   [ RunTime:0.000729s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 131   [ RunTime:0.000530s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 52   [ RunTime:0.000818s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 6   [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 136   [ RunTime:0.000753s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 112   [ RunTime:0.000748s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 73   [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 122   [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 10   [ RunTime:0.000713s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 11   [ RunTime:0.001215s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 139   [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 223   [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 173   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 255   [ RunTime:0.000831s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 58   [ RunTime:0.000606s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 91   [ RunTime:0.000766s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 26   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 40   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 187   [ RunTime:0.000404s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 22   [ RunTime:0.000619s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 27   [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 41   [ RunTime:0.000573s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 225   [ RunTime:0.000577s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 247   [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 319   [ RunTime:0.000565s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 53   [ RunTime:0.000357s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 83   [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 107   [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 154   [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 30   [ RunTime:0.000352s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 165   [ RunTime:0.000543s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 44   [ RunTime:0.000768s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 3   [ RunTime:0.000373s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 183   [ RunTime:0.000578s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 157   [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 4   [ RunTime:0.000481s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 3   [ RunTime:0.000540s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 34   [ RunTime:0.000337s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 219   [ RunTime:0.000719s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 220   [ RunTime:0.000525s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 286   [ RunTime:0.000516s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 32   [ RunTime:0.000369s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 46   [ RunTime:0.000627s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 93   [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 185   [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 292   [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 29   [ RunTime:0.000360s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 43   [ RunTime:0.000521s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 46   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 107   [ RunTime:0.000492s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 32   [ RunTime:0.000933s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 158   [ RunTime:0.000586s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 102   [ RunTime:0.000406s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 143   [ RunTime:0.000688s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 65   [ RunTime:0.000863s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 142   [ RunTime:0.000380s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 56   [ RunTime:0.000620s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 210   [ RunTime:0.000389s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 288   [ RunTime:0.000534s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 14   [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 17   [ RunTime:0.000668s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 188   [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 152   [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 13   [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 145   [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 289   [ RunTime:0.000514s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 290   [ RunTime:0.000495s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 94   [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 312   [ RunTime:0.000449s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 202   [ RunTime:0.000487s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 89   [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 134   [ RunTime:0.000504s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 135   [ RunTime:0.000480s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 71   [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 110   [ RunTime:0.000717s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 90   [ RunTime:0.000328s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 138   [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 31   [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 45   [ RunTime:0.000479s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 91   [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 182   [ RunTime:0.000665s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 293   [ RunTime:0.000465s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 16   [ RunTime:0.000272s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 284   [ RunTime:0.000490s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 153   [ RunTime:0.000493s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 118   [ RunTime:0.000548s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 88   [ RunTime:0.000309s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 206   [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 76   [ RunTime:0.000310s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 208   [ RunTime:0.000491s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 207   [ RunTime:0.000482s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 74   [ RunTime:0.000288s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 115   [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 147   [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 231   [ RunTime:0.000498s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 79   [ RunTime:0.000249s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 38   [ RunTime:0.000467s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 123   [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 23   [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 29   [ RunTime:0.000452s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 210   [ RunTime:0.000474s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 148   [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 35   [ RunTime:0.000499s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 37   [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 54   [ RunTime:0.000485s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 25   [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 36   [ RunTime:0.000477s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 211   [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 88   [ RunTime:0.000564s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_masterbrand` WHERE  `pid` = 73   [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carserise` WHERE  `pid` = 114   [ RunTime:0.000481s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T16:29:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/user/getmenulist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/user/getmenulist.html [运行时间：0.099889s][吞吐率：10.01req/s] [内存消耗：3,008.05kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'user',
+    2 => 'getmenulist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\User->GetMenuList[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/User.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/user/getmenulist.html [ array (
+  0 => 'MenuData',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001748s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.004908s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_rule`  [ RunTime:0.000571s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T16:29:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/javascript/skin/images/tbg.gif
+[ log ] 127.0.0.1/medias/public/javascript/skin/images/tbg.gif [运行时间：0.071434s][吞吐率：14.00req/s] [内存消耗：1,266.46kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'javascript',
+    1 => 'skin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/user/getmenulist.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T16:29:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/skin/images/allbg.gif
+[ log ] 127.0.0.1/medias/public/skin/images/allbg.gif [运行时间：0.073221s][吞吐率：13.66req/s] [内存消耗：1,266.57kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'images',
+    2 => 'allbg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/user/getmenulist.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T16:59:33+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/GetyzmChb?callback=jQuery18307523913703493261_1495529965979&iphone=17703186690&_=1495529966017
+[ log ] localhost/medias/public/index.php/port/Chebaih/GetyzmChb?callback=jQuery18307523913703493261_1495529965979&iphone=17703186690&_=1495529966017 [运行时间：7.329530s][吞吐率：0.14req/s] [内存消耗：1,626.66kb] [文件加载：31]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'GetyzmChb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=copf8u5o8n7465tkdvahbflk33',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18307523913703493261_1495529965979',
+  'iphone' => '17703186690',
+  '_' => '1495529966017',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->GetyzmChb[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T17:11:12+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/GetyzmChb?callback=jQuery18306728512310312411_1495530663747&iphone=17703186690&_=1495530663783
+[ log ] localhost/medias/public/index.php/port/Chebaih/GetyzmChb?callback=jQuery18306728512310312411_1495530663747&iphone=17703186690&_=1495530663783 [运行时间：8.553210s][吞吐率：0.12req/s] [内存消耗：1,627.27kb] [文件加载：31]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'GetyzmChb',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=copf8u5o8n7465tkdvahbflk33',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18306728512310312411_1495530663747',
+  'iphone' => '17703186690',
+  '_' => '1495530663783',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->GetyzmChb[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:10:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/project/show.html [运行时间：0.127469s][吞吐率：7.85req/s] [内存消耗：3,105.27kb] [文件加载：50]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/project/show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001685s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.004459s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.001666s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.002054s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.003592s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000991s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T18:10:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/javascript/skin/images/tbg.gif
+[ log ] 127.0.0.1/medias/public/javascript/skin/images/tbg.gif [运行时间：0.052487s][吞吐率：19.05req/s] [内存消耗：1,266.47kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'javascript',
+    1 => 'skin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:10:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/skin/images/wbg.gif
+[ log ] 127.0.0.1/medias/public/skin/images/wbg.gif [运行时间：0.059665s][吞吐率：16.76req/s] [内存消耗：1,266.51kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'images',
+    2 => 'wbg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:10:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/skin/images/allbg.gif
+[ log ] 127.0.0.1/medias/public/skin/images/allbg.gif [运行时间：0.058418s][吞吐率：17.12req/s] [内存消耗：1,266.50kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'images',
+    2 => 'allbg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:10:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/add.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/project/add.html [运行时间：0.043512s][吞吐率：22.98req/s] [内存消耗：2,911.04kb] [文件加载：46]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->add[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/project/add.html [ array (
+  0 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000522s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_brand` [ RunTime:0.003599s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_brand` WHERE  `pid` = 0   [ RunTime:0.000515s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T18:18:32+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/project/add.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/project/add.html [运行时间：0.061624s][吞吐率：16.23req/s] [内存消耗：2,907.13kb] [文件加载：47]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'add',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '91',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://127.0.0.1',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/add.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+  'project_name' => '车百汇项目',
+  'brand_id' => 
+  array (
+    0 => '',
+  ),
+  'pj_id' => 'NB43594385',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->add[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/tpl/dispatch_jump.tpl [ array (
+  0 => 'code',
+  1 => 'msg',
+  2 => 'data',
+  3 => 'url',
+  4 => 'wait',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000433s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.004948s ]
+[ sql ] [ SQL ] INSERT INTO `zt_project` (`project_name` , `pj_id` , `brand` , `time`) VALUES ('车百汇项目' , 'NB43594385' , '' , '2017-05-23 18:18:32')      [ RunTime:0.000452s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T18:18:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/project/show.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/project/show.html [运行时间：0.035534s][吞吐率：28.14req/s] [内存消耗：3,105.34kb] [文件加载：50]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'project',
+    2 => 'show',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Project->show[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Project.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/project/show.html [ array (
+  0 => 'delopt',
+  1 => 'data',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000434s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_project` [ RunTime:0.003125s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 1   [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_project` `p` INNER JOIN `zt_brand` `b` ON `p`.`brand`=`b`.`brand_id` ORDER BY id desc LIMIT 0,20   [ RunTime:0.000367s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.003408s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000698s ]
+
+---------------------------------------------------------------
+[ 2017-05-23T18:18:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/skin/images/allbg.gif
+[ log ] 127.0.0.1/medias/public/skin/images/allbg.gif [运行时间：0.017678s][吞吐率：56.57req/s] [内存消耗：1,266.50kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'images',
+    2 => 'allbg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:18:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/skin/images/wbg.gif
+[ log ] 127.0.0.1/medias/public/skin/images/wbg.gif [运行时间：0.018563s][吞吐率：53.87req/s] [内存消耗：1,266.51kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'skin',
+    1 => 'images',
+    2 => 'wbg.gif',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-23T18:18:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/javascript/skin/images/tbg.gif
+[ log ] 127.0.0.1/medias/public/javascript/skin/images/tbg.gif [运行时间：0.018306s][吞吐率：54.63req/s] [内存消耗：1,266.47kb] [文件加载：27]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'javascript',
+    1 => 'skin',
+    2 => 'images',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'image/webp,image/*,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/project/show.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=glaen5k1re45sbnq3l46rgq8k2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

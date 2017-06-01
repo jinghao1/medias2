@@ -1,0 +1,4027 @@
+/*****
+ *@author: linyh
+ *@from: Global style summarize/yearTypeSummarize/carTypeSummarize/carTypeContrast
+ *@description: 何在朋
+ *@date: name (2017.01.21)
+*/
+.header {
+  width: 100%;
+}
+.header .header_nav {
+  width: 100%;
+  height: 36px;
+  background: #333;
+}
+.header .header_nav .header_nav_content {
+  width: 982px;
+  margin: 0 auto;
+  height: 36px;
+  line-height: 36px;
+  padding: 0 4px;
+  background: #333;
+}
+.header .header_nav .header_nav_content a {
+  font-size: 14px;
+  color: #999;
+}
+.header .header_nav .header_nav_content .triangle {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  float: left;
+  border: 4px solid transparent;
+  border-top-color: #999;
+  top: 16px;
+  right: 0;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left {
+  float: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li {
+  float: left;
+  color: #999;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.header .header_nav .header_nav_content .header_nav_left li.car_all {
+  float: left;
+  text-align: center;
+  height: 36px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.car_all .car_all_s a {
+  display: block;
+  font-size: 16px;
+  color: #fff;
+  padding: 0 10px;
+  background: #398be4;
+  font-weight: bold;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li {
+  float: left;
+  margin: 0 12px;
+  text-align: center;
+  height: 36px;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li .default_address {
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  padding-left: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li .default_address a {
+  cursor: default;
+}
+.header .header_nav .header_nav_content .header_nav_left li.address_li .default_address a:hover {
+  color: #999;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first {
+  float: left;
+  padding-left: 4px;
+  text-align: center;
+  height: 36px;
+  font-size: 14px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first span {
+  display: block;
+  height: 36px;
+  color: #fff;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.header .header_nav .header_nav_content .header_nav_left li.default_address {
+  float: left;
+  text-align: center;
+  padding-right: 12px;
+  height: 36px;
+  font-size: 14px;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first,
+.header .header_nav .header_nav_content .header_nav_left li.nav_line {
+  padding: 0 12px 0 0;
+}
+.header .header_nav .header_nav_content .header_nav_left li.nav_line {
+  position: relative;
+  top: 10px;
+  color: #272727;
+}
+.header .header_nav .header_nav_content .header_nav_left li.nav_line span {
+  width: 0;
+  display: block;
+  height: 16px;
+  top: 10px;
+  border-left: 1px solid #272727;
+  vertical-align: middle;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first .bg {
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.first span {
+  display: block;
+  height: 36px;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li:hover .changeAdd,
+.header .header_nav .header_nav_content .header_nav_left li:hover a {
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li:hover .default_address a {
+  color: #999;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position {
+  position: relative;
+  margin-right: 12px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position span {
+  color: #999;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position span.changeAdd {
+  height: 36px;
+  display: block;
+  padding-right: 12px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose {
+  width: 478px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  z-index: 9999999999;
+  background: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search {
+  width: 478px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input {
+  height: 52px;
+  width: 478px;
+  text-align: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span {
+  display: block;
+  float: left;
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span img {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search {
+  position: absolute;
+  width: 145px;
+  z-index: 10311111;
+  border: 1px solid #eee;
+  border-bottom: none;
+  margin-top: 1px;
+  top: 42px;
+  left: 10px;
+  background: #fff;
+  text-align: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li {
+  z-index: 120;
+  width: 144px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 4px;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny {
+  color: #999;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny span {
+  margin-left: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result {
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result:hover {
+  background: #398be4;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span {
+  display: inline-block;
+  margin-left: 15px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_text {
+  float: left;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_letters {
+  float: right;
+  margin-right: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li .city_text {
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span .input_letters_search ul li span img {
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.delete_city {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.search_btn {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  z-index: 109;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search {
+  text-align: center;
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search a {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 11px 0;
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span.city_hot_search a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_search .city_search_input span input {
+  height: 32px;
+  padding-left: 26px;
+  border: none;
+  width: 121px;
+  background: #eee;
+  margin: 10px 10px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num {
+  width: 462px;
+  height: 72px;
+  background: #fff;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num a {
+  display: block;
+  float: left;
+  height: 26px;
+  margin: 4px 5px;
+  width: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  border: 1px solid #dadada;
+  text-align: center;
+  color: #333;
+  background: #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .hot_city_num .a_active {
+  background: #1064c1;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll {
+  height: 372px;
+  width: 478px;
+  overflow: hidden;
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .scrollbar {
+  width: 12px;
+  height: 372px;
+  background: #eee;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .scrollbar .scrollbtn {
+  width: 100%;
+  height: 50px;
+  background: #666;
+  border-radius: 20px;
+  opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  position: absolute;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region {
+  position: absolute;
+  width: 468px;
+  top: 0;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl {
+  padding: 4px 0 4px 0;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dt {
+  float: left;
+  height: 30px;
+  width: 70px;
+  text-align: right;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dt span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dt span.province_tx {
+  float: right;
+  display: block;
+  padding-top: 0;
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dt span.province_num {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  float: left;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  padding-left: 10px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dd {
+  float: right;
+  width: 380px;
+  zoom: 1;
+  line-height: 30px;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dd a {
+  font-size: 12px;
+  float: left;
+  height: 30px;
+  color: #333;
+  zoom: 1;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.header .header_nav .header_nav_content .header_nav_left li.city_position .city_chose .city_scroll .city_chose_region dl dd a:hover {
+  background: #398BE4;
+  color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_right {
+  float: right;
+  height: 36px;
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_right li {
+  float: right;
+  height: 36px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.bg {
+  background: #5a5a5a;
+}
+.header .header_nav .header_nav_content .header_nav_right li.bg a {
+  color: #FFFFFF;
+}
+.header .header_nav .header_nav_content .header_nav_right li.nav_line {
+  color: #272727;
+  padding: 0;
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.nav_line span {
+  width: 0;
+  display: block;
+  position: relative;
+  height: 16px;
+  top: 10px;
+  border-left: 1px solid #272727;
+  vertical-align: middle;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name {
+  position: relative;
+  margin-right: 12px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .triangle2 {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: #999;
+  top: 16px;
+  right: 1px;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name:hover .triangle2 {
+  border-top-color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name:hover .user_drop {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop {
+  display: none;
+  position: absolute;
+  width: 138px;
+  z-index: 11;
+  background: #fff;
+  right: 0;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom-width: 4px;
+  height: initial;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span.latest_view a {
+  height: 28px;
+  display: block;
+  width: 124px;
+  margin-left: 14px;
+  color: #333;
+  line-height: 28px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span.latest_view a.view_res {
+  color: #aaa;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span.latest_view a:hover {
+  color: #3A8BE4;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span.sign_out a {
+  height: 32px;
+  display: block;
+  line-height: 32px;
+  width: 124px;
+  border-top: 1px solid #eee;
+  padding-left: 14px;
+  color: #333;
+}
+.header .header_nav .header_nav_content .header_nav_right li.user_name .user_drop span.sign_out a:hover {
+  background: #eee;
+  color: #3A8BE4;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice {
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice em {
+  width: 18px;
+  height: 36px;
+  display: inline-block;
+  background: url("../img/message_notice.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 8px;
+  right: 8px;
+  display: inline-block;
+  background: #e43a3a;
+  border-radius: 50%;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice:hover .message_drop {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice .message_drop {
+  display: none;
+  position: absolute;
+  width: 125px;
+  height: initial;
+  background: #FFFFFF;
+  left: 0;
+  top: 35px;
+  border: 1px solid #333;
+  z-index: 11;
+  border-bottom-width: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice .message_drop a {
+  display: block;
+  position: relative;
+  height: 32px;
+  width: 125px;
+  color: #333333;
+  line-height: 32px;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice .message_drop a:hover {
+  background: #eee;
+  color: #398be4;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice .message_drop a span {
+  display: block;
+  float: left;
+  height: 32px;
+  margin: 0 14px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.message_notice .message_drop a i {
+  position: absolute;
+  width: 5px;
+  height: 5px;
+  top: 14px;
+  right: 10px;
+  display: inline-block;
+  background: #e43a3a;
+  border-radius: 50%;
+}
+.header .header_nav .header_nav_content .header_nav_right li.header_hover {
+  padding: 0 12px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.header_hover span.triangle {
+  height: 0;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id {
+  position: relative;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id .download {
+  z-index: 10001;
+  width: 305px;
+  height: 180px;
+  background-image: url("../img/download_a_bg.png");
+  background-size: 100% 100%;
+  box-sizing: border-box;
+  padding: 24px;
+  position: absolute;
+  top: 27px;
+  right: -85px;
+  display: none;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id .download div {
+  width: 108px;
+  height: 108px;
+  text-align: center;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id .download div span {
+  font-size: 14px;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id .download div img {
+  width: 100%;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id .download .line {
+  margin: 0 20px;
+  border-left: 1px solid #eee;
+  height: 108px;
+  width: 0;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id:hover .triangle {
+  border-top-color: #fff;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id:hover #app a {
+  color: #fff !important;
+}
+.header .header_nav .header_nav_content .header_nav_right li#app_id:hover .download {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third {
+  position: relative;
+  padding: 0 22px 0 10px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third span {
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third span.triangle1 {
+  width: 0;
+  height: 0;
+  display: inline-block;
+  position: absolute;
+  border: 4px solid transparent;
+  border-top-color: #999;
+  top: 16px;
+  right: 12px;
+  cursor: pointer;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container {
+  display: none;
+  position: absolute;
+  width: 101px;
+  height: 97px;
+  top: 35px;
+  z-index: 11;
+  background: #fff;
+  left: 0;
+  border: 1px solid #333;
+  border-bottom-width: 4px;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a {
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  width: 101px;
+  color: #333;
+  border-bottom: 1px solid #eee;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a .i {
+  width: 20px;
+  height: 14px;
+  margin-left: 14px;
+  margin-right: 20px;
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wx i {
+  width: 20px;
+  height: 14px;
+  margin-left: 14px;
+  margin-right: 20px;
+  display: inline-block;
+  background: url("../img/wx.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wx:hover {
+  background: #eee;
+  color: #398be4;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wx:hover i {
+  background: url("../img/wx_hover.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wb i {
+  width: 20px;
+  height: 14px;
+  margin-left: 14px;
+  margin-right: 20px;
+  display: inline-block;
+  background: url("../img/wb.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wb:hover {
+  background: #eee;
+  color: #398be4;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.wb:hover i {
+  background: url("../img/wb_hover.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.tx_qq {
+  border: none;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.tx_qq i {
+  width: 20px;
+  height: 14px;
+  margin-left: 14px;
+  margin-right: 20px;
+  display: inline-block;
+  height: 17px;
+  background: url("../img/qq.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.tx_qq:hover {
+  background: #eee;
+  color: #398be4;
+}
+.header .header_nav .header_nav_content .header_nav_right li.login_third .login_third_container a.tx_qq:hover i {
+  background: url("../img/qq_hover.png") no-repeat center;
+}
+.header .header_nav .header_nav_content .header_nav_right li span {
+  display: block;
+}
+.header .header_nav .header_nav_content .header_nav_right li span.app {
+  width: 100%;
+  display: inline-block;
+}
+.header .header_nav .header_nav_content .header_nav_right li span.app a {
+  display: inline-block;
+  float: left;
+}
+.logo {
+  width: 990px;
+  height: 114px;
+  margin: 0 auto;
+  position: relative;
+}
+.logo img {
+  display: block;
+}
+.logo .logo_left {
+  float: left;
+  padding: 30px 20px 23px 6px;
+}
+.logo .logo_right {
+  float: right;
+  padding-top: 12px;
+  padding-bottom: 8px;
+}
+.hearer_advertisement {
+  width: 100%;
+}
+.hearer_advertisement .hearer_advertisement_container {
+  width: 990px;
+  margin: 12px auto 0 auto;
+}
+.hearer_advertisement .hearer_advertisement_container img {
+  width: 100%;
+  display: inline-block;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carMenu
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_c_top .imgs_c_crumbs {
+  height: 50px;
+  line-height: 50px;
+  color: #999;
+}
+.imgs_c_top .imgs_c_crumbs a {
+  display: inline-block;
+  margin: 0 8px;
+  color: #666;
+}
+.imgs_c_top .imgs_c_crumbs a:last-child {
+  color: #398be4;
+  cursor: text;
+}
+.imgs_c_top .imgs_c_crumbs a:hover {
+  color: #398be4;
+}
+.imgs_c_top .imgs_c_list {
+  height: 42px;
+  padding-top: 20px;
+  border: 1px solid #c4c4c4;
+  border-bottom: none;
+  padding-left: 12px;
+  position: relative;
+}
+.imgs_c_top .imgs_c_list .imgs_car_sign {
+  margin-top: -6px;
+  display: inline-block;
+  float: left;
+}
+.imgs_c_top .imgs_c_list .imgs_car_sign img {
+  width: 40px;
+  height: 40px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_name {
+  font-size: 20px;
+  color: #333;
+  font-weight: 700;
+  margin-left: 12px;
+  display: inline-block;
+  float: left;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year {
+  float: left;
+  margin-top: 5px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li {
+  float: left;
+  width: 67px;
+  text-align: center;
+  border-right: 1px solid #c4c4c4;
+  cursor: pointer;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li:hover a {
+  color: #398be4;
+  text-decoration: underline;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li .imgs_down {
+  float: right;
+  margin-top: 5px;
+  margin-right: 20px;
+  display: inline-block;
+  width: 9px;
+  height: 7px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -74px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li .tsYear {
+  margin-left: 6px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year li:last-child {
+  border-right: none;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border {
+  border-right: 0px;
+  position: relative;
+  width: 88px;
+  padding-left: 7px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w {
+  height: 20px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w ol {
+  position: absolute;
+  width: 80px;
+  top: 25px;
+  left: 4px;
+  border: 1px solid #333;
+  border-right: none;
+  border-bottom-width: 4px;
+  background: #fff;
+  z-index: 200;
+  display: none;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list {
+  width: 80px;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list li {
+  height: 32px;
+  width: 100%;
+  line-height: 32px;
+  border-bottom: 1px solid #eee;
+  text-align: center;
+  border-right: 1px solid #333;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list li a {
+  color: #333;
+  text-decoration: none;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list li:hover {
+  background: #398be4;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list li:hover a {
+  color: #fff;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_list_w .stop_list .s_no_border {
+  border-bottom: none;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border:hover ol {
+  display: block;
+}
+.imgs_c_top .imgs_c_list .imgs_car_year .imgs_year_b a {
+  font-weight: 700;
+}
+.imgs_c_top .imgs_car_type {
+  height: 31px;
+  border-top: 4px solid #333;
+  border-bottom: 1px solid #c4c4c4;
+  background: #eee;
+  padding-left: 12px;
+}
+.imgs_c_top .imgs_car_type li {
+  float: left;
+  font-size: 16px;
+  color: #333;
+  height: 31px;
+  line-height: 31px;
+  border-left: 1px solid #eee;
+  border-right: 1px solid #eee;
+  /*
+            &:hover{
+                border-color: @color-c4;
+                background: @color-fff;
+                height: 32px;
+            }
+            */
+}
+.imgs_c_top .imgs_car_type li a {
+  display: inline-block;
+  padding: 0 12px;
+}
+.imgs_c_top .imgs_car_type .no_h:hover {
+  border-color: #c4c4c4;
+  background: #fff;
+  height: 32px;
+}
+.imgs_c_top .imgs_car_type .no_h:hover a {
+  height: 32px;
+  border-top: 4px solid #1673d9;
+  margin-top: -4px;
+  color: #333;
+  cursor: pointer;
+}
+.imgs_c_top .imgs_car_type .no_click a {
+  color: #ccc;
+  cursor: default;
+}
+.imgs_c_top .imgs_car_type .imgs_current {
+  border-color: #c4c4c4;
+  background: #fff;
+  height: 32px;
+}
+.imgs_c_top .imgs_car_type .imgs_current a {
+  height: 32px;
+  border-top: 4px solid #1673d9;
+  margin-top: -4px;
+  color: #333;
+  cursor: default;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carLike
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_l_car {
+  margin-bottom: 40px;
+}
+.imgs_l_car li {
+  float: left;
+  width: 94px;
+  height: 116px;
+  margin-left: 8px;
+  padding-top: 12px;
+  text-align: center;
+}
+.imgs_l_car li a img {
+  display: inline-block;
+  width: 90px;
+  height: 60px;
+}
+.imgs_l_car li a .imgs_l_name {
+  color: #333;
+  margin-top: 10px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.imgs_l_car li a .imgs_l_price {
+  margin-top: 5px;
+  color: #e43a3a;
+}
+.imgs_l_car li a:hover .imgs_l_name {
+  color: #126acc;
+  text-decoration: underline;
+}
+.imgs_l_car li a:hover .imgs_l_price {
+  text-decoration: underline;
+}
+.imgs_l_car li a:active .imgs_l_name {
+  color: #1064c1;
+  text-decoration: underline;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carOther
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_other_car {
+  margin-bottom: 23px;
+}
+.imgs_other_car li {
+  line-height: 28px;
+}
+.imgs_other_car li .imgs_blue_dian {
+  display: inline-block;
+  margin-right: 7px;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -23px;
+  width: 3px;
+  height: 3px;
+  float: left;
+  margin-top: 12px;
+}
+.imgs_other_car li .imgs_other_price {
+  float: right;
+  color: #999;
+  letter-spacing: -1px;
+}
+.imgs_other_car li a {
+  color: #333;
+  display: inline-block;
+  width: 90px;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.imgs_other_car li a:hover {
+  color: #126acc;
+  text-decoration: underline;
+}
+.imgs_other_car li a:active {
+  color: #1064c1;
+  text-decoration: underline;
+}
+.tcdPageCode {
+  padding: 15px 20px;
+  color: #ccc;
+  text-align: center;
+  overflow: hidden;
+}
+.tcdPageCode a {
+  display: inline-block;
+  color: #333;
+  height: 38px;
+  font-size: 16px;
+  line-height: 38px;
+  border: 1px solid #e1e1e1;
+  margin: 0 2px;
+  vertical-align: middle;
+}
+.tcdPageCode .tcdNumber {
+  width: 38px;
+  padding: 0;
+}
+.tcdPageCode .prevPage {
+  width: 79px;
+  background: #f3f3f3;
+}
+.tcdPageCode .nextPage {
+  width: 79px;
+  background: #f3f3f3;
+}
+.tcdPageCode .dian {
+  width: 38px;
+  height: 38px;
+  line-height: 38px;
+  border: 1px solid #e1e1e1;
+  margin: 0 2px;
+  overflow: hidden;
+}
+.tcdPageCode a:hover {
+  text-decoration: none;
+  border: 1px solid #428bca;
+}
+.tcdPageCode span.current {
+  display: inline-block;
+  height: 38px;
+  width: 38px;
+  font-size: 16px;
+  line-height: 38px;
+  margin: 0 2px;
+  color: #fff;
+  background-color: #398be4;
+  border: 1px solid transparent;
+  vertical-align: middle;
+}
+.tcdPageCode span.disabled {
+  display: inline-block;
+  height: 38px;
+  width: 79px;
+  line-height: 38px;
+  /*padding: 0 10px;*/
+  font-size: 16px;
+  margin: 0 2px;
+  color: #999;
+  background: #f3f3f3;
+  border: 1px solid #e1e1e1;
+  vertical-align: middle;
+}
+/*****
+ *@author: linyh
+ *@from: Global style hotCarContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.05)
+*/
+.car_type_contrast {
+  margin-bottom: 36px;
+}
+.car_type_contrast .display_n {
+  display: none;
+}
+.car_type_contrast h1 {
+  font-size: 16px;
+  color: #333;
+  font-weight: bold;
+  line-height: 40px;
+}
+.car_type_contrast dl {
+  border: 1px solid #eee;
+}
+.car_type_contrast dl dt {
+  padding-bottom: 4px;
+}
+.car_type_contrast dl dt p {
+  font-size: 14px;
+  font-weight: 600;
+  line-height: 20px;
+  text-align: center;
+}
+.car_type_contrast dl dt p a:hover {
+  color: #398be4;
+}
+.car_type_contrast dl dt p:first-child {
+  text-align: left;
+  padding: 10px 20px 0;
+}
+.car_type_contrast dl dt p:first-child + p {
+  font-size: 12px;
+  color: #e43a3a;
+  line-height: 22px;
+}
+.car_type_contrast dl dd {
+  overflow: hidden;
+  padding: 9px 0 10px;
+  border-top: 1px dashed #eee;
+  background-color: #f7f7f7;
+}
+.car_type_contrast dl dd span {
+  display: inline-block;
+  float: left;
+}
+.car_type_contrast dl dd span a:hover {
+  color: #398be4;
+}
+.car_type_contrast dl dd span i {
+  display: inline-block;
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  vertical-align: middle;
+  margin-left: 3px;
+  cursor: pointer;
+}
+.car_type_contrast dl dd span i:hover {
+  border-color: #3a8be4;
+}
+.car_type_contrast dl dd span .checked {
+  border: 0;
+  background-image: url("../img/summar_sprite.png");
+  background-position: -75px -56px;
+  width: 14px;
+  height: 14px;
+}
+.car_type_contrast dl dd span:first-child + span {
+  width: 169px;
+  padding-left: 10px;
+  line-height: 18px;
+}
+.car_type_contrast dl .center span i {
+  vertical-align: -12px;
+}
+.car_type_contrast dl .start_contrast_btn {
+  padding: 12px 60px;
+}
+.car_type_contrast dl .start_contrast_btn .btn_style {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+}
+.car_type_contrast dl .start_contrast_btn span {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #aaa;
+}
+.car_type_contrast dl .start_contrast_btn a {
+  color: #fff;
+  font-size: 14px;
+  padding: 0 14px;
+  line-height: 24px;
+  display: inline-block;
+  background-color: #ffa903;
+}
+.car_type_contrast dl .start_contrast_btn a:hover {
+  background-color: #ff9103;
+}
+.car_type_contrast dl .start_contrast_btn a:active {
+  background-color: #ff8003;
+}
+.car_type_contrast dl .start_contrast_btn .display_n {
+  display: none;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carHot
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.imgs_hot_title {
+  height: 30px;
+  padding-top: 16px;
+  font-size: 16px;
+  color: #333;
+  font-weight: 700;
+}
+.we-buy .bor-to-bo-ri {
+  border: 1px solid #eee;
+  border-left: none;
+}
+.we-buy .bor-to-bo-ri .fl-li {
+  height: 33px;
+  width: 59px;
+  border-left: 2px solid #f7f7f7;
+  border-right: 1px solid #eee;
+  border-bottom: 1px solid #eee;
+  background-color: #f7f7f7;
+  text-align: center;
+  line-height: 33px;
+  cursor: pointer;
+  color: #666;
+}
+.we-buy .bor-to-bo-ri .active {
+  border-left: 2px solid #FFA904;
+  border-right: 1px solid #fff;
+  background-color: #fff;
+}
+.we-buy .bor-to-bo-ri .fl_li_nBoder {
+  border-bottom: 1px solid #f7f7f7;
+}
+.we-buy .w189 {
+  width: 140px;
+  border: none;
+}
+.we-buy .w189 ul {
+  display: none;
+}
+.we-buy .w189 ul li {
+  height: 33px;
+  width: 140px;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+  line-height: 33px;
+  cursor: pointer;
+}
+.we-buy .w189 ul li .num {
+  float: left;
+  width: 16px;
+  height: 16px;
+  background: #c4c4c4;
+  color: #FEFFFD;
+  text-align: center;
+  margin: 8px 12px 0 4px;
+  vertical-align: text-bottom;
+  line-height: 16px;
+}
+.we-buy .w189 ul li .bgtop {
+  background: #FFA904;
+}
+.we-buy .w189 ul li a {
+  display: inline-block;
+  width: 100px;
+}
+.we-buy .w189 ul li:hover a {
+  color: #398be4;
+  text-decoration: underline;
+}
+.we-buy .w189 ul .l-li-nBorder {
+  border-bottom: none;
+}
+.we-buy .w189 .js-show {
+  display: block;
+}
+.city_chose {
+  width: 478px;
+  position: absolute;
+  top: 35px;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  z-index: 9999999999;
+  background: #fff;
+}
+.city_chose .city_search {
+  width: 478px;
+  border-bottom: 1px solid #eee;
+  background: #fff;
+}
+.city_chose .city_search .city_search_input {
+  height: 52px;
+  width: 478px;
+  text-align: left;
+}
+.city_chose .city_search .city_search_input span {
+  display: block;
+  float: left;
+  position: relative;
+}
+.city_chose .city_search .city_search_input span img {
+  display: block;
+}
+.city_chose .city_search .city_search_input span .input_letters_search {
+  position: absolute;
+  width: 145px;
+  z-index: 10311111;
+  border: 1px solid #eee;
+  border-bottom: none;
+  margin-top: 1px;
+  top: 42px;
+  left: 10px;
+  background: #fff;
+  text-align: left;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li {
+  z-index: 120;
+  width: 144px;
+  height: 24px;
+  line-height: 24px;
+  margin-right: 4px;
+  border-bottom: 1px solid #eee;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny {
+  color: #999;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.click_to_destiny span {
+  margin-left: 4px;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result {
+  cursor: pointer;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result:hover {
+  background: #398be4;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span {
+  display: inline-block;
+  margin-left: 15px;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_text {
+  float: left;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li.city_search_result span.city_letters {
+  float: right;
+  margin-right: 4px;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li .city_text {
+  color: #333;
+}
+.city_chose .city_search .city_search_input span .input_letters_search ul li span img {
+  display: inline-block;
+}
+.city_chose .city_search .city_search_input span.delete_city {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  cursor: pointer;
+}
+.city_chose .city_search .city_search_input span.search_btn {
+  position: absolute;
+  left: 15px;
+  top: 18px;
+  z-index: 109;
+}
+.city_chose .city_search .city_search_input span.city_hot_search {
+  text-align: center;
+  display: block;
+}
+.city_chose .city_search .city_search_input span.city_hot_search a {
+  font-size: 12px;
+  display: inline-block;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 11px 0;
+  color: #333;
+}
+.city_chose .city_search .city_search_input span.city_hot_search a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.city_chose .city_search .city_search_input span input {
+  height: 32px;
+  padding-left: 26px;
+  border: none;
+  width: 121px;
+  background: #eee;
+  margin: 10px 10px;
+}
+.city_chose .hot_city_num {
+  width: 462px;
+  height: 72px;
+  background: #fff;
+  padding: 10px 8px;
+  border-bottom: 1px solid #eee;
+}
+.city_chose .hot_city_num a {
+  display: block;
+  float: left;
+  height: 26px;
+  margin: 4px 5px;
+  width: 26px;
+  line-height: 26px;
+  font-weight: bold;
+  border: 1px solid #dadada;
+  text-align: center;
+  color: #333;
+  background: #eee;
+}
+.city_chose .hot_city_num a:hover {
+  background: #398be4;
+  color: #fff;
+}
+.city_chose .hot_city_num .a_active {
+  background: #1064c1;
+  color: #fff;
+}
+.city_chose .city_scroll {
+  height: 372px;
+  width: 478px;
+  overflow: hidden;
+  position: relative;
+}
+.city_chose .city_scroll .scrollbar {
+  width: 12px;
+  height: 372px;
+  background: #eee;
+  position: absolute;
+  right: 0;
+  top: 0;
+}
+.city_chose .city_scroll .scrollbar .scrollbtn {
+  width: 100%;
+  height: 50px;
+  background: #666;
+  border-radius: 20px;
+  opacity: 0.2;
+  -ms-filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  filter: progid:DXImageTransform.Microsoft.Alpha(Opacity=20);
+  position: absolute;
+}
+.city_chose .city_scroll .city_chose_region {
+  position: absolute;
+  width: 468px;
+  top: 0;
+}
+.city_chose .city_scroll .city_chose_region dl {
+  padding: 4px 0 4px 0;
+  display: block;
+  overflow: hidden;
+  border-bottom: 1px solid #eee;
+}
+.city_chose .city_scroll .city_chose_region dl dt {
+  float: left;
+  height: 30px;
+  width: 70px;
+  text-align: right;
+  line-height: 30px;
+}
+.city_chose .city_scroll .city_chose_region dl dt span {
+  display: block;
+  height: 30px;
+  line-height: 30px;
+}
+.city_chose .city_scroll .city_chose_region dl dt span.province_tx {
+  float: right;
+  display: block;
+  padding-top: 0;
+  color: #333;
+}
+.city_chose .city_scroll .city_chose_region dl dt span.province_num {
+  display: inline-block;
+  font-size: 14px;
+  color: #999;
+  float: left;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+  padding-left: 10px;
+}
+.city_chose .city_scroll .city_chose_region dl dd {
+  float: right;
+  width: 380px;
+  zoom: 1;
+  line-height: 30px;
+}
+.city_chose .city_scroll .city_chose_region dl dd a {
+  font-size: 12px;
+  float: left;
+  height: 30px;
+  color: #333;
+  zoom: 1;
+  line-height: 30px;
+  padding: 0 8px;
+  margin: 0 2px;
+  white-space: nowrap;
+}
+.city_chose .city_scroll .city_chose_region dl dd a:hover {
+  background: #398BE4;
+  color: #fff;
+}
+/*****
+ *@author: linyh
+ *@from: Global style gotopContrast module
+ *@description: 何在朋
+ *@date: name (2017.02.06)
+*/
+.position_fixed {
+  position: fixed;
+  z-index: 91;
+  left: 50%;
+  margin-left: 520px;
+  bottom: 160px;
+}
+.position_fixed .display_n {
+  display: none;
+}
+.position_fixed .type_constract {
+  margin-bottom: 8px;
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_btn {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #bababa;
+  background-color: #eee;
+  color: #999;
+  position: relative;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_btn .pk {
+  display: block;
+  width: 26px;
+  height: 26px;
+  margin: 12px auto 0;
+  background-image: url("../img/constract.png");
+}
+.position_fixed .type_constract .type_constract_btn .pk_text {
+  line-height: 32px;
+  display: block;
+  font-weight: 700;
+  text-align: center;
+}
+.position_fixed .type_constract .type_constract_btn i {
+  color: #fff;
+  width: 20px;
+  line-height: 20px;
+  text-align: center;
+  display: inline-block;
+  border-radius: 10px;
+  background-color: #FFA904;
+  position: absolute;
+  top: -11px;
+  right: -11px;
+}
+.position_fixed .type_constract .type_constract_btn:hover {
+  background: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_btn:hover .pk {
+  background-image: url("../img/constract_h.png");
+}
+.position_fixed .type_constract .type_constract_btn:hover .pk_text {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list {
+  position: absolute;
+  bottom: -80px;
+  left: -296px;
+}
+.position_fixed .type_constract .type_constract_list .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title {
+  color: #fff;
+  line-height: 32px;
+  background-color: #333;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title h5 {
+  float: left;
+  display: inline-block;
+  padding-left: 13px;
+  font-weight: bold;
+}
+.position_fixed .type_constract .type_constract_list .t_c_title span {
+  float: right;
+  display: inline-block;
+  padding-right: 9px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content {
+  padding-bottom: 10px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  background-color: #fff;
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history {
+  margin-bottom: 14px;
+  height: 270px;
+  overflow-y: scroll;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li {
+  padding: 8px 11px 8px 12px;
+  border-bottom: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a {
+  display: inline-block;
+  line-height: 18px;
+  width: 228px;
+  margin-right: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li a:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_history li .delete_icon {
+  background-image: url("../img/sprite.png");
+  background-position: -3px -430px;
+  width: 10px;
+  height: 10px;
+  display: inline-block;
+  vertical-align: top;
+  margin-top: 5px;
+  text-align: right;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style {
+  width: 252px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .p_style:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .scroll-box-style {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input {
+  width: 252px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box {
+  width: 252px;
+  height: 470px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index {
+  float: left;
+  width: 31px;
+  border-right: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span {
+  display: inline-block;
+  width: 31px;
+  text-align: center;
+  line-height: 18px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span:hover a {
+  color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-letter-index span:first-child a {
+  color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list {
+  float: right;
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul {
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li {
+  padding-left: 12px;
+  width: 206px;
+  line-height: 28px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li a span {
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_brand .brand_scroll_area .brand-scroll-list-box .brand-scroll-list ul li:hover a {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input {
+  width: 252px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list {
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list .all_item {
+  font-weight: bold;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl {
+  width: 252px;
+  line-height: 28px;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dt {
+  font-weight: bold;
+  line-height: 32px;
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd {
+  padding-left: 14px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_type .car_type_scroll_area .car-type-scroll-list dl dd:hover a {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style {
+  position: relative;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input {
+  width: 252px;
+  line-height: 26px;
+  overflow: hidden;
+  border: 1px solid #dadada;
+  margin-bottom: 8px;
+  margin-left: 10px;
+  cursor: pointer;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input span {
+  color: #999;
+  display: inline-block;
+  padding-left: 9px;
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input .down_icon {
+  width: 10px;
+  height: 8px;
+  display: inline-block;
+  margin: 10px 11px 0 0;
+  float: right;
+  background-image: url("../img/sprite.png");
+  background-position: 0px -2370px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input:hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input:hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input_hover {
+  border-color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .choice_input_hover .down_icon {
+  background-position: 0px -2419px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area {
+  color: #333;
+  border: 1px solid #333;
+  border-bottom: 5px solid #333;
+  background-color: #fff;
+  position: absolute;
+  bottom: 30px;
+  left: 10px;
+  z-index: 1000;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route {
+  line-height: 31px;
+  border-bottom: 1px solid #333;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route .blue_border {
+  border-bottom: 2px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .choice_route span {
+  display: inline-block;
+  padding: 0 10px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list {
+  height: 470px;
+  overflow: auto;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list .all_item {
+  font-weight: bold;
+  line-height: 28px;
+  padding-left: 12px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl {
+  width: 252px;
+  line-height: 28px;
+  padding: 6px 0;
+  border-top: 1px solid #eee;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dt {
+  font-weight: bold;
+  line-height: 32px;
+  padding-left: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd {
+  padding-left: 14px;
+  cursor: pointer;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd span {
+  float: left;
+  display: block;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  width: 160px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd i {
+  float: right;
+  color: #e43a3a;
+  padding-right: 14px;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover {
+  background-color: #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover span {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .choice_car_style .car_style_scroll_area .car-style-scroll-list dl dd:hover i {
+  color: #fff;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .btn_sty {
+  font-size: 14px;
+  width: 252px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .dis_click {
+  font-size: 14px;
+  width: 252px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  color: #999;
+  background-color: #eee;
+  border: 1px solid #dadada;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .sure_click {
+  font-size: 14px;
+  width: 252px;
+  line-height: 36px;
+  text-align: center;
+  margin-left: 10px;
+  display: inline-block;
+  color: #fff;
+  background-color: #398be4;
+  border: 1px solid #398be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .search_input .start_contrast .display_n {
+  display: none;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar {
+  padding: 13px 10px 0;
+  overflow: hidden;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .tip {
+  float: left;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all {
+  float: right;
+  cursor: pointer;
+  color: #666;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all:hover {
+  color: #3a8be4;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .tip_bar .clear_all:active {
+  color: #1673d9;
+}
+.position_fixed .type_constract .type_constract_list .t_c_content .jt {
+  background-image: url("../img/summar_sprite.png");
+  background-position: 0 -129px;
+  width: 8px;
+  height: 14px;
+  display: inline-block;
+  position: absolute;
+  bottom: 100px;
+  right: -8px;
+  z-index: 10;
+}
+.position_fixed .go_top {
+  width: 68px;
+  height: 68px;
+  border: 1px solid #bababa;
+  background: #eee;
+  cursor: pointer;
+}
+.position_fixed .go_top .display_n {
+  display: none;
+}
+.position_fixed .go_top .goTop_icon {
+  margin: 12px auto 0 auto;
+  display: block;
+  width: 26px;
+  height: 26px;
+  background-image: url(../img/gotop.png);
+}
+.position_fixed .go_top .goTop_text {
+  font-weight: 700;
+  color: #999;
+  display: block;
+  height: 32px;
+  line-height: 32px;
+  text-align: center;
+}
+.position_fixed .go_top:hover {
+  background: #3a8be4;
+}
+.position_fixed .go_top:hover .goTop_icon {
+  background-image: url(../img/gotop_hover.png);
+}
+.position_fixed .go_top:hover .goTop_text {
+  color: #fff;
+}
+.footer {
+  width: 100%;
+  background: #333;
+  overflow: hidden;
+}
+.footer .footer_content {
+  overflow: hidden;
+  width: 990px;
+  margin: 0 auto;
+  background: #333;
+  z-index: 9999999999999;
+  color: #fff;
+}
+.footer .footer_content ul {
+  margin: 20px auto;
+  padding: 0 25px;
+  text-align: center;
+  line-height: 12px;
+}
+.footer .footer_content ul li {
+  margin-right: 30px;
+  display: inline-block;
+}
+.footer .footer_content ul li a {
+  display: block;
+  font-size: 12px;
+  color: #ffffff;
+  font-family: "PingFangSC-Regular", "Hiragino Sans GB", "Helvetica Neue", Helvetica, Arial, "Microsoft Yahei", sans-serif;
+}
+.footer .footer_content ul li.website a {
+  cursor: default;
+}
+.footer .footer_content p {
+  text-align: center;
+  margin: 20px auto;
+  line-height: 12px;
+}
+.footer .footer_content p .f_location {
+  margin-right: 16px;
+}
+.footer .footer_content div {
+  text-align: center;
+  margin-bottom: 20px;
+  line-height: 12px;
+}
+.footer .footer_content div span {
+  margin-right: 16px;
+}
+.footer .footer_content div a {
+  color: #fff;
+  margin: 0 10px;
+}
+/*****
+ *@author: jianingning
+ *@from: Global style mod_carLike
+ *@description: 何在朋
+ *@date: name (2017.02.04)
+*/
+.ad_duilian_wrap {
+  width: 990px;
+  margin: 0 auto;
+  position: relative;
+  top: -104px;
+}
+.car_intro li {
+  position: relative;
+}
+.car_intro li .img_box {
+  position: absolute;
+  top: -134px;
+  left: -24px;
+  z-index: 12000;
+  width: 168px;
+  height: 122px;
+  background: #fff;
+  box-shadow: 0 0 14px #000;
+  display: none;
+}
+.car_intro li .img_box img {
+  width: 157px;
+  height: 112px;
+  padding: 5px 6px;
+}
+.car_intro li .img_box span {
+  width: 8px;
+  height: 6px;
+  display: block;
+  position: absolute;
+  bottom: -5px;
+  left: 48%;
+  background: url(../img/dir_tri.png) no-repeat;
+}
+.car_intro li .img_box p {
+  position: absolute;
+  bottom: -15px;
+  left: 0;
+  height: 15px;
+  width: 100%;
+}
+.car_intro li .img_box a b {
+  display: block;
+  position: absolute;
+  right: 1px;
+  bottom: 0;
+  width: 38px;
+  height: 16px;
+  border: 1px solid #eee;
+  color: #eee;
+  font-size: 12px;
+  line-height: 16px;
+  text-align: center;
+}
+.ad_text_list {
+  width: 341px;
+  height: 28px;
+  border: 1px solid rgba(255, 77, 78, 0.3);
+  color: #ff4d4e;
+  display: block;
+  font-size: 16px;
+  line-height: 28px;
+  text-align: center;
+  margin-top: 14px;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+}
+.ad_text_list span {
+  width: 38px;
+  height: 16px;
+  border: 1px solid #eee;
+  position: absolute;
+  top: 0;
+  right: 0;
+  line-height: 16px;
+  font-size: 12px;
+  color: #eee;
+}
+.car_ad_mod {
+  width: 990px;
+  margin: 0 auto;
+  margin-bottom: 20px;
+}
+.car_ad_mod img {
+  padding-top: 32px;
+}
+.car_ad_mod object {
+  padding-top: 32px;
+}
+.ad_right_mod {
+  width: 717px;
+  margin: 0 auto;
+  margin-top: 40px;
+}
+.ad_right_mod img {
+  width: 717px;
+  padding-top: 32px;
+}
+.ad_article_mod {
+  width: 628px;
+}
+.ad_article_mod img {
+  width: 628px;
+}
+.ad_article_botmod {
+  width: 704px;
+}
+.ad_article_botmod img {
+  width: 704px;
+}
+.rightsm_ad_mod {
+  width: 204px;
+  margin: 0 auto 10px auto;
+}
+.rightsm_ad_mod img {
+  width: 204px;
+}
+.rightbottom_ad_mod {
+  width: 252px;
+  margin: 0px auto 8px;
+}
+.rightbottom_ad_mod img {
+  width: 252px;
+}
+.rightarticle_ad_mod {
+  width: 252px;
+  margin: 0 auto;
+}
+.rightarticle_ad_mod img {
+  width: 252px;
+}
+.bottom_ad_tonglang {
+  padding-bottom: 48px;
+}
+.rightarticle_ad_live img,
+.rightarticle_ad_live object {
+  margin-bottom: 40px;
+}
+.not_found {
+  margin-top: 45px;
+  display: block;
+}
+.not_found img {
+  display: inline-block;
+  width: 233px;
+  height: 222px;
+  margin-left: 82px;
+}
+.not_found p {
+  padding-left: 350px;
+  line-height: 50px;
+}
+.not_found .sorry {
+  padding-top: 97px;
+  font-size: 30px;
+  font-weight: 600;
+}
+.not_found .ch {
+  color: #999;
+  font-size: 18px;
+}
+.font-w {
+  font-weight: bold;
+}
+.display_n {
+  display: none;
+}
+.wr {
+  background-color: #e72b2a;
+}
+.wo {
+  background-color: #e48d24;
+}
+.wp {
+  background-color: #f6e8f7;
+}
+.wg {
+  background-color: #2d5966;
+}
+.wblick {
+  background-color: #000;
+}
+.wpurp {
+  background-color: #c24070;
+}
+.wbrown {
+  background-color: #574227;
+}
+.ng {
+  background-color: #2d5966;
+}
+.nw {
+  background-color: #fff;
+}
+.nb {
+  background-color: #000;
+}
+#mCSB_1 #mCSB_1_container,
+#mCSB_2 #mCSB_1_container,
+#mCSB_3 #mCSB_1_container,
+#mCSB_1 #mCSB_2_container,
+#mCSB_2 #mCSB_2_container,
+#mCSB_3 #mCSB_2_container,
+#mCSB_1 #mCSB_3_container,
+#mCSB_2 #mCSB_3_container,
+#mCSB_3 #mCSB_3_container {
+  margin-right: 0;
+}
+#mCSB_1 #mCSB_1_scrollbar_vertical,
+#mCSB_2 #mCSB_1_scrollbar_vertical,
+#mCSB_3 #mCSB_1_scrollbar_vertical,
+#mCSB_1 #mCSB_2_scrollbar_vertical,
+#mCSB_2 #mCSB_2_scrollbar_vertical,
+#mCSB_3 #mCSB_2_scrollbar_vertical,
+#mCSB_1 #mCSB_3_scrollbar_vertical,
+#mCSB_2 #mCSB_3_scrollbar_vertical,
+#mCSB_3 #mCSB_3_scrollbar_vertical {
+  width: 10px;
+}
+#mCSB_1 #mCSB_1_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_1_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_1_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_2_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_2_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_2_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_3_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_3_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_3_scrollbar_vertical #mCSB_1_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_1_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_1_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_1_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_2_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_2_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_2_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_3_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_3_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_3_scrollbar_vertical #mCSB_2_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_1_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_1_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_1_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_2_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_2_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_2_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_1 #mCSB_3_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_2 #mCSB_3_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar,
+#mCSB_3 #mCSB_3_scrollbar_vertical #mCSB_3_dragger_vertical .mCSB_dragger_bar {
+  width: 6px;
+  background-color: #999;
+}
+#mCSB_1 #mCSB_1_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_2 #mCSB_1_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_3 #mCSB_1_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_1 #mCSB_2_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_2 #mCSB_2_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_3 #mCSB_2_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_1 #mCSB_3_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_2 #mCSB_3_scrollbar_vertical .mCSB_draggerRail,
+#mCSB_3 #mCSB_3_scrollbar_vertical .mCSB_draggerRail {
+  width: 12px;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  background-color: #eee;
+}
+.summary_imgs_c_title {
+  width: 990px;
+  margin: 22px auto 0;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list {
+  position: relative;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .icon-audi-logo {
+  margin-top: 8px;
+  background-image: url("../img/summar_sprite.png");
+  background-position: -56px 0px;
+  width: 33px;
+  height: 13px;
+  float: left;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year {
+  float: left;
+  margin-top: 8px;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border {
+  border-right: 0px;
+  width: 88px;
+  padding-left: 7px;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .icon-down {
+  float: right;
+  margin-right: 20px;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_s_y_list {
+  position: absolute;
+  top: 28px;
+  left: 445px;
+  z-index: 100;
+  padding-top: 20px;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_s_y_list .stop_s_y {
+  width: 80px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  overflow: hidden;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_s_y_list .stop_s_y a {
+  color: #333;
+  text-decoration: none;
+  display: inline-block;
+  width: 80px;
+  line-height: 29px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_s_y_list .stop_s_y a:hover {
+  color: #fff;
+  background-color: #3189e9;
+  border-color: #3189e9;
+}
+.summary_imgs_c_title .year_imgs_c_top .imgs_c_list .imgs_car_year .imgs_no_border .stop_s_y_list .stop_s_y a:active {
+  color: #fff;
+  background-color: #126acc;
+  border-color: #126acc;
+}
+.summarize_main_area {
+  width: 990px;
+  margin: 20px auto 0;
+}
+.summarize_main_area .display_none {
+  display: none;
+}
+.summarize_main_area .summarize_show_module {
+  width: 720px;
+  float: left;
+  border-right: 1px solid #eee;
+  padding-right: 31px;
+  /*相关问答*/
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg {
+  width: 720px;
+  height: 310px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture {
+  width: 270px;
+  float: left;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt {
+  height: 180px;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt a {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt a img {
+  display: inline-block;
+  width: 100%;
+  height: 180px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt .display_n {
+  display: none;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt p {
+  position: absolute;
+  bottom: 0;
+  left: 10px;
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dt p strong {
+  display: block;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list {
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .turn_btn {
+  background-image: url("../img/summar_sprite.png");
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  z-index: 200;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .pre_list {
+  background-image: url("../img/summar_sprite.png");
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  z-index: 200;
+  background-position: -109px -34px;
+  left: 1px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .next_list {
+  background-image: url("../img/summar_sprite.png");
+  width: 7px;
+  height: 14px;
+  position: absolute;
+  top: 12px;
+  cursor: pointer;
+  z-index: 200;
+  background-position: -109px 0px;
+  right: 5px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .car_color_item {
+  height: 38px;
+  margin: 0 12px 0 13px;
+  position: relative;
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .car_color_item .color_scroll {
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .car_color_item .color_scroll a {
+  display: block;
+  float: left;
+  width: 18px;
+  height: 8px;
+  border: 1px solid #dadada;
+  margin: 14px 5px 0;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .color_list .car_color_item .color_scroll a:hover {
+  width: 34px;
+  height: 10px;
+  margin: 13px -3px 0;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .car_show_position span {
+  width: 133px;
+  display: inline-block;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .car_show_position span a {
+  display: inline-block;
+  width: 100%;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .car_show_position span a img {
+  display: inline-block;
+  width: 133px;
+  height: 88px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_picture dl dd .car_show_position span i {
+  color: #fff;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 34px;
+  line-height: 20px;
+  text-align: center;
+  background-color: #000;
+  filter: alpha(opacity=80);
+  opacity: 0.8;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text {
+  width: 410px;
+  margin-left: 40px;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title {
+  line-height: 42px;
+  padding-bottom: 8px;
+  border-bottom: 1px solid #eee;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_t_p {
+  color: #999;
+  font-size: 16px;
+  display: inline-block;
+  float: left;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_t_p a {
+  color: #e43a3a;
+  font-size: 20px;
+  font-weight: 600;
+  cursor: default;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_t_p a:hover {
+  color: #e3393a;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_t_p a:active {
+  color: #b81818;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_f {
+  display: inline-block;
+  float: right;
+  font-size: 14px;
+  margin-left: 12px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_f i {
+  vertical-align: -1px;
+  margin-right: 4px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_f .icon-share {
+  background-image: url("../img/summar_sprite.png");
+  background-position: -39px -56px;
+  width: 16px;
+  height: 17px;
+  display: inline-block;
+  vertical-align: -3px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_f .icon-collect {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -302px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .p_f .icon-collected {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -282px;
+  width: 15px;
+  height: 15px;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area {
+  position: absolute;
+  top: 34px;
+  right: 44px;
+  z-index: 200;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list {
+  padding-top: 12px;
+  border: 1px solid #333;
+  background-color: #fff;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list li {
+  line-height: 12px;
+  padding: 0 12px 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list li a {
+  display: inline-block;
+  width: 40px;
+  height: 40px;
+  background-image: url("../img/sprite.png");
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx {
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx .display_n {
+  display: none;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx a {
+  background-position: 0px -860px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx a:hover {
+  background-position: 0px -1130px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx a:active {
+  background-position: 0px -1355px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wx span {
+  position: absolute;
+  top: -18px;
+  left: 64px;
+  z-index: 500;
+  padding-left: 10px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wb a {
+  background-position: 0px -1310px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wb a:hover {
+  background-position: 0px -1265px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_wb a:active {
+  background-position: 0px -1220px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_kj a {
+  background-position: 0px -1040px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_kj a:hover {
+  background-position: 0px -1085px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_kj a:active {
+  background-position: 0px -815px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_qq a {
+  background-position: 0px -905px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_qq a:hover {
+  background-position: 0px -950px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .price_title .share_area .share_list .share_qq a:active {
+  background-position: 0px -995px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price {
+  margin-top: 8px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p {
+  font-size: 14px;
+  line-height: 30px;
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span {
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span i {
+  color: #999;
+  display: inline-block;
+  width: 92px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span:first-child {
+  width: 230px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span:nth-of-type(2),
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span:first-child + span {
+  float: left;
+  width: 180px;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span:nth-of-type(2) i,
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price p span:first-child + span i {
+  width: 56px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price dl {
+  overflow: hidden;
+  margin-top: 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price dl dt {
+  float: left;
+  width: 80px;
+  color: #999;
+  font-size: 14px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price dl dd {
+  float: left;
+  width: 330px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price dl dd span {
+  font-size: 12px;
+  width: 96px;
+  line-height: 22px;
+  text-align: center;
+  border: 1px solid #dadada;
+  display: inline-block;
+  margin: 0 0 12px 9px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends {
+  margin: 20px 0 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a {
+  font-size: 16px;
+  width: 122px;
+  line-height: 34px;
+  text-align: center;
+  border: 1px solid #dadada;
+  background-color: #eee;
+  float: left;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:hover {
+  color: #fff;
+  background-color: #3a8be4;
+  border-color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:active {
+  color: #fff;
+  background-color: #1673d9;
+  border-color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:first-child {
+  color: #fff;
+  width: 130px;
+  line-height: 36px;
+  background-color: #FFA904;
+  border: 0;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:first-child:hover {
+  background-color: #ff9103;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:first-child:active {
+  background-color: #ff8003;
+}
+.summarize_main_area .summarize_show_module .summarize_car_msg .car_msg_text .car_msg_price .car_msg_extends a:first-child + a {
+  margin: 0 15px;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title {
+  overflow: hidden;
+  margin-top: 29px;
+  border-bottom: 4px solid #333;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title i {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title span {
+  color: #eee;
+  font-size: 14px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title span a {
+  font-size: 14px;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title span a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_title span a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content {
+  padding: 19px 0 4px;
+  overflow: hidden;
+  border-bottom: 1px solid #dadada;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li {
+  color: #999;
+  font-size: 14px;
+  height: 30px;
+  line-height: 14px;
+  width: 346px;
+  overflow: hidden;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li a {
+  color: #999;
+  float: left;
+  padding-right: 10px;
+  border-right: 1px solid #ccc;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li a em {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -23px;
+  width: 3px;
+  height: 3px;
+  display: inline-block;
+  padding-right: 6px;
+  vertical-align: 4px;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li .list_wz {
+  color: #333;
+  float: left;
+  padding-left: 10px;
+  border-right: 0;
+  border-left: 1px solid #b3b3b3;
+  width: 180px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li .list_wz:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li .list_wz:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li i {
+  float: right;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li:first-child {
+  float: left;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li:first-child + li + li {
+  float: left;
+}
+.summarize_main_area .summarize_show_module .brand_article .brand_article_content ul li:first-child + li + li + li + li {
+  float: left;
+}
+.summarize_main_area .summarize_show_module .brand_car_type {
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice {
+  padding: 0 5px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 72px;
+  left: -88px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .item_style {
+  width: 68px;
+  padding-top: 8px;
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .item_style span {
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-right: 0;
+  padding-left: 3px;
+  line-height: 14px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .item_style span i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .item_style span i:hover {
+  border-color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .item_style span .checked {
+  border: 0;
+  background-image: url("../img/summar_sprite.png");
+  background-position: -75px -56px;
+  width: 14px;
+  height: 14px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_year,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_type,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_num {
+  width: 68px;
+  padding-top: 8px;
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_year span,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_type span,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_num span {
+  display: inline-block;
+  margin-bottom: 12px;
+  margin-right: 0;
+  padding-left: 3px;
+  line-height: 14px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_year span i,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_type span i,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_num span i {
+  width: 12px;
+  height: 12px;
+  border: 1px solid #333;
+  display: inline-block;
+  vertical-align: -2px;
+  margin-right: 6px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_year span i:hover,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_type span i:hover,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_num span i:hover {
+  border-color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_year span .checked,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_type span .checked,
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .stop_sell_num span .checked {
+  border: 0;
+  background-image: url("../img/summar_sprite.png");
+  background-position: -75px -56px;
+  width: 14px;
+  height: 14px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .clear_choice {
+  text-align: center;
+  line-height: 35px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .clear_choice:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_choice .clear_choice:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title {
+  padding-top: 28px;
+  border-bottom: 4px solid #333;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title span {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  margin-right: 21px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type {
+  float: left;
+  margin-top: 5px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li {
+  float: left;
+  font-size: 16px;
+  padding: 0 12px;
+  margin: 10px 0;
+  margin-bottom: 8px;
+  line-height: 16px;
+  border-left: 1px solid #eee;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li a:hover {
+  color: #398be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li:first-child {
+  border-left: 0;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li.active a {
+  font-weight: 600;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell.active em {
+  font-weight: bold;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell i {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -41px;
+  width: 12px;
+  height: 6px;
+  display: inline-block;
+  vertical-align: middle;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell_type_list {
+  width: 90px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  overflow: hidden;
+  position: absolute;
+  top: 16px;
+  left: 4px;
+  z-index: 100;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell_type_list a {
+  font-size: 14px;
+  display: inline-block;
+  width: 90px;
+  height: 40px;
+  line-height: 39px;
+  text-align: center;
+  border-bottom: 1px solid #eee;
+  background-color: #fff;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell_type_list a:hover {
+  color: #fff;
+  background-color: #3189e9;
+  border-color: #3189e9;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .sell_type li .stop_sell_type_list a:active {
+  color: #fff;
+  background-color: #126acc;
+  border-color: #126acc;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .b_c_t_more {
+  font-size: 14px;
+  float: right;
+  padding-top: 18px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .b_c_t_more a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_car_type_title .b_c_t_more a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr {
+  border-bottom: 1px solid #dadada;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr.b_car_list a:hover {
+  color: #398be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr:hover {
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th {
+  text-align: left;
+  font-weight: normal;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child {
+  width: 299px;
+  padding: 6px 0 4px;
+  line-height: 22px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_sell_msg {
+  margin: 5px 0 2px;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_sell_msg a {
+  color: #fff;
+  background-color: #398be4;
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 16px;
+  cursor: default;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_sell_msg i {
+  color: #333;
+  line-height: 16px;
+  padding: 0 4px;
+  border: 1px solid #333;
+  background-color: #fff;
+  position: absolute;
+  bottom: -16px;
+  left: 25px;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_sell_msg span {
+  color: #fff;
+  background-color: #aaa;
+  display: inline-block;
+  padding: 0 4px;
+  line-height: 16px;
+  margin-left: 2px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_style a {
+  display: inline-block;
+  width: 95%;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_style a:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_style a:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_dangw {
+  color: #999;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child .car_dangw span {
+  margin-right: 8px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th {
+  width: 54px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th .attention_bar {
+  width: 30px;
+  height: 4px;
+  background-color: #dadada;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th .attention_bar .attention_scale {
+  height: 100%;
+  width: 20%;
+  background-color: #398be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th {
+  width: 91px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th a {
+  display: inline-block;
+  margin-right: 4px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th a .icon-calce {
+  background-image: url("../img/sprite.png");
+  background-position: -12px -2288px;
+  width: 12px;
+  height: 13px;
+  display: inline-block;
+  vertical-align: -2px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th {
+  width: 161px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th span {
+  color: #e43a3a;
+  cursor: pointer;
+  width: 80px;
+  display: inline-block;
+  text-overflow: ellipsis;
+  vertical-align: middle;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th span:hover {
+  color: #e3393a;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th span:active {
+  color: #b81818;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th span a {
+  color: #e43a3a;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th span a:hover {
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th > a {
+  color: #fff;
+  display: inline-block;
+  line-height: 24px;
+  padding: 0 8px;
+  margin-left: 7px;
+  background-color: #ffa903;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th > a:hover {
+  background-color: #ff9103;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th > a:active {
+  background-color: #ff8003;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th {
+  width: 116px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .margin_lr {
+  margin: 0 3px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .contrast_btn {
+  padding: 5px;
+  color: #333;
+  border: 1px solid #dadada;
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .contrast_btn .icon-add {
+  background-image: url("../img/sprite.png");
+  background-position: -12px -2263px;
+  width: 12px;
+  height: 12px;
+  display: inline-block;
+  vertical-align: -1px;
+  margin-right: 3px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .contrast_btn:hover .icon-add {
+  background-position: -12px -2276px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .contrast_btn:active .icon-add {
+  background-position: 0px -2276px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody tr th:first-child + th + th + th + th .dis_contra {
+  color: #ababab;
+  padding: 5px 6px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody .contrast_table_title {
+  color: #999;
+  font-size: 14px;
+  line-height: 40px;
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody .contrast_table_title th {
+  font-weight: bold;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody .contrast_table_title .car_parameter {
+  color: #333;
+  padding-left: 4px;
+}
+.summarize_main_area .summarize_show_module .brand_car_type .brand_contrast .brand_contrast_table tbody .contrast_table_title .car_parameter span {
+  margin-right: 10px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title {
+  overflow: hidden;
+  margin-top: 29px;
+  border-bottom: 4px solid #333;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title i {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title span {
+  color: #eee;
+  font-size: 14px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title span a {
+  font-size: 14px;
+  margin: 0 12px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title span a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title span a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_article_title span .b_a_more {
+  margin-right: 0;
+}
+.summarize_main_area .summarize_show_module .brand_picture .car_color_list {
+  padding: 12px 0 11px;
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .brand_picture .car_color_list .c_color_wg {
+  float: left;
+  margin-right: 40px;
+  height: 22px;
+  line-height: 22px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .car_color_list .c_color_wg span a {
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  border: 1px solid #eee;
+  margin-left: 12px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .car_color_list .c_color_ns {
+  float: left;
+  height: 22px;
+  line-height: 20px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .car_color_list .c_color_ns span a {
+  display: inline-block;
+  width: 18px;
+  height: 8px;
+  border: 1px solid #eee;
+  margin-left: 12px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show {
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left {
+  float: left;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left span {
+  display: block;
+  width: 237px;
+  height: 158px;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left span img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left span:first-child {
+  margin-bottom: 4px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left span .pic_link {
+  width: 100%;
+  height: 100%;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 100;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_left span .review_link {
+  color: #fff;
+  font-size: 14px;
+  line-height: 24px;
+  padding: 0 10px;
+  background-color: #ffa903;
+  display: inline-block;
+  position: absolute;
+  top: 0;
+  left: 0;
+  z-index: 200;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right {
+  float: right;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul {
+  width: 478px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li {
+  overflow: hidden;
+  width: 478px;
+  height: 104px;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li a {
+  display: block;
+  float: left;
+  width: 156px;
+  height: 104px;
+  margin-left: 5px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li a img {
+  display: inline-block;
+  width: 100%;
+  height: 100%;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li a:first-child {
+  margin-left: 0;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li:first-child + li {
+  margin: 5px 0;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic_picture {
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic_picture:hover .shade {
+  background-color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic_picture:active .shade {
+  background-color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .shade {
+  width: 156px;
+  height: 104px;
+  background-color: #000;
+  fliter: opacity(alpha=80);
+  opacity: 0.8;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic {
+  width: 156px;
+  height: 104px;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic .icon-next {
+  display: inline-block;
+  margin: 20px 60px 0;
+  background-image: url("../img/summar_sprite.png");
+  background-position: 0px 0px;
+  width: 36px;
+  height: 36px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .brand_picture_show .b_pic_right ul li .more_pic .more_pic_text {
+  width: 100%;
+  color: #fff;
+  font-size: 14px;
+  margin-top: 14px;
+  text-align: center;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item .p_c_item_title {
+  padding-top: 12px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item .p_c_item_title a {
+  font-size: 16px;
+  line-height: 56px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item .p_c_item_title a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item .p_c_item_title a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul {
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li {
+  float: left;
+  margin-left: 20px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li a {
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li a .b_p_img {
+  width: 165px;
+  margin-bottom: 12px;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li a .b_p_img img {
+  width: 100%;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li a:hover .b_p_text {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li a:active .b_p_text {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .brand_picture .pic_classify_list .pic_classify_item ul li:first-child {
+  margin-left: 0;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title {
+  overflow: hidden;
+  margin-top: 29px;
+  border-bottom: 4px solid #333;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title i {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title span {
+  color: #eee;
+  font-size: 14px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title span a {
+  font-size: 14px;
+  margin: 0 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title span a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title span a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .summarize_video .brand_article_title span .b_a_more {
+  margin-right: 0;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list .time {
+  position: absolute;
+  top: 136px;
+  right: 4px;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  z-index: 2;
+  background: #3a2a25;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl {
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl dt {
+  width: 237px;
+  height: 158px;
+  margin-top: 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl dt img {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl dt span {
+  display: inline-block;
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -25px;
+  margin-top: -38px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl dd {
+  font-size: 14px;
+  color: #333;
+  padding-left: 4px;
+  line-height: 38px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl .v-small-tit {
+  width: 233px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl .v-time {
+  position: absolute;
+  top: 136px;
+  right: 4px;
+  width: 40px;
+  height: 18px;
+  line-height: 18px;
+  z-index: 2;
+  background: #3a2a25;
+  opacity: 0.8;
+  filter: alpha(opacity=50);
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl:hover dt span {
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -1400px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl:hover .v-small-tit {
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl:active dt span {
+  background: url("../img/sprite.png");
+  background-repeat: no-repeat;
+  background-position: 0px -1455px;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li dl:active .v-small-tit {
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .summarize_video .pub-list li:first-child + li {
+  margin: 0 4px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title {
+  margin-top: 16px;
+  border-bottom: 4px solid #333;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .b_a_t {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice {
+  float: left;
+  padding-top: 18px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li {
+  font-size: 14px;
+  float: left;
+  margin-left: 20px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn .dealer_name .dealer_num {
+  color: #b3b3b3;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn i {
+  background-image: url("../img/sprite.png");
+  background-position: 0px -41px;
+  width: 12px;
+  height: 6px;
+  display: inline-block;
+  margin-left: 4px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn:hover .dealer_num {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .ch_btn:active .dealer_num {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .city_chose {
+  top: 44px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .city_chose .delete_city_c {
+  float: right;
+  position: absolute;
+  right: 10px;
+  top: 18px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer {
+  width: 126px;
+  border: 1px solid #333;
+  border-bottom: 4px solid #333;
+  background-color: #fff;
+  position: absolute;
+  top: 44px;
+  left: 174px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer a {
+  display: inline-block;
+  width: 116px;
+  line-height: 28px;
+  padding-left: 10px;
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer a:hover {
+  color: #fff;
+  background-color: #3189e9;
+  border-color: #3189e9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer a:hover span {
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer a:active {
+  color: #fff;
+  background-color: #126acc;
+  border-color: #126acc;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer a:active span {
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_choice li .all_dealer .display_n {
+  display: none;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_sort {
+  color: #eee;
+  font-size: 14px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_sort a {
+  font-size: 14px;
+  padding: 0 12px;
+  line-height: 14px;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .brand_article_title .area_dealer_sort a:first-child + a {
+  padding-right: 4px;
+  border-left: 1px solid #dadada;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .yt_b_t {
+  margin-top: 28px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl {
+  overflow: hidden;
+  padding-bottom: 12px;
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dt {
+  float: left;
+  width: 40px;
+  margin-top: 12px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd {
+  float: left;
+  width: 676px;
+  padding-left: 4px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd a {
+  display: inline-block;
+  line-height: 17px;
+  padding: 0 4px;
+  margin: 12px 0 0 16px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd a i {
+  color: #999;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd a:hover {
+  color: #fff;
+  background-color: #398be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd a:hover i {
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd .a-hover {
+  color: #fff;
+  background-color: #398be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area dl dd .a-hover i {
+  color: #fff;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item {
+  overflow: hidden;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail {
+  float: left;
+  width: 340px;
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail:first-child {
+  padding-right: 40px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail:first-child + .dealer_detail + .dealer_detail {
+  padding-right: 40px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail:first-child + .dealer_detail + .dealer_detail + .dealer_detail + .dealer_detail {
+  padding-right: 40px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 {
+  margin-top: 10px;
+  line-height: 40px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 a {
+  font-size: 16px;
+  font-weight: 600;
+  color: #e43a3a;
+  cursor: pointer;
+  max-width: 230px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  float: left;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 a em {
+  color: #999;
+  font-weight: 600;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 a span {
+  color: #333;
+  font-weight: 600;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 a:hover span {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 a:active span {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail h2 i {
+  font-size: 12px;
+  width: 53px;
+  line-height: 18px;
+  display: inline-block;
+  text-align: center;
+  border: 1px solid #c4c4c4;
+  margin-left: 12px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail p {
+  line-height: 30px;
+  font-size: 14px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail p span {
+  color: #999;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail p .cuxiao {
+  display: inline-block;
+  width: 232px;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  vertical-align: top;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail p .ad {
+  width: 38px;
+  line-height: 16px;
+  text-align: center;
+  color: #f2f2f2;
+  border: 1px solid #f2f2f2;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .address i {
+  width: 192px;
+  display: inline-block;
+  vertical-align: middle;
+  overflow: hidden;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .address .area_pic {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .address .area_pic:hover {
+  color: #3a8be4;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .address .area_pic:active {
+  color: #1673d9;
+  text-decoration: underline;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends {
+  margin: 12px 0 20px;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a {
+  font-size: 16px;
+  display: inline-block;
+  width: 90px;
+  line-height: 26px;
+  text-align: center;
+  border: 1px solid #dadada;
+  background-color: #eee;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:hover {
+  color: #fff;
+  background-color: #3a8be4;
+  border-color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:active {
+  color: #fff;
+  background-color: #1673d9;
+  border-color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:first-child {
+  color: #fff;
+  width: 112px;
+  line-height: 28px;
+  background-color: #FFA904;
+  border: 0;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:first-child:hover {
+  background-color: #ff9103;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:first-child:active {
+  background-color: #ff8003;
+}
+.summarize_main_area .summarize_show_module .authorized_dealer .dealer_area .dealer_list .dealer_item .dealer_detail .car_msg_extends a:first-child + a {
+  margin: 0 8px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title {
+  overflow: hidden;
+  margin-top: 29px;
+  border-bottom: 4px solid #333;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title i {
+  font-size: 20px;
+  font-weight: 600;
+  line-height: 44px;
+  float: left;
+  display: inline-block;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title i b {
+  margin-right: 4px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title span {
+  color: #eee;
+  font-size: 14px;
+  margin: 15px 0 10px;
+  display: inline-block;
+  float: right;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title span a {
+  font-size: 14px;
+  margin: 0 12px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title span a:hover {
+  color: #3a8be4;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title span a:active {
+  color: #1673d9;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .brand_article_title span .b_a_more {
+  margin-right: 0;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl {
+  border-bottom: 1px solid #eee;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl dt {
+  float: left;
+  margin-right: 13px;
+  width: 60px;
+  height: 120px;
+  position: relative;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_photo,
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_mask {
+  display: inline-block;
+  width: 60px;
+  height: 60px;
+  position: absolute;
+  left: 0;
+  top: 20px;
+  z-index: 1;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_mask {
+  z-index: 5;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl dd {
+  float: right;
+  width: 647px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_userNews {
+  margin-top: 26px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_userNews .s_answer_name {
+  font-size: 14px;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_userNews .s_answer_num {
+  font-size: 12px;
+  color: #a8a8a8;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_text {
+  margin-top: 11px;
+  line-height: 25px;
+  font-size: 14px;
+  cursor: pointer;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_text .s_answer_buy {
+  color: #398be4;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_dl .s_answer_text .s_answer_content:hover {
+  text-decoration: underline;
+  color: #398be4;
+}
+.summarize_main_area .summarize_show_module .summarize_answer .s_answer_btn {
+  margin: 20px 0 52px 0;
+  display: block;
+  width: 720px;
+  height: 40px;
+  text-align: center;
+  line-height: 40px;
+  background: #eee;
+  font-size: 14px;
+  color: #999;
+}
+.summarize_main_area .imgs_m_right {
+  width: 206px;
+  height: auto;
+  float: right;
+  margin-top: -3px;
+}
+.summarize_main_area .imgs_m_right .carLike_wrap {
+  margin-top: 25px;
+}
+.summarize_main_area .imgs_m_right .carLike_wrap h3 {
+  margin-top: 0;
+}
+.summarize_main_area .imgs_m_right .carLike_wrap .imgs_l_car {
+  margin-bottom: 44px;
+}
+.summarize_main_area .imgs_m_right .carHot_wrap {
+  margin-bottom: 40px;
+}
+.summarize_main_area .imgs_m_right h3 {
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 28px;
+  padding-top: 2px;
+  border-bottom: 1px solid #eee;
+  margin-top: 20px;
+}
+#back_to_top {
+  display: none;
+}
+.we-buy {
+  margin-bottom: 10px;
+}
+#putweixin1 {
+  display: none;
+  position: absolute;
+  left: 42px;
+  top: 89px;
+}
+/*
+dongbo   jxiufu erweima
+*/
+.erweima {
+  position: absolute;
+  left: 61px;
+  top: -18px;
+  display: none;
+  padding-left: 10px;
+}
+#putweixin {
+  position: absolute;
+  top: 93px;
+  left: 56px;
+}
+.share_wx {
+  position: relative;
+}
+.remove_margintop {
+  margin-top: 0;
+}

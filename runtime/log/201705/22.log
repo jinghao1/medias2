@@ -1,0 +1,1492 @@
+[ 2017-05-22T09:55:21+08:00 ] ::1 ::1 GET /medias/public/index.php
+[ log ] localhost/medias/public/index.php [运行时间：0.134967s][吞吐率：7.41req/s] [内存消耗：1,701.14kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:21+08:00 ] ::1 ::1 GET /medias/public/index.php/admin/login/index.html
+[ log ] localhost/medias/public/index.php/admin/login/index.html [运行时间：0.023853s][吞吐率：41.92req/s] [内存消耗：1,679.89kb] [文件加载：34]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Login.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:23+08:00 ] 127.0.0.1 127.0.0.1 OPTIONS /medias/public/index.php/admin/login/login.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/login/login.html [运行时间：0.039141s][吞吐率：25.55req/s] [内存消耗：2,539.44kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'access-control-request-method' => 'POST',
+  'origin' => 'http://localhost',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'access-control-request-headers' => 'x-requested-with',
+  'accept' => '*/*',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/login/login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:25+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/login/loginsong.html [运行时间：0.102483s][吞吐率：9.76req/s] [内存消耗：2,866.70kb] [文件加载：44]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'content-length' => '30',
+  'cache-control' => 'max-age=0',
+  'origin' => 'http://localhost',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.008000s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.018677s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_admin` WHERE  `username` = 'admin' LIMIT 1    [ RunTime:0.002999s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_group` [ RunTime:0.010082s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_group` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.000486s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.010547s ]
+[ sql ] [ SQL ] SELECT `name` FROM `zt_auth_rule`  [ RunTime:0.000304s ]
+[ sql ] [ SQL ] UPDATE `zt_admin`  SET `loginnum`=214,`last_login_ip`='127.0.0.1',`last_login_time`=1495418125  WHERE  `user_id` = 1       [ RunTime:0.001569s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000533s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_log` [ RunTime:0.011046s ]
+[ sql ] [ SQL ] INSERT INTO `zt_log` (`admin_id` , `admin_name` , `description` , `status` , `ip` , `add_time`) VALUES (1 , 'admin' , '用户【admin】登录成功' , 1 , '127.0.0.1' , 1495418125)        [ RunTime:0.001006s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/index.html [运行时间：0.015109s][吞吐率：66.19req/s] [内存消耗：1,716.46kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'cache-control' => 'max-age=0',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=fsb3glkqd1rp98akdgaddjkve2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/top.html [运行时间：0.030562s][吞吐率：32.72req/s] [内存消耗：1,717.23kb] [文件加载：36]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=fsb3glkqd1rp98akdgaddjkve2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/menu.html [运行时间：0.076140s][吞吐率：13.13req/s] [内存消耗：2,896.02kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=fsb3glkqd1rp98akdgaddjkve2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001205s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007011s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.003214s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000361s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000313s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T09:55:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/main.html [运行时间：0.091112s][吞吐率：10.98req/s] [内存消耗：1,641.94kb] [文件加载：35]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=fsb3glkqd1rp98akdgaddjkve2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Index.php ]
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/index/main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-05-22T09:56:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.104039s][吞吐率：9.61req/s] [内存消耗：3,650.38kb] [文件加载：45]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => '127.0.0.1',
+  'connection' => 'keep-alive',
+  'upgrade-insecure-requests' => '1',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495001023; PHPSESSID=fsb3glkqd1rp98akdgaddjkve2',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/admin/controller/Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] /Applications/XAMPP/xamppfiles/htdocs/medias/public/../application/admin/view/cityact/citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.011412s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.002280s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 1  [ RunTime:0.007733s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 820000  [ RunTime:0.001119s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 2  [ RunTime:0.001024s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 31  [ RunTime:0.001060s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 3  [ RunTime:0.001154s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 6  [ RunTime:0.001059s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 7  [ RunTime:0.000905s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 4  [ RunTime:0.001007s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 5  [ RunTime:0.000987s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 13  [ RunTime:0.000920s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 12  [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 10  [ RunTime:0.001010s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 9  [ RunTime:0.001047s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 8  [ RunTime:0.000913s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 11  [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 14  [ RunTime:0.000997s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 15  [ RunTime:0.001063s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 16  [ RunTime:0.000940s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 17  [ RunTime:0.001057s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 18  [ RunTime:0.000993s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 19  [ RunTime:0.000970s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 20  [ RunTime:0.000996s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 23  [ RunTime:0.000902s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 24  [ RunTime:0.000911s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 25  [ RunTime:0.001041s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 22  [ RunTime:0.000995s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 21  [ RunTime:0.001021s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 26  [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 710000  [ RunTime:0.000922s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 810000  [ RunTime:0.000898s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 27  [ RunTime:0.000846s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 28  [ RunTime:0.001001s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 29  [ RunTime:0.001042s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 30  [ RunTime:0.001095s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T09:56:46+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308673207665769622_1495418205910&_=1495418206257
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308673207665769622_1495418205910&_=1495418206257 [运行时间：0.031084s][吞吐率：32.17req/s] [内存消耗：2,699.63kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18308673207665769622_1495418205910',
+  '_' => '1495418206257',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000592s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.002918s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001757s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T09:57:03+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18305023657146674048_1495418223146&_=1495418223204
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18305023657146674048_1495418223146&_=1495418223204 [运行时间：0.038203s][吞吐率：26.18req/s] [内存消耗：2,699.63kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18305023657146674048_1495418223146',
+  '_' => '1495418223204',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000779s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003656s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001872s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:06:53+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830960198713693331_1495418813779&_=1495418813863
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830960198713693331_1495418813779&_=1495418813863 [运行时间：0.045126s][吞吐率：22.16req/s] [内存消耗：2,701.01kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1830960198713693331_1495418813779',
+  '_' => '1495418813863',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010868s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001432s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:07:03+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183017951304473565788_1495418823127&_=1495418823205
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183017951304473565788_1495418823127&_=1495418823205 [运行时间：0.039196s][吞吐率：25.51req/s] [内存消耗：2,701.36kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183017951304473565788_1495418823127',
+  '_' => '1495418823205',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000431s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005279s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001881s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:07:40+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308550047697537333_1495418860172&_=1495418860256
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308550047697537333_1495418860172&_=1495418860256 [运行时间：0.037739s][吞吐率：26.50req/s] [内存消耗：2,701.35kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18308550047697537333_1495418860172',
+  '_' => '1495418860256',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002889s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003265s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001076s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:09:30+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306416718236745753_1495418969613&_=1495418970014
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306416718236745753_1495418969613&_=1495418970014 [运行时间：0.083512s][吞吐率：11.97req/s] [内存消耗：2,701.35kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18306416718236745753_1495418969613',
+  '_' => '1495418970014',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000595s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.012986s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001750s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:10:16+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304515750454916754_1495419016514&_=1495419016598
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304515750454916754_1495419016514&_=1495419016598 [运行时间：0.055433s][吞吐率：18.04req/s] [内存消耗：2,701.02kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18304515750454916754_1495419016514',
+  '_' => '1495419016598',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000696s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.014723s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001837s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:12:12+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304220224154670005_1495419132394&_=1495419132495
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304220224154670005_1495419132394&_=1495419132495 [运行时间：0.049986s][吞吐率：20.01req/s] [内存消耗：2,700.76kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18304220224154670005_1495419132394',
+  '_' => '1495419132495',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000597s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.006643s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001741s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:12:36+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18309870756024770027_1495419156197&_=1495419156281
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18309870756024770027_1495419156197&_=1495419156281 [运行时间：0.038571s][吞吐率：25.93req/s] [内存消耗：2,700.76kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18309870756024770027_1495419156197',
+  '_' => '1495419156281',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000623s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003530s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001736s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:13:23+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183010535625028787954_1495419202983&_=1495419203072
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183010535625028787954_1495419202983&_=1495419203072 [运行时间：0.101115s][吞吐率：9.89req/s] [内存消耗：2,701.02kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183010535625028787954_1495419202983',
+  '_' => '1495419203072',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000715s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.056844s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001826s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:13:48+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304269607343025237_1495419228462&_=1495419228560
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304269607343025237_1495419228462&_=1495419228560 [运行时间：0.081463s][吞吐率：12.28req/s] [内存消耗：2,701.35kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18304269607343025237_1495419228462',
+  '_' => '1495419228560',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000792s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.041086s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.002296s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:15:34+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304645129623692694_1495419334393&_=1495419334477
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18304645129623692694_1495419334393&_=1495419334477 [运行时间：0.044073s][吞吐率：22.69req/s] [内存消耗：2,700.73kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18304645129623692694_1495419334393',
+  '_' => '1495419334477',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005368s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001087s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:17:19+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306564705891040641_1495419438993&_=1495419439094
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306564705891040641_1495419438993&_=1495419439094 [运行时间：0.078492s][吞吐率：12.74req/s] [内存消耗：2,700.83kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18306564705891040641_1495419438993',
+  '_' => '1495419439094',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000485s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.032688s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001871s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:19:11+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183030148053283598797_1495419551434&_=1495419551516
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183030148053283598797_1495419551434&_=1495419551516 [运行时间：0.038185s][吞吐率：26.19req/s] [内存消耗：2,701.88kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183030148053283598797_1495419551434',
+  '_' => '1495419551516',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000395s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.006511s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.002118s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:19:32+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183019390556056777197_1495419572741&_=1495419572824
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183019390556056777197_1495419572741&_=1495419572824 [运行时间：0.046134s][吞吐率：21.68req/s] [内存消耗：2,701.43kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183019390556056777197_1495419572741',
+  '_' => '1495419572824',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001209s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005154s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001700s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:20:21+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306135233716944082_1495419621290&_=1495419621370
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18306135233716944082_1495419621290&_=1495419621370 [运行时间：0.034840s][吞吐率：28.70req/s] [内存消耗：2,701.80kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18306135233716944082_1495419621290',
+  '_' => '1495419621370',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000451s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003129s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001651s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:21:23+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830825689865950741_1495419683055&_=1495419683150
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830825689865950741_1495419683055&_=1495419683150 [运行时间：0.091884s][吞吐率：10.88req/s] [内存消耗：2,701.42kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1830825689865950741_1495419683055',
+  '_' => '1495419683150',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.003754s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.055976s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001281s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:21:37+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183023295092247176452_1495419697730&_=1495419697810
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183023295092247176452_1495419697730&_=1495419697810 [运行时间：0.036311s][吞吐率：27.54req/s] [内存消耗：2,701.86kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183023295092247176452_1495419697730',
+  '_' => '1495419697810',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000378s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003247s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001740s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:21:54+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308438130700850452_1495419714328&_=1495419714411
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308438130700850452_1495419714328&_=1495419714411 [运行时间：0.034171s][吞吐率：29.26req/s] [内存消耗：2,701.88kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18308438130700850452_1495419714328',
+  '_' => '1495419714411',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000448s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004664s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001936s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:24:10+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308185523719650794_1495419850801&_=1495419850886
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308185523719650794_1495419850801&_=1495419850886 [运行时间：0.034215s][吞吐率：29.23req/s] [内存消耗：2,702.42kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18308185523719650794_1495419850801',
+  '_' => '1495419850886',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000482s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003196s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001590s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T10:40:12+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18307364124729319024_1495420812189&_=1495420812270
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18307364124729319024_1495420812189&_=1495420812270 [运行时间：0.061449s][吞吐率：16.27req/s] [内存消耗：2,702.42kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18307364124729319024_1495420812189',
+  '_' => '1495420812270',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000384s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005070s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001354s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:04:19+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183012285323646572621_1495422259608&_=1495422259628
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183012285323646572621_1495422259608&_=1495422259628 [运行时间：0.034566s][吞吐率：28.93req/s] [内存消耗：2,702.44kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183012285323646572621_1495422259608',
+  '_' => '1495422259628',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001008s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004768s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001820s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:05:13+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18305284458198271411_1495422313907&_=1495422313939
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18305284458198271411_1495422313907&_=1495422313939 [运行时间：0.040358s][吞吐率：24.78req/s] [内存消耗：2,702.65kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18305284458198271411_1495422313907',
+  '_' => '1495422313939',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000589s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004752s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001622s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:06:15+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308035112092673915_1495422375359&_=1495422375395
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18308035112092673915_1495422375359&_=1495422375395 [运行时间：0.047018s][吞吐率：21.27req/s] [内存消耗：2,702.86kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18308035112092673915_1495422375359',
+  '_' => '1495422375395',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002042s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.011630s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001178s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:08:11+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183047189555964435037_1495422491629&_=1495422491662
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery183047189555964435037_1495422491629&_=1495422491662 [运行时间：0.046346s][吞吐率：21.58req/s] [内存消耗：2,703.93kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183047189555964435037_1495422491629',
+  '_' => '1495422491662',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000915s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.013782s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001207s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:08:47+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830505104784320513_1495422527849&_=1495422527882
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery1830505104784320513_1495422527849&_=1495422527882 [运行时间：0.044260s][吞吐率：22.59req/s] [内存消耗：2,705.04kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1830505104784320513_1495422527849',
+  '_' => '1495422527882',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001284s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010053s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.002379s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T11:08:56+08:00 ] ::1 ::1 GET /medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18309987660219381078_1495422536523&_=1495422536568
+[ log ] localhost/medias/public/index.php/port/ChebaiH/Changecityinfo?callback=jQuery18309987660219381078_1495422536523&_=1495422536568 [运行时间：0.031606s][吞吐率：31.64req/s] [内存消耗：2,705.29kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'ChebaiH',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18309987660219381078_1495422536523',
+  '_' => '1495422536568',
+)
+[ info ] [ RUN ] app\port\controller\ChebaiH->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000398s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.003926s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001643s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T13:43:59+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery18306090639260753188_1495431839761&_=1495431839813
+[ log ] localhost/medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery18306090639260753188_1495431839761&_=1495431839813 [运行时间：0.131600s][吞吐率：7.60req/s] [内存消耗：2,706.03kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18306090639260753188_1495431839761',
+  '_' => '1495431839813',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.002080s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.006206s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001335s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T13:46:01+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery1830026034082253820978_1495431960928&_=1495431960976
+[ log ] localhost/medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery1830026034082253820978_1495431960928&_=1495431960976 [运行时间：0.050454s][吞吐率：19.82req/s] [内存消耗：2,705.51kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1830026034082253820978_1495431960928',
+  '_' => '1495431960976',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000452s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.004031s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001140s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T13:47:20+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery18304671931269858691_1495432039888&_=1495432039946
+[ log ] localhost/medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery18304671931269858691_1495432039888&_=1495432039946 [运行时间：0.068788s][吞吐率：14.54req/s] [内存消耗：2,706.02kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery18304671931269858691_1495432039888',
+  '_' => '1495432039946',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.033242s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001912s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T14:23:22+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery183008029503253746095_1495434202757&_=1495434202810
+[ log ] localhost/medias/public/index.php/port/Chebaih/Changecityinfo?callback=jQuery183008029503253746095_1495434202757&_=1495434202810 [运行时间：0.055515s][吞吐率：18.01req/s] [内存消耗：2,706.10kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Changecityinfo',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'accept' => '*/*',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183008029503253746095_1495434202757',
+  '_' => '1495434202810',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Changecityinfo[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000604s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009272s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.002397s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T15:49:47+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Chityinfom?callback=jQuery1102020046214555230613_1495439387117&_=1495439387118
+[ log ] localhost/medias/public/index.php/port/Chebaih/Chityinfom?callback=jQuery1102020046214555230613_1495439387117&_=1495439387118 [运行时间：0.076224s][吞吐率：13.12req/s] [内存消耗：2,725.52kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Chityinfom',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'referer' => 'http://localhost/chebaihui_m/carIndex.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102020046214555230613_1495439387117',
+  '_' => '1495439387118',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Chityinfom[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001472s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.005271s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001721s ]
+
+---------------------------------------------------------------
+[ 2017-05-22T15:50:59+08:00 ] ::1 ::1 GET /medias/public/index.php/port/Chebaih/Chityinfom?callback=jQuery110208011331602551406_1495439459586&_=1495439459587
+[ log ] localhost/medias/public/index.php/port/Chebaih/Chityinfom?callback=jQuery110208011331602551406_1495439459586&_=1495439459587 [运行时间：0.044244s][吞吐率：22.60req/s] [内存消耗：2,726.23kb] [文件加载：40]
+[ info ] [ LANG ] /Applications/XAMPP/xamppfiles/htdocs/medias/thinkphp/lang/zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'Chityinfom',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'host' => 'localhost',
+  'connection' => 'keep-alive',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'x-requested-with' => 'XMLHttpRequest',
+  'user-agent' => 'Mozilla/5.0 (Macintosh; Intel Mac OS X 10_12_4) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/55.0.2883.95 Safari/537.36',
+  'referer' => 'http://localhost/chebaihui_m/carIndex.html',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'cookie' => 'PHPSESSID=lmef88nmqc71ebtlfpc60u8o86',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110208011331602551406_1495439459586',
+  '_' => '1495439459587',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->Chityinfom[ /Applications/XAMPP/xamppfiles/htdocs/medias/application/port/controller/Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.006304s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`initial`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`status` = 1 ORDER BY a.initial  [ RunTime:0.001452s ]
+
+---------------------------------------------------------------

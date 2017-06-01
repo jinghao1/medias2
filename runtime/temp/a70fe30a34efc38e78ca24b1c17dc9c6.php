@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html";i:1489484782;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:75:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html";i:1495695341;}*/ ?>
 <html>
 <head>
 <title>menu</title>
@@ -31,6 +31,7 @@
 		        <dd style='display:block' class='sitem' id='<?php echo $fmenu; ?>'>
 		          <ul class='sitemu'>
 		            <?php if(is_array($menuvo) || $menuvo instanceof \think\Collection): if( count($menuvo)==0 ) : echo "" ;else: foreach($menuvo as $kurl=>$tname): ?> 
+		          
 			            <li><a href="<?php echo url($kurl); ?>" target='main' class="iii"><?php echo $tname; ?></a> </li>
 			             
 		            <?php endforeach; endif; else: echo "" ;endif; ?>

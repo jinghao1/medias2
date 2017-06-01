@@ -23,7 +23,6 @@ class Base extends Controller
         if(session('admin_uid') != 1){
 		
             if(!in_array($url, ['admin/index/index','admin/index/top','admin/index/menu','admin/index/main'])){
-	            //p($url,session('admin_uid'));
 	           
                 if(!$auth->check($url,session('admin_uid'))){
                     $this->error('抱歉，您没有操作权限');
