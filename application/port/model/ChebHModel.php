@@ -8,6 +8,7 @@ class ChebHModel extends Model
     protected $table = 'allcity';
     protected $tableact = 'allcbhact';
 	protected $carcbh = 'brand_cbh';
+	//protected $carcbh = 'cbh_brand';
     
     
     //获取省份下对应的所有城市信息
@@ -23,13 +24,17 @@ class ChebHModel extends Model
 
     //获取 车百汇 车型信息
     public function Undercar($pid){
-        return Db::name($this->carcbh)->where('pid',$pid)->select();
+        return Db::name($this->carcbh)->where('pid',$pid)->order('start')->select();
     }
 
     //获取 车百汇 各层级数据 车型数据
     public function Udcar($pid,$name){
-
-        return Db::name($name)->where('pid',$pid)->select();
+		if($pid==0){
+			return Db::name($name)->where('pid',$pid)->order('start,second ')->select();
+		}else{
+			return Db::name($name)->where('pid',$pid)->order('start ')->select();
+		}
+        
     }
 
     //购车时间
@@ -58,7 +63,13 @@ class ChebHModel extends Model
         return Db::name($this->table)->alias('a')->join('zt_allcbhact b','a.cityid=b.cityid','LEFT')->field('a.cityid,a.cityname,a.status,b.begtime,b.endtime,b.address,b.fzrname,b.waiting')->where('a.cityname',$str)->where('a.status',1)->select();
     }
 
-   	
+   	//车百汇项目  通过车系id，返回车系品牌，品牌id，
+   	public function Rtcarbyseriseid($cid){
+	   	$end = Db::name('cbh_carserise')->alias('a')->join('zt_cbh_masterbrand b','b.brand_id=a.pid','LEFT')->join('zt_cbh_brand c','b.pid=c.brand_id','LEFT')->field('b.brand_id as carid,c.brand_id as brid')->where('a.brand_id',$cid)->select();
+	   	//echo Db::name('cbh_carserise')->getLastSql();
+	   	return $end;
+	   	
+   	}
 
 	//车百汇项目 ，根据城市名称返回城市id
 	public function rtcityidbyname($name){

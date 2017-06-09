@@ -5,6 +5,18 @@
 	<title>经销商信息导入</title>
 </head>
 <body>
+	<p>各地经销商信息导入</p>
+	<form action="{:url('Excel/readerBW')}" method="post" enctype="multipart/form-data">
+	    <input type="file" name="importexcel"/> 
+	    <input type="submit" value="导入"/>
+	</form>
+
+<!--智慧云数据对接-->
+<br>
+<br>
+<br>
+<br>
+<p>智慧云数据对接</p>
 	<form action="{:url('Excel/readerBW')}" method="post" enctype="multipart/form-data">
 	    <input type="file" name="importexcel"/> 
 	    <input type="submit" value="导入"/>

@@ -113,6 +113,8 @@ class Hkinfo extends Controller	{
 		return;
 	}
 
+	
+
 	//头部信息接口https 转换
 	public function cgheadhttps(){
 		$all = input('param.'); //接收信息 

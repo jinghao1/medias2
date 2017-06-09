@@ -1,0 +1,105 @@
+[ 2017-06-07T15:45:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/bmpro/Bmlot/Choice
+[ log ] localhost/medias/public/index.php/bmpro/Bmlot/Choice [运行时间：0.137042s][吞吐率：7.30req/s] [内存消耗：1,659.20kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bmpro',
+    1 => 'Bmlot',
+    2 => 'Choice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bmpro\controller\Bmlot->Choice[ D:\rar\phpstudy\WWW\medias\application\bmpro\controller\Bmlot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.050995s ] mysql:dbname=baoma;host=192.168.120.4;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bm_paobab` [ RunTime:0.014391s ]
+[ sql ] [ SQL ] SELECT * FROM `bm_paobab` WHERE  `p_id` = 1   [ RunTime:0.024357s ]
+[ error ] [8]未定义数组下标: 0[D:\rar\phpstudy\WWW\medias\application\bmpro\controller\Bmlot.php:22]
+
+---------------------------------------------------------------
+[ 2017-06-07T15:45:55+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/bmpro/Bmlot/Choice
+[ log ] localhost/medias/public/index.php/bmpro/Bmlot/Choice [运行时间：0.111357s][吞吐率：8.98req/s] [内存消耗：1,574.57kb] [文件加载：39]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bmpro',
+    1 => 'Bmlot',
+    2 => 'Choice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bmpro\controller\Bmlot->Choice[ D:\rar\phpstudy\WWW\medias\application\bmpro\controller\Bmlot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.043141s ] mysql:dbname=baoma;host=192.168.120.4;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bm_paobab` [ RunTime:0.020694s ]
+[ sql ] [ SQL ] SELECT * FROM `bm_paobab`  [ RunTime:0.024139s ]
+
+---------------------------------------------------------------
+[ 2017-06-07T15:48:05+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/bmpro/Bmlot/Choice
+[ log ] localhost/medias/public/index.php/bmpro/Bmlot/Choice [运行时间：0.124975s][吞吐率：8.00req/s] [内存消耗：1,574.57kb] [文件加载：39]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'bmpro',
+    1 => 'Bmlot',
+    2 => 'Choice',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\bmpro\controller\Bmlot->Choice[ D:\rar\phpstudy\WWW\medias\application\bmpro\controller\Bmlot.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.052685s ] mysql:dbname=baoma;host=192.168.120.4;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `bm_paobab` [ RunTime:0.019313s ]
+[ sql ] [ SQL ] SELECT * FROM `bm_paobab`  [ RunTime:0.032514s ]
+
+---------------------------------------------------------------

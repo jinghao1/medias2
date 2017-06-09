@@ -69,7 +69,7 @@ function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){
 	}
 	foreach($html->find('div[class=mouth-item]') as $fk=> $element) {
 		$test=  $element->find('div[class=cont-title fn-clear]');
-		//var_dump($test);
+	 
 		foreach($test as $kt=> $end){ //抬头 
 			$mt = 1;
 			foreach($end->find("a") as $vt){
@@ -89,7 +89,8 @@ function curcontent($url='http://k.autohome.com.cn/692/index_1.html'){
 			//echo $end;
 			//echo "<br>";
 		}
-		$content =$element->find('div[class=text-con height-list]');
+		$content =$element->find('div[class=text-con]');
+		 
 		foreach($content as $kc=> $con){ 
 			//var_dump($con->outertext); 
 			$conbest = getbest($con->outertext);

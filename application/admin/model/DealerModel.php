@@ -43,6 +43,8 @@ class DealerModel extends Model
                     //->order("dealer_id desc ")
                    // ->select("limit 1,20");
                     ->paginate();  
+            //'select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on c.brand_id=d.car_series_id left join zt_project p on d.project_id=p.id left join zt_lotuser m on m.userid=d.dealer_id left join zt_lottery n on m.lotid=n.id order by d.dealer_id desc limit 1,20'
+           // 'select d.dealer_id,d.name from zt_user_dealer d left join zt_brand c on c.brand_id=d.car_series_id left join zt_project p on d.project_id=p.id  left join zt_lotuser m on m.userid=d.dealer_id  left join zt_lottery n on m.lotid=n.id order by d.dealer_id desc limit 1,20'
         }
     }
 

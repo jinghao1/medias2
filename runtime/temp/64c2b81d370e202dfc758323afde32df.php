@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html";i:1495785018;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html";i:1496369907;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -72,7 +72,7 @@
 			<a style="float:left" href="<?php echo url('chebaihui/cbhregall',['enews'=>'1']); ?>"><div class="outbutlef <?php if(!empty($yxenews)) echo 'ckback'; ?>">&nbsp; mobile &nbsp;</div></a> 
 			<a style="float:left" href="<?php echo url('chebaihui/cbhregall',['enews'=>'2']); ?>"><div class="outbutlef <?php if(!empty($llenews)) echo 'ckback'; ?>">&nbsp; pc &nbsp;</div></a>
 			 
-			<a style="float:right" href="<?php echo url('Excel/index',['enewsid'=>$enewsid]); ?>"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
+			<a style="float:right" href="<?php echo url('Excel/CbhregOut',['enewsid'=>$enewsid]); ?>"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 

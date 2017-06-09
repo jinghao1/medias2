@@ -9,7 +9,14 @@ use app\admin\model\UserModel;
 class Index extends	Base	
 {				
 	public	function index()				
-	{								
+	{			
+		$UserId = session::get("admin_uid");
+		//通过userid,查询所在用户组，判断跳转
+		$ck = new UserModel();
+		$userinfo = $ck->UserAll($UserId);
+		if($userinfo[0]['groupid']==14){
+			$this->redirect('Chebaihui/gtphone');
+		} 
 		return $this->fetch();
 	} 
 

@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html";i:1496220700;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:82:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html";i:1496283469;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -85,7 +85,7 @@
 		    </div>
 		  </div>
 		   
-		   <div class="form-group">
+		   <!--<div class="form-group">
 		    <label class="col-sm-6 control-label">选择车型</label>
 		    <div class="col-sm-4">
 		      <p class="form-control-static"><?php echo $data['brand_name']; ?></p>
@@ -115,7 +115,7 @@
 		    <div class="col-sm-4">
 		      <p class="form-control-static"><?php echo $data['changeaddr']; ?></p>
 		    </div>
-		  </div>
+		  </div>-->
 		    <div class="form-group">
 		    <label class="col-sm-6 control-label">注册时间</label>
 		    <div class="col-sm-4">

@@ -1,0 +1,1764 @@
+[ 2017-06-02T10:22:00+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.083258s][吞吐率：12.01req/s] [内存消耗：2,051.13kb] [文件加载：53]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001133s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008986s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000436s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008771s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.011122s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009146s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000595s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T10:45:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.076839s][吞吐率：13.01req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000893s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009332s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000689s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.011995s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007683s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008123s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000518s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000185s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T10:48:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html [运行时间：0.068758s][吞吐率：14.54req/s] [内存消耗：1,932.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000732s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008503s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000354s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007677s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007893s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000245s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000448s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007930s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000226s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T10:56:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.069533s][吞吐率：14.38req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000940s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008137s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000322s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007145s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007827s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000252s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008531s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000345s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html [运行时间：0.071454s][吞吐率：14.00req/s] [内存消耗：1,932.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000873s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009338s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000670s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000503s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007814s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008117s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000277s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000240s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008018s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000618s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000280s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.062181s][吞吐率：16.08req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000827s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008337s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000333s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007875s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007652s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008247s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000303s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000203s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html [运行时间：0.074417s][吞吐率：13.44req/s] [内存消耗：1,932.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008782s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000312s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000546s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007601s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000308s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.015305s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000196s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008252s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000214s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.063003s][吞吐率：15.87req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000602s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.007899s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000305s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007311s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008297s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000260s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007713s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000223s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html [运行时间：0.067594s][吞吐率：14.79req/s] [内存消耗：1,932.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000616s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009458s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000262s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000412s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007718s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000194s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009613s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000263s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000219s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008501s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000183s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T11:09:21+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.087862s][吞吐率：11.38req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000863s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.028640s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000311s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008296s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008280s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000307s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008011s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000275s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000319s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:54:04+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html [运行时间：0.070914s][吞吐率：14.10req/s] [内存消耗：1,932.95kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '1',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000951s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009038s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000523s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '1' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000392s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008676s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009074s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000168s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008366s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000524s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:54:05+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.073388s][吞吐率：13.63req/s] [内存消耗：1,928.57kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/1.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000911s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010896s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000349s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000466s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009157s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009185s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008914s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000314s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:54:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/2.html [运行时间：0.039380s][吞吐率：25.39req/s] [内存消耗：1,583.12kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.011715s ]
+[ error ] [10501]SQLSTATE[42S22]: Column not found: 1054 Unknown column 'n.brandid' in 'on clause'[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\db\Connection.php:362]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:54:26+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.066495s][吞吐率：15.04req/s] [内存消耗：1,932.59kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000791s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008947s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000294s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000397s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007399s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000257s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008277s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000300s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000254s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000201s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008170s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000211s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:54:27+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/1.html [运行时间：0.122449s][吞吐率：8.17req/s] [内存消耗：4,734.56kb] [文件加载：99]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000709s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009816s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc   [ RunTime:0.000607s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000736s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.010295s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000341s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:57:55+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.077267s][吞吐率：12.94req/s] [内存消耗：1,928.64kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000836s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010549s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000331s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.015755s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008576s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.010104s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000295s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000259s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T13:57:56+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/2.html [运行时间：0.107875s][吞吐率：9.27req/s] [内存消耗：4,728.44kb] [文件加载：99]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'no-cache',
+  'pragma' => 'no-cache',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000608s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009861s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` WHERE  `d`.`whreg` = 2 ORDER BY d.dealer_id desc   [ RunTime:0.000528s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007800s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000239s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:31:03+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.017167s][吞吐率：58.25req/s] [内存消耗：1,038.20kb] [文件加载：33]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ LOG ] INIT File
+[ error ] [0]方法参数错误:id[D:\rar\phpstudy\WWW\medias\thinkphp\library\think\App.php:300]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:31:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.020564s][吞吐率：48.63req/s] [内存消耗：1,584.72kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ error ] [1]Call to undefined function app\port\model\alias()[D:\rar\phpstudy\WWW\medias\application\port\model\ChebHModel.php:63]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:31:47+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.032014s][吞吐率：31.24req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000979s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.010411s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.001029s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:32:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.032144s][吞吐率：31.11req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001052s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.008821s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000302s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:34:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.067831s][吞吐率：14.74req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001279s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.042066s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000964s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:34:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.035618s][吞吐率：28.08req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000663s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.010532s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000344s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:34:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.033840s][吞吐率：29.55req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000680s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009206s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000304s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:34:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.035620s][吞吐率：28.07req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000685s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.012190s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000281s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T14:34:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.031786s][吞吐率：31.46req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000684s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.008808s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000331s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.033655s][吞吐率：29.71req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000922s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.008912s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000712s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.036649s][吞吐率：27.29req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000737s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.010858s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000340s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.033840s][吞吐率：29.55req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000652s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.008473s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000285s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.033303s][吞吐率：30.03req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000651s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009850s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000654s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:17+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.031964s][吞吐率：31.29req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000649s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009180s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000394s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.093918s][吞吐率：10.65req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000688s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.071174s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000411s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:21+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.033398s][吞吐率：29.94req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000847s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009496s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.035734s][吞吐率：27.98req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000673s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009959s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000342s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:23+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.035449s][吞吐率：28.21req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.009182s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000303s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:14:24+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.032520s][吞吐率：30.75req/s] [内存消耗：1,701.06kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000682s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.008636s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000341s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:21:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.044150s][吞吐率：22.65req/s] [内存消耗：1,701.54kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001035s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.019308s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000310s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:49:21+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.038515s][吞吐率：25.96req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000904s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.010658s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000740s ]
+
+---------------------------------------------------------------
+[ 2017-06-02T17:49:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/songt
+[ log ] 127.0.0.1/medias/public/index.php/port/Chebaih/songt [运行时间：0.032697s][吞吐率：30.58req/s] [内存消耗：1,702.04kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'songt',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=idt6sn5eu118ufha7r41gt0340',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->songt[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000926s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carserise` [ RunTime:0.010154s ]
+[ sql ] [ SQL ] SELECT b.brand_id as carid,c.brand_id as brid FROM `zt_cbh_carserise` `a` LEFT JOIN `zt_cbh_masterbrand` `b` ON `b`.`brand_id`=`a`.`pid` LEFT JOIN `zt_cbh_brand` `c` ON `b`.`pid`=`c`.`brand_id` WHERE  `a`.`brand_id` = 3779  [ RunTime:0.000279s ]
+
+---------------------------------------------------------------

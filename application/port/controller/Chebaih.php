@@ -201,48 +201,50 @@ class Chebaih extends Controller
 	} 
 
 	//  车型信息 
-	public function Carinfo(){
-		$all = input('param.'); //接收信息 
-		$callback = $all["callback"];  
-		$ck = new ChebHModel();
-		$arr = $ck->Undercar(0);
-		if($arr){
-			foreach($arr as $key=>$val){
-				$one[$val['brand_id']] = $val['brand_name']; 
-				$lin = $ck->Undercar($val['brand_id']);	
-				foreach($lin as $erval){
-					$two[$val['brand_id']][] = $erval['brand_id']; 
-					$allcity[$erval['brand_id']] = $erval['brand_name'];
-					$tt = $ck->Undercar($erval['brand_id']);
-					$ti=0;
-					foreach($tt as $ttval){
-						$three[$erval['brand_id']][] = $ttval['brand_id'];
-						//$two[$val['brand_id']][$ti][$erval['brand_id']] = $ttval['brand_id'];
-						$allcity[$ttval['brand_id']] = $ttval['brand_name'];
-						$ti++;
-					}	
-				} 
-			}
-		}
-		$end['pinpai'] = $one;
-		$end['releav'] = $two; //一级=》品牌
-		$end['detail'] = $three; //品牌=》车型
-		$end['allcar'] = $allcity;
+	//public function Carinfo(){
+	//	$all = input('param.'); //接收信息 
+	//	$callback = $all["callback"];  
+	//	$ck = new ChebHModel();
+	//	$arr = $ck->Undercar(0);
+	//	if($arr){
+	//		foreach($arr as $key=>$val){
+	//			$one[$val['brand_id']] = $val['brand_name']; 
+	//			$lin = $ck->Undercar($val['brand_id']);	
+	//			foreach($lin as $erval){
+	//				$two[$val['brand_id']][] = $erval['brand_id']; 
+	//				$allcity[$erval['brand_id']] = $erval['brand_name'];
+	//				$tt = $ck->Undercar($erval['brand_id']);
+	//				$ti=0;
+	//				foreach($tt as $ttval){
+	//					$three[$erval['brand_id']][] = $ttval['brand_id'];
+	//					//$two[$val['brand_id']][$ti][$erval['brand_id']] = $ttval['brand_id'];
+	//					$allcity[$ttval['brand_id']] = $ttval['brand_name'];
+	//					$ti++;
+	//				}	
+	//			} 
+	//		}
+	//	}
+	//	$end['pinpai'] = $one;
+	//	$end['releav'] = $two; //一级=》品牌
+	//	$end['detail'] = $three; //品牌=》车型
+	//	$end['allcar'] = $allcity;
 	 
-		echo $callback.'('.json_encode($end).')';
-		return;
-	}
+	//	echo $callback.'('.json_encode($end).')';
+	//	return;
+	//}
 
-	//  车型信息 new  分表
+	//  车型信息 new  分表  pc
 	public function Carinfocbh(){
 		$all = input('param.'); //接收信息 
 		$callback = $all["callback"];  
 		$ck = new ChebHModel();
 		$arr = $ck->Udcar(0,'cbh_brand');
-
+		$zm = array();
 		if($arr){
 			foreach($arr as $key=>$val){
-				$one[$val['brand_id']] = $val['brand_name']; 
+				$one[] = array('id'=>$val['brand_id'],'val'=>$val['brand_name']);
+				$zm[$val['brand_id']] = $val['start'];
+				//$one[$val['brand_id']] = $val['brand_name']; 
 				$lin = $ck->Udcar($val['brand_id'],'cbh_masterbrand');	
 				foreach($lin as $erval){
 					$two[$val['brand_id']][] = $erval['brand_id']; 
@@ -256,12 +258,16 @@ class Chebaih extends Controller
 				} 
 			}
 		}
+ 
 		$end['pinpai'] = $one;
 		$end['releav'] = $two; //一级=》品牌
 		$end['detail'] = $three; //品牌=》车型
 		$end['allcar'] = $allcity;
+		$end['zimu'] = $zm; //id=》首字母
 	 	$cartt = array(); //购车时间 
 	 	//购车时间
+	 	//var_dump($end['pinpai']);
+	 	//echo "<br>=====<br>";
 	 	$cartime = $ck->Chbcartime();
 	 	if($cartime){
 	 		foreach($cartime as $cart){
@@ -269,10 +275,61 @@ class Chebaih extends Controller
 	 		}
 	 	}
 	 	$end['cartime'] =  $cartt;
+	 	//var_dump($end['pinpai']);
+	 	//echo "<br>=====<br>";
+	 	//exit(json_encode($end));
 		echo $callback.'('.json_encode($end).')';
 		return;
 	}
 
+	//  车型信息 new  分表 mobile
+	public function Carinfocbhmb(){
+		$all = input('param.'); //接收信息 
+		$callback = $all["callback"];  
+		$ck = new ChebHModel();
+		$arr = $ck->Udcar(0,'cbh_brand');
+		$zm = array();
+		if($arr){
+			foreach($arr as $key=>$val){
+				$one[$val['start']][] = array('id'=>$val['brand_id'],'val'=>$val['brand_name']);
+				$zm[$val['brand_id']] = $val['start'];
+				//$one[$val['brand_id']] = $val['brand_name']; 
+				$lin = $ck->Udcar($val['brand_id'],'cbh_masterbrand');	
+				foreach($lin as $erval){
+					$two[$val['brand_id']][] = $erval['brand_id']; 
+					$allcity[$erval['brand_id']] = $erval['brand_name'];
+					$tt = $ck->Udcar($erval['brand_id'],'cbh_carserise'); 
+					foreach($tt as $ttval){
+						$three[$erval['brand_id']][] = $ttval['brand_id'];
+						//$two[$val['brand_id']][$ti][$erval['brand_id']] = $ttval['brand_id'];
+						$allcity[$ttval['brand_id']] = $ttval['brand_name']; 
+					}	
+				} 
+			}
+		}
+ 
+		$end['pinpai'] = $one;
+		$end['releav'] = $two; //一级=》品牌
+		$end['detail'] = $three; //品牌=》车型
+		$end['allcar'] = $allcity;
+		$end['zimu'] = $zm; //id=》首字母
+	 	$cartt = array(); //购车时间 
+	 	//购车时间
+	 	//var_dump($end['pinpai']);
+	 	//echo "<br>=====<br>";
+	 	$cartime = $ck->Chbcartime();
+	 	if($cartime){
+	 		foreach($cartime as $cart){
+	 			$cartt[$cart['id']] = $cart['timename'];
+	 		}
+	 	}
+	 	$end['cartime'] =  $cartt;
+	 	//var_dump($end['pinpai']);
+	 	//echo "<br>=====<br>";
+	 	//exit(json_encode($end));
+		echo $callback.'('.json_encode($end).')';
+		return;
+	}
 
 	private function contcurl($url){
 		$ch = curl_init();  
@@ -350,7 +407,13 @@ class Chebaih extends Controller
 		return;
 
 	} 
-
+	public function songt(){
+		$id = 3779;
+		$dealer = new ChebHModel();
+		$allcarser = $dealer->Rtcarbyseriseid($id);
+		
+		var_dump($allcarser);
+	}
 	//注册信息 === 车百汇
 	public function RegCbh(){
 		$all = input('param.'); //接收信息 
@@ -362,6 +425,7 @@ class Chebaih extends Controller
 		$data['sex'] = 0; //未选择
 		$data['buy_car_time'] = $all['buytime']; //购车时间
 		$data['car_series_id'] = $all['carseris']; //车系id
+	
 		if(isset($all['carname']) && !empty($all['carname'])){
 			//通过车型名称查询车型id
 			$carnamearr = explode("-",$all['carname']);
@@ -374,6 +438,12 @@ class Chebaih extends Controller
 			if(isset($cend[0]) && $cend[0]['brand_id']){
 				$data['car_series_id'] = $cend[0]['brand_id'];
 			}
+		}
+		//通过车系id，查询车型名称，车型品牌
+		$allcarser = $dealer->Rtcarbyseriseid($data['car_series_id']);
+		if(isset($allcarser[0])&&!empty($allcarser[0])){
+			$data['masterbrand'] = $allcarser[0]['carid'];
+			$data['brand'] = $allcarser[0]['brid'];
 		}
 		//$data['brand'] = $all['brand']; //品牌id
 		//$data['masterbrand'] = $all['masterbrand']; //车系分类id。奥迪（进口）
@@ -390,8 +460,13 @@ class Chebaih extends Controller
 
 		if(isset($all['fself'])&&!empty($all['fself']) ){ //注册来源
 			$data['from'] = $all['fself'];
+			//通过城市id 获取城市名称 
 		} 
- 
+
+ 		//获取用户ip
+ 		if(isset($all['orignIp']) && !empty($all['orignIp'])){
+	 		$data['curip'] = $all['orignIp']; //记录ip
+ 		}
 		if($thes != $all['yzm'] || empty($thes) || empty($all['yzm'])){
 			$endyzjm = array("start"=>'1004','msg'=>'验证码错误');
 			echo $callback.'('.json_encode($endyzjm).')';
@@ -418,7 +493,7 @@ class Chebaih extends Controller
 				$phend = $dealer->Cbhunique($data['phone']);
 
 				if($phend==1){ 
-					$endyzjm = array("start"=>'1003','msg'=>'该手机已经注册');
+					$endyzjm = array("start"=>'1003','msg'=>'该手机号已注册！');
 					echo $callback.'('.json_encode($endyzjm).')';
 					return; 
 				}
@@ -426,7 +501,7 @@ class Chebaih extends Controller
 			//信息注册
 			$res = $dealer->CbhRegall($data);  
 			if($res){
-				$endyzjm = array("start"=>'2003','msg'=>'注册成功，感谢您的参与');
+				$endyzjm = array("start"=>'2003','msg'=>'注册成功，感谢您的参与！');
 
 				echo $callback.'('.json_encode($endyzjm).')';
 				//发送注册成功短信
@@ -694,6 +769,9 @@ class Chebaih extends Controller
 	 
 	}
 
+	//获取当前访问用户ip
+ 
+
 	//一键查询，车百汇注册信息
 	//public function gtphone(){ 
 	//	$all = input('param.'); //接收信息  
@@ -710,6 +788,45 @@ class Chebaih extends Controller
 	//	return $this->fetch(); 
 	//}
 
+		//接口信息转换 内容详情
+	public function ToZhyun(){
+		 
+		$curt = time();
+		$appsecret = '3C8C719C-2F20-476D-A953-88F612D89664';
+		$appkey = 'chebaihui';
+		$carid = '3046';
+		$dealerid = '988';
+		$mobile = '17703186690';
+		$name = '宋京浩';
+		$type = '0';
+		
+		$singstr = $appkey.$appsecret.$carid.$dealerid.$mobile.$name.$type.$curt;
+		$singstr = sha1($singstr);
+		$singstr = base64_encode($singstr);
+		$singstr = urlencode($singstr);
+	 	$datarr = array('AppKey'=>$appkey,'Signature'=>$singstr,'Appsecret'=>$appsecret,'carId'=>$carid,'dealerId'=>$dealerid,'mobile'=>$mobile,'name'=>$name,'type'=>$type);
+		$theurl ='http://api.xingyuanauto.com/BusinessOrder/Orders?AppKey='.$appkey.'&Signature='.$singstr.'&Timestamp='.$curt; 
+		$data = http_build_query($datarr); 
+		$opts = array (
+			'http' => array (
+				'method' => 'POST', 
+				'header'=> "Content-type:form-data/x-www-from-urlencoded",
+				'content' => $data
+			)
+		);
+		 
+		$context = stream_context_create($opts);
+		$html = file_get_contents($theurl,false,$context);
+		 
+		var_dump($html);
+	}
+
+
+	//智慧云数据对接   数据源 == Excel
+	public function ZhybyExc(){
+		
+	}
+	
 
 }	
 
