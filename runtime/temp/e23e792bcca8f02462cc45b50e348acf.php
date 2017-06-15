@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html";i:1496975294;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html";i:1496977601;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -18,7 +18,7 @@
 <br>
 <br>
 <p>智慧云数据对接</p>
-	<form action="<?php echo url('Excel/readerBW'); ?>" method="post" enctype="multipart/form-data">
+	<form action="<?php echo url('Cbhtozhy/Tozhydata'); ?>" method="post" enctype="multipart/form-data">
 	    <input type="file" name="importexcel"/> 
 	    <input type="submit" value="导入"/>
 	</form>

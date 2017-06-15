@@ -892,3 +892,1676 @@
 [ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1501   [ RunTime:0.000386s ]
 
 ---------------------------------------------------------------
+[ 2017-06-09T11:02:14+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.022036s][吞吐率：45.38req/s] [内存消耗：1,207.45kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:02:33+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/excel/readerbw.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/readerbw.html [运行时间：0.134499s][吞吐率：7.43req/s] [内存消耗：4,205.66kb] [文件加载：88]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'readerbw',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBYkXQi7SfX2IddCw',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->readerBW[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:06:51+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.019621s][吞吐率：50.97req/s] [内存消耗：1,207.45kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:06:55+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.087206s][吞吐率：11.47req/s] [内存消耗：4,678.90kb] [文件加载：86]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary0ZXnT95vJ9ekuT6W',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:49:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.020960s][吞吐率：47.71req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:49:19+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.104664s][吞吐率：9.55req/s] [内存消耗：4,788.92kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryajXiTKmBSSdpgHDD',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000751s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.008107s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3811 LIMIT 1    [ RunTime:0.000416s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2646 LIMIT 1    [ RunTime:0.000411s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2774 LIMIT 1    [ RunTime:0.000371s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:49:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017860s][吞吐率：55.99req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:49:37+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.236635s][吞吐率：4.23req/s] [内存消耗：4,788.96kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryixqZBsLA6G33EXBB',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000727s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.137619s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3811 LIMIT 1    [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2646 LIMIT 1    [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2774 LIMIT 1    [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:52:31+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/cityact/citylist.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cityact/citylist.html [运行时间：0.083835s][吞吐率：11.93req/s] [内存消耗：2,314.64kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cityact',
+    2 => 'citylist',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Cityact->citylist[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cityact.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html [ array (
+  0 => 'zmlist',
+  1 => 'procity',
+  2 => 'proii',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001010s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.012291s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname`,`initial` FROM `zt_allcity` WHERE  `level` = 0 ORDER BY initial   [ RunTime:0.000930s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 1  [ RunTime:0.001238s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 820000  [ RunTime:0.000702s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 2  [ RunTime:0.000754s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 31  [ RunTime:0.001303s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 3  [ RunTime:0.000791s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 6  [ RunTime:0.000819s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 7  [ RunTime:0.000762s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 4  [ RunTime:0.001033s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 5  [ RunTime:0.001487s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 13  [ RunTime:0.000928s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 12  [ RunTime:0.000951s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 10  [ RunTime:0.001009s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 9  [ RunTime:0.000897s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 8  [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 11  [ RunTime:0.000824s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 14  [ RunTime:0.001146s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 15  [ RunTime:0.000865s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 16  [ RunTime:0.000796s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 17  [ RunTime:0.000816s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 18  [ RunTime:0.000805s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 19  [ RunTime:0.000751s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 20  [ RunTime:0.000985s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 23  [ RunTime:0.000908s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 24  [ RunTime:0.000800s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 25  [ RunTime:0.000986s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 22  [ RunTime:0.000896s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 21  [ RunTime:0.000945s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 26  [ RunTime:0.000697s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 710000  [ RunTime:0.000653s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 810000  [ RunTime:0.000652s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 27  [ RunTime:0.000779s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 28  [ RunTime:0.001269s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 29  [ RunTime:0.001018s ]
+[ sql ] [ SQL ] SELECT `a`.`cityid`,`a`.`cityname`,`a`.`status`,`b`.`begtime`,`b`.`endtime`,`b`.`address`,`b`.`fzrname`,`b`.`waiting` FROM `zt_allcity` `a` LEFT JOIN `zt_allcbhact` `b` ON `a`.`cityid`=`b`.`cityid` WHERE  `a`.`parentid` = 30  [ RunTime:0.000966s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:52:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.074449s][吞吐率：13.43req/s] [内存消耗：1,932.75kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000674s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009162s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000520s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000375s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009027s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010352s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000232s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1501   [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000216s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009998s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000682s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000225s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:52:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/1.html [运行时间：0.111458s][吞吐率：8.97req/s] [内存消耗：4,790.33kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009412s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc   [ RunTime:0.000814s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000783s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008356s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009099s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1501   [ RunTime:0.000287s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:52:54+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.018901s][吞吐率：52.91req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:52:59+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.120749s][吞吐率：8.28req/s] [内存消耗：4,790.20kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarysPSSCvpLahNk7bTv',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000570s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.008597s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3753 LIMIT 1    [ RunTime:0.000415s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2682 LIMIT 1    [ RunTime:0.000453s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3591 LIMIT 1    [ RunTime:0.000308s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:54:37+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.020619s][吞吐率：48.50req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:54:41+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.104749s][吞吐率：9.55req/s] [内存消耗：4,790.65kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary9NvTzsQoOYyYlUZT',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000717s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.009529s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3753 LIMIT 1    [ RunTime:0.000431s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2682 LIMIT 1    [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3591 LIMIT 1    [ RunTime:0.000360s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T11:56:05+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017520s][吞吐率：57.08req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T11:56:09+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.148949s][吞吐率：6.71req/s] [内存消耗：4,791.07kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryFZyREByOQ8pRe9cx',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000681s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.052048s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3753 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000427s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2682 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.001072s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3591 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000460s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T12:00:22+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.019631s][吞吐率：50.94req/s] [内存消耗：1,094.49kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T12:00:25+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.111095s][吞吐率：9.00req/s] [内存消耗：4,791.07kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryBHcUuAzPWp2dJmZs',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5338',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000735s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.008281s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3753 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000566s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2682 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000950s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3591 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000442s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T14:09:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.074142s][吞吐率：13.49req/s] [内存消耗：1,932.75kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000912s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010242s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000568s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008652s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000218s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009772s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1501   [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009593s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000637s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T14:12:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/1.html [运行时间：0.367670s][吞吐率：2.72req/s] [内存消耗：4,792.30kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.129238s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept`,`d`.`curip` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc   [ RunTime:0.000875s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000564s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.046949s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000283s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.105260s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1501   [ RunTime:0.000358s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T15:18:48+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017097s][吞吐率：58.49req/s] [内存消耗：1,094.87kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T15:18:52+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.125585s][吞吐率：7.96req/s] [内存消耗：4,805.40kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryVuYTz1l9SUHTTwH4',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '5850',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000814s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.011796s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3753 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000435s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.011251s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000378s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2682 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000706s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3591 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000551s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '重庆市' LIMIT 1    [ RunTime:0.000329s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:26:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.018559s][吞吐率：53.88req/s] [内存消耗：1,094.87kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:41+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.123077s][吞吐率：8.13req/s] [内存消耗：1,932.90kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000903s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.011071s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.044224s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000621s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009477s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010563s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000284s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.010526s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000626s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/1.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/1.html [运行时间：0.110448s][吞吐率：9.05req/s] [内存消耗：4,794.41kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '1',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000743s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009653s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept`,`d`.`curip`,`d`.`whreg` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc   [ RunTime:0.000849s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.007685s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007471s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000401s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000265s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.077424s][吞吐率：12.92req/s] [内存消耗：1,937.62kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000667s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008590s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000410s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000571s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009359s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009177s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000285s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000253s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000198s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.009710s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000537s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000311s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:48+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/2.html [运行时间：0.113005s][吞吐率：8.85req/s] [内存消耗：4,802.95kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000594s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010086s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept`,`d`.`curip`,`d`.`whreg` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 2 ORDER BY d.dealer_id desc   [ RunTime:0.000648s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000620s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008382s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008379s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000239s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000246s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:49+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017877s][吞吐率：55.94req/s] [内存消耗：1,094.87kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T16:29:53+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.252451s][吞吐率：3.96req/s] [内存消耗：4,483.05kb] [文件加载：95]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXK30taE74mVLIs6M',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000622s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.132142s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000489s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008897s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000324s ]
+[ error ] [8]未定义变量: remark[D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php:78]
+
+---------------------------------------------------------------
+[ 2017-06-09T16:31:48+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017614s][吞吐率：56.77req/s] [内存消耗：1,094.87kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T16:31:52+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.105305s][吞吐率：9.50req/s] [内存消耗：4,473.23kb] [文件加载：95]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryKhn5kHm0BQSTYHeS',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000819s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.010017s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009382s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000348s ]
+[ error ] [8]未定义变量: datarr[D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php:122]
+
+---------------------------------------------------------------
+[ 2017-06-09T17:03:38+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017911s][吞吐率：55.83req/s] [内存消耗：1,094.87kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T17:03:44+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.193637s][吞吐率：5.16req/s] [内存消耗：5,104.54kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=hacafh34b7itf0jag1b2p049s4',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGVNNyAushZmYHbwB',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000801s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.009351s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010493s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000338s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000325s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.051600s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000250s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000459s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000229s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000418s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000973s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000422s ]
+
+---------------------------------------------------------------
+[ 2017-06-09T18:06:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203442785300071065_1497002778130&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497002778131
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203442785300071065_1497002778130&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497002778131 [运行时间：0.358827s][吞吐率：2.79req/s] [内存消耗：994.81kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1493797349; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; PHPSESSID=eg2tf457secnrd2mojj80t7dl0',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110203442785300071065_1497002778130',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497002778131',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:06:55+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206281979744278245_1497002815655&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497002815656
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206281979744278245_1497002815655&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497002815656 [运行时间：0.207565s][吞吐率：4.82req/s] [内存消耗：994.92kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; PHPSESSID=eg2tf457secnrd2mojj80t7dl0; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497002779; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497002779',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206281979744278245_1497002815655',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497002815656',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:12:08+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102031913648741059863_1497003128308&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003128309
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102031913648741059863_1497003128308&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003128309 [运行时间：0.089717s][吞吐率：11.15req/s] [内存消耗：994.74kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497002779',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102031913648741059863_1497003128308',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003128309',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:12:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102015812671831420055_1497003130463&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003130464
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102015812671831420055_1497003130463&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003130464 [运行时间：0.706929s][吞吐率：1.41req/s] [内存消耗：994.89kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497002779,1497003129; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497003129',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102015812671831420055_1497003130463',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003130464',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:12:42+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102039786223541158416_1497003161724&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003161725
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102039786223541158416_1497003161724&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003161725 [运行时间：0.284146s][吞吐率：3.52req/s] [内存消耗：994.67kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102039786223541158416_1497003161724',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003161725',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:19:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102007837511952293141_1497003572114&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003572115
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102007837511952293141_1497003572114&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003572115 [运行时间：0.100870s][吞吐率：9.91req/s] [内存消耗：994.85kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102007837511952293141_1497003572114',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003572115',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:19:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102014124459496032804_1497003575704&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003575705
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102014124459496032804_1497003575704&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003575705 [运行时间：0.102424s][吞吐率：9.76req/s] [内存消耗：994.85kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497003572',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102014124459496032804_1497003575704',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003575705',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-09T18:21:57+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110202987463566789246_1497003717405&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003717406
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110202987463566789246_1497003717405&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497003717406 [运行时间：0.064652s][吞吐率：15.47req/s] [内存消耗：994.85kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497003576',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110202987463566789246_1497003717405',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497003717406',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

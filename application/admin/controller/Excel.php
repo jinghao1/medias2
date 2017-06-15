@@ -198,12 +198,12 @@ class Excel extends	Controller
 	    $proinfo = input('param.');
         $enewsid = input('param.enewsid/d');
        
-        $header = array('注册id','姓名','手机号','车系id','车系名称','车型品牌','创建时间','购车时间','入口城市','定位城市','选择城市','奖品领取'); 
+        $header = array('注册id','姓名','手机号','车系id','车系名称','车型品牌','创建时间','购车时间','入口城市','定位城市','选择城市','奖品领取','IP','PC/Mobile'); 
      
         if($enewsid && $enewsid!=3){
 	        $wharr['d.whreg'] = $enewsid;
 	        $data = db('cbh_reg') 
-                ->alias("d")->field('d.dealer_id,d.name,d.phone,d.car_series_id,n.brand_name as serisename,m.brand_name as ppname,d.time,d.from,d.buy_car_time,d.localaddr,d.changeaddr,d.accept') 
+                ->alias("d")->field('d.dealer_id,d.name,d.phone,d.car_series_id,n.brand_name as serisename,m.brand_name as ppname,d.time,d.from,d.buy_car_time,d.localaddr,d.changeaddr,d.accept,d.curip,d.whreg') 
                 ->join('zt_cbh_carserise n','d.car_series_id=n.brand_id','LEFT')
                 ->join('zt_cbh_brand m','d.brand=m.brand_id','LEFT')
                 ->where($wharr) 
@@ -211,7 +211,7 @@ class Excel extends	Controller
                 ->select(); 
         }else{
 	        $data = db('cbh_reg') 
-                ->alias("d")->field('d.dealer_id,d.name,d.phone,d.car_series_id,n.brand_name as serisename,m.brand_name as ppname,d.time,d.from,d.buy_car_time,d.localaddr,d.changeaddr,d.accept') 
+                ->alias("d")->field('d.dealer_id,d.name,d.phone,d.car_series_id,n.brand_name as serisename,m.brand_name as ppname,d.time,d.from,d.buy_car_time,d.localaddr,d.changeaddr,d.accept,d.curip,d.whreg') 
                 ->join('zt_cbh_carserise n','d.car_series_id=n.brand_id','LEFT') 
                 ->join('zt_cbh_brand m','d.brand=m.brand_id','LEFT')
                 ->order("d.dealer_id desc ")
@@ -283,7 +283,9 @@ class Excel extends	Controller
             $arrs['localaddr'] = $rows['localaddr']; //定位城市
             $arrs['changeaddr'] = $rows['changeaddr']; //选择城市
             //奖品领取情况
-            $arrs['havelot'] = $rows['accept']==1 ? "已领取" : "未领取"; 
+            $arrs['havelot'] = $rows['accept']==1 ? "已领取" : "未领取";
+            $arrs['ip'] = $rows['curip']; //注册ip 
+            $arrs['whreg'] = $rows['whreg']; //pc/mobile标记
             $span = ord("A");
             //end
             foreach($arrs as $keyName=>$value) {// 列写入
@@ -456,7 +458,7 @@ class Excel extends	Controller
         $allRow       = $currentSheet->getHighestRow();
         $dealer = new DealerModel();
         $allColumn ='N';
-        for($currentRow = 2; $currentRow <= $allRow; $currentRow++){
+        for($currentRow = 4; $currentRow <= $allRow; $currentRow++){
             for($currentColumn='A'; $currentColumn <= $allColumn; $currentColumn++){
                 $address = $currentColumn.$currentRow;
                 $arr[$currentRow][$currentColumn] = $currentSheet->getCell($address)->getValue();
@@ -464,17 +466,11 @@ class Excel extends	Controller
                 //instanceof PHPExcel_RichText 需要检测字段类型 目前为强制转换
                 //富文本转换
 			       //$arr[$currentRow][$currentColumn] = $arr[$currentRow][$currentColumn]->__toString();   
-            }
-               
-            //$dm = $arr[$currentRow]['F']; //经销商编号
-            //$dealername = $arr[$currentRow]['H']; //经销商名称
-            //$dealcity = $arr[$currentRow]['F']; //经销商所在城市名称
-            //$dealprovince = $arr[$currentRow]['H']; //经销商所在省份名称
-            //$addr = $arr[$currentRow]['E']; //经销商所在地址
-            $dealminname =  $arr[$currentRow]['E'];//经销商简称 
+            } 
+            $dealminname =  '';//经销商简称 
             $dealername = $arr[$currentRow]['D']; //经销商名称
-            $dealprovince = $arr[$currentRow]['K']; //经销商所在省份名称
-            $dealcity = $arr[$currentRow]['M']; //经销商所在城市名称
+            $dealprovince = $arr[$currentRow]['A']; //经销商所在省份名称
+            $dealcity = $arr[$currentRow]['C']; //经销商所在城市名称
             //检测经销商是否存在，存在继续下一个，不存在检测省份，城市
             if(!$dealername|| !$dealcity ||!$dealprovince){
 	            continue;
@@ -482,19 +478,19 @@ class Excel extends	Controller
             //var_dump($dealminname);
             //exit;
             $dataarr = array();
-            $result =  $dealer->exDlMingjueZs($dealername,'mj_dealer');
+            $result =  $dealer->exDlMingjueZs($dealername,'ch_dealer');
             if(!$result){ //如果不存在
 	            //检测省份是否存在，不存在，创建，存在获取proid
-	            $endpro =  $dealer->exDlMingjueZs($dealprovince,'mj_dealer');
+	            $endpro =  $dealer->exDlMingjueZs($dealprovince,'ch_dealer');
 	            if($endpro){ //省份存在 检测城市是否存在
-		            $endcity =  $dealer->exDlMingjueZs($dealcity,'mj_dealer');
+		            $endcity =  $dealer->exDlMingjueZs($dealcity,'ch_dealer');
 		            if($endcity){ //城市存在，插入经销商信息
 		            	//$dataarr = array('dm'=>$dm); //存放传入信息 
 		            	$dataarr['pid'] = $endcity[0]['dealer_id']; //父级id
 		            	$dataarr['dlname'] = $dealername; //经销商名称
 		            	$dataarr['minname'] = $dealminname; //经销商名字简称
 		             
-			            $insertinfo = $dealer->ItMJZs($dataarr,'mj_dealer');
+			            $insertinfo = $dealer->ItMJZs($dataarr,'ch_dealer');
 			            var_dump( $insertinfo);
 				           echo "<br>";
 		            }else{ //城市不存在，先插入城市，获取城市id，再插入经销商
@@ -503,12 +499,12 @@ class Excel extends	Controller
 		             
 			           $dataarr['dlname'] = $dealcity; //城市名称
 			           $dataarr['pid'] = $endpro[0]['dealer_id']; //父级省份id
-			           $insertinfo = $dealer->ItMJZs($dataarr,'mj_dealer');
+			           $insertinfo = $dealer->ItMJZs($dataarr,'ch_dealer');
 			           var_dump( $insertinfo);
 				           echo "<br>";
 			           if($insertinfo){ //城市插入成功，插入当前经销商信息
 				           $datrr = array('pid'=>$insertinfo,'dlname'=>$dealername,'minname'=>$dealminname); 
-				           $insertjxs = $dealer->ItMJZs($datrr,'mj_dealer');
+				           $insertjxs = $dealer->ItMJZs($datrr,'ch_dealer');
 				           var_dump( $insertjxs);
 				           echo "<br>";
 			           }   
@@ -518,7 +514,7 @@ class Excel extends	Controller
 			        $dataarr['pid'] = 0; //父级省份id
 			        $dataarr['minname'] = ""; //经销商名字简称
 		         
-			        $insertinfo = $dealer->ItMJZs($dataarr,'mj_dealer');
+			        $insertinfo = $dealer->ItMJZs($dataarr,'ch_dealer');
 			        var_dump( $insertinfo);
 				    echo "<br>";
 	            }
