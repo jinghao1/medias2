@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html";i:1496369907;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:84:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html";i:1497860361;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -87,6 +87,7 @@
 		<td>来源</td> 
 		<td >定位城市</td>
 		<td >选择城市</td>
+		<td >车系品牌</td>
 		<td >车系车型</td>
 		<td >注册时间</td>
 		<td >操作</td>
@@ -102,6 +103,7 @@
 		     <td ><?php echo $v['from']; ?></td> 
 			<td ><?php echo $v['localaddr']; ?></td>
 			<td ><?php echo $v['changeaddr']; ?></td>
+			<td ><?php echo $v['bbbrand']; ?></td>
 			<td ><?php echo $v['brand_name']; ?></td>
 			<td ><?php echo date('Y-m-d H:i:s',$v['time']); ?></td>
 			<td>

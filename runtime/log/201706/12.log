@@ -1,0 +1,3078 @@
+[ 2017-06-12T09:26:24+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205678351552088272_1497230784124&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497230784125
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205678351552088272_1497230784124&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497230784125 [运行时间：0.574277s][吞吐率：1.74req/s] [内存消耗：994.71kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110205678351552088272_1497230784124',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497230784125',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T09:28:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207452204701248484_1497230891294&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497230891295
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207452204701248484_1497230891294&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497230891295 [运行时间：0.114086s][吞吐率：8.77req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497230784',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110207452204701248484_1497230891294',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497230891295',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T09:35:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203989405303986351_1497231342842&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497231342843
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203989405303986351_1497231342842&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497231342843 [运行时间：0.887763s][吞吐率：1.13req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497230898',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110203989405303986351_1497231342842',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497231342843',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:02:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102022415027652385566_1497232954687&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497232954688
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102022415027652385566_1497232954687&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497232954688 [运行时间：1.714679s][吞吐率：0.58req/s] [内存消耗：998.92kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497231343',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102022415027652385566_1497232954687',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497232954688',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:03:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205058317970772437_1497233004695&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233004696
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205058317970772437_1497233004695&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233004696 [运行时间：0.272372s][吞吐率：3.67req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497232955',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110205058317970772437_1497233004695',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233004696',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:03:29+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206281941981657866_1497233008886&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233008887
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206281941981657866_1497233008886&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233008887 [运行时间：0.193617s][吞吐率：5.16req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233005',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206281941981657866_1497233008886',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233008887',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:04:17+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102041666828577311077_1497233055295&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233055296
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102041666828577311077_1497233055295&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233055296 [运行时间：1.846198s][吞吐率：0.54req/s] [内存消耗：998.92kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233009',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102041666828577311077_1497233055295',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233055296',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:05:45+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207463528459548507_1497233145399&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233145400
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207463528459548507_1497233145399&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233145400 [运行时间：0.082984s][吞吐率：12.05req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233056',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110207463528459548507_1497233145399',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233145400',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:06:03+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204067104516467033_1497233163467&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233163468
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204067104516467033_1497233163467&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233163468 [运行时间：0.161761s][吞吐率：6.18req/s] [内存消耗：998.88kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233146',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110204067104516467033_1497233163467',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233163468',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:08:53+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102013179950417251662_1497233333099&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233333100
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102013179950417251662_1497233333099&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233333100 [运行时间：0.258525s][吞吐率：3.87req/s] [内存消耗：998.92kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497003162,1497230784; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233164',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102013179950417251662_1497233333099',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233333100',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:09:15+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020839161986463216_1497233355126&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233355127
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020839161986463216_1497233355126&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233355127 [运行时间：0.635888s][吞吐率：1.57req/s] [内存消耗：998.66kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery11020839161986463216_1497233355126',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233355127',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:12:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020541913695151927_1497233555109&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233555110
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020541913695151927_1497233555109&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233555110 [运行时间：0.445484s][吞吐率：2.24req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery11020541913695151927_1497233555109',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233555110',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:13:01+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020013117338584257343_1497233581440&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233581441
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020013117338584257343_1497233581440&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233581441 [运行时间：0.156658s][吞吐率：6.38req/s] [内存消耗：998.81kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233555',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery11020013117338584257343_1497233581440',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233581441',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:13:47+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208372491774373552_1497233626660&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233626661
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208372491774373552_1497233626660&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233626661 [运行时间：0.328633s][吞吐率：3.04req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233582',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110208372491774373552_1497233626660',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233626661',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:14:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102025641890717239324_1497233646853&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233646854
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102025641890717239324_1497233646853&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233646854 [运行时间：0.209257s][吞吐率：4.78req/s] [内存消耗：998.81kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233627',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102025641890717239324_1497233646853',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233646854',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:15:09+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209471461714538472_1497233709426&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233709427
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209471461714538472_1497233709426&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233709427 [运行时间：0.175248s][吞吐率：5.71req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233647',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110209471461714538472_1497233709426',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233709427',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:15:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020418979209506011_1497233731609&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233731610
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020418979209506011_1497233731609&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233731610 [运行时间：0.969073s][吞吐率：1.03req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233710',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery11020418979209506011_1497233731609',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233731610',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T10:16:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206262663809801396_1497233788277&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233788278
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206262663809801396_1497233788277&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497233788278 [运行时间：0.127285s][吞吐率：7.86req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233732',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206262663809801396_1497233788277',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497233788278',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T11:04:09+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204997361378260976_1497236649608&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497236649609
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204997361378260976_1497236649608&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497236649609 [运行时间：0.146471s][吞吐率：6.83req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497233788',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110204997361378260976_1497236649608',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497236649609',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php
+[ log ] localhost/medias/public/index.php [运行时间：0.051500s][吞吐率：19.42req/s] [内存消耗：1,026.20kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => '',
+    1 => NULL,
+    2 => NULL,
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497236650',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/login/index.html
+[ log ] localhost/medias/public/index.php/admin/login/index.html [运行时间：0.035171s][吞吐率：28.43req/s] [内存消耗：1,012.57kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497236650; PHPSESSID=5mdlo293t4e3vou2c1mee2ovp2',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:08+08:00 ] 127.0.0.1 127.0.0.1 OPTIONS /medias/public/index.php/admin/login/login.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/login/login.html [运行时间：0.029826s][吞吐率：33.53req/s] [内存消耗：1,530.11kb] [文件加载：40]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'login',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => '*/*',
+  'access-control-request-headers' => 'x-requested-with',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'origin' => 'http://localhost',
+  'access-control-request-method' => 'POST',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Login->login[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\login\login.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:10+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/login/loginsong.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/login/loginsong.html [运行时间：0.158980s][吞吐率：6.29req/s] [内存消耗：1,733.04kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'login',
+    2 => 'loginsong',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'application/x-www-form-urlencoded',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://localhost',
+  'cache-control' => 'max-age=0',
+  'content-length' => '30',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'username' => 'admin',
+  'password' => '555666',
+)
+[ info ] [ RUN ] app\admin\controller\Login->loginsong[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Login.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001106s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.046750s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_admin` WHERE  `username` = 'admin' LIMIT 1    [ RunTime:0.000458s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_group` [ RunTime:0.015129s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_auth_group` WHERE  `id` = 1 LIMIT 1    [ RunTime:0.007580s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.016729s ]
+[ sql ] [ SQL ] SELECT `name` FROM `zt_auth_rule`  [ RunTime:0.000512s ]
+[ sql ] [ SQL ] UPDATE `zt_admin`  SET `loginnum`=251,`last_login_ip`='127.0.0.1',`last_login_time`=1497258730  WHERE  `user_id` = 1       [ RunTime:0.000323s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000662s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_log` [ RunTime:0.035246s ]
+[ sql ] [ SQL ] INSERT INTO `zt_log` (`admin_id` , `admin_name` , `description` , `status` , `ip` , `add_time`) VALUES (1 , 'admin' , '用户【admin】登录成功' , 1 , '127.0.0.1' , 1497258730)        [ RunTime:0.000352s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/index.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/index.html [运行时间：0.057104s][吞吐率：17.51req/s] [内存消耗：1,745.23kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'index',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/medias/public/index.php/admin/login/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->index[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\index.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000567s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.007914s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `g` ON `a`.`groupid`=`g`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/top.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/top.html [运行时间：0.050264s][吞吐率：19.90req/s] [内存消耗：1,035.88kb] [文件加载：36]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'top',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->top[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\top.html [ array (
+  0 => 'UserName',
+  1 => 'UserId',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/menu.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/menu.html [运行时间：0.063664s][吞吐率：15.71req/s] [内存消耗：1,749.01kb] [文件加载：45]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'menu',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->menu[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\menu.html [ array (
+  0 => 'menuarr',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000508s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008825s ]
+[ sql ] [ SQL ] SELECT `a`.`user_id`,`b`.`rules` FROM `zt_admin` `a` LEFT JOIN `zt_auth_group` `b` ON `a`.`groupid`=`b`.`id` WHERE  `a`.`user_id` = 1  [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_auth_rule` [ RunTime:0.010081s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 0 ORDER BY sort   [ RunTime:0.000386s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 26 ORDER BY sort   [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 118 ORDER BY sort   [ RunTime:0.000298s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 121 ORDER BY sort   [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 122 ORDER BY sort   [ RunTime:0.000304s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 13 ORDER BY sort   [ RunTime:0.000281s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 5 ORDER BY sort   [ RunTime:0.000291s ]
+[ sql ] [ SQL ] SELECT `id`,`name`,`title` FROM `zt_auth_rule` WHERE  `pid` = 1 ORDER BY sort   [ RunTime:0.000349s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/index/main.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/index/main.html [运行时间：0.061488s][吞吐率：16.26req/s] [内存消耗：991.52kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'index',
+    2 => 'main',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/index.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Index->main[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Index.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\index\main.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/gtphone.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/gtphone.html [运行时间：0.065566s][吞吐率：15.25req/s] [内存消耗：1,004.76kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'gtphone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->gtphone[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html [ array (
+  0 => 'uid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:39+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691 [运行时间：0.153756s][吞吐率：6.50req/s] [内存消耗：1,710.64kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'gtphone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/gtphone.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->gtphone[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html [ array (
+  0 => 'data',
+  1 => 'havereg',
+  2 => 'havelq',
+  3 => 'thephone',
+  4 => 'uid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000947s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.079317s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`accept`,`c`.`brand_name`,`d`.`car_series_id`,`d`.`time`,`a`.`timename`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` INNER JOIN `zt_buytime` `a` ON `d`.`buy_car_time`=`a`.`id` WHERE  `d`.`phone` = '17703186691'  [ RunTime:0.042702s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:45+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.043612s][吞吐率：22.93req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000618s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009561s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000354s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000298s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:45+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.039429s][吞吐率：25.36req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000545s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008627s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000232s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:45+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.039357s][吞吐率：25.41req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000615s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008309s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000305s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:46+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.038014s][吞吐率：26.31req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000543s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008453s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000332s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000289s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:47+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.039670s][吞吐率：25.21req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010069s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000245s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:47+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.042084s][吞吐率：23.76req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000566s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.011843s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000238s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:48+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.048848s][吞吐率：20.47req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000555s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.018998s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000304s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000299s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:48+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.038826s][吞吐率：25.76req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000542s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010354s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000295s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000274s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:49+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.038228s][吞吐率：26.16req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000546s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009050s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000336s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000263s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:50+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.042720s][吞吐率：23.41req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000524s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.012928s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000256s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000224s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:50+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.038473s][吞吐率：25.99req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000560s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008249s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000319s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:51+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.038685s][吞吐率：25.85req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000561s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008824s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000248s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000229s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:51+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.037248s][吞吐率：26.85req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000590s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008206s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000376s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '17703186691'     [ RunTime:0.000230s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:12:52+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.041436s][吞吐率：24.13req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186691',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '17703186691',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000525s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010139s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '17703186691'   [ RunTime:0.000322s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '17703186691'     [ RunTime:0.000278s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:13:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.023957s][吞吐率：41.74req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:15:28+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/gtphone.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/gtphone.html [运行时间：0.019190s][吞吐率：52.11req/s] [内存消耗：1,004.76kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'gtphone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->gtphone[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html [ array (
+  0 => 'uid',
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:15:31+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186690
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186690 [运行时间：0.039199s][吞吐率：25.51req/s] [内存消耗：1,708.88kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'gtphone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/gtphone.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '17703186690',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->gtphone[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html [ array (
+  0 => 'havereg',
+  1 => 'havelq',
+  2 => 'thephone',
+  3 => 'uid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000763s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009375s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`accept`,`c`.`brand_name`,`d`.`car_series_id`,`d`.`time`,`a`.`timename`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` INNER JOIN `zt_buytime` `a` ON `d`.`buy_car_time`=`a`.`id` WHERE  `d`.`phone` = '17703186690'  [ RunTime:0.000533s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:15:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152 [运行时间：0.110555s][吞吐率：9.05req/s] [内存消耗：1,710.69kb] [文件加载：44]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'gtphone',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=17703186690',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'phone' => '18810439152',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->gtphone[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\gtphone.html [ array (
+  0 => 'data',
+  1 => 'havereg',
+  2 => 'havelq',
+  3 => 'thephone',
+  4 => 'uid',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000565s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.078104s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`accept`,`c`.`brand_name`,`d`.`car_series_id`,`d`.`time`,`a`.`timename`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` INNER JOIN `zt_buytime` `a` ON `d`.`buy_car_time`=`a`.`id` WHERE  `d`.`phone` = '18810439152'  [ RunTime:0.000540s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:16:46+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.036545s][吞吐率：27.36req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '18810439152',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000777s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010047s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '18810439152'   [ RunTime:0.000243s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '18810439152'     [ RunTime:0.000261s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:16:47+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.040389s][吞吐率：24.76req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '18810439152',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000610s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009842s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '18810439152'   [ RunTime:0.000340s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '18810439152'     [ RunTime:0.000316s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:16:48+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.039042s][吞吐率：25.61req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '18810439152',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000675s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010732s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '18810439152'   [ RunTime:0.000260s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=1  WHERE  `phone` = '18810439152'     [ RunTime:0.000307s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:16:48+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/Chebaihui/upuserlq
+[ log ] 127.0.0.1/medias/public/index.php/admin/Chebaihui/upuserlq [运行时间：0.040120s][吞吐率：24.93req/s] [内存消耗：1,700.94kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'Chebaihui',
+    2 => 'upuserlq',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/Chebaihui/gtphone?phone=18810439152',
+  'content-type' => 'application/x-www-form-urlencoded; charset=UTF-8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'origin' => 'http://127.0.0.1',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'content-length' => '20',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+  'curphone' => '18810439152',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->upuserlq[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000571s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008853s ]
+[ sql ] [ SQL ] SELECT `accept` FROM `zt_cbh_reg` WHERE  `phone` = '18810439152'   [ RunTime:0.000298s ]
+[ sql ] [ SQL ] UPDATE `zt_cbh_reg`  SET `accept`=0  WHERE  `phone` = '18810439152'     [ RunTime:0.000275s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:17:15+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.020029s][吞吐率：49.93req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:17:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.107226s][吞吐率：9.33req/s] [内存消耗：1,932.91kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000607s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009486s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000695s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000539s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008422s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009247s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000265s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.017121s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008333s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000471s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000181s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:17:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.098386s][吞吐率：10.16req/s] [内存消耗：1,937.58kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000581s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009152s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.015935s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000633s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.010629s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010336s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000282s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000266s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000192s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000182s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.010526s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000249s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:17:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/2.html [运行时间：0.158072s][吞吐率：6.33req/s] [内存消耗：4,803.05kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000679s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010723s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept`,`d`.`curip`,`d`.`whreg` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 2 ORDER BY d.dealer_id desc   [ RunTime:0.041831s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000844s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009438s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000264s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010080s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000319s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:18:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.021055s][吞吐率：47.49req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:18:18+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.187690s][吞吐率：5.33req/s] [内存消耗：5,139.25kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary8s6BEny5ak8vdREr',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29914',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000729s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.031222s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.010692s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.007293s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000321s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000602s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000278s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000657s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000342s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000705s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000271s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:20:53+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.018315s][吞吐率：54.60req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:21:04+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：7.618091s][吞吐率：0.13req/s] [内存消耗：5,139.22kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryGOPMAgOlPB46jFSO',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '29914',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000738s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.010079s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000579s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008559s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000390s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000287s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000212s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000517s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000912s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000421s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:23:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html [运行时间：0.077632s][吞吐率：12.88req/s] [内存消耗：1,932.91kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'yxenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000849s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.010172s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000268s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = 1 ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000351s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009408s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000255s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010351s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000244s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000214s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000247s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008886s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000290s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.001070s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:23:29+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html [运行时间：0.081260s][吞吐率：12.31req/s] [内存消耗：1,937.58kb] [文件加载：51]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'chebaihui',
+    2 => 'cbhregall',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enews' => '2',
+)
+[ info ] [ SESSION ] INIT array (
+  'id' => '',
+  'var_session_id' => '',
+  'prefix' => 'think',
+  'type' => '',
+  'auto_start' => true,
+)
+[ info ] [ RUN ] app\admin\controller\Chebaihui->Cbhregall[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Chebaihui.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\chebaihui\cbhregall.html [ array (
+  0 => 'llenews',
+  1 => 'enewsid',
+  2 => 'editopt',
+  3 => 'proid',
+  4 => 'delopt',
+  5 => 'data',
+  6 => 'page',
+) ]
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000695s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.009154s ]
+[ sql ] [ SQL ] SELECT COUNT(*) AS tp_count FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 1   [ RunTime:0.000379s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`from`,`d`.`car_time`,`c`.`brand_name`,`d`.`time`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `c` ON `d`.`car_series_id`=`c`.`brand_id` WHERE  `d`.`whreg` = '2' ORDER BY d.dealer_id desc  LIMIT 0,20   [ RunTime:0.000572s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.008203s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000209s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008054s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000258s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000259s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 0   [ RunTime:0.000204s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000251s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_admin` [ RunTime:0.008250s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000233s ]
+[ sql ] [ SQL ] SELECT `rules` FROM `zt_admin` `a` INNER JOIN `zt_auth_group` `b` ON `b`.`id`=`a`.`groupid` WHERE  `a`.`user_id` = 1  [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:23:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/cbhregout/enewsid/2.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/cbhregout/enewsid/2.html [运行时间：0.119771s][吞吐率：8.35req/s] [内存消耗：4,803.05kb] [文件加载：100]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'cbhregout',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/chebaihui/cbhregall/enews/2.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'enewsid' => '2',
+)
+[ info ] [ RUN ] app\admin\controller\Excel->CbhregOut[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000647s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_reg` [ RunTime:0.008495s ]
+[ sql ] [ SQL ] SELECT `d`.`dealer_id`,`d`.`name`,`d`.`phone`,`d`.`car_series_id`,n.brand_name as serisename,m.brand_name as ppname,`d`.`time`,`d`.`from`,`d`.`buy_car_time`,`d`.`localaddr`,`d`.`changeaddr`,`d`.`accept`,`d`.`curip`,`d`.`whreg` FROM `zt_cbh_reg` `d` LEFT JOIN `zt_cbh_carserise` `n` ON `d`.`car_series_id`=`n`.`brand_id` LEFT JOIN `zt_cbh_brand` `m` ON `d`.`brand`=`m`.`brand_id` WHERE  `d`.`whreg` = 2 ORDER BY d.dealer_id desc   [ RunTime:0.000496s ]
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000572s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.014569s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000269s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008129s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 401   [ RunTime:0.000316s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000230s ]
+[ sql ] [ SQL ] SELECT `cityid`,`cityname` FROM `zt_allcity` WHERE  `cityid` = 1708   [ RunTime:0.000192s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:23:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.019665s][吞吐率：50.85req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:23:41+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.840095s][吞吐率：1.19req/s] [内存消耗：5,104.58kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarySL9yXN9xxX9hJ417',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000642s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.008487s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000469s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008198s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000301s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000237s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000454s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000273s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000381s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000396s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.048123s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000759s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000391s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:26:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017896s][吞吐率：55.88req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:26:21+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：1.062960s][吞吐率：0.94req/s] [内存消耗：5,104.77kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary1FB8Ny1dEyTbjSE5',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000981s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.103805s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000441s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009224s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000334s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000279s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000280s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000424s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000358s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000368s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000758s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000306s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:28:11+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.019969s][吞吐率：50.08req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:28:17+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：1.710946s][吞吐率：0.58req/s] [内存消耗：5,105.64kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryXrBnSboAoeUsdlVt',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000708s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.153736s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000526s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010559s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000276s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000227s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000353s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000211s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000437s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000385s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000347s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000747s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000305s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:28:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.017635s][吞吐率：56.71req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:28:50+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.629609s][吞吐率：1.59req/s] [内存消耗：5,105.67kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundaryTWAzAQ8LYzjCDSKG',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000631s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.009143s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000443s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008234s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000339s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000364s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000222s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000554s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000387s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000382s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000341s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000356s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000783s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:29:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.022317s][吞吐率：44.81req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:29:15+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：0.554065s][吞吐率：1.80req/s] [内存消耗：5,105.67kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundary0ROgZ3yAE6WMKQAD',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000644s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.008937s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000372s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008274s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000315s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000302s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000224s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000413s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000225s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000395s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000213s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000384s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.001286s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000418s ]
+
+---------------------------------------------------------------
+[ 2017-06-12T17:30:51+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/admin/excel/putin.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/excel/putin.html [运行时间：0.019097s][吞吐率：52.36req/s] [内存消耗：1,094.88kb] [文件加载：34]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'excel',
+    2 => 'putin',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/index/menu.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Excel->Putin[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Excel.php ]
+[ info ] [ VIEW ] D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html [ array (
+) ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-12T17:30:57+08:00 ] 127.0.0.1 127.0.0.1 POST /medias/public/index.php/admin/cbhtozhy/tozhydata.html
+[ log ] 127.0.0.1/medias/public/index.php/admin/cbhtozhy/tozhydata.html [运行时间：1.932613s][吞吐率：0.52req/s] [内存消耗：5,104.77kb] [文件加载：89]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'admin',
+    1 => 'cbhtozhy',
+    2 => 'tozhydata',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1495784905,1496214821,1496223851; PHPSESSID=kjg0ubh1pivqfsiqvu4jpge066',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, br',
+  'referer' => 'http://127.0.0.1/medias/public/index.php/admin/excel/putin.html',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'content-type' => 'multipart/form-data; boundary=----WebKitFormBoundarynqYCTCe8LCIi4CXn',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'origin' => 'http://127.0.0.1',
+  'cache-control' => 'max-age=0',
+  'content-length' => '6362',
+  'connection' => 'keep-alive',
+  'host' => '127.0.0.1',
+)
+[ info ] [ PARAM ] array (
+)
+[ info ] [ RUN ] app\admin\controller\Cbhtozhy->Tozhydata[ D:\rar\phpstudy\WWW\medias\application\admin\controller\Cbhtozhy.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000811s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_cbh_carbasic` [ RunTime:0.009239s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 3577 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000455s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.008598s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000340s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2772 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000414s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000299s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4834 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000464s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000274s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 4803 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000335s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '北京市' LIMIT 1    [ RunTime:0.000336s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_cbh_carbasic` WHERE  `pid` = 2660 ORDER BY brand_id desc LIMIT 1    [ RunTime:0.000394s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = 'NaN' LIMIT 1    [ RunTime:0.000881s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `cityname` = '大连市' LIMIT 1    [ RunTime:0.000431s ]
+
+---------------------------------------------------------------

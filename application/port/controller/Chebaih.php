@@ -168,7 +168,7 @@ class Chebaih extends Controller
 							$str2 .= '<span onclick="actall(\''.$begmon.'\',\''.$endmon.'\',\''.$ainfo['address'].'\','.$ainfo['cityid'].',\''.$ainfo['cityname'].'\',this)">'.$ainfo['cityname'].'</span>';
 						}else{
 							$actnum[] = $ainfo['initial']; //赋值
-							$str2 .= '</div></li><li><a>'.$ainfo['initial'].':</a> <div class="citys">>  <span onclick="actall(\''.$begmon.'\',\''.$endmon.'\',\''.$ainfo['address'].'\','.$ainfo['cityid'].',\''.$ainfo['cityname'].'\',this)">'.$ainfo['cityname'].'</span>';
+							$str2 .= '</div></li><li><a>'.$ainfo['initial'].':</a> <div class="citys">  <span onclick="actall(\''.$begmon.'\',\''.$endmon.'\',\''.$ainfo['address'].'\','.$ainfo['cityid'].',\''.$ainfo['cityname'].'\',this)">'.$ainfo['cityname'].'</span>';
 						}
 					}else{
 						$actnum[] = $ainfo['initial']; //赋值
@@ -505,7 +505,7 @@ class Chebaih extends Controller
 
 				echo $callback.'('.json_encode($endyzjm).')';
 				//发送注册成功短信
-				$this->SendSuCbh($all['phone']);
+				$this->SendSuCbh($data);
 				return; 
 			}else{
 				$endyzjm = array("start"=>'2007','msg'=>'注册失败，请重试');
@@ -516,10 +516,57 @@ class Chebaih extends Controller
 	 
 	}
 	//发送短信成功注册车百汇
-	public function SendSuCbh($phone){
+	public function SendSuCbh($phdata){
+		 
+		$phone = $phdata['phone'];
 		$appidnum = 2; //汽车大全id
 		$curtime = time(); //获取当前时间戳
-		$cont = '【车百汇】恭喜您报名成功汽车大全车百汇活动！欢迎您于2017年X月X日前往XXXXX（地址）领取签到礼品，现场还有丰富的互动环节等您参与，订购车更有机会获得购车大礼！';
+		//选择用户注册活动城市
+	    $acttime = "";
+	    $actaddr = "";
+		$ctend = array(); 
+		$dk = new ChebHModel();
+		if(isset($phdata['changeaddr']) && !empty($phdata['changeaddr'])){
+			//通过城市名称，获取城市id
+			$ctend = $dk->Actcityinfo($phdata['changeaddr']);
+			 
+		}
+		if( isset($ctend[0]) && !empty($ctend[0])){ //用户选择城市
+			$actbegtime = $ctend[0]['begtime'];
+			$acttime = $ctend[0]['endtime'];
+			$actaddr = $ctend[0]['address'];
+		}else if(isset($phdata['localaddr']) && !empty($phdata['localaddr'])){ //定位城市
+			//通过城市名称，获取城市活动信息
+			$ctend = $dk->Actcityinfo($phdata['localaddr']);
+			if( isset($ctend[0]) && !empty($ctend[0])){
+				$actbegtime = $ctend[0]['begtime'];
+				$acttime = $ctend[0]['endtime'];
+				$actaddr = $ctend[0]['address'];
+			}else if(isset($phdata['from']) && !empty($phdata['from'])){
+				//通过来源城市id，获取当前id，活动城市，活动截止日期
+				$ctend = $dk->Actcitycbhbyid($phdata['from']);
+				if(!empty($ctend)){
+					$actbegtime = $ctend['begtime'];
+					$acttime = $ctend['endtime'];
+					$actaddr = $ctend['address'];
+				}
+			}
+		
+		}
+		if(!$acttime || !$actaddr){
+			$actbegtime = '2017年X月X日';
+			$acttime = '2017年X月X日';
+			$actaddr = 'XXXXX（地址）';
+		}else{
+			$actbegtime = date('Y年m月d日',$actbegtime);
+			$acttime = date('Y年m月d日',$acttime);
+		}
+		
+	 
+		//通过城市id获取城市活动信息
+
+		
+		$cont = '【车百汇】恭喜您报名成功汽车大全车百汇活动！欢迎您于'.$actbegtime.'~'.$acttime.'前往'.$actaddr.'领取签到礼品，现场还有丰富的互动环节等您参与，订购车更有机会获得购车大礼！';
 		//获取秘钥地址
 		$mikeyurl = 'http://api.sys.xingyuanauto.com/sms/GetPassSecret?appid='.$appidnum.'&ticket='.$curtime; 
 		//创建请求
@@ -536,6 +583,7 @@ class Chebaih extends Controller
 		     'noteContent'=>$cont
 		     );
 		$end =$this->contpostcurl($urlp,$post_data);
+		//var_dump($end);
 	}
 
 	//车百汇 pc端广告id

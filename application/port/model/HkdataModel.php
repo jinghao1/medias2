@@ -57,4 +57,15 @@ class HkdataModel extends Model
 	public function Gtudcity($id){
 		return Db::name('allcity')->field('cityid,cityname')->where('parentid',$id)->select();
 	}
+
+		//宝沃bx7 直播数据  插入
+	public function Bwupdirect($data){
+		$end = Db::name('system')->where('id',1)->update($data);
+		return $end;
+	}
+	//返回bx7 直播视频状态
+	public function Bwrtvideostat($id=1){
+		$end = Db::name("system")->where('id',$id)->find();
+		return $end;
+	}
 }

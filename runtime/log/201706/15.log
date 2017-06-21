@@ -1,0 +1,1125 @@
+[ 2017-06-15T09:30:19+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204422700734792069_1497490218021&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490218022
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110204422700734792069_1497490218021&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490218022 [运行时间：1.220914s][吞吐率：0.82req/s] [内存消耗：998.84kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355; bdshare_firstime=1497318682011; tshiylastdiggid=55n5',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110204422700734792069_1497490218021',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490218022',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:30:36+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102007364957217266999_1497490234652&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490234653
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102007364957217266999_1497490234652&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490234653 [运行时间：1.791980s][吞吐率：0.56req/s] [内存消耗：998.98kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490219',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102007364957217266999_1497490234652',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490234653',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:31:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102018552873932177993_1497490276486&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490276487
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102018552873932177993_1497490276486&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490276487 [运行时间：1.789039s][吞吐率：0.56req/s] [内存消耗：998.98kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490235',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102018552873932177993_1497490276486',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490276487',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:32:07+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206158273004916295_1497490325735&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490325736
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206158273004916295_1497490325735&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490325736 [运行时间：2.044965s][吞吐率：0.49req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490277',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206158273004916295_1497490325735',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490325736',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:35:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102010623500486370263_1497490449814&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490449815
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102010623500486370263_1497490449814&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490449815 [运行时间：62.333275s][吞吐率：0.02req/s] [内存消耗：987.00kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490327',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102010623500486370263_1497490449814',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490449815',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:35:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110201896302245091681_1497490512315&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490512316
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110201896302245091681_1497490512315&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490512316 [运行时间：0.654044s][吞吐率：1.53req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490450',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110201896302245091681_1497490512315',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490512316',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:39:10+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203436691247639858_1497490748310&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490748311
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110203436691247639858_1497490748310&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497490748311 [运行时间：2.420995s][吞吐率：0.41req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490512',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110203436691247639858_1497490748310',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497490748311',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T09:50:30+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102016327912811183065_1497491430107&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497491430108
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102016327912811183065_1497491430107&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497491430108 [运行时间：0.121195s][吞吐率：8.25req/s] [内存消耗：995.00kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497490748',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102016327912811183065_1497491430107',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497491430108',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:12:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206974775653794483_1497496366361&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496366362
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206974775653794483_1497496366361&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496366362 [运行时间：0.187798s][吞吐率：5.32req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497491430',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206974775653794483_1497496366361',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497496366362',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:14:31+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102019225041424802547_1497496471608&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496471609
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102019225041424802547_1497496471608&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496471609 [运行时间：0.193333s][吞吐率：5.17req/s] [内存消耗：995.00kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496367',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102019225041424802547_1497496471608',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497496471609',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:15:52+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208114644386525811_1497496552004&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496552005
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208114644386525811_1497496552004&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497496552005 [运行时间：0.617903s][吞吐率：1.62req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496472',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110208114644386525811_1497496552004',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497496552005',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:24:27+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110200887472300123362_1497497066880&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497066881
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110200887472300123362_1497497066880&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497066881 [运行时间：0.068397s][吞吐率：14.62req/s] [内存消耗：991.09kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496552',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110200887472300123362_1497497066880',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497497066881',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������ [D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php:125]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:24:34+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208141788821882565_1497497074092&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497074093
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208141788821882565_1497497074092&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497074093 [运行时间：0.021359s][吞吐率：46.82req/s] [内存消耗：991.09kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496552',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110208141788821882565_1497497074092',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497497074093',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������ [D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php:125]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:25:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209252184117008824_1497497143337&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497143338
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209252184117008824_1497497143337&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497143338 [运行时间：0.023583s][吞吐率：42.40req/s] [内存消耗：991.09kb] [文件加载：35]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496552',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110209252184117008824_1497497143337',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497497143338',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+[ error ] [2]file_get_contents(): php_network_getaddresses: getaddrinfo failed: ��֪������������ [D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php:125]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:25:43+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1 [运行时间：0.148563s][吞吐率：6.73req/s] [内存消耗：1,581.50kb] [文件加载：38]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Ltbuycartime',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496552',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '1',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Ltbuycartime[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000929s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.017906s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000478s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:28:33+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020018619139744726843_1497497251825&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497251826
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery11020018619139744726843_1497497251825&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497251826 [运行时间：61.991882s][吞吐率：0.02req/s] [内存消耗：958.99kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497496552',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery11020018619139744726843_1497497251825',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497497251826',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:33:25+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206914356771419383_1497497605190&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497605191
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110206914356771419383_1497497605190&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497497605191 [运行时间：0.321118s][吞吐率：3.11req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497497252',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110206914356771419383_1497497605190',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497497605191',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:56:04+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207122400643238778_1497498962866&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497498962867
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110207122400643238778_1497498962866&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497498962867 [运行时间：1.386149s][吞吐率：0.72req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497497605',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110207122400643238778_1497498962866',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497498962867',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:56:04+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1 [运行时间：0.121382s][吞吐率：8.24req/s] [内存消耗：1,581.50kb] [文件加载：38]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Ltbuycartime',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497497605',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '1',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Ltbuycartime[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000969s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.089270s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000247s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:56:23+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E4%BA%AC%E6%B5%A9&thesex=1&numberphone=13500785566&dealer=10%2C114%2C216&model=66&key=95a6af3aeb4be113abf3d0378e5bf79cbe77212a9fb9a319e7920573b1367814&fromwh=2&pjid=36&fself=0
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E4%BA%AC%E6%B5%A9&thesex=1&numberphone=13500785566&dealer=10%2C114%2C216&model=66&key=95a6af3aeb4be113abf3d0378e5bf79cbe77212a9fb9a319e7920573b1367814&fromwh=2&pjid=36&fself=0 [运行时间：0.238643s][吞吐率：4.19req/s] [内存消耗：1,666.86kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497498963',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '2',
+  'username' => '宋京浩',
+  'thesex' => '1',
+  'numberphone' => '13500785566',
+  'dealer' => '10,114,216',
+  'model' => '66',
+  'key' => '95a6af3aeb4be113abf3d0378e5bf79cbe77212a9fb9a319e7920573b1367814',
+  'fromwh' => '2',
+  'pjid' => '36',
+  'fself' => '0',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000767s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.108049s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000456s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.008663s ]
+[ sql ] [ SQL ] SELECT `dealer_id` FROM `zt_bwuser_bx7` WHERE  `phone` = '13500785566'   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000244s ]
+[ sql ] [ SQL ] INSERT INTO `zt_bwuser_bx7` (`buy_car_time` , `phone` , `name` , `dealer_name` , `car_series_id` , `sex` , `whreg` , `project_id` , `from` , `time`) VALUES (2 , '13500785566' , '宋京浩' , '10,114,216' , 66 , 1 , 2 , 36 , 0 , 1497498983)            [ RunTime:0.000355s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:57:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102021121936466628077_1497499031860&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497499031861
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102021121936466628077_1497499031860&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497499031861 [运行时间：0.562845s][吞吐率：1.78req/s] [内存消耗：995.00kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497498963',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102021121936466628077_1497499031860',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497499031861',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T11:57:12+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1 [运行时间：0.040447s][吞吐率：24.72req/s] [内存消耗：1,581.50kb] [文件加载：38]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Ltbuycartime',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497498963',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '1',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Ltbuycartime[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000742s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009589s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000258s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T11:58:57+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E6%B5%A9&thesex=1&numberphone=13500896644&dealer=2%2C3%2C6&model=66&key=d90ac49ad5e425632cb8d1834491429ddec328e5a79e038928152950c355801c&fromwh=2&pjid=36&fself=0
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E6%B5%A9&thesex=1&numberphone=13500896644&dealer=2%2C3%2C6&model=66&key=d90ac49ad5e425632cb8d1834491429ddec328e5a79e038928152950c355801c&fromwh=2&pjid=36&fself=0 [运行时间：0.044560s][吞吐率：22.44req/s] [内存消耗：1,666.76kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497499032',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '2',
+  'username' => '宋浩',
+  'thesex' => '1',
+  'numberphone' => '13500896644',
+  'dealer' => '2,3,6',
+  'model' => '66',
+  'key' => 'd90ac49ad5e425632cb8d1834491429ddec328e5a79e038928152950c355801c',
+  'fromwh' => '2',
+  'pjid' => '36',
+  'fself' => '0',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000824s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.009180s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000296s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.008727s ]
+[ sql ] [ SQL ] SELECT `dealer_id` FROM `zt_bwuser_bx7` WHERE  `phone` = '13500896644'   [ RunTime:0.000241s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000228s ]
+[ sql ] [ SQL ] INSERT INTO `zt_bwuser_bx7` (`buy_car_time` , `phone` , `name` , `dealer_name` , `car_series_id` , `sex` , `whreg` , `project_id` , `from` , `time`) VALUES (2 , '13500896644' , '宋浩' , '2,3,6' , 66 , 1 , 2 , 36 , 0 , 1497499137)            [ RunTime:0.000253s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T12:02:00+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205268470074512255_1497499320462&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497499320463
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110205268470074512255_1497499320462&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Fquerytype%3D1&_=1497499320463 [运行时间：0.382617s][吞吐率：2.61req/s] [内存消耗：995.06kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497499032',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110205268470074512255_1497499320462',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?querytype=1',
+  '_' => '1497499320463',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T12:02:00+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Ltbuycartime?buycartime=1 [运行时间：0.041840s][吞吐率：23.90req/s] [内存消耗：1,581.50kb] [文件加载：38]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Ltbuycartime',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497499032',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '1',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Ltbuycartime[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000761s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_buytime` [ RunTime:0.009949s ]
+[ sql ] [ SQL ] SELECT `id`,`timename` FROM `zt_buytime`  [ RunTime:0.000281s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T12:02:32+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E6%9F%90%E6%9F%90&thesex=1&numberphone=13500986677&dealer=20%2C110%2C213&model=66&key=3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d&fromwh=2&pjid=36&fself=0
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E5%AE%8B%E6%9F%90%E6%9F%90&thesex=1&numberphone=13500986677&dealer=20%2C110%2C213&model=66&key=3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d&fromwh=2&pjid=36&fself=0 [运行时间：0.047751s][吞吐率：20.94req/s] [内存消耗：1,666.86kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497499335',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '2',
+  'username' => '宋某某',
+  'thesex' => '1',
+  'numberphone' => '13500986677',
+  'dealer' => '20,110,213',
+  'model' => '66',
+  'key' => '3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d',
+  'fromwh' => '2',
+  'pjid' => '36',
+  'fself' => '0',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000950s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.009808s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000348s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.009931s ]
+[ sql ] [ SQL ] SELECT `dealer_id` FROM `zt_bwuser_bx7` WHERE  `phone` = '13500986677'   [ RunTime:0.000306s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000319s ]
+[ sql ] [ SQL ] INSERT INTO `zt_bwuser_bx7` (`buy_car_time` , `phone` , `name` , `dealer_name` , `car_series_id` , `sex` , `whreg` , `project_id` , `from` , `time`) VALUES (2 , '13500986677' , '宋某某' , '20,110,213' , 66 , 1 , 2 , 36 , 0 , 1497499352)            [ RunTime:0.000346s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T12:03:06+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E6%B5%81%E6%9F%90&thesex=1&numberphone=13500907788&dealer=20%2C110%2C213&model=66&key=3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d&fromwh=2&pjid=36&fself=0
+[ log ] localhost/medias/public/index.php/port/Bwuserbx7/Comreg?buycartime=2&username=%E6%B5%81%E6%9F%90&thesex=1&numberphone=13500907788&dealer=20%2C110%2C213&model=66&key=3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d&fromwh=2&pjid=36&fself=0 [运行时间：0.047236s][吞吐率：21.17req/s] [内存消耗：1,666.78kb] [文件加载：41]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Bwuserbx7',
+    2 => 'Comreg',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497499335',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'application/json, text/javascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'buycartime' => '2',
+  'username' => '流某',
+  'thesex' => '1',
+  'numberphone' => '13500907788',
+  'dealer' => '20,110,213',
+  'model' => '66',
+  'key' => '3440f3e368998c3ec27597cd42bbdab7bd56fc4574a42839f41dc7187c01548d',
+  'fromwh' => '2',
+  'pjid' => '36',
+  'fself' => '0',
+)
+[ info ] [ RUN ] app\port\controller\Bwuserbx7->Comreg[ D:\rar\phpstudy\WWW\medias\application\port\controller\Bwuserbx7.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000853s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allpro` [ RunTime:0.010554s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000446s ]
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_bwuser_bx7` [ RunTime:0.007312s ]
+[ sql ] [ SQL ] SELECT `dealer_id` FROM `zt_bwuser_bx7` WHERE  `phone` = '13500907788'   [ RunTime:0.000289s ]
+[ sql ] [ SQL ] SELECT * FROM `zt_allpro` WHERE  `proid` = 36   [ RunTime:0.000393s ]
+[ sql ] [ SQL ] INSERT INTO `zt_bwuser_bx7` (`buy_car_time` , `phone` , `name` , `dealer_name` , `car_series_id` , `sex` , `whreg` , `project_id` , `from` , `time`) VALUES (2 , '13500907788' , '流某' , '20,110,213' , 66 , 1 , 2 , 36 , 0 , 1497499386)            [ RunTime:0.000368s ]
+
+---------------------------------------------------------------
+[ 2017-06-15T14:23:13+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209390021672177651_1497507793637&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507793638
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110209390021672177651_1497507793637&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507793638 [运行时间：0.276243s][吞吐率：3.62req/s] [内存消耗：995.38kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497507713',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110209390021672177651_1497507793637',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu?querytype=1',
+  '_' => '1497507793638',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T14:23:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102006112536519494327_1497507814312&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507814313
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102006112536519494327_1497507814312&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507814313 [运行时间：0.735701s][吞吐率：1.36req/s] [内存消耗：995.45kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497507794',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102006112536519494327_1497507814312',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu?querytype=1',
+  '_' => '1497507814313',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T14:23:39+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102011929802112252696_1497507819502&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507819503
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery1102011929802112252696_1497507819502&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507819503 [运行时间：0.227089s][吞吐率：4.40req/s] [内存消耗：995.45kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497507815',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery1102011929802112252696_1497507819502',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu?querytype=1',
+  '_' => '1497507819503',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------
+[ 2017-06-15T14:24:18+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208087176993882008_1497507858247&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507858248
+[ log ] localhost/medias/public/index.php/port/Hkinfo/cgheadhttps?callback=jQuery110208087176993882008_1497507858247&bkurl=http%3A%2F%2Flocalhost%2F201704%2Fborgwardbx7%2F%3Futm_source%3Dqichedaquan%26utm_content%3DVistakantianxiaAPPyuanchuangwenzhang%26utm_medium%3Dqichepindaojiaodiantu%3Fquerytype%3D1&_=1497507858248 [运行时间：0.294171s][吞吐率：3.40req/s] [内存消耗：995.38kb] [文件加载：31]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Hkinfo',
+    2 => 'cgheadhttps',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; Hm_lvt_add096930b07acc951facf60f1bf5db9=1496739940; Hm_lvt_b6e20c79cdc60f1fee68b2b72b0585ca=1496891967; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lpvt_9b892b9b49ee5115c47c4c076c7483f8=1497507820',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'referer' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'x-requested-with' => 'XMLHttpRequest',
+  'accept' => 'text/javascript, application/javascript, application/ecmascript, application/x-ecmascript, */*; q=0.01',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery110208087176993882008_1497507858247',
+  'bkurl' => 'http://localhost/201704/borgwardbx7/?utm_source=qichedaquan&utm_content=VistakantianxiaAPPyuanchuangwenzhang&utm_medium=qichepindaojiaodiantu?querytype=1',
+  '_' => '1497507858248',
+)
+[ info ] [ RUN ] app\port\controller\Hkinfo->cgheadhttps[ D:\rar\phpstudy\WWW\medias\application\port\controller\Hkinfo.php ]
+[ info ] [ LOG ] INIT File
+
+---------------------------------------------------------------

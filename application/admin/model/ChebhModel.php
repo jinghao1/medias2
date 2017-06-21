@@ -107,9 +107,9 @@ class ChebhModel extends Model
 	public function getregcbh($fromid=1){
 			//读取分页信息 
 		if($fromid==3){
-			return Db::name('cbh_reg')->alias("d")->field('d.dealer_id,d.name,d.phone,d.from,d.car_time,c.brand_name,d.time,d.buy_car_time,d.localaddr,d.changeaddr')->join('zt_cbh_carserise c','d.car_series_id=c.brand_id','LEFT')->order("d.dealer_id desc ")->paginate(); 
+			return Db::name('cbh_reg')->alias("d")->field('d.dealer_id,d.name,d.phone,d.from,m.brand_name as bbbrand,d.car_time,c.brand_name,d.time,d.buy_car_time,d.localaddr,d.changeaddr')->join('zt_cbh_carserise c','d.car_series_id=c.brand_id','LEFT')->join('zt_cbh_brand m','d.brand=m.brand_id','LEFT')->order("d.dealer_id desc ")->paginate(); 
 		}else{
-			return Db::name('cbh_reg')->alias("d")->field('d.dealer_id,d.name,d.phone,d.from,d.car_time,c.brand_name,d.time,d.buy_car_time,d.localaddr,d.changeaddr')->join('zt_cbh_carserise c','d.car_series_id=c.brand_id','LEFT')->where('d.whreg',$fromid)->order("d.dealer_id desc ")->paginate(); 
+			return Db::name('cbh_reg')->alias("d")->field('d.dealer_id,d.name,d.phone,d.from,m.brand_name as bbbrand,d.car_time,c.brand_name,d.time,d.buy_car_time,d.localaddr,d.changeaddr')->join('zt_cbh_carserise c','d.car_series_id=c.brand_id','LEFT')->join('zt_cbh_brand m','d.brand=m.brand_id','LEFT')->where('d.whreg',$fromid)->order("d.dealer_id desc ")->paginate(); 
 		}
 		 
  

@@ -120,7 +120,7 @@ class Hkinfo extends Controller	{
 		$all = input('param.'); //接收信息 
 		$callback = $all["callback"]; 
 	 
-		$xurl = 'http://i.qichedaquan.com/info/header?source=1&backurl='.$all['bkurl'];
+		$xurl = 'http://i.qichedaquan.com/info/header?backurl='.$all['bkurl'];
 	 
 		$end = file_get_contents($xurl);
 		//$end = '00099';  

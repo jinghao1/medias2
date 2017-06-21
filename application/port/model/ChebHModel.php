@@ -80,6 +80,15 @@ class ChebHModel extends Model
 	public function Caridbycarname($name){
 		return Db::name('cbh_carserise')->where('brand_name',$name)->select();
 	}
+
+	//通过用户手机号 获取注册信息
+	//public function cityregbyphone($phone){
+	//	return Db::name('cbh_reg')->field('from,localaddr,changeaddr')->where('phone',$phone)->find();
+	//}
+	//通过城市id,获取车百汇活动信息
+	public function Actcitycbhbyid($id){
+		return Db::name('zt_allcbhact')->field('begtime,endtime,address')->where('cityid',$id)->find();
+	}
 	    
 	
 }
