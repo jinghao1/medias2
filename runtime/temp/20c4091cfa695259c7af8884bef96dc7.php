@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html";i:1495425264;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\cityact\citylist.html";i:1498026221;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -202,7 +202,7 @@
 <script>
 var start = {
   elem: '#start1',
-  format: 'YYYY/MM/DD',
+  format: 'YYYY/MM/DD hh:mm',
   //min: laydate.now(), //设定最小日期为当前日期
   max: '2099-06-16 23:59:59', //最大日期
   istime: true,
@@ -215,7 +215,7 @@ var start = {
 var end = {
   elem: '#end1',
  // format: 'YYYY/MM/DD hh:mm',
-  format: 'YYYY/MM/DD',
+  format: 'YYYY/MM/DD hh:mm',
   //min: laydate.now(),
   max: '2099-06-16 23:59:59',
   istime: true,

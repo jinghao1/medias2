@@ -1,0 +1,317 @@
+[ 2017-06-26T16:05:03+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：3.934592s][吞吐率：0.25req/s] [内存消耗：1,779.91kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '北京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001111s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.025630s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '北京市'    [ RunTime:0.001559s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:05:51+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：6.973498s][吞吐率：0.14req/s] [内存消耗：1,780.10kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '北京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000723s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009561s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '北京市'    [ RunTime:0.001273s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:06:46+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：4.579975s][吞吐率：0.22req/s] [内存消耗：1,780.10kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '北京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000744s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009340s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '北京市'    [ RunTime:0.001196s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:08:52+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：3.242962s][吞吐率：0.31req/s] [内存消耗：1,780.27kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '北京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000872s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009017s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '北京市'    [ RunTime:0.001233s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:09:20+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8C%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：2.955659s][吞吐率：0.34req/s] [内存消耗：1,780.39kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '北京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.001106s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.009053s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '北京市'    [ RunTime:0.000901s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:09:35+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%A4%A7%E8%BF%9E%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%A4%A7%E8%BF%9E%E5%B8%82&_=1498464154289 [运行时间：2.511519s][吞吐率：0.40req/s] [内存消耗：1,780.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '大连市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000703s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.070563s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '大连市'    [ RunTime:0.001289s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:10:16+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8D%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8D%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：4.028924s][吞吐率：0.25req/s] [内存消耗：1,780.30kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '南京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.000834s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.052075s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '南京市'    [ RunTime:0.001087s ]
+
+---------------------------------------------------------------
+[ 2017-06-26T16:15:27+08:00 ] 127.0.0.1 127.0.0.1 GET /medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8D%97%E4%BA%AC%E5%B8%82&_=1498464154289
+[ log ] localhost/medias/public/index.php/port/Chebaih/AdcontAll?callback=jQuery183043962510876493543_1498464007826&regw=1&setCity=%E5%8D%97%E4%BA%AC%E5%B8%82&_=1498464154289 [运行时间：5.460238s][吞吐率：0.18req/s] [内存消耗：1,780.09kb] [文件加载：43]
+[ info ] [ LANG ] D:\rar\phpstudy\WWW\medias\thinkphp\lang\zh-cn.php
+[ info ] [ ROUTE ] array (
+  'type' => 'module',
+  'module' => 
+  array (
+    0 => 'port',
+    1 => 'Chebaih',
+    2 => 'AdcontAll',
+  ),
+)
+[ info ] [ HEADER ] array (
+  'cookie' => 'Hm_lvt_f7837cdb3a52632e3ab0c97029d9c19d=1490265823; Hm_lvt_0f9c7b195f0b86ba1118656d4a142474=1490606547; cna=BLM+EVhwMW0CASebnorWKGr1; Hm_lvt_8ec9c91b90c7c95b8a61831bd25de969=1493196656,1493363203; Hm_lvt_7e1b991d14eb5047e1f521cd606b8f00=1494230939,1495849992; bdshare_firstime=1497318682011; tshiylastdiggid=55n5; Hm_lvt_9b892b9b49ee5115c47c4c076c7483f8=1497233355,1497490219; Hm_lvt_14f983fb2590f231a73236d2d25ad263=1498013158; Hm_lvt_add096930b07acc951facf60f1bf5db9=1498123801',
+  'accept-language' => 'zh-CN,zh;q=0.8',
+  'accept-encoding' => 'gzip, deflate, sdch, br',
+  'accept' => 'text/html,application/xhtml+xml,application/xml;q=0.9,image/webp,*/*;q=0.8',
+  'user-agent' => 'Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/58.0.3029.110 Safari/537.36',
+  'upgrade-insecure-requests' => '1',
+  'cache-control' => 'max-age=0',
+  'connection' => 'keep-alive',
+  'host' => 'localhost',
+  'content-length' => '',
+  'content-type' => '',
+)
+[ info ] [ PARAM ] array (
+  'callback' => 'jQuery183043962510876493543_1498464007826',
+  'regw' => '1',
+  'setCity' => '南京市',
+  '_' => '1498464154289',
+)
+[ info ] [ RUN ] app\port\controller\Chebaih->AdcontAll[ D:\rar\phpstudy\WWW\medias\application\port\controller\Chebaih.php ]
+[ info ] [ DB ] INIT mysql
+[ info ] [ CACHE ] INIT File
+[ info ] [ LOG ] INIT File
+[ sql ] [ DB ] CONNECT:[ UseTime:0.010547s ] mysql:dbname=media;host=127.0.0.1;port=3306;charset=utf8
+[ sql ] [ SQL ] SHOW COLUMNS FROM `zt_allcity` [ RunTime:0.010007s ]
+[ sql ] [ SQL ] SELECT `cityid` FROM `zt_allcity` WHERE  `level` = 1  AND `cityname` = '南京市'    [ RunTime:0.000745s ]
+
+---------------------------------------------------------------

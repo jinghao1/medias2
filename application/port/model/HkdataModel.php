@@ -9,6 +9,7 @@ class HkdataModel extends Model
 	 
  	protected $hktable = 'ydbad'; //信息回馈
  	protected $adtable = 'ydadtt'; //广告位点击监测
+ 	protected $tableall = 'allpro'; //项目汇总表
 	//将数据插入
 	public function IntHk($data){
 		$end = Db::name($this->hktable)->insert($data);
@@ -68,4 +69,49 @@ class HkdataModel extends Model
 		$end = Db::name("system")->where('id',$id)->find();
 		return $end;
 	}
+
+	  /**
+     * 通过项目id,获取项目注册信息，经销商列表读取经销商列表
+     */
+    function GetTablebyproid($proid)
+    {
+    	return Db::name($this->tableall)->where('proid',$proid)->find();
+    	 
+    } 
+
+	  //通过项目id，手机号，获取用户注册id,竞猜次数
+    public function Rtuidbyphone($phone,$proid=null){
+	    //通过项目id获对应的表明
+	    $end = array();
+	    if($proid){
+		    $tableinfo = $this->GetTablebyproid($proid);
+		    if(!empty($tableinfo['reginfo'])){
+			    $end = Db::name($tableinfo['reginfo'])->field("dealer_id,jcnum")->where("phone",$phone)->find();
+		    } 
+	    }   
+		return $end; 
+    }
+
+    //插入竞猜信息  东标308 
+    public function  Itjcinfo($arr){
+	    return Db::name('db_308_jc')->insertGetId($arr);
+    }
+    //更新 用户竞猜次数 东标308
+    public function Upusernum($userid){
+	    return Db::name('db_308')->where('dealer_id',$userid)->setDec('jcnum');
+    }
+    //获取竞猜价格，数量
+    public function Getnumaver($minpric,$maxprice){
+	    $minpric = $minpric*10000;
+	    $maxprice = $maxprice*10000;
+	    return Db::name('db_308_jc')->where('price>='.$minpric)->where('price<='.$maxprice)->count('id');
+    }
+    //获取竞猜最小价格
+    public function Getminpric(){
+	    return Db::name('db_308_jc')->min('price');
+    }
+     //获取竞猜最大价格
+    public function Getmaxpric(){
+	    return Db::name('db_308_jc')->max('price');
+    }
 }

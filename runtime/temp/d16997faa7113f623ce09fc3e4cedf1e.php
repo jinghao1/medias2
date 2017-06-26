@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html";i:1489574400;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:77:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\user\menuadd.html";i:1498101518;}*/ ?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -48,7 +48,7 @@
 				<tr>
 					<td>是否启用</td>
 					<td>
-						<input type="radio" name="status" value="1">是
+						<input type="radio" name="status" value="1" checked>是
 						<input type="radio" name="status" value="0">否
 					</td>
 				</tr>

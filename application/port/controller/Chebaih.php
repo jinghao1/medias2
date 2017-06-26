@@ -34,6 +34,8 @@ class Chebaih extends Controller
 		//将数据分类
 		$str1 = '<h3 style="color: #000">正在报名</h3>
 	            <div class="city-list">';
+	    $str4 = '<dl>';
+        $str3 = '<dl>';
 		if($citys){
 			foreach($citys as $ainfo){
 				if($ainfo['waiting']){ //筹备中城市信息
@@ -128,6 +130,8 @@ class Chebaih extends Controller
 		//将数据分类
 		$str1 = '<h2>正在报名</h2>
             	<ul class="uls">';
+        $str4 = '<li><div>';
+        $str3 = '<li><div>';
 		if($citys){
 			foreach($citys as $ainfo){
 				if($ainfo['waiting']){ //筹备中城市信息
@@ -703,18 +707,18 @@ class Chebaih extends Controller
 					 	}
 					} 
 				 
-					if(empty($newarr[$key])){
-						$arri = get_object_vars($arrinfo[0]); 
+					//if(empty($newarr[$key])){
+					//	$arri = get_object_vars($arrinfo[0]); 
 					  
-						//字段1
-						$newarr[$key]['text1'] = $arri['data'][0]->Text1;
-						//字段2
-						$newarr[$key]['text2'] = $arri['data'][0]->Text2;
-						//图片
-						$newarr[$key]['image'] = $arri['data'][0]->CarImage;
-						//链接
-						$newarr[$key]['link'] = $arri['data'][0]->Link;   
-					}
+					//	//字段1
+					//	$newarr[$key]['text1'] = $arri['data'][0]->Text1;
+					//	//字段2
+					//	$newarr[$key]['text2'] = $arri['data'][0]->Text2;
+					//	//图片
+					//	$newarr[$key]['image'] = $arri['data'][0]->CarImage;
+					//	//链接
+					//	$newarr[$key]['link'] = $arri['data'][0]->Link;   
+					//}
 				}
 			}
 			 
@@ -746,21 +750,21 @@ class Chebaih extends Controller
 							}
 						}
 					}
-					if(empty($xstharr[$key1])){
+					//if(empty($xstharr[$key1])){
 						 
-						$arri = get_object_vars($arrinfo[0]); 
-						//字段1 
+					//	$arri = get_object_vars($arrinfo[0]); 
+					//	//字段1 
 					 
-						if($arri['data'][0]){
-							$xstharr[$key1]['text1'] = $arri['data'][0]->Text1;
-							//字段2
-							$xstharr[$key1]['text2'] = $arri['data'][0]->Text2;
-							//图片
-							$xstharr[$key1]['image'] = $arri['data'][0]->CarImage;
-							//链接
-							$xstharr[$key1]['link'] = $arri['data'][0]->Link; 
-						}  
-					} 
+					//	if($arri['data'][0]){
+					//		$xstharr[$key1]['text1'] = $arri['data'][0]->Text1;
+					//		//字段2
+					//		$xstharr[$key1]['text2'] = $arri['data'][0]->Text2;
+					//		//图片
+					//		$xstharr[$key1]['image'] = $arri['data'][0]->CarImage;
+					//		//链接
+					//		$xstharr[$key1]['link'] = $arri['data'][0]->Link; 
+					//	}  
+					//} 
 				}
 			}
 			$cznum = count($newarr);
