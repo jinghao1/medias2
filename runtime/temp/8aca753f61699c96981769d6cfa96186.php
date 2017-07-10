@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dbjingcai\showjc.html";i:1498111908;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:81:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\dbjingcai\showjc.html";i:1498717457;}*/ ?>
 <html>
 <head>
 <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
@@ -21,7 +21,7 @@
 			<a style="float:left" href="<?php echo url('Dbjingcai/Showjc',['enews'=>'1','id'=>$proid]); ?>"><div class="outbutlef <?php if(!empty($yxenews)) echo 'ckback'; ?>">&nbsp; 真实 &nbsp;</div></a> 
 			<a style="float:left" href="<?php echo url('Dbjingcai/Showjc',['enews'=>'2','id'=>$proid]); ?>"><div class="outbutlef <?php if(!empty($llenews)) echo 'ckback'; ?>">&nbsp; 虚假 &nbsp;</div></a>
 			 
-		<!--	<a style="float:right" href="<?php echo url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid]); ?>"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>-->
+			<a style="float:right" href="<?php echo url('Excel/Dbpriceoutput',['proid'=>$proid,'enewsid'=>$enewsid]); ?>"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 
@@ -33,6 +33,7 @@
 		<td >竞猜价格</td>
 		<td >时间</td> 
 		<td >真实/虚假</td>  
+		<td >操作</td>  
 	</tr>
 
 	<?php if(is_array($data) || $data instanceof \think\Collection): if( count($data)==0 ) : echo "" ;else: foreach($data as $key=>$v): ?>
@@ -43,6 +44,10 @@
 			<td ><?php echo $v['price']; ?></td>
 			<td ><?php echo date('Y-m-d H:i:s',$v['time']); ?></td>
 			<td ><?php echo !empty($v['type'])?'虚拟' : '真实'; ?></td> 
+			<td ><?php if($delopt): ?>
+					<a onclick="return confirm('确认删除？');" href="<?php echo url('Dbjingcai/Deljcprice',['v_id'=>$v['id'],'u_id'=>$v['userid']]); ?>">删除</a> 
+				<?php endif; ?> 
+			</td>
 		</tr>
 	<?php endforeach; endif; else: echo "" ;endif; ?>
 

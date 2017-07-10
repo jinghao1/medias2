@@ -8,6 +8,7 @@ class DbjingcaiModel extends Model
 	 // 设置当前模型对应的完整数据表名称
     protected $table = 'db_308_jc';
     protected $tables = 'project';
+    protected $tabledb = 'db_308';
 
     /**
      * 项目添加
@@ -26,6 +27,14 @@ class DbjingcaiModel extends Model
     { 
     	 
     	return Db::name($this->table)->where('type',$in)->count();
+    }
+    //删除竞猜价格
+    public function deldbjcprice($id,$uid){
+	    $end = Db::name($this->table)->where('id',$id)->delete();
+	    if($uid && $end){
+		    $end = Db::name($this->tabledb)->where('dealer_id',$uid)->setInc('jcnum');
+	    }
+	    return $end;
     }
     
     
@@ -75,14 +84,14 @@ class DbjingcaiModel extends Model
 
 	    switch ($fromid){
             case 1: //真实
-                return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->where('d.type',0)->order('d.time desc')->paginate();
+                return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type,d.userid')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->where('d.type',0)->order('d.time desc')->paginate();
                 break;  
             case 2: //虚假
-                 return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->where('d.type',1)->order('d.time desc')->paginate();
+                 return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type,d.userid')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->where('d.type',1)->order('d.time desc')->paginate();
                 break;  
             
             default:  //全部
-                 return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->order('d.time desc')->paginate();
+                 return Db::name('db_308_jc')->alias('d')->field('d.price,d.time,c.name,c.phone,d.id,d.type,d.userid')->join('zt_db_308 c','d.userid=c.dealer_id','LEFT')->order('d.time desc')->paginate();
                 break;  
         } 
 	 

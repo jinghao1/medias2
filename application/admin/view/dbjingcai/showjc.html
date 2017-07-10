@@ -20,7 +20,7 @@
 			<a style="float:left" href="{:url('Dbjingcai/Showjc',['enews'=>'1','id'=>$proid])}"><div class="outbutlef {$yxenews?='ckback'}">&nbsp; 真实 &nbsp;</div></a> 
 			<a style="float:left" href="{:url('Dbjingcai/Showjc',['enews'=>'2','id'=>$proid])}"><div class="outbutlef {$llenews?='ckback'}">&nbsp; 虚假 &nbsp;</div></a>
 			 
-		<!--	<a style="float:right" href="{:url('Excel/index',['proid'=>$proid,'enewsid'=>$enewsid])}"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>-->
+			<a style="float:right" href="{:url('Excel/Dbpriceoutput',['proid'=>$proid,'enewsid'=>$enewsid])}"> <div class="outbut"> &nbsp;导 出 &nbsp;</div></a>
 			&nbsp;&nbsp;&nbsp;
 		</td>
 		 
@@ -32,6 +32,7 @@
 		<td >竞猜价格</td>
 		<td >时间</td> 
 		<td >真实/虚假</td>  
+		<td >操作</td>  
 	</tr>
 
 	{foreach name="data" item="v"}
@@ -42,6 +43,10 @@
 			<td >{$v.price}</td>
 			<td >{:date('Y-m-d H:i:s',$v.time)}</td>
 			<td >{$v.type? '虚拟' : '真实'}</td> 
+			<td >{if condition="$delopt"}
+					<a onclick="return confirm('确认删除？');" href="{:url('Dbjingcai/Deljcprice',['v_id'=>$v.id,'u_id'=>$v.userid])}">删除</a> 
+				{/if} 
+			</td>
 		</tr>
 	{/foreach}
 

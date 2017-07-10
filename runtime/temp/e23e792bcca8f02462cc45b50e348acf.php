@@ -1,4 +1,4 @@
-<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html";i:1496977601;}*/ ?>
+<?php if (!defined('THINK_PATH')) exit(); /*a:1:{s:76:"D:\rar\phpstudy\WWW\medias\public/../application/admin\view\excel\putin.html";i:1499220682;}*/ ?>
 <!doctype html>
 <html lang="en">
 <head>
@@ -22,5 +22,13 @@
 	    <input type="file" name="importexcel"/> 
 	    <input type="submit" value="导入"/>
 	</form>
+
+
+	<!--秦-->
+<br>
+<br>
+<br>
+<br>
+ 
 </body>
 </html>

@@ -49,8 +49,9 @@ class DealerModel extends Model
     }
 
 	//读取分页信息 
-    function PjDlAll($id,$fromid=1)
+    function PjDlAll($id,$fromid=1,$bt='0',$et='9499788800')
     {
+	   
 	    //通过项目id，查询项目对应的注册信息表
 	    $tbinfo = Db::name("allpro")->where('proid',$id)->select();
 	    $arrwh = array('d.project_id'=>$id);
@@ -66,6 +67,7 @@ class DealerModel extends Model
                     //->join('zt_lotuser m','m.userid=d.dealer_id','LEFT')
                    // ->join('zt_lottery n','m.lotid=n.id','LEFT')
                     ->where($arrwh) 
+                    ->where('d.time>'.$bt." AND d.time<".$et) 
                     ->order("dealer_id desc ")
                     //->limit("0,20")
                     //->select();

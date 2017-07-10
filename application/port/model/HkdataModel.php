@@ -106,6 +106,10 @@ class HkdataModel extends Model
 	    $maxprice = $maxprice*10000;
 	    return Db::name('db_308_jc')->where('price>='.$minpric)->where('price<='.$maxprice)->count('id');
     }
+    //获取总共投票竞猜数量
+    public function Alljcnum(){
+	    return Db::name('db_308_jc')->count('id');
+    }
     //获取竞猜最小价格
     public function Getminpric(){
 	    return Db::name('db_308_jc')->min('price');

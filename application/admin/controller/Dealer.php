@@ -190,6 +190,25 @@ class Dealer extends	Base
 		$you = input('param.enews');
 		$fromid = empty($you) ? 1 : $you;
 		$data = array(); 
+		$begtime = input('param.begtime');
+		$endtime = input('param.endtime');
+		if($begtime){
+			$this->assign('begtime',$begtime);
+			$begtime = strtotime($begtime);
+			
+		}else{
+			
+			$this->assign('begtime',"");
+			$begtime = "0";
+		}
+		if($endtime){
+			$this->assign('endtime',$endtime);
+			$endtime = strtotime($endtime);
+		}else{
+			$this->assign('endtime',"");
+			$endtime = "9499788800"; //截止时间
+		}
+	 
 		//查询车系车型
 		if(!empty($id)){
 			//获取是显示全部还是，mobile，pc
@@ -203,6 +222,9 @@ class Dealer extends	Base
 				case 3:
 			 		$this->assign('allout',1);
 				 	break;  
+				case 4:
+			 		$this->assign('h5out',1);
+				 	break; 
 				default:
 				 	$this->assign('yxenews',1);
 				 	break; 
@@ -215,7 +237,8 @@ class Dealer extends	Base
 
 	//'SELECT * FROM zt_user_dealer INNER JOIN (SELECT dealer_id FROM zt_user_dealer ORDER BY dealer_id desc LIMIT 0,20) as deal USING (dealer_id)'
 			//$data = $dealer->ProjectDealerAll($id,$fromid); 
-			$data = $dealer->PjDlAll($id,$fromid); 
+			
+			$data = $dealer->PjDlAll($id,$fromid,$begtime,$endtime); 
 			//echo Db::name("user_dealer")->getlastsql();
 			$proinfo = $project->ProjectSelectName($id); //获取当前项目名称
 			$this->assign('proname',$proinfo[0]['project_name']);
@@ -237,8 +260,17 @@ class Dealer extends	Base
 			foreach($buycartm as $bctm){
 				$newbuycartm[$bctm['id']] = $bctm['timename'];
 			}
-		} 
+		}  
 		//获取所有奖项
+		if($id==44){ 
+			//福特购车时间段
+			$ftbuycartm = $car->Ftbuycartime();
+			if($ftbuycartm){
+				foreach($ftbuycartm as $bctm){
+					$newbuycartm[$bctm['id']] = $bctm['timename'];
+				}
+			} 
+		}
 		$alloti =  $dealer->alllotin();
 		$allotiarr = array();
 		if($alloti){

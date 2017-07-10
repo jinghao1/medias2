@@ -192,7 +192,7 @@ class Dbjingcai extends	Controller	{
 			return; 
 		}
 		$randnum = rand('1000','9999');
-		$cont = '【东标308竞猜】您的手机号验证码是：'.$randnum.'，30分钟内有效，如非本人操作请忽略。';
+		$cont = '【东标5008竞猜】您的手机号验证码是：'.$randnum.'，30分钟内有效，如非本人操作请忽略。';
 		//获取秘钥地址
 		$mikeyurl = 'http://api.sys.xingyuanauto.com/sms/GetPassSecret?appid='.$appidnum.'&ticket='.$curtime; 
 		//创建请求
@@ -284,8 +284,9 @@ class Dbjingcai extends	Controller	{
 			//echo Db::name('db_308_jc')->getLastSql();
 			$all[$minprice."-".$maxp] = $num;
 		} 
-	  
-		echo $callback.'('.json_encode($all).')';
+	    $allnum = $ck->Alljcnum();
+	    $end = array('data'=>$all,'allnum'=>$allnum);
+		echo $callback.'('.json_encode($end).')';
 		return;
 	}
  

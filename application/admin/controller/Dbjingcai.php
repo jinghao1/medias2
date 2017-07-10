@@ -11,6 +11,7 @@ use	think\Controller;
 use	think\Request;
 use	think\Db; 
 use app\admin\model\DbjingcaiModel;
+use app\admin\model\UserModel;
 class Dbjingcai extends	Base	
 {	
 
@@ -48,10 +49,35 @@ class Dbjingcai extends	Base
         }else{
             $page = "";
         } 
+        //检测
+        $user = new UserModel();
+        //检测注册信息删除权限
+        $delpro = $user->CkOptionuser('admin/Dbjingcai/Deljcprice'); 
+        $this->assign('delopt',$delpro); //是否有删除权限，1有，2没有    
         $this->assign('data',$data);     
         $this->assign('proid','44');  //暂时无用    
         $this->assign('page',$page);                    
         return $this->fetch();  
+	}
+
+	//删除 竞猜价格
+	public function Deljcprice(){
+		$dealer = new DbjingcaiModel();
+        $id = input('param.v_id/d');   //竞猜id
+        $uid = input('param.u_id/d');  //用户id
+        if($id){
+            $res = $dealer->deldbjcprice($id,$uid);
+            if($res){
+                $this->success('删除成功');
+            }
+            else
+            {
+                $this->error('删除失败');
+            }
+        }else{
+            $this->error('无删除id');
+        }
+		
 	}
 	//灌水
 	public function Guanshui(){

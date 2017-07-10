@@ -66,12 +66,22 @@ class CarModel extends Model
 	    return DB::name($this->tablebd)->field("brand_id,brand_name")->where('brand_id','in',$id)->select();
     }
 
-    //返回购车时间
+    //返回通过购车时间
     public function BuycarTime($id=null){
 	    if($id){
 		    return DB::name("buytime")->field("id,timename")->where('id',$id)->select();
 	    }else{
 		    return  DB::name("buytime")->field("id,timename")->select();
+	    }
+	    
+    }
+
+      //返回福特购车时间
+    public function Ftbuycartime($id=null){
+	    if($id){
+		    return DB::name("buytime_ft")->field("id,timename")->where('id',$id)->select();
+	    }else{
+		    return  DB::name("buytime_ft")->field("id,timename")->select();
 	    }
 	    
     }
